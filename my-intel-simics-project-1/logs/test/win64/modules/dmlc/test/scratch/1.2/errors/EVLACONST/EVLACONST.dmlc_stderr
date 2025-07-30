@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EVLACONST.dml:22:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EVLACONST.dml:26:5: error EVLACONST: variable length array declared with (partially) const-qualified type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EVLACONST.dml:28:5: error EVLACONST: variable length array declared with (partially) const-qualified type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EVLACONST.dml:33:5: error EVLACONST: variable length array declared with (partially) const-qualified type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EVLACONST.dml:35:5: error EVLACONST: variable length array declared with (partially) const-qualified type

@@ -1,0 +1,11 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:15:5: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:42:8: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:6:1: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:27:1: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:31:1: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:22:19: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:24:19: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:11:1: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:38:1: error EVOID: illegal use of void type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:44:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EVOID.dml:46:5: error EVOID: illegal use of void type

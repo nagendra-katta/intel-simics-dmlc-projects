@@ -1,0 +1,6 @@
+WARNING: module 'dml-test-next_time' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\events\T_next_time.py
+[obj info] nexttime 1.000000
+[obj info] nexttime 2.000000
+[obj info] nexttime 1.000000
+[obj info] nexttime 2.000000

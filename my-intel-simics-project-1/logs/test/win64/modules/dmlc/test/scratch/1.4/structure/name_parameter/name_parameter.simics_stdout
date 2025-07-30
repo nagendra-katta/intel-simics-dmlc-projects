@@ -1,0 +1,6 @@
+WARNING: module 'dml-test-name_parameter' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] b_r name is REG_NAME_OVERRIDDEN
+[obj info] b_r qname is BANK_NAME_OVERRIDDEN.REG_NAME_OVERRIDDEN
+[obj info] b_r_f name is FIELD_NAME_OVERRIDDEN
+[obj info] b_r_f qname is BANK_NAME_OVERRIDDEN.REG_NAME_OVERRIDDEN.FIELD_NAME_OVERRIDDEN
+[obj info] c_r_f qname is c.NOT_THE_BANK.f

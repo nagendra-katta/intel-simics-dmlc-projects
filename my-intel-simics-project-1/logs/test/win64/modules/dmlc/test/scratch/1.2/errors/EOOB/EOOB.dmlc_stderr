@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EOOB.dml:11:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EOOB.dml:13:10: error EOOB: array index out of bounds
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EOOB.dml:15:10: error EOOB: array index out of bounds
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EOOB.dml:17:5: error EOOB: array index out of bounds
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EOOB.dml:19:5: error EOOB: array index out of bounds
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EOOB.dml:21:6: error EOOB: array index out of bounds

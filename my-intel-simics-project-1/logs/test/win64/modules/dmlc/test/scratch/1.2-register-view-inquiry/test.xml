@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device name="test" bitorder="le">
+  <bank name="inquiry" byte_order="little-endian">
+    <register name="r" offset="0" size="4">
+    </register>
+  </bank>
+</device>

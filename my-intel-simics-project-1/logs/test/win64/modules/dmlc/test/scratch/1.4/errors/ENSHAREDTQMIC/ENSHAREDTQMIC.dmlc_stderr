@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHAREDTQMIC.dml:46:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHAREDTQMIC.dml:57:19: error ENSHAREDTQMIC: invalid template-qualified method implementation call made via a value of template type: 't2' does not provide nor inherit a shared implementation of 'nonshared'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHAREDTQMIC.dml:59:19: error EMEMBERTQMIC: invalid template-qualified method implementation call, 't1' does not provide nor inherit an implementation of a method 'abstract1', only an abstract declaration of it
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHAREDTQMIC.dml:9:1: template declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHAREDTQMIC.dml:61:19: error EMEMBERTQMIC: invalid template-qualified method implementation call, 't2' does not provide nor inherit an implementation of a method 'abstract2', only an abstract declaration of it
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHAREDTQMIC.dml:18:1: template declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHAREDTQMIC.dml:63:19: error ENSHAREDTQMIC: invalid template-qualified method implementation call made via a value of template type: 't2' does not provide nor inherit a shared implementation of 'sm3'

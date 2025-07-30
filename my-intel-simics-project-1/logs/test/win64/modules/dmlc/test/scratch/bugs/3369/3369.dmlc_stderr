@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_3369.dml:8:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_3369.dml:10:5: error EPTYPE: wrong type for parameter x in method call
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_3369.dml:10:5:   got:      uint8
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_3369.dml:10:5:   expected: pointer to int32

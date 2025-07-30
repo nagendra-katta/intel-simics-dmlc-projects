@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EABSTEMPLATE.dml:15:1: In p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EABSTEMPLATE.dml:16:8: error EABSTEMPLATE: Instantiating template t1 requires abstract method m to be implemented
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EABSTEMPLATE.dml:11:5: abstract declaration

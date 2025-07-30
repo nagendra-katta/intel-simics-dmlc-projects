@@ -1,0 +1,9 @@
+WARNING: module 'dml-test-notify_state' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\misc\T_notify_state.py
+[obj info] Attribute set called
+[obj info] Attribute get called
+[obj info] Event triggered
+[obj info] Interface method called
+[obj info] Exposed method called
+[obj info] Indirectly exposed method called
+[obj info] Immediate after triggered

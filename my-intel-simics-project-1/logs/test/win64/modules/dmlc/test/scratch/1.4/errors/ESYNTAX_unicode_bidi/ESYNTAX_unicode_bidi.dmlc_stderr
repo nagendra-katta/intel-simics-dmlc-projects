@@ -1,0 +1,14 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:12:1: error ESYNTAX: syntax error at '\u2067': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:14:1: error ESYNTAX: syntax error at '\u2068': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:16:1: error ESYNTAX: syntax error at '\u2066': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:18:1: error ESYNTAX: syntax error at '\u2069': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:18:2: error ESYNTAX: syntax error at '\u2069': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:18:3: error ESYNTAX: syntax error at '\u2069': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:20:1: error ESYNTAX: syntax error at '\u202a': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:22:1: error ESYNTAX: syntax error at '\u202d': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:24:1: error ESYNTAX: syntax error at '\u202b': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:26:1: error ESYNTAX: syntax error at '\u202e': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:28:1: error ESYNTAX: syntax error at '\u202c': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:28:2: error ESYNTAX: syntax error at '\u202c': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:28:3: error ESYNTAX: syntax error at '\u202c': Unicode BiDi character not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_unicode_bidi.dml:28:4: error ESYNTAX: syntax error at '\u202c': Unicode BiDi character not allowed

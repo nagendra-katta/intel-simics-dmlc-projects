@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-subobjs' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\structure\T_subobjs.py
+[obj.port.p[1] info] PP
+[obj.d[1] spec-viol] DD
+[obj.bank.b[1] unimpl] BB

@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EACHK.dml:9:1: In a0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EACHK.dml:9:1: error EACHK: checkpointable attribute missing set or get method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EACHK.dml:17:1: In a1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EACHK.dml:17:1: error EACHK: checkpointable attribute missing set or get method

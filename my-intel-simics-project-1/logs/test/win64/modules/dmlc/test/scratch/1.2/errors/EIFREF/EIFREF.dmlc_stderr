@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIFREF.dml:6:7: In post_init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIFREF.dml:14:20: error EIFREF: illegal interface method reference: $s.signal.signal_raise

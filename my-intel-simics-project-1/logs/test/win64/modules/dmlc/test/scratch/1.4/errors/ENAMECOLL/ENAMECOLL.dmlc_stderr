@@ -1,0 +1,105 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:84:5: error ENAMECOLL: name collision on 'i'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:82:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:157:5: error ENAMECOLL: name collision on 'i'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:155:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:280:9: error ENAMECOLL: name collision on 'a'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:278:9: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:288:9: error ENAMECOLL: name collision on 'a'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:286:9: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:47:1: error ENAMECOLL: name collision on 'c7'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:49:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:57:1: error ENAMECOLL: name collision on 'c9'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:59:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:66:1: error ENAMECOLL: name collision on 't1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:68:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:71:1: error ENAMECOLL: name collision on 's'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:73:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:87:1: error ENAMECOLL: name collision on 'g'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:89:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:164:5: error ENAMECOLL: name collision on 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:162:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:169:5: error ENAMECOLL: name collision on 'i'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:167:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:174:5: error ENAMECOLL: name collision on 'mp'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:172:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:179:5: error ENAMECOLL: name collision on 'pm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:177:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:184:5: error ENAMECOLL: name collision on 'ses'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:182:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:195:5: error ENAMECOLL: name collision on 'p0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:191:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:203:5: error ENAMECOLL: name collision on 'p0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:191:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:218:5: error ENAMECOLL: name collision on 'am'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:208:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:220:5: error ENAMECOLL: name collision on 'dm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:210:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:222:5: error ENAMECOLL: name collision on 'dm2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:212:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:224:5: error ENAMECOLL: name collision on 'ses'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:214:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:17:7: error ENAMECOLL: name collision on 'c1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:15:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:23:1: error ENAMECOLL: name collision on 'c2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:21:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:38:1: error ENAMECOLL: name collision on 'c5'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:36:7: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:54:1: error ENAMECOLL: name collision on 'c8'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:52:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:12:1: error ENAMECOLL: name collision on 'c0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:10:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:26:1: error ENAMECOLL: name collision on 'c3'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:28:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:31:1: error ENAMECOLL: name collision on 'c4'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:33:7: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:41:1: error ENAMECOLL: name collision on 'c6'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:43:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:78:7: error ENAMECOLL: name collision on 'bar'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:76:7: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:91:1: In b
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:93:5: error ENAMECOLL: name collision on 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:95:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:136:1: In b2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:141:9: error ENAMECOLL: name collision on 'r1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:138:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:149:9: error ENAMECOLL: name collision on 'r_collision'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:145:9: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:133:5: error ENAMECOLL: name collision on 'dev'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:7:7: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:255:1: In ga[i < 4][i < 4]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:255:1: error ENAMECOLL: name collision on 'i'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:255:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:122:5: In gg.g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:115:5: error ENAMECOLL: name collision on 'p'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:118:9: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:121:1: In gg
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:228:5: error ENAMECOLL: name collision on 'am'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:208:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:233:13: In template param_untyped_override
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:230:5: error ENAMECOLL: name collision on 'dm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:210:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:98:1: In p0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:102:5: error ENAMECOLL: name collision on 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:100:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:105:1: In p2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:109:5: error ENAMECOLL: name collision on 'baz'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:107:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:247:1: In p_clash
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:244:5: error ENAMECOLL: name collision on 'p'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:242:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:271:1: In param_clash_override
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:269:5: error ENAMECOLL: name collision on 'overridden_clash'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:267:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:205:1: In po
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:199:11: error ENAMECOLL: name collision on 'p0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:205:31: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:249:1: In tb
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:251:5: error ENAMECOLL: name collision on 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:237:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:129:1: error ENAMECOLL: name collision on 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:127:8: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:263:1: error ENAMECOLL: name collision on 'm_dup'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENAMECOLL.dml:261:1: conflicting definition

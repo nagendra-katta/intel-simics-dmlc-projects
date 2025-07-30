@@ -1,0 +1,444 @@
+WARNING: module 'dml-test-par_over_endian' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_par_over_endian.py
+Writing 4 bytes to offset 0x0
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.r1 (addr 0) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f1 <= 0
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f2 <= 0x1
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f3 <= 0x2
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f4 <= 0x3
+Writing 4 bytes to offset 0x4
+DATA 4050607
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.r2 (addr 0x4) <- 0x07060504
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f1 <= 0x4
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f2 <= 0x5
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f3 <= 0x6
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f4 <= 0x7
+Writing 4 bytes to offset 0x8
+DATA 8090a0b
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.r3 (addr 0x8) <- 0x0b0a0908
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r3.f1 <= 0x8
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r3.f2 <= 0x9
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r3.f3 <= 0xa
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r3.f4 <= 0xb
+Reading 4 bytes from offset 0x0
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f1 => 0
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f2 => 0x1
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f3 => 0x2
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f4 => 0x3
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.r1 (addr 0) -> 0x03020100
+Reading 4 bytes from offset 0x4
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f1 => 0x4
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f2 => 0x5
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f3 => 0x6
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f4 => 0x7
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.r2 (addr 0x4) -> 0x07060504
+Reading 4 bytes from offset 0x8
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r3.f1 => 0x8
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r3.f2 => 0x9
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r3.f3 => 0xa
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r3.f4 => 0xb
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.r3 (addr 0x8) -> 0x0b0a0908
+Now read some partial ranges
+Reading 1 bytes from offset 0x0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0 in nonpar_nonover_be (addr 0) outside registers or misaligned access
+Reading 1 bytes from offset 0x1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x1 in nonpar_nonover_be (addr 0x1) outside registers or misaligned access
+Reading 1 bytes from offset 0x2
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x2 in nonpar_nonover_be (addr 0x2) outside registers or misaligned access
+Reading 1 bytes from offset 0x3
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x3 in nonpar_nonover_be (addr 0x3) outside registers or misaligned access
+Reading 1 bytes from offset 0x4
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x4 in nonpar_nonover_be (addr 0x4) outside registers or misaligned access
+Reading 1 bytes from offset 0x5
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x5 in nonpar_nonover_be (addr 0x5) outside registers or misaligned access
+Reading 1 bytes from offset 0x6
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x6 in nonpar_nonover_be (addr 0x6) outside registers or misaligned access
+Reading 1 bytes from offset 0x7
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x7 in nonpar_nonover_be (addr 0x7) outside registers or misaligned access
+Reading 2 bytes from offset 0x0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0 in nonpar_nonover_be (addr 0) outside registers or misaligned access
+Reading 2 bytes from offset 0x1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x1 in nonpar_nonover_be (addr 0x1) outside registers or misaligned access
+Reading 2 bytes from offset 0x2
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x2 in nonpar_nonover_be (addr 0x2) outside registers or misaligned access
+Reading 2 bytes from offset 0x4
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x4 in nonpar_nonover_be (addr 0x4) outside registers or misaligned access
+Reading 2 bytes from offset 0x5
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x5 in nonpar_nonover_be (addr 0x5) outside registers or misaligned access
+Reading 2 bytes from offset 0x6
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x6 in nonpar_nonover_be (addr 0x6) outside registers or misaligned access
+Now read/write some overlapping ranges
+Reading 8 bytes from offset 0x0
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f1 => 0
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f2 => 0x1
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f3 => 0x2
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r1.f4 => 0x3
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.r1 (addr 0) -> 0x03020100
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0 in nonpar_nonover_be (addr 0) outside registers or misaligned access
+Reading 8 bytes from offset 0x4
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f1 => 0x4
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f2 => 0x5
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f3 => 0x6
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.r2.f4 => 0x7
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.r2 (addr 0x4) -> 0x07060504
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x4 in nonpar_nonover_be (addr 0x4) outside registers or misaligned access
+Writing 8 bytes to offset 0x0
+DATA 405060700010203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.r1 (addr 0) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f1 <= 0
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f2 <= 0x1
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f3 <= 0x2
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r1.f4 <= 0x3
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0 in nonpar_nonover_be (addr 0) outside registers or misaligned access
+Writing 8 bytes to offset 0x4
+DATA 8090a0b04050607
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.r2 (addr 0x4) <- 0x07060504
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f1 <= 0x4
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f2 <= 0x5
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f3 <= 0x6
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.r2.f4 <= 0x7
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x4 in nonpar_nonover_be (addr 0x4) outside registers or misaligned access
+Now read/write some partial and overlapping ranges
+Reading 4 bytes from offset 0x2
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x2 in nonpar_nonover_be (addr 0x2) outside registers or misaligned access
+Reading 4 bytes from offset 0x6
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x6 in nonpar_nonover_be (addr 0x6) outside registers or misaligned access
+Writing 4 bytes to offset 0x2
+DATA 6070001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte write access at offset 0x2 in nonpar_nonover_be (addr 0x2) outside registers or misaligned access
+Writing 4 bytes to offset 0x6
+DATA a0b0405
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte write access at offset 0x6 in nonpar_nonover_be (addr 0x6) outside registers or misaligned access
+Reading registers of various sizes
+Writing 1 bytes to offset 0x1000000
+DATA 0
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.s1 (addr 0x1000000) <- 0x00
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.s1.f <= 0
+Reading 1 bytes from offset 0x1000000
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.s1.f => 0
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.s1 (addr 0x1000000) -> 0x00
+Writing 2 bytes to offset 0x2000000
+DATA 1
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.s2 (addr 0x2000000) <- 0x0100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.s2.f <= 0x100
+Reading 2 bytes from offset 0x2000000
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.s2.f => 0x100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.s2 (addr 0x2000000) -> 0x0100
+Writing 1 bytes to offset 0x2000001
+DATA 0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte write access at offset 0x2000001 in nonpar_nonover_be (addr 0x2000001) outside registers or misaligned access
+Reading 1 bytes from offset 0x2000001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x2000001 in nonpar_nonover_be (addr 0x2000001) outside registers or misaligned access
+Writing 3 bytes to offset 0x3000000
+DATA 102
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.s3 (addr 0x3000000) <- 0x020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.s3.f <= 0x20100
+Reading 3 bytes from offset 0x3000000
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.s3.f => 0x20100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.s3 (addr 0x3000000) -> 0x020100
+Writing 2 bytes to offset 0x3000001
+DATA 1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte write access at offset 0x3000001 in nonpar_nonover_be (addr 0x3000001) outside registers or misaligned access
+Reading 2 bytes from offset 0x3000001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x3000001 in nonpar_nonover_be (addr 0x3000001) outside registers or misaligned access
+Writing 1 bytes to offset 0x3000002
+DATA 0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte write access at offset 0x3000002 in nonpar_nonover_be (addr 0x3000002) outside registers or misaligned access
+Reading 1 bytes from offset 0x3000002
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x3000002 in nonpar_nonover_be (addr 0x3000002) outside registers or misaligned access
+Writing 4 bytes to offset 0x4000000
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.s4 (addr 0x4000000) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.s4.f <= 0x3020100
+Reading 4 bytes from offset 0x4000000
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.s4.f => 0x3020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.s4 (addr 0x4000000) -> 0x03020100
+Writing 3 bytes to offset 0x4000001
+DATA 102
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte write access at offset 0x4000001 in nonpar_nonover_be (addr 0x4000001) outside registers or misaligned access
+Reading 3 bytes from offset 0x4000001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte read access at offset 0x4000001 in nonpar_nonover_be (addr 0x4000001) outside registers or misaligned access
+Writing 2 bytes to offset 0x4000002
+DATA 1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte write access at offset 0x4000002 in nonpar_nonover_be (addr 0x4000002) outside registers or misaligned access
+Reading 2 bytes from offset 0x4000002
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x4000002 in nonpar_nonover_be (addr 0x4000002) outside registers or misaligned access
+Writing 1 bytes to offset 0x4000003
+DATA 0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte write access at offset 0x4000003 in nonpar_nonover_be (addr 0x4000003) outside registers or misaligned access
+Reading 1 bytes from offset 0x4000003
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x4000003 in nonpar_nonover_be (addr 0x4000003) outside registers or misaligned access
+Writing 5 bytes to offset 0x5000000
+DATA 1020304
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.s5 (addr 0x5000000) <- 0x0403020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.s5.f <= 0x403020100
+Reading 5 bytes from offset 0x5000000
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.s5.f => 0x403020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.s5 (addr 0x5000000) -> 0x0403020100
+Writing 4 bytes to offset 0x5000001
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte write access at offset 0x5000001 in nonpar_nonover_be (addr 0x5000001) outside registers or misaligned access
+Reading 4 bytes from offset 0x5000001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x5000001 in nonpar_nonover_be (addr 0x5000001) outside registers or misaligned access
+Writing 3 bytes to offset 0x5000002
+DATA 102
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte write access at offset 0x5000002 in nonpar_nonover_be (addr 0x5000002) outside registers or misaligned access
+Reading 3 bytes from offset 0x5000002
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte read access at offset 0x5000002 in nonpar_nonover_be (addr 0x5000002) outside registers or misaligned access
+Writing 2 bytes to offset 0x5000003
+DATA 1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte write access at offset 0x5000003 in nonpar_nonover_be (addr 0x5000003) outside registers or misaligned access
+Reading 2 bytes from offset 0x5000003
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x5000003 in nonpar_nonover_be (addr 0x5000003) outside registers or misaligned access
+Writing 1 bytes to offset 0x5000004
+DATA 0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte write access at offset 0x5000004 in nonpar_nonover_be (addr 0x5000004) outside registers or misaligned access
+Reading 1 bytes from offset 0x5000004
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x5000004 in nonpar_nonover_be (addr 0x5000004) outside registers or misaligned access
+Writing 6 bytes to offset 0x6000000
+DATA 102030405
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.s6 (addr 0x6000000) <- 0x050403020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.s6.f <= 0x50403020100
+Reading 6 bytes from offset 0x6000000
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.s6.f => 0x50403020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.s6 (addr 0x6000000) -> 0x050403020100
+Writing 5 bytes to offset 0x6000001
+DATA 1020304
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 5 byte write access at offset 0x6000001 in nonpar_nonover_be (addr 0x6000001) outside registers or misaligned access
+Reading 5 bytes from offset 0x6000001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 5 byte read access at offset 0x6000001 in nonpar_nonover_be (addr 0x6000001) outside registers or misaligned access
+Writing 4 bytes to offset 0x6000002
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte write access at offset 0x6000002 in nonpar_nonover_be (addr 0x6000002) outside registers or misaligned access
+Reading 4 bytes from offset 0x6000002
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x6000002 in nonpar_nonover_be (addr 0x6000002) outside registers or misaligned access
+Writing 3 bytes to offset 0x6000003
+DATA 102
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte write access at offset 0x6000003 in nonpar_nonover_be (addr 0x6000003) outside registers or misaligned access
+Reading 3 bytes from offset 0x6000003
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte read access at offset 0x6000003 in nonpar_nonover_be (addr 0x6000003) outside registers or misaligned access
+Writing 2 bytes to offset 0x6000004
+DATA 1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte write access at offset 0x6000004 in nonpar_nonover_be (addr 0x6000004) outside registers or misaligned access
+Reading 2 bytes from offset 0x6000004
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x6000004 in nonpar_nonover_be (addr 0x6000004) outside registers or misaligned access
+Writing 1 bytes to offset 0x6000005
+DATA 0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte write access at offset 0x6000005 in nonpar_nonover_be (addr 0x6000005) outside registers or misaligned access
+Reading 1 bytes from offset 0x6000005
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x6000005 in nonpar_nonover_be (addr 0x6000005) outside registers or misaligned access
+Writing 7 bytes to offset 0x7000000
+DATA 10203040506
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.s7 (addr 0x7000000) <- 0x06050403020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.s7.f <= 0x6050403020100
+Reading 7 bytes from offset 0x7000000
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.s7.f => 0x6050403020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.s7 (addr 0x7000000) -> 0x06050403020100
+Writing 6 bytes to offset 0x7000001
+DATA 102030405
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 6 byte write access at offset 0x7000001 in nonpar_nonover_be (addr 0x7000001) outside registers or misaligned access
+Reading 6 bytes from offset 0x7000001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 6 byte read access at offset 0x7000001 in nonpar_nonover_be (addr 0x7000001) outside registers or misaligned access
+Writing 5 bytes to offset 0x7000002
+DATA 1020304
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 5 byte write access at offset 0x7000002 in nonpar_nonover_be (addr 0x7000002) outside registers or misaligned access
+Reading 5 bytes from offset 0x7000002
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 5 byte read access at offset 0x7000002 in nonpar_nonover_be (addr 0x7000002) outside registers or misaligned access
+Writing 4 bytes to offset 0x7000003
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte write access at offset 0x7000003 in nonpar_nonover_be (addr 0x7000003) outside registers or misaligned access
+Reading 4 bytes from offset 0x7000003
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x7000003 in nonpar_nonover_be (addr 0x7000003) outside registers or misaligned access
+Writing 3 bytes to offset 0x7000004
+DATA 102
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte write access at offset 0x7000004 in nonpar_nonover_be (addr 0x7000004) outside registers or misaligned access
+Reading 3 bytes from offset 0x7000004
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 3 byte read access at offset 0x7000004 in nonpar_nonover_be (addr 0x7000004) outside registers or misaligned access
+Writing 2 bytes to offset 0x7000005
+DATA 1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte write access at offset 0x7000005 in nonpar_nonover_be (addr 0x7000005) outside registers or misaligned access
+Reading 2 bytes from offset 0x7000005
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 2 byte read access at offset 0x7000005 in nonpar_nonover_be (addr 0x7000005) outside registers or misaligned access
+Writing 1 bytes to offset 0x7000006
+DATA 0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte write access at offset 0x7000006 in nonpar_nonover_be (addr 0x7000006) outside registers or misaligned access
+Reading 1 bytes from offset 0x7000006
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 1 byte read access at offset 0x7000006 in nonpar_nonover_be (addr 0x7000006) outside registers or misaligned access
+Accessing arrays
+Reading 4 bytes from offset 0x100
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a1[0].f => 0x3020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a1[0] (addr 0x100) -> 0x03020100
+Writing 4 bytes to offset 0x100
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a1[0] (addr 0x100) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a1[0].f <= 0x3020100
+Reading 8 bytes from offset 0x100
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a1[0].f => 0x3020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a1[0] (addr 0x100) -> 0x03020100
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x100 in nonpar_nonover_be (addr 0x100) outside registers or misaligned access
+Writing 8 bytes to offset 0x100
+DATA 405060700010203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a1[0] (addr 0x100) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a1[0].f <= 0x3020100
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x100 in nonpar_nonover_be (addr 0x100) outside registers or misaligned access
+Reading 8 bytes from offset 0x102
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x102 in nonpar_nonover_be (addr 0x102) outside registers or misaligned access
+Writing 8 bytes to offset 0x102
+DATA a0b040506070001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x102 in nonpar_nonover_be (addr 0x102) outside registers or misaligned access
+Reading 4 bytes from offset 0x200
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a2[0].f => 0x3020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a2[0] (addr 0x200) -> 0x03020100
+Writing 4 bytes to offset 0x200
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a2[0] (addr 0x200) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a2[0].f <= 0x3020100
+Reading 8 bytes from offset 0x200
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a2[0].f => 0x3020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a2[0] (addr 0x200) -> 0x03020100
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x200 in nonpar_nonover_be (addr 0x200) outside registers or misaligned access
+Writing 8 bytes to offset 0x200
+DATA 405060700010203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a2[0] (addr 0x200) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a2[0].f <= 0x3020100
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x200 in nonpar_nonover_be (addr 0x200) outside registers or misaligned access
+Reading 8 bytes from offset 0x202
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x202 in nonpar_nonover_be (addr 0x202) outside registers or misaligned access
+Writing 8 bytes to offset 0x202
+DATA a0b040506070001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x202 in nonpar_nonover_be (addr 0x202) outside registers or misaligned access
+Reading 4 bytes from offset 0x300
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a3[0].f => 0x3020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a3[0] (addr 0x300) -> 0x03020100
+Writing 4 bytes to offset 0x300
+DATA 10203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a3[0] (addr 0x300) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a3[0].f <= 0x3020100
+Reading 8 bytes from offset 0x300
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a3[0].f => 0x3020100
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a3[0] (addr 0x300) -> 0x03020100
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x300 in nonpar_nonover_be (addr 0x300) outside registers or misaligned access
+Writing 8 bytes to offset 0x300
+DATA 405060700010203
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a3[0] (addr 0x300) <- 0x03020100
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a3[0].f <= 0x3020100
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x300 in nonpar_nonover_be (addr 0x300) outside registers or misaligned access
+Reading 8 bytes from offset 0x302
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x302 in nonpar_nonover_be (addr 0x302) outside registers or misaligned access
+Writing 8 bytes to offset 0x302
+DATA a0b040506070001
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x302 in nonpar_nonover_be (addr 0x302) outside registers or misaligned access
+Reading 4 bytes from offset 0x400
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x400 in nonpar_nonover_be (addr 0x400) outside registers or misaligned access
+Reading 4 bytes from offset 0x404
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x404 in nonpar_nonover_be (addr 0x404) outside registers or misaligned access
+Reading 4 bytes from offset 0x408
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a5[0].f => 0xb0a0908
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a5[0] (addr 0x408) -> 0x0b0a0908
+Reading 4 bytes from offset 0x418
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x418 in nonpar_nonover_be (addr 0x418) outside registers or misaligned access
+Reading 4 bytes from offset 0x41c
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 4 byte read access at offset 0x41c in nonpar_nonover_be (addr 0x41c) outside registers or misaligned access
+Reading 8 bytes from offset 0x500
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a6[2].f => 0
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a6[2] (addr 0x500) -> 0x00
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x500 in nonpar_nonover_be (addr 0x500) outside registers or misaligned access
+Writing 8 bytes to offset 0x500
+DATA 706050403020100
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a6[2] (addr 0x500) <- 0x00
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a6[2].f <= 0
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x500 in nonpar_nonover_be (addr 0x500) outside registers or misaligned access
+Reading 8 bytes from offset 0x501
+[obj.bank.nonpar_nonover_be info] Read from field nonpar_nonover_be.a7[0].f => 0x1
+[obj.bank.nonpar_nonover_be info] Read from register nonpar_nonover_be.a7[0] (addr 0x501) -> 0x01
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte read access at offset 0x501 in nonpar_nonover_be (addr 0x501) outside registers or misaligned access
+Writing 8 bytes to offset 0x501
+DATA 807060504030201
+[obj.bank.nonpar_nonover_be info] Write to register nonpar_nonover_be.a7[0] (addr 0x501) <- 0x01
+[obj.bank.nonpar_nonover_be info] Write to field nonpar_nonover_be.a7[0].f <= 0x1
+[obj.bank.nonpar_nonover_be info] Missed in bank nonpar_nonover_be
+[obj.bank.nonpar_nonover_be spec-viol] 8 byte write access at offset 0x501 in nonpar_nonover_be (addr 0x501) outside registers or misaligned access

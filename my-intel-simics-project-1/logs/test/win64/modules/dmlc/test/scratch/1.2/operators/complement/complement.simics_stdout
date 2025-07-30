@@ -1,0 +1,7 @@
+WARNING: module 'dml-test-complement' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] 1 - ok
+[obj info] 2 - ok
+[obj info] 3 - ok
+[obj info] 4 - ok
+[obj info] 5 - ok
+[obj info] 6 - ok

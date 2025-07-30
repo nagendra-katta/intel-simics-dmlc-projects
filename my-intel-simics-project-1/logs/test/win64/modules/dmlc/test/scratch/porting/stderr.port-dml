@@ -1,0 +1,34 @@
+Unexpected error on this porting tag:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:248:1: porting PRETVAL: ['c:\\users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\misc\\porting.dml:248:56', 'c:\\users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\misc\\porting.dml:254:1', 'c:\\users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\misc\\porting.dml:248:54', [('C:\\Users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\misc\\porting.dml:248:36', 'zero_or_three')]]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\tags:207: found here
+Traceback (most recent call last):
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\port_dml.py", line 1174, in main
+    t.apply(src)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\port_dml.py", line 487, in apply
+    tokens = list(f.read_tokens(self.offset(f, body_start),
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\port_dml.py", line 130, in read_tokens
+    t = lexer.token()
+  File "C:\Users\nagen\AppData\Local\Programs\Simics\simics-python-7.10.0\win64\bin\py3\site-packages\ply\lex.py", line 384, in token
+    newtok = self.lexerrorf(tok)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\dmllex.py", line 278, in t_error
+    syntax_error(t, t.value[0], "illegal character")
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\dmllex.py", line 219, in syntax_error
+    raise ESYNTAX(DumpableSite(t.lexer.file_info, t.lexpos), tokenstr, reason)
+dml.messages.ESYNTAX: C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:296:16: syntax error at '': illegal character
+[9483, ''][9479, '']C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:202: warning WUNUSED: method 'templates__t__dead_inline' never invoked during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:186:5: original location
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:211: warning WUNUSED: method 'dead_inline' never invoked during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:195:1: original location
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:236: warning WUNUSED: method 'i' never invoked during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:218:1: original location
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:242: warning WUNUSED: method 'ii' never invoked during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:222:1: original location
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:261: warning WUNUSED: method 'local_no_inline' never invoked during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:238:1: original location
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:334: warning WUNUSED: true branch never taken during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:311:5: original location
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:338: warning WUNUSED: false branch never taken during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:315:12: original location
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml:376: warning WUNUSED: template 'dead' never instantiated during build. Only partial porting possible
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\porting.dml:353:1: original location
+*** Failed to apply 1 out of 435 porting tags; partial result saved to C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting\porting.dml. Consider applying the failed tags manually.

@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-trait' is not thread safe. Turning Multimachine Accelerator off.
+[obj.port.p[0] info] hello

@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EEXTERN.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EEXTERN.dml:10:1: error EEXTERN: illegal declaration of extern method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EEXTERN.dml:14:1: error EEXTERN: illegal declaration of extern method

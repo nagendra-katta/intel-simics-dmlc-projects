@@ -1,0 +1,15 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:24:8: error EEXTERNINCOMP: incompatible extern declarations for 'ext2': type mismatch
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:24:8: this declaration specifies the type: bitfields (backing type: uint32)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:22:8: conflicting declaration, which specifies the type: uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:33:8: error EEXTERNINCOMP: incompatible extern declarations for 'ext4': type mismatch
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:33:8: this declaration specifies the type: vector of int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:31:8: conflicting declaration, which specifies the type: vector of int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:46:8: error EEXTERNINCOMP: incompatible extern declarations for 'ext7': type mismatch
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:46:8: this declaration specifies the type: function(int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:44:8: conflicting declaration, which specifies the type: function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:51:8: error EEXTERNINCOMP: incompatible extern declarations for 'ext8': type mismatch
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:51:8: this declaration specifies the type: function(,...) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:49:8: conflicting declaration, which specifies the type: function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:56:8: error EEXTERNINCOMP: incompatible extern declarations for 'ext9': type mismatch
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:56:8: this declaration specifies the type: function(,...) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXTERNINCOMP.dml:54:8: conflicting declaration, which specifies the type: function(int) returning void

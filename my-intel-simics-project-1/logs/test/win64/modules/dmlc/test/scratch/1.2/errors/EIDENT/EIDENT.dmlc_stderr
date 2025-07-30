@@ -1,0 +1,9 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:16:22: error EIDENT: unknown identifier: 'FOO'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:12:5: In p.foo
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:12:21: error EIDENT: unknown identifier: 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:21:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:24:5: error EIDENT: unknown identifier: 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:33:25: error EIDENT: unknown identifier: 'i'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:35:19: error EIDENT: unknown identifier: 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:40:5: error EIDENT: unknown identifier: 'typename'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDENT.dml:42:5: error ETYPE: unknown type: 'value'

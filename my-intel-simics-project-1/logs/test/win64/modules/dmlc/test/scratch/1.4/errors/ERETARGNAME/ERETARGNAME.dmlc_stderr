@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGNAME.dml:10:9: error ERETARGNAME: method return type declarations may not be named: i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGNAME.dml:15:6: error ERETARGNAME: method return type declarations may not be named: i

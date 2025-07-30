@@ -1,0 +1,4 @@
+WARNING: module 'dml-test-1.2-register-view' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\register_view.py
+[obj error] Cannot get register due to exception (defaulting to 0)
+[obj error] Cannot set register due to exception

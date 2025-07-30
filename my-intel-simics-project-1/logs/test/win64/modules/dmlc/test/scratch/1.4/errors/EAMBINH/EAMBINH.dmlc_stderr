@@ -1,0 +1,15 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:38:1: error EAMBINH: conflicting definitions of p when instantiating tp2 and tp1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:52:1: error EAMBINH: conflicting definitions of m when instantiating asm2 and asm1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:56:1: error EAMBINH: conflicting definitions of m when instantiating asm3 and asm1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:75:1: error EAMBINH: conflicting definitions of m when instantiating asm9 and asm6
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:78:1: In g1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:61:5: error EAMBINH: conflicting definitions of m when instantiating template asm6 and template asm7
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:64:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:61:5: to resolve, either add 'is asm7' near this line...
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:64:5: ... or add 'is asm6' near this line
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:28:4: In template t2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:20:5: In p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:23:9: error EAMBINH: conflicting definitions of x when instantiating template t2 and 'in each (sub)' block from template t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:15:9: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:23:9: to resolve, either add 'is t' near this line...
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBINH.dml:15:9: ... or add 'is t2' near this line

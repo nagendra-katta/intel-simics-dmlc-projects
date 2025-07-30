@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_after.dml:11:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_after.dml:13:5: error ESYNTAX: syntax error: callback expression to after statement must be a function application
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_after.dml:15:5: error ESYNTAX: syntax error: callback expression to after statement must be a function application

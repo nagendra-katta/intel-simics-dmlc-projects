@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\testing.dml:23:9: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLYMETH.dml:22:6: error EAPPLYMETH: call to method 'throwing' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLYMETH.dml:22:6:   use the 'call' or 'inline' statements to call this method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLYMETH.dml:24:6: error EAPPLYMETH: call to method 'multi_out' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLYMETH.dml:24:6:   use the 'call' or 'inline' statements to call this method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLYMETH.dml:26:6: error EAPPLYMETH: call to method 'inlined' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLYMETH.dml:26:6:   use the 'call' or 'inline' statements to call this method

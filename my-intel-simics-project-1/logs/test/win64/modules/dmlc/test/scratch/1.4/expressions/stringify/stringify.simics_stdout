@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-stringify' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] string_val evaluated to "foo"
+[obj info] int_val evaluated to 5
+[obj info] float_val evaluated to 0.5
+[obj info] register name became b_r_18

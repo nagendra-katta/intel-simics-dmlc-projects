@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDVAR.dml:8:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDVAR.dml:12:5: error EDVAR: duplicate definition of variable 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDVAR.dml:10:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDVAR.dml:17:5: error EDVAR: duplicate definition of variable 'i'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDVAR.dml:15:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDVAR.dml:22:5: error EDVAR: duplicate definition of variable 'j'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDVAR.dml:20:5: conflicting definition

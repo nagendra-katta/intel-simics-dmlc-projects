@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENOPTR.dml:9:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENOPTR.dml:13:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENOPTR.dml:15:5: error ENOPTR: not a pointer: 1 (uint1)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENOPTR.dml:17:6: error ENOPTR: not a pointer: 1 (uint1)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENOPTR.dml:20:6: error ENOPTR: not a pointer: t (tr)

@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:40:10: In m4
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:31:5: error ERETARGS: wrong number of return values: Expected 0, got 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:24:7: In m3
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:26:5: error ERETARGS: wrong number of return values: Expected 2, got 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:19:7: In m2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:21:5: error ERETARGS: wrong number of return values: Expected 0, got 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:14:7: In m1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:16:5: error ERETARGS: wrong number of return values: Expected 0, got 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:9:7: In m0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETARGS.dml:11:5: error ERETARGS: wrong number of return values: Expected 1, got 0

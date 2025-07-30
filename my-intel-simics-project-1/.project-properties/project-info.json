@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "name": "My Intel Simics Project 1",
+  "description": "This project is based of the \"C:\\Users\\nagen\\Downloads\\simics-7-packages-2025-16-win64.ispm\" repository",
+  "favorite": false,
+  "manifestName": "Public Intel® Simics® Quick Start Platform (QSP-x86) - 7",
+  "manifestGroup": "qsp-x86-public-7",
+  "manifestVersion": "2025ww16.1"
+}

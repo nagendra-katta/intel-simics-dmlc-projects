@@ -1,0 +1,10 @@
+WARNING: module 'dml-test-inquiry' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\registers\T_inquiry.py
+[obj info] Partially setting register b.r[7:0] <- 0x11
+[obj info] Partially setting register b.r[63:56] <- 0x11
+[obj info] Partially setting register b.r[23:8] <- 0x2211
+[obj info] Partially setting register b.r[63:56] <- 0x11
+[obj info] Partially setting register b.overflow[7:0] <- 0x22
+[obj info] Setting register b.r <- 0x8877665544332211
+[obj info] Partially setting register b.r[63:24] <- 0x5544332211
+[obj info] Partially setting register b.overflow[23:0] <- 0x887766

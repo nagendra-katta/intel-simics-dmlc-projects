@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:19:9: error EBITRO: bit range of field 'b.r1.f1' overlaps with field 'b.r1.f2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:21:9: field b.r1.f2 defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:29:9: error EBITRO: bit range of field 'b.r3.f[0]' overlaps with field 'b.r3.f1[0]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:33:9: field b.r3.f1[i < 2] defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:33:9: error EBITRO: bit range of field 'b.r3.f1[0]' overlaps with field 'b.r3.f[1]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:29:9: field b.r3.f[i < 2] defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:29:9: error EBITRO: bit range of field 'b.r3.f[1]' overlaps with field 'b.r3.f1[1]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:33:9: field b.r3.f1[i < 2] defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:33:9: error EBITRO: bit range of field 'b.r3.f1[1]' overlaps with field 'b.r3.f2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EBITRO.dml:35:9: field b.r3.f2 defined here

@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-5425' is not thread safe. Turning Multimachine Accelerator off.
+CRASH!

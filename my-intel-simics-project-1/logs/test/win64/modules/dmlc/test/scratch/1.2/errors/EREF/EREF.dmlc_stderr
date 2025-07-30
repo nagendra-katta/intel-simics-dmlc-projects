@@ -1,0 +1,12 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:9:1: In b0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:17:17: error EREF: reference to unknown object 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:48:23: In b2.g1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:48:21: error EREF: reference to unknown object 'g0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:52:23: In b3.g0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:52:21: error EREF: reference to unknown object 'g1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:57:1: In p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:57:16: error EREF: reference to unknown object 'garbage'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:28:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:30:6: error EREF: reference to unknown object 'y'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:32:8: error EREF: reference to unknown object '$b0.z'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EREF.dml:35:8: error EREF: reference to unknown object '$b1.r1'

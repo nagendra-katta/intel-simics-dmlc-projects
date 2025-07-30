@@ -1,0 +1,14 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:10:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:12:6: error EIDENT: unknown identifier: 'uint32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:14:12: error EIDENTSIZEOF: unknown value identifier in the operand of 'sizeof': 'uint32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:14:12:   'uint32' is a valid type identifier. Did you mean to use 'sizeoftype'?
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:16:12: error EIDENTSIZEOF: unknown value identifier in the operand of 'sizeof': 'uint32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:16:12:   'uint32' is a valid type identifier. Did you mean to use 'sizeoftype'?
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:19:6: error EIDENT: unknown identifier: 't'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:21:12: error EIDENTSIZEOF: unknown value identifier in the operand of 'sizeof': 't'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:21:12:   't' is a valid type identifier. Did you mean to use 'sizeoftype'?
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:23:12: error EIDENTSIZEOF: unknown value identifier in the operand of 'sizeof': 't'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:23:12:   't' is a valid type identifier. Did you mean to use 'sizeoftype'?
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:26:6: error EIDENT: unknown identifier: 'u'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:28:12: error EIDENT: unknown identifier: 'u'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENTSIZEOF.dml:30:12: error EIDENT: unknown identifier: 'u'

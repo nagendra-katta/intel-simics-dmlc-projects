@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-static_export' is not thread safe. Turning Multimachine Accelerator off.

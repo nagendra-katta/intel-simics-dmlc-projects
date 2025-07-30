@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENARRAY.dml:7:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENARRAY.dml:10:5: error ENARRAY: trying to index something that isn't an array: 'b'

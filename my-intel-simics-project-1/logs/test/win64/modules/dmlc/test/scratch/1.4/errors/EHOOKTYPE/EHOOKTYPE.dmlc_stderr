@@ -1,0 +1,12 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:23:1: error EHOOKTYPE: 'struct _anon_struct_0' is a not a valid message component type for a hook, as it is or contains some anonymous struct
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:20:4: In template t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:13:5: error EHOOKTYPE: 'struct _anon_struct_1' is a not a valid message component type for a hook, as it is or contains some anonymous struct
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:20:4: In template t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:15:5: error EHOOKTYPE: 'pointer to array of size cast(nonconstant_int, int64 ) of int' is a not a valid message component type for a hook, as it is or contains some array of non-constant size
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:20:4: In template t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:17:5: error EHOOKTYPE: 'layout' is a not a valid message component type for a hook, as it is or contains some anonymous layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:25:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:28:5: error EHOOKTYPE: 'struct _anon_struct_3' is a not a valid message component type for a hook, as it is or contains some anonymous struct
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:30:5: error EHOOKTYPE: 'pointer to array of size cast(i, int64 ) of int32' is a not a valid message component type for a hook, as it is or contains some array of non-constant size
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EHOOKTYPE.dml:32:5: error EHOOKTYPE: 'layout' is a not a valid message component type for a hook, as it is or contains some anonymous layout

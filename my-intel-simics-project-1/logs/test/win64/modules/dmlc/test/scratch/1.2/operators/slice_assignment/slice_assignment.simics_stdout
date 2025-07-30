@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-slice_assignment' is not thread safe. Turning Multimachine Accelerator off.

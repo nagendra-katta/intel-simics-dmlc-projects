@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-extern_typedef' is not thread safe. Turning Multimachine Accelerator off.

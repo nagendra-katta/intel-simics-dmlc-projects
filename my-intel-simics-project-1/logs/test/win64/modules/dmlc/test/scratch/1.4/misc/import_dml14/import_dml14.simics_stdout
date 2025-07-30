@@ -1,0 +1,11 @@
+WARNING: module 'dml-test-import_dml14' is not thread safe. Turning Multimachine Accelerator off.
+[obj.bank.field_regs info] r4.f write
+[obj.bank.field_regs info] r5.write 345600
+[obj.bank.field_regs info] r5.f read
+[obj spec-viol] 1 byte read access at offset 0x3 in io_memory_access_bank outside registers or misaligned access
+[obj spec-viol] 1 byte read access at offset 0x3 in transaction_access_bank_compat outside registers or misaligned access
+[obj spec-viol] 1 byte read access at offset 0x3 in transaction_access_bank_compat outside registers or misaligned access
+[obj spec-viol] 1 byte read access at offset 0x3 in io_memory_access_bank outside registers or misaligned access
+[obj spec-viol] 1 byte read access at offset 0x3 in transaction_access_bank_compat outside registers or misaligned access
+[obj spec-viol] 1 byte read access at offset 0x3 in transaction_access_bank_compat outside registers or misaligned access
+[obj info] Once logging

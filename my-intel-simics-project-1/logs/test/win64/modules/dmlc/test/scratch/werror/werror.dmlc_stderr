@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\werror\T_WUNUSEDDEFAULT.dml:14:13: dmlc: warnings being treated as errors
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\werror\T_WUNUSEDDEFAULT.dml:14:13: warning WUNUSEDDEFAULT: unused: after_write methods are not called automatically for field objects in r0.f.after_write

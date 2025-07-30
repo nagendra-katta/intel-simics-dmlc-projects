@@ -1,0 +1,4 @@
+C:\\Users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\methods\\T_inline_array.dml: In function '_DML_M_init':
+C:\\Users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\methods\\T_inline_array.dml:18:39: error: invalid initializer
+   18 |     inline $m1(bar);
+      |                                       ^      

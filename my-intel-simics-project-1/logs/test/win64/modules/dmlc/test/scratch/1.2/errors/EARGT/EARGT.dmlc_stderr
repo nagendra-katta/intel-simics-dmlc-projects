@@ -1,0 +1,11 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:12:5: error EARGT: wrong type in method parameter 'level' when implementing 'interrupt'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:12:5:   got:      'pointer to void'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:12:5:   expected: 'int32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:23:5: In m
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:23:5: error EARGT: wrong type in input parameter 'b' when inlining 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:23:5:   got:      'int'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:23:5:   expected: 'bool'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:25:5: In m
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:25:22: error EARGT: wrong type in output parameter 'i' when calling 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:25:22:   got:      'bool'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARGT.dml:25:22:   expected: 'int'

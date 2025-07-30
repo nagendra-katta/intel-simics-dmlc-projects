@@ -1,0 +1,27 @@
+<command-line>:0: error ESYNTAX: syntax error at '-D//': expected name=value
+<command-line>:0: error ESYNTAX: syntax error at '-D7=5': invalid identifier: 7
+<command-line>:0: error ESYNTAX: syntax error at '-DX:8': expected name=value
+<command-line>:0: error ESYNTAX: syntax error at '-DX=-3': Invalid literal -
+<command-line>:0: error ESYNTAX: syntax error at '-DX=zzz': Invalid literal zzz
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:112: error ESYNTAX: syntax error: COVERITY pragma must specify event to suppress, and optionally classification
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:22:11: error ESYNTAX: syntax error: name omitted in parameter declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:28:5: error ESYNTAX: syntax error at 'inline': only use inline if there are untyped arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:33:5: error ESYNTAX: syntax error at 'inline': only use inline if there are untyped arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:42:15: error ESYNTAX: syntax error: parameter type declaration only permitted in top level template block
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:44:9: error ESYNTAX: syntax error at 'shared': shared method declaration only permitted in top level template block
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:48:1: error ESYNTAX: syntax error at ':': parameter type declaration only permitted in top level template block
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:50:1: error ESYNTAX: syntax error at 'shared': shared method declaration only permitted in top level template block
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:54:16: error ESYNTAX: syntax error at '0x1_0000_0000_000...': too large integer constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:56:16: error ESYNTAX: syntax error at '18446744073709551616': too large integer constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:59:4: error ESYNTAX: syntax error at '0b1_00000000_0000...': too large integer constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:63:14: error ESYNTAX: syntax error at ':': expected '=' or 'default'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:65:22: error ESYNTAX: syntax error at ':': expected '=' or 'default'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:68:19: error ESYNTAX: syntax error at '=': expected ;
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:70:19: error ESYNTAX: syntax error at 'default': expected ;
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:82:1: error ESYNTAX: syntax error at 'if': invalid 'if', use '#if' in object context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:86:1: error ESYNTAX: syntax error at 'else': invalid 'else', use '#else'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:107:5: error ESYNTAX: syntax error at 'goto': goto statements are not yet implemented in DML 1.4
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:89:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:93:5: error ESYNTAX: syntax error at '(': wrong number of simultaneous assign targets for initializer: Expected [ast.initializer_scalar(ast.int(5))], got [LocalVariable(LocalSymbol(a, 'v543_a')), LocalVariable(LocalSymbol(b, 'v543_b'))]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:98:13: error ESYNTAX: syntax error at '=': assignment chain not allowed as method invocation target
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX.dml:101:9: error ESYNTAX: syntax error at '=': assignment chain not allowed as method invocation target

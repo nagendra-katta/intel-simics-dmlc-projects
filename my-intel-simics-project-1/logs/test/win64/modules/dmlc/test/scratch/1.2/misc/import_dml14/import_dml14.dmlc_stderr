@@ -1,0 +1,20 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:405:1: warning WEXPERIMENTAL: Use of unsupported feature: top-level 'if' body with unsupported statements
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:522:9: warning WEXPERIMENTAL: Use of unsupported feature: top-level 'if' body with unsupported statements
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:519:1: warning WEXPERIMENTAL: Use of unsupported feature: top-level 'if' body with unsupported statements
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_import_dml14.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_import_dml14.dml:34:1: warning WEXPERIMENTAL: Use of unsupported feature: more than one level of method overrides
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_import_dml14.dml:99:1: In p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_import_dml14.dml:102:5: warning WTHROWS_DML12: overriding non-throwing DML 1.4 method with throwing DML 1.2 method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:14:11: original non-throwing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_import_dml14.dml:116:5: warning WTHROWS_DML12: overriding non-throwing DML 1.4 method with throwing DML 1.2 method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:13:5: original non-throwing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_import_dml14.dml:109:5: warning WTHROWS_DML12: overriding non-throwing DML 1.4 method with throwing DML 1.2 method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:12:5: original non-throwing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:443:1: In simple_cycle_ev
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml12-compatibility.dml:421:48: warning WEXPERIMENTAL: Use of unsupported feature: parameter with two default declarations
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:433:1: In simple_time_ev
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml12-compatibility.dml:422:47: warning WEXPERIMENTAL: Use of unsupported feature: parameter with two default declarations
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:463:1: In uint64_cycle_ev
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml12-compatibility.dml:423:48: warning WEXPERIMENTAL: Use of unsupported feature: parameter with two default declarations
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\dml14.dml:453:1: In uint64_time_ev
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml12-compatibility.dml:424:47: warning WEXPERIMENTAL: Use of unsupported feature: parameter with two default declarations

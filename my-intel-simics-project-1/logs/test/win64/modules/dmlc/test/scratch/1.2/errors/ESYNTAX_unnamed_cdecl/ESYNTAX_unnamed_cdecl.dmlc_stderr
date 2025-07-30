@@ -1,0 +1,8 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:13:9: error ESYNTAX: syntax error: missing name in declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:16:16: error ESYNTAX: syntax error: missing name in declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:20:5: error ESYNTAX: syntax error: missing name in declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:24:6: error ESYNTAX: syntax error: missing name in declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:28:5: error ESYNTAX: syntax error: missing name in declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:32:5: error ESYNTAX: syntax error: missing name in declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:13:1: error ENAMECOLL: name collision on '_name_omitted'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_unnamed_cdecl.dml:16:1: conflicting definition

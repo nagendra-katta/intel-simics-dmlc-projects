@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-array' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] l1.a[0] = 0x0001
+[obj info] l1.a[1] = 0x0203
+[obj info] l2[0].a[0] = 0x0001
+[obj info] l2[1].a[0] = 0x1819

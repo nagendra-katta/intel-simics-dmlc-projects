@@ -1,0 +1,9 @@
+WARNING: module 'dml-test-default' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] overridden M
+[obj info] default M
+[obj info] overridden N
+[obj info] default N
+[obj info] overridden O 2
+[obj info] default O 3
+[obj info] overridden P 2
+[obj info] default P 3

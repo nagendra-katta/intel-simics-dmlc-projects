@@ -1,0 +1,1925 @@
+WARNING: module 'dml-test-regdisp' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\lib\T_regdisp.py
+Writing 4 bytes to offset 0x0: (0, 1, 2, 3)
+[obj info] Write to register par_over.r1 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x0
+Reading 4 bytes from offset 0x0
+[obj info] Read from register par_over.r1 -> 0x03020100
+Read (0, 1, 2, 3) from 0x0
+Writing 4 bytes to offset 0x4: (4, 5, 6, 7)
+[obj info] Write to register par_over.r2 <- 0x07060504
+Wrote (4, 5, 6, 7) to 0x4
+Reading 4 bytes from offset 0x4
+[obj info] Read from register par_over.r2 -> 0x07060504
+Read (4, 5, 6, 7) from 0x4
+Writing 4 bytes to offset 0x8: (8, 9, 10, 11)
+[obj info] Write to register par_over.r3 <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x8
+Reading 4 bytes from offset 0x8
+[obj info] Read from register par_over.r3 -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x8
+Now read some partial ranges
+Writing 1 bytes to offset 0x0: (0,)
+[obj info] Partial write to register par_over.r1[7:0] <- 0x00
+Wrote (0,) to 0x0
+Reading 1 bytes from offset 0x0
+[obj info] Partial read from register par_over.r1[7:0] -> 0x00
+Read (0,) from 0x0
+Writing 1 bytes to offset 0x1: (1,)
+[obj info] Partial write to register par_over.r1[15:8] <- 0x01
+Wrote (1,) to 0x1
+Reading 1 bytes from offset 0x1
+[obj info] Partial read from register par_over.r1[15:8] -> 0x01
+Read (1,) from 0x1
+Writing 1 bytes to offset 0x2: (2,)
+[obj info] Partial write to register par_over.r1[23:16] <- 0x02
+Wrote (2,) to 0x2
+Reading 1 bytes from offset 0x2
+[obj info] Partial read from register par_over.r1[23:16] -> 0x02
+Read (2,) from 0x2
+Writing 1 bytes to offset 0x3: (3,)
+[obj info] Partial write to register par_over.r1[31:24] <- 0x03
+Wrote (3,) to 0x3
+Reading 1 bytes from offset 0x3
+[obj info] Partial read from register par_over.r1[31:24] -> 0x03
+Read (3,) from 0x3
+Writing 1 bytes to offset 0x4: (4,)
+[obj info] Partial write to register par_over.r2[7:0] <- 0x04
+Wrote (4,) to 0x4
+Reading 1 bytes from offset 0x4
+[obj info] Partial read from register par_over.r2[7:0] -> 0x04
+Read (4,) from 0x4
+Writing 1 bytes to offset 0x5: (5,)
+[obj info] Partial write to register par_over.r2[15:8] <- 0x05
+Wrote (5,) to 0x5
+Reading 1 bytes from offset 0x5
+[obj info] Partial read from register par_over.r2[15:8] -> 0x05
+Read (5,) from 0x5
+Writing 1 bytes to offset 0x6: (6,)
+[obj info] Partial write to register par_over.r2[23:16] <- 0x06
+Wrote (6,) to 0x6
+Reading 1 bytes from offset 0x6
+[obj info] Partial read from register par_over.r2[23:16] -> 0x06
+Read (6,) from 0x6
+Writing 1 bytes to offset 0x7: (7,)
+[obj info] Partial write to register par_over.r2[31:24] <- 0x07
+Wrote (7,) to 0x7
+Reading 1 bytes from offset 0x7
+[obj info] Partial read from register par_over.r2[31:24] -> 0x07
+Read (7,) from 0x7
+Writing 2 bytes to offset 0x0: (0, 1)
+[obj info] Partial write to register par_over.r1[15:0] <- 0x0100
+Wrote (0, 1) to 0x0
+Reading 2 bytes from offset 0x0
+[obj info] Partial read from register par_over.r1[15:0] -> 0x0100
+Read (0, 1) from 0x0
+Writing 2 bytes to offset 0x1: (1, 2)
+[obj info] Partial write to register par_over.r1[23:8] <- 0x0201
+Wrote (1, 2) to 0x1
+Reading 2 bytes from offset 0x1
+[obj info] Partial read from register par_over.r1[23:8] -> 0x0201
+Read (1, 2) from 0x1
+Writing 2 bytes to offset 0x2: (2, 3)
+[obj info] Partial write to register par_over.r1[31:16] <- 0x0302
+Wrote (2, 3) to 0x2
+Reading 2 bytes from offset 0x2
+[obj info] Partial read from register par_over.r1[31:16] -> 0x0302
+Read (2, 3) from 0x2
+Writing 2 bytes to offset 0x4: (4, 5)
+[obj info] Partial write to register par_over.r2[15:0] <- 0x0504
+Wrote (4, 5) to 0x4
+Reading 2 bytes from offset 0x4
+[obj info] Partial read from register par_over.r2[15:0] -> 0x0504
+Read (4, 5) from 0x4
+Writing 2 bytes to offset 0x5: (5, 6)
+[obj info] Partial write to register par_over.r2[23:8] <- 0x0605
+Wrote (5, 6) to 0x5
+Reading 2 bytes from offset 0x5
+[obj info] Partial read from register par_over.r2[23:8] -> 0x0605
+Read (5, 6) from 0x5
+Writing 2 bytes to offset 0x6: (6, 7)
+[obj info] Partial write to register par_over.r2[31:16] <- 0x0706
+Wrote (6, 7) to 0x6
+Reading 2 bytes from offset 0x6
+[obj info] Partial read from register par_over.r2[31:16] -> 0x0706
+Read (6, 7) from 0x6
+Now read/access some overlapping ranges
+Writing 8 bytes to offset 0x0: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register par_over.r1 <- 0x0000000003020100
+[obj info] Write to register par_over.r2 <- 0x0000000007060504
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x0
+Reading 8 bytes from offset 0x0
+[obj info] Read from register par_over.r1 -> 0x0000000003020100
+[obj info] Read from register par_over.r2 -> 0x0000000007060504
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x0
+Writing 8 bytes to offset 0x4: (4, 5, 6, 7, 8, 9, 10, 11)
+[obj info] Write to register par_over.r2 <- 0x0000000007060504
+[obj info] Write to register par_over.r3 <- 0x000000000b0a0908
+Wrote (4, 5, 6, 7, 8, 9, 10, 11) to 0x4
+Reading 8 bytes from offset 0x4
+[obj info] Read from register par_over.r2 -> 0x0000000007060504
+[obj info] Read from register par_over.r3 -> 0x000000000b0a0908
+Read (4, 5, 6, 7, 8, 9, 10, 11) from 0x4
+Now read/access some partial and overlapping ranges
+Writing 4 bytes to offset 0x2: (2, 3, 4, 5)
+[obj info] Partial write to register par_over.r1[31:16] <- 0x0302
+[obj info] Partial write to register par_over.r2[15:0] <- 0x0504
+Wrote (2, 3, 4, 5) to 0x2
+Reading 4 bytes from offset 0x2
+[obj info] Partial read from register par_over.r1[31:16] -> 0x0302
+[obj info] Partial read from register par_over.r2[15:0] -> 0x0504
+Read (2, 3, 4, 5) from 0x2
+Writing 4 bytes to offset 0x6: (6, 7, 8, 9)
+[obj info] Partial write to register par_over.r2[31:16] <- 0x0706
+[obj info] Partial write to register par_over.r3[15:0] <- 0x0908
+Wrote (6, 7, 8, 9) to 0x6
+Reading 4 bytes from offset 0x6
+[obj info] Partial read from register par_over.r2[31:16] -> 0x0706
+[obj info] Partial read from register par_over.r3[15:0] -> 0x0908
+Read (6, 7, 8, 9) from 0x6
+Reading registers of various sizes
+Writing 1 bytes to offset 0x1000000: (0,)
+[obj info] Write to register par_over.s1 <- 0x00
+Wrote (0,) to 0x1000000
+Reading 1 bytes from offset 0x1000000
+[obj info] Read from register par_over.s1 -> 0x00
+Read (0,) from 0x1000000
+Writing 2 bytes to offset 0x2000000: (0, 1)
+[obj info] Write to register par_over.s2 <- 0x0100
+Wrote (0, 1) to 0x2000000
+Reading 2 bytes from offset 0x2000000
+[obj info] Read from register par_over.s2 -> 0x0100
+Read (0, 1) from 0x2000000
+Writing 1 bytes to offset 0x2000001: (1,)
+[obj info] Partial write to register par_over.s2[15:8] <- 0x01
+Wrote (1,) to 0x2000001
+Reading 1 bytes from offset 0x2000001
+[obj info] Partial read from register par_over.s2[15:8] -> 0x01
+Read (1,) from 0x2000001
+Writing 3 bytes to offset 0x3000000: (0, 1, 2)
+[obj info] Write to register par_over.s3 <- 0x020100
+Wrote (0, 1, 2) to 0x3000000
+Reading 3 bytes from offset 0x3000000
+[obj info] Read from register par_over.s3 -> 0x020100
+Read (0, 1, 2) from 0x3000000
+Writing 2 bytes to offset 0x3000001: (1, 2)
+[obj info] Partial write to register par_over.s3[23:8] <- 0x0201
+Wrote (1, 2) to 0x3000001
+Reading 2 bytes from offset 0x3000001
+[obj info] Partial read from register par_over.s3[23:8] -> 0x0201
+Read (1, 2) from 0x3000001
+Writing 1 bytes to offset 0x3000002: (2,)
+[obj info] Partial write to register par_over.s3[23:16] <- 0x02
+Wrote (2,) to 0x3000002
+Reading 1 bytes from offset 0x3000002
+[obj info] Partial read from register par_over.s3[23:16] -> 0x02
+Read (2,) from 0x3000002
+Writing 4 bytes to offset 0x4000000: (0, 1, 2, 3)
+[obj info] Write to register par_over.s4 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x4000000
+Reading 4 bytes from offset 0x4000000
+[obj info] Read from register par_over.s4 -> 0x03020100
+Read (0, 1, 2, 3) from 0x4000000
+Writing 3 bytes to offset 0x4000001: (1, 2, 3)
+[obj info] Partial write to register par_over.s4[31:8] <- 0x030201
+Wrote (1, 2, 3) to 0x4000001
+Reading 3 bytes from offset 0x4000001
+[obj info] Partial read from register par_over.s4[31:8] -> 0x030201
+Read (1, 2, 3) from 0x4000001
+Writing 2 bytes to offset 0x4000002: (2, 3)
+[obj info] Partial write to register par_over.s4[31:16] <- 0x0302
+Wrote (2, 3) to 0x4000002
+Reading 2 bytes from offset 0x4000002
+[obj info] Partial read from register par_over.s4[31:16] -> 0x0302
+Read (2, 3) from 0x4000002
+Writing 1 bytes to offset 0x4000003: (3,)
+[obj info] Partial write to register par_over.s4[31:24] <- 0x03
+Wrote (3,) to 0x4000003
+Reading 1 bytes from offset 0x4000003
+[obj info] Partial read from register par_over.s4[31:24] -> 0x03
+Read (3,) from 0x4000003
+Writing 5 bytes to offset 0x5000000: (0, 1, 2, 3, 4)
+[obj info] Write to register par_over.s5 <- 0x0403020100
+Wrote (0, 1, 2, 3, 4) to 0x5000000
+Reading 5 bytes from offset 0x5000000
+[obj info] Read from register par_over.s5 -> 0x0403020100
+Read (0, 1, 2, 3, 4) from 0x5000000
+Writing 4 bytes to offset 0x5000001: (1, 2, 3, 4)
+[obj info] Partial write to register par_over.s5[39:8] <- 0x04030201
+Wrote (1, 2, 3, 4) to 0x5000001
+Reading 4 bytes from offset 0x5000001
+[obj info] Partial read from register par_over.s5[39:8] -> 0x04030201
+Read (1, 2, 3, 4) from 0x5000001
+Writing 3 bytes to offset 0x5000002: (2, 3, 4)
+[obj info] Partial write to register par_over.s5[39:16] <- 0x040302
+Wrote (2, 3, 4) to 0x5000002
+Reading 3 bytes from offset 0x5000002
+[obj info] Partial read from register par_over.s5[39:16] -> 0x040302
+Read (2, 3, 4) from 0x5000002
+Writing 2 bytes to offset 0x5000003: (3, 4)
+[obj info] Partial write to register par_over.s5[39:24] <- 0x0403
+Wrote (3, 4) to 0x5000003
+Reading 2 bytes from offset 0x5000003
+[obj info] Partial read from register par_over.s5[39:24] -> 0x0403
+Read (3, 4) from 0x5000003
+Writing 1 bytes to offset 0x5000004: (4,)
+[obj info] Partial write to register par_over.s5[39:32] <- 0x04
+Wrote (4,) to 0x5000004
+Reading 1 bytes from offset 0x5000004
+[obj info] Partial read from register par_over.s5[39:32] -> 0x04
+Read (4,) from 0x5000004
+Writing 6 bytes to offset 0x6000000: (0, 1, 2, 3, 4, 5)
+[obj info] Write to register par_over.s6 <- 0x050403020100
+Wrote (0, 1, 2, 3, 4, 5) to 0x6000000
+Reading 6 bytes from offset 0x6000000
+[obj info] Read from register par_over.s6 -> 0x050403020100
+Read (0, 1, 2, 3, 4, 5) from 0x6000000
+Writing 5 bytes to offset 0x6000001: (1, 2, 3, 4, 5)
+[obj info] Partial write to register par_over.s6[47:8] <- 0x0504030201
+Wrote (1, 2, 3, 4, 5) to 0x6000001
+Reading 5 bytes from offset 0x6000001
+[obj info] Partial read from register par_over.s6[47:8] -> 0x0504030201
+Read (1, 2, 3, 4, 5) from 0x6000001
+Writing 4 bytes to offset 0x6000002: (2, 3, 4, 5)
+[obj info] Partial write to register par_over.s6[47:16] <- 0x05040302
+Wrote (2, 3, 4, 5) to 0x6000002
+Reading 4 bytes from offset 0x6000002
+[obj info] Partial read from register par_over.s6[47:16] -> 0x05040302
+Read (2, 3, 4, 5) from 0x6000002
+Writing 3 bytes to offset 0x6000003: (3, 4, 5)
+[obj info] Partial write to register par_over.s6[47:24] <- 0x050403
+Wrote (3, 4, 5) to 0x6000003
+Reading 3 bytes from offset 0x6000003
+[obj info] Partial read from register par_over.s6[47:24] -> 0x050403
+Read (3, 4, 5) from 0x6000003
+Writing 2 bytes to offset 0x6000004: (4, 5)
+[obj info] Partial write to register par_over.s6[47:32] <- 0x0504
+Wrote (4, 5) to 0x6000004
+Reading 2 bytes from offset 0x6000004
+[obj info] Partial read from register par_over.s6[47:32] -> 0x0504
+Read (4, 5) from 0x6000004
+Writing 1 bytes to offset 0x6000005: (5,)
+[obj info] Partial write to register par_over.s6[47:40] <- 0x05
+Wrote (5,) to 0x6000005
+Reading 1 bytes from offset 0x6000005
+[obj info] Partial read from register par_over.s6[47:40] -> 0x05
+Read (5,) from 0x6000005
+Writing 7 bytes to offset 0x7000000: (0, 1, 2, 3, 4, 5, 6)
+[obj info] Write to register par_over.s7 <- 0x06050403020100
+Wrote (0, 1, 2, 3, 4, 5, 6) to 0x7000000
+Reading 7 bytes from offset 0x7000000
+[obj info] Read from register par_over.s7 -> 0x06050403020100
+Read (0, 1, 2, 3, 4, 5, 6) from 0x7000000
+Writing 6 bytes to offset 0x7000001: (1, 2, 3, 4, 5, 6)
+[obj info] Partial write to register par_over.s7[55:8] <- 0x060504030201
+Wrote (1, 2, 3, 4, 5, 6) to 0x7000001
+Reading 6 bytes from offset 0x7000001
+[obj info] Partial read from register par_over.s7[55:8] -> 0x060504030201
+Read (1, 2, 3, 4, 5, 6) from 0x7000001
+Writing 5 bytes to offset 0x7000002: (2, 3, 4, 5, 6)
+[obj info] Partial write to register par_over.s7[55:16] <- 0x0605040302
+Wrote (2, 3, 4, 5, 6) to 0x7000002
+Reading 5 bytes from offset 0x7000002
+[obj info] Partial read from register par_over.s7[55:16] -> 0x0605040302
+Read (2, 3, 4, 5, 6) from 0x7000002
+Writing 4 bytes to offset 0x7000003: (3, 4, 5, 6)
+[obj info] Partial write to register par_over.s7[55:24] <- 0x06050403
+Wrote (3, 4, 5, 6) to 0x7000003
+Reading 4 bytes from offset 0x7000003
+[obj info] Partial read from register par_over.s7[55:24] -> 0x06050403
+Read (3, 4, 5, 6) from 0x7000003
+Writing 3 bytes to offset 0x7000004: (4, 5, 6)
+[obj info] Partial write to register par_over.s7[55:32] <- 0x060504
+Wrote (4, 5, 6) to 0x7000004
+Reading 3 bytes from offset 0x7000004
+[obj info] Partial read from register par_over.s7[55:32] -> 0x060504
+Read (4, 5, 6) from 0x7000004
+Writing 2 bytes to offset 0x7000005: (5, 6)
+[obj info] Partial write to register par_over.s7[55:40] <- 0x0605
+Wrote (5, 6) to 0x7000005
+Reading 2 bytes from offset 0x7000005
+[obj info] Partial read from register par_over.s7[55:40] -> 0x0605
+Read (5, 6) from 0x7000005
+Writing 1 bytes to offset 0x7000006: (6,)
+[obj info] Partial write to register par_over.s7[55:48] <- 0x06
+Wrote (6,) to 0x7000006
+Reading 1 bytes from offset 0x7000006
+[obj info] Partial read from register par_over.s7[55:48] -> 0x06
+Read (6,) from 0x7000006
+Accessing arrays
+Writing 4 bytes to offset 0x100: (0, 1, 2, 3)
+[obj info] Write to register par_over.a1[0][0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x100
+Reading 4 bytes from offset 0x100
+[obj info] Read from register par_over.a1[0][0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x100
+Writing 8 bytes to offset 0x100: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register par_over.a1[0][0] <- 0x0000000003020100
+[obj info] Write to register par_over.a1[0][1] <- 0x0000000007060504
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x100
+Reading 8 bytes from offset 0x100
+[obj info] Read from register par_over.a1[0][0] -> 0x0000000003020100
+[obj info] Read from register par_over.a1[0][1] -> 0x0000000007060504
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x100
+Writing 8 bytes to offset 0x102: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj info] Partial write to register par_over.a1[0][0][31:16] <- 0x0302
+[obj info] Write to register par_over.a1[0][1] <- 0x0000000007060504
+[obj info] Partial write to register par_over.a1[0][2][15:0] <- 0x0908
+Wrote (2, 3, 4, 5, 6, 7, 8, 9) to 0x102
+Reading 8 bytes from offset 0x102
+[obj info] Partial read from register par_over.a1[0][0][31:16] -> 0x0302
+[obj info] Read from register par_over.a1[0][1] -> 0x0000000007060504
+[obj info] Partial read from register par_over.a1[0][2][15:0] -> 0x0908
+Read (2, 3, 4, 5, 6, 7, 8, 9) from 0x102
+Writing 8 bytes to offset 0x110: (16, 17, 18, 19, 20, 21, 22, 23)
+[obj info] Write to register par_over.a1[1][0] <- 0x0000000013121110
+[obj info] Write to register par_over.a1[1][1] <- 0x0000000017161514
+Wrote (16, 17, 18, 19, 20, 21, 22, 23) to 0x110
+Reading 8 bytes from offset 0x110
+[obj info] Read from register par_over.a1[1][0] -> 0x0000000013121110
+[obj info] Read from register par_over.a1[1][1] -> 0x0000000017161514
+Read (16, 17, 18, 19, 20, 21, 22, 23) from 0x110
+Writing 8 bytes to offset 0x112: (18, 19, 20, 21, 22, 23, 24, 25)
+[obj info] Partial write to register par_over.a1[1][0][31:16] <- 0x1312
+[obj info] Write to register par_over.a1[1][1] <- 0x0000000017161514
+[obj info] Partial write to register par_over.a1[1][2][15:0] <- 0x1918
+Wrote (18, 19, 20, 21, 22, 23, 24, 25) to 0x112
+Reading 8 bytes from offset 0x112
+[obj info] Partial read from register par_over.a1[1][0][31:16] -> 0x1312
+[obj info] Read from register par_over.a1[1][1] -> 0x0000000017161514
+[obj info] Partial read from register par_over.a1[1][2][15:0] -> 0x1918
+Read (18, 19, 20, 21, 22, 23, 24, 25) from 0x112
+Writing 4 bytes to offset 0x200: (0, 1, 2, 3)
+[obj info] Write to register par_over.a2[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x200
+Reading 4 bytes from offset 0x200
+[obj info] Read from register par_over.a2[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x200
+Writing 8 bytes to offset 0x200: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x200 in par_over outside registers or misaligned access
+Reading 8 bytes from offset 0x200
+[obj spec-viol] 8 byte read access at offset 0x200 in par_over outside registers or misaligned access
+Writing 8 bytes to offset 0x202: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 6 byte write access at offset 0x202 in par_over outside registers or misaligned access
+Reading 8 bytes from offset 0x202
+[obj spec-viol] 6 byte read access at offset 0x202 in par_over outside registers or misaligned access
+Writing 4 bytes to offset 0x300: (0, 1, 2, 3)
+[obj info] Write to register par_over.a3[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x300
+Reading 4 bytes from offset 0x300
+[obj info] Read from register par_over.a3[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x300
+Writing 8 bytes to offset 0x300: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register par_over.a3[0] <- 0x0000000003020100
+[obj info] Write to register par_over.a4[0] <- 0x0000000007060504
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x300
+Reading 8 bytes from offset 0x300
+[obj info] Read from register par_over.a3[0] -> 0x0000000003020100
+[obj info] Read from register par_over.a4[0] -> 0x0000000007060504
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x300
+Writing 8 bytes to offset 0x302: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj info] Partial write to register par_over.a3[0][31:16] <- 0x0302
+[obj info] Write to register par_over.a4[0] <- 0x0000000007060504
+[obj info] Partial write to register par_over.a3[1][15:0] <- 0x0908
+Wrote (2, 3, 4, 5, 6, 7, 8, 9) to 0x302
+Reading 8 bytes from offset 0x302
+[obj info] Partial read from register par_over.a3[0][31:16] -> 0x0302
+[obj info] Read from register par_over.a4[0] -> 0x0000000007060504
+[obj info] Partial read from register par_over.a3[1][15:0] -> 0x0908
+Read (2, 3, 4, 5, 6, 7, 8, 9) from 0x302
+Writing 4 bytes to offset 0x400: (0, 1, 2, 3)
+[obj spec-viol] 4 byte write access at offset 0x400 in par_over outside registers or misaligned access
+Reading 4 bytes from offset 0x400
+[obj spec-viol] 4 byte read access at offset 0x400 in par_over outside registers or misaligned access
+Writing 4 bytes to offset 0x404: (4, 5, 6, 7)
+[obj spec-viol] 4 byte write access at offset 0x404 in par_over outside registers or misaligned access
+Reading 4 bytes from offset 0x404
+[obj spec-viol] 4 byte read access at offset 0x404 in par_over outside registers or misaligned access
+Writing 4 bytes to offset 0x408: (8, 9, 10, 11)
+[obj info] Write to register par_over.a5[0] <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x408
+Reading 4 bytes from offset 0x408
+[obj info] Read from register par_over.a5[0] -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x408
+Writing 4 bytes to offset 0x418: (24, 25, 26, 27)
+[obj spec-viol] 4 byte write access at offset 0x418 in par_over outside registers or misaligned access
+Reading 4 bytes from offset 0x418
+[obj spec-viol] 4 byte read access at offset 0x418 in par_over outside registers or misaligned access
+Writing 4 bytes to offset 0x41c: (28, 29, 30, 31)
+[obj spec-viol] 4 byte write access at offset 0x41c in par_over outside registers or misaligned access
+Reading 4 bytes from offset 0x41c
+[obj spec-viol] 4 byte read access at offset 0x41c in par_over outside registers or misaligned access
+Writing 8 bytes to offset 0x500: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register par_over.a6[2] <- 0x0000000000000000
+[obj info] Write to register par_over.a7[0] <- 0x0000000000000001
+[obj info] Write to register par_over.x1 <- 0x0000000000000002
+[obj info] Write to register par_over.a7[1] <- 0x0000000000000003
+[obj info] Write to register par_over.a6[1] <- 0x0000000000000004
+[obj info] Write to register par_over.a7[2] <- 0x0000000000000005
+[obj info] Write to register par_over.x2 <- 0x0000000000000006
+[obj info] Write to register par_over.a7[3] <- 0x0000000000000007
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x500
+Reading 8 bytes from offset 0x500
+[obj info] Read from register par_over.a6[2] -> 0x0000000000000000
+[obj info] Read from register par_over.a7[0] -> 0x0000000000000001
+[obj info] Read from register par_over.x1 -> 0x0000000000000002
+[obj info] Read from register par_over.a7[1] -> 0x0000000000000003
+[obj info] Read from register par_over.a6[1] -> 0x0000000000000004
+[obj info] Read from register par_over.a7[2] -> 0x0000000000000005
+[obj info] Read from register par_over.x2 -> 0x0000000000000006
+[obj info] Read from register par_over.a7[3] -> 0x0000000000000007
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x500
+Writing 8 bytes to offset 0x501: (1, 2, 3, 4, 5, 6, 7, 8)
+[obj info] Write to register par_over.a7[0] <- 0x0000000000000001
+[obj info] Write to register par_over.x1 <- 0x0000000000000002
+[obj info] Write to register par_over.a7[1] <- 0x0000000000000003
+[obj info] Write to register par_over.a6[1] <- 0x0000000000000004
+[obj info] Write to register par_over.a7[2] <- 0x0000000000000005
+[obj info] Write to register par_over.x2 <- 0x0000000000000006
+[obj info] Write to register par_over.a7[3] <- 0x0000000000000007
+[obj info] Write to register par_over.a6[0] <- 0x0000000000000008
+Wrote (1, 2, 3, 4, 5, 6, 7, 8) to 0x501
+Reading 8 bytes from offset 0x501
+[obj info] Read from register par_over.a7[0] -> 0x0000000000000001
+[obj info] Read from register par_over.x1 -> 0x0000000000000002
+[obj info] Read from register par_over.a7[1] -> 0x0000000000000003
+[obj info] Read from register par_over.a6[1] -> 0x0000000000000004
+[obj info] Read from register par_over.a7[2] -> 0x0000000000000005
+[obj info] Read from register par_over.x2 -> 0x0000000000000006
+[obj info] Read from register par_over.a7[3] -> 0x0000000000000007
+[obj info] Read from register par_over.a6[0] -> 0x0000000000000008
+Read (1, 2, 3, 4, 5, 6, 7, 8) from 0x501
+Writing 4 bytes to offset 0x0: (0, 1, 2, 3)
+[obj info] Write to register nonpar_over.r1 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x0
+Reading 4 bytes from offset 0x0
+[obj info] Read from register nonpar_over.r1 -> 0x03020100
+Read (0, 1, 2, 3) from 0x0
+Writing 4 bytes to offset 0x4: (4, 5, 6, 7)
+[obj info] Write to register nonpar_over.r2 <- 0x07060504
+Wrote (4, 5, 6, 7) to 0x4
+Reading 4 bytes from offset 0x4
+[obj info] Read from register nonpar_over.r2 -> 0x07060504
+Read (4, 5, 6, 7) from 0x4
+Writing 4 bytes to offset 0x8: (8, 9, 10, 11)
+[obj info] Write to register nonpar_over.r3 <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x8
+Reading 4 bytes from offset 0x8
+[obj info] Read from register nonpar_over.r3 -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x8
+Now read some partial ranges
+Writing 1 bytes to offset 0x0: (0,)
+[obj spec-viol] 1 byte write access at offset 0 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x0
+[obj spec-viol] 1 byte read access at offset 0 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x1: (1,)
+[obj spec-viol] 1 byte write access at offset 0x1 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x1
+[obj spec-viol] 1 byte read access at offset 0x1 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x2: (2,)
+[obj spec-viol] 1 byte write access at offset 0x2 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x2
+[obj spec-viol] 1 byte read access at offset 0x2 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x3: (3,)
+[obj spec-viol] 1 byte write access at offset 0x3 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x3
+[obj spec-viol] 1 byte read access at offset 0x3 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x4: (4,)
+[obj spec-viol] 1 byte write access at offset 0x4 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x4
+[obj spec-viol] 1 byte read access at offset 0x4 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x5: (5,)
+[obj spec-viol] 1 byte write access at offset 0x5 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x5
+[obj spec-viol] 1 byte read access at offset 0x5 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x6: (6,)
+[obj spec-viol] 1 byte write access at offset 0x6 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x6
+[obj spec-viol] 1 byte read access at offset 0x6 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x7: (7,)
+[obj spec-viol] 1 byte write access at offset 0x7 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x7
+[obj spec-viol] 1 byte read access at offset 0x7 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x0: (0, 1)
+[obj spec-viol] 2 byte write access at offset 0 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x0
+[obj spec-viol] 2 byte read access at offset 0 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x1: (1, 2)
+[obj spec-viol] 2 byte write access at offset 0x1 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x1
+[obj spec-viol] 2 byte read access at offset 0x1 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x2: (2, 3)
+[obj spec-viol] 2 byte write access at offset 0x2 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x2
+[obj spec-viol] 2 byte read access at offset 0x2 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x4: (4, 5)
+[obj spec-viol] 2 byte write access at offset 0x4 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x4
+[obj spec-viol] 2 byte read access at offset 0x4 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x5: (5, 6)
+[obj spec-viol] 2 byte write access at offset 0x5 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x5
+[obj spec-viol] 2 byte read access at offset 0x5 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x6: (6, 7)
+[obj spec-viol] 2 byte write access at offset 0x6 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x6
+[obj spec-viol] 2 byte read access at offset 0x6 in nonpar_over outside registers or misaligned access
+Now read/access some overlapping ranges
+Writing 8 bytes to offset 0x0: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register nonpar_over.r1 <- 0x0000000003020100
+[obj info] Write to register nonpar_over.r2 <- 0x0000000007060504
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x0
+Reading 8 bytes from offset 0x0
+[obj info] Read from register nonpar_over.r1 -> 0x0000000003020100
+[obj info] Read from register nonpar_over.r2 -> 0x0000000007060504
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x0
+Writing 8 bytes to offset 0x4: (4, 5, 6, 7, 8, 9, 10, 11)
+[obj info] Write to register nonpar_over.r2 <- 0x0000000007060504
+[obj info] Write to register nonpar_over.r3 <- 0x000000000b0a0908
+Wrote (4, 5, 6, 7, 8, 9, 10, 11) to 0x4
+Reading 8 bytes from offset 0x4
+[obj info] Read from register nonpar_over.r2 -> 0x0000000007060504
+[obj info] Read from register nonpar_over.r3 -> 0x000000000b0a0908
+Read (4, 5, 6, 7, 8, 9, 10, 11) from 0x4
+Now read/access some partial and overlapping ranges
+Writing 4 bytes to offset 0x2: (2, 3, 4, 5)
+[obj spec-viol] 4 byte write access at offset 0x2 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x2
+[obj spec-viol] 4 byte read access at offset 0x2 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x6: (6, 7, 8, 9)
+[obj spec-viol] 4 byte write access at offset 0x6 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x6
+[obj spec-viol] 4 byte read access at offset 0x6 in nonpar_over outside registers or misaligned access
+Reading registers of various sizes
+Writing 1 bytes to offset 0x1000000: (0,)
+[obj info] Write to register nonpar_over.s1 <- 0x00
+Wrote (0,) to 0x1000000
+Reading 1 bytes from offset 0x1000000
+[obj info] Read from register nonpar_over.s1 -> 0x00
+Read (0,) from 0x1000000
+Writing 2 bytes to offset 0x2000000: (0, 1)
+[obj info] Write to register nonpar_over.s2 <- 0x0100
+Wrote (0, 1) to 0x2000000
+Reading 2 bytes from offset 0x2000000
+[obj info] Read from register nonpar_over.s2 -> 0x0100
+Read (0, 1) from 0x2000000
+Writing 1 bytes to offset 0x2000001: (1,)
+[obj spec-viol] 1 byte write access at offset 0x2000001 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x2000001
+[obj spec-viol] 1 byte read access at offset 0x2000001 in nonpar_over outside registers or misaligned access
+Writing 3 bytes to offset 0x3000000: (0, 1, 2)
+[obj info] Write to register nonpar_over.s3 <- 0x020100
+Wrote (0, 1, 2) to 0x3000000
+Reading 3 bytes from offset 0x3000000
+[obj info] Read from register nonpar_over.s3 -> 0x020100
+Read (0, 1, 2) from 0x3000000
+Writing 2 bytes to offset 0x3000001: (1, 2)
+[obj spec-viol] 2 byte write access at offset 0x3000001 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x3000001
+[obj spec-viol] 2 byte read access at offset 0x3000001 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x3000002: (2,)
+[obj spec-viol] 1 byte write access at offset 0x3000002 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x3000002
+[obj spec-viol] 1 byte read access at offset 0x3000002 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x4000000: (0, 1, 2, 3)
+[obj info] Write to register nonpar_over.s4 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x4000000
+Reading 4 bytes from offset 0x4000000
+[obj info] Read from register nonpar_over.s4 -> 0x03020100
+Read (0, 1, 2, 3) from 0x4000000
+Writing 3 bytes to offset 0x4000001: (1, 2, 3)
+[obj spec-viol] 3 byte write access at offset 0x4000001 in nonpar_over outside registers or misaligned access
+Reading 3 bytes from offset 0x4000001
+[obj spec-viol] 3 byte read access at offset 0x4000001 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x4000002: (2, 3)
+[obj spec-viol] 2 byte write access at offset 0x4000002 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x4000002
+[obj spec-viol] 2 byte read access at offset 0x4000002 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x4000003: (3,)
+[obj spec-viol] 1 byte write access at offset 0x4000003 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x4000003
+[obj spec-viol] 1 byte read access at offset 0x4000003 in nonpar_over outside registers or misaligned access
+Writing 5 bytes to offset 0x5000000: (0, 1, 2, 3, 4)
+[obj info] Write to register nonpar_over.s5 <- 0x0403020100
+Wrote (0, 1, 2, 3, 4) to 0x5000000
+Reading 5 bytes from offset 0x5000000
+[obj info] Read from register nonpar_over.s5 -> 0x0403020100
+Read (0, 1, 2, 3, 4) from 0x5000000
+Writing 4 bytes to offset 0x5000001: (1, 2, 3, 4)
+[obj spec-viol] 4 byte write access at offset 0x5000001 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x5000001
+[obj spec-viol] 4 byte read access at offset 0x5000001 in nonpar_over outside registers or misaligned access
+Writing 3 bytes to offset 0x5000002: (2, 3, 4)
+[obj spec-viol] 3 byte write access at offset 0x5000002 in nonpar_over outside registers or misaligned access
+Reading 3 bytes from offset 0x5000002
+[obj spec-viol] 3 byte read access at offset 0x5000002 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x5000003: (3, 4)
+[obj spec-viol] 2 byte write access at offset 0x5000003 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x5000003
+[obj spec-viol] 2 byte read access at offset 0x5000003 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x5000004: (4,)
+[obj spec-viol] 1 byte write access at offset 0x5000004 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x5000004
+[obj spec-viol] 1 byte read access at offset 0x5000004 in nonpar_over outside registers or misaligned access
+Writing 6 bytes to offset 0x6000000: (0, 1, 2, 3, 4, 5)
+[obj info] Write to register nonpar_over.s6 <- 0x050403020100
+Wrote (0, 1, 2, 3, 4, 5) to 0x6000000
+Reading 6 bytes from offset 0x6000000
+[obj info] Read from register nonpar_over.s6 -> 0x050403020100
+Read (0, 1, 2, 3, 4, 5) from 0x6000000
+Writing 5 bytes to offset 0x6000001: (1, 2, 3, 4, 5)
+[obj spec-viol] 5 byte write access at offset 0x6000001 in nonpar_over outside registers or misaligned access
+Reading 5 bytes from offset 0x6000001
+[obj spec-viol] 5 byte read access at offset 0x6000001 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x6000002: (2, 3, 4, 5)
+[obj spec-viol] 4 byte write access at offset 0x6000002 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x6000002
+[obj spec-viol] 4 byte read access at offset 0x6000002 in nonpar_over outside registers or misaligned access
+Writing 3 bytes to offset 0x6000003: (3, 4, 5)
+[obj spec-viol] 3 byte write access at offset 0x6000003 in nonpar_over outside registers or misaligned access
+Reading 3 bytes from offset 0x6000003
+[obj spec-viol] 3 byte read access at offset 0x6000003 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x6000004: (4, 5)
+[obj spec-viol] 2 byte write access at offset 0x6000004 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x6000004
+[obj spec-viol] 2 byte read access at offset 0x6000004 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x6000005: (5,)
+[obj spec-viol] 1 byte write access at offset 0x6000005 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x6000005
+[obj spec-viol] 1 byte read access at offset 0x6000005 in nonpar_over outside registers or misaligned access
+Writing 7 bytes to offset 0x7000000: (0, 1, 2, 3, 4, 5, 6)
+[obj info] Write to register nonpar_over.s7 <- 0x06050403020100
+Wrote (0, 1, 2, 3, 4, 5, 6) to 0x7000000
+Reading 7 bytes from offset 0x7000000
+[obj info] Read from register nonpar_over.s7 -> 0x06050403020100
+Read (0, 1, 2, 3, 4, 5, 6) from 0x7000000
+Writing 6 bytes to offset 0x7000001: (1, 2, 3, 4, 5, 6)
+[obj spec-viol] 6 byte write access at offset 0x7000001 in nonpar_over outside registers or misaligned access
+Reading 6 bytes from offset 0x7000001
+[obj spec-viol] 6 byte read access at offset 0x7000001 in nonpar_over outside registers or misaligned access
+Writing 5 bytes to offset 0x7000002: (2, 3, 4, 5, 6)
+[obj spec-viol] 5 byte write access at offset 0x7000002 in nonpar_over outside registers or misaligned access
+Reading 5 bytes from offset 0x7000002
+[obj spec-viol] 5 byte read access at offset 0x7000002 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x7000003: (3, 4, 5, 6)
+[obj spec-viol] 4 byte write access at offset 0x7000003 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x7000003
+[obj spec-viol] 4 byte read access at offset 0x7000003 in nonpar_over outside registers or misaligned access
+Writing 3 bytes to offset 0x7000004: (4, 5, 6)
+[obj spec-viol] 3 byte write access at offset 0x7000004 in nonpar_over outside registers or misaligned access
+Reading 3 bytes from offset 0x7000004
+[obj spec-viol] 3 byte read access at offset 0x7000004 in nonpar_over outside registers or misaligned access
+Writing 2 bytes to offset 0x7000005: (5, 6)
+[obj spec-viol] 2 byte write access at offset 0x7000005 in nonpar_over outside registers or misaligned access
+Reading 2 bytes from offset 0x7000005
+[obj spec-viol] 2 byte read access at offset 0x7000005 in nonpar_over outside registers or misaligned access
+Writing 1 bytes to offset 0x7000006: (6,)
+[obj spec-viol] 1 byte write access at offset 0x7000006 in nonpar_over outside registers or misaligned access
+Reading 1 bytes from offset 0x7000006
+[obj spec-viol] 1 byte read access at offset 0x7000006 in nonpar_over outside registers or misaligned access
+Accessing arrays
+Writing 4 bytes to offset 0x100: (0, 1, 2, 3)
+[obj info] Write to register nonpar_over.a1[0][0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x100
+Reading 4 bytes from offset 0x100
+[obj info] Read from register nonpar_over.a1[0][0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x100
+Writing 8 bytes to offset 0x100: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register nonpar_over.a1[0][0] <- 0x0000000003020100
+[obj info] Write to register nonpar_over.a1[0][1] <- 0x0000000007060504
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x100
+Reading 8 bytes from offset 0x100
+[obj info] Read from register nonpar_over.a1[0][0] -> 0x0000000003020100
+[obj info] Read from register nonpar_over.a1[0][1] -> 0x0000000007060504
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x100
+Writing 8 bytes to offset 0x102: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x102 in nonpar_over outside registers or misaligned access
+Reading 8 bytes from offset 0x102
+[obj spec-viol] 8 byte read access at offset 0x102 in nonpar_over outside registers or misaligned access
+Writing 8 bytes to offset 0x110: (16, 17, 18, 19, 20, 21, 22, 23)
+[obj info] Write to register nonpar_over.a1[1][0] <- 0x0000000013121110
+[obj info] Write to register nonpar_over.a1[1][1] <- 0x0000000017161514
+Wrote (16, 17, 18, 19, 20, 21, 22, 23) to 0x110
+Reading 8 bytes from offset 0x110
+[obj info] Read from register nonpar_over.a1[1][0] -> 0x0000000013121110
+[obj info] Read from register nonpar_over.a1[1][1] -> 0x0000000017161514
+Read (16, 17, 18, 19, 20, 21, 22, 23) from 0x110
+Writing 8 bytes to offset 0x112: (18, 19, 20, 21, 22, 23, 24, 25)
+[obj spec-viol] 8 byte write access at offset 0x112 in nonpar_over outside registers or misaligned access
+Reading 8 bytes from offset 0x112
+[obj spec-viol] 8 byte read access at offset 0x112 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x200: (0, 1, 2, 3)
+[obj info] Write to register nonpar_over.a2[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x200
+Reading 4 bytes from offset 0x200
+[obj info] Read from register nonpar_over.a2[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x200
+Writing 8 bytes to offset 0x200: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x200 in nonpar_over outside registers or misaligned access
+Reading 8 bytes from offset 0x200
+[obj spec-viol] 8 byte read access at offset 0x200 in nonpar_over outside registers or misaligned access
+Writing 8 bytes to offset 0x202: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x202 in nonpar_over outside registers or misaligned access
+Reading 8 bytes from offset 0x202
+[obj spec-viol] 8 byte read access at offset 0x202 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x300: (0, 1, 2, 3)
+[obj info] Write to register nonpar_over.a3[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x300
+Reading 4 bytes from offset 0x300
+[obj info] Read from register nonpar_over.a3[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x300
+Writing 8 bytes to offset 0x300: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register nonpar_over.a3[0] <- 0x0000000003020100
+[obj info] Write to register nonpar_over.a4[0] <- 0x0000000007060504
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x300
+Reading 8 bytes from offset 0x300
+[obj info] Read from register nonpar_over.a3[0] -> 0x0000000003020100
+[obj info] Read from register nonpar_over.a4[0] -> 0x0000000007060504
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x300
+Writing 8 bytes to offset 0x302: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x302 in nonpar_over outside registers or misaligned access
+Reading 8 bytes from offset 0x302
+[obj spec-viol] 8 byte read access at offset 0x302 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x400: (0, 1, 2, 3)
+[obj spec-viol] 4 byte write access at offset 0x400 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x400
+[obj spec-viol] 4 byte read access at offset 0x400 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x404: (4, 5, 6, 7)
+[obj spec-viol] 4 byte write access at offset 0x404 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x404
+[obj spec-viol] 4 byte read access at offset 0x404 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x408: (8, 9, 10, 11)
+[obj info] Write to register nonpar_over.a5[0] <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x408
+Reading 4 bytes from offset 0x408
+[obj info] Read from register nonpar_over.a5[0] -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x408
+Writing 4 bytes to offset 0x418: (24, 25, 26, 27)
+[obj spec-viol] 4 byte write access at offset 0x418 in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x418
+[obj spec-viol] 4 byte read access at offset 0x418 in nonpar_over outside registers or misaligned access
+Writing 4 bytes to offset 0x41c: (28, 29, 30, 31)
+[obj spec-viol] 4 byte write access at offset 0x41c in nonpar_over outside registers or misaligned access
+Reading 4 bytes from offset 0x41c
+[obj spec-viol] 4 byte read access at offset 0x41c in nonpar_over outside registers or misaligned access
+Writing 8 bytes to offset 0x500: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register nonpar_over.a6[2] <- 0x0000000000000000
+[obj info] Write to register nonpar_over.a7[0] <- 0x0000000000000001
+[obj info] Write to register nonpar_over.x1 <- 0x0000000000000002
+[obj info] Write to register nonpar_over.a7[1] <- 0x0000000000000003
+[obj info] Write to register nonpar_over.a6[1] <- 0x0000000000000004
+[obj info] Write to register nonpar_over.a7[2] <- 0x0000000000000005
+[obj info] Write to register nonpar_over.x2 <- 0x0000000000000006
+[obj info] Write to register nonpar_over.a7[3] <- 0x0000000000000007
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x500
+Reading 8 bytes from offset 0x500
+[obj info] Read from register nonpar_over.a6[2] -> 0x0000000000000000
+[obj info] Read from register nonpar_over.a7[0] -> 0x0000000000000001
+[obj info] Read from register nonpar_over.x1 -> 0x0000000000000002
+[obj info] Read from register nonpar_over.a7[1] -> 0x0000000000000003
+[obj info] Read from register nonpar_over.a6[1] -> 0x0000000000000004
+[obj info] Read from register nonpar_over.a7[2] -> 0x0000000000000005
+[obj info] Read from register nonpar_over.x2 -> 0x0000000000000006
+[obj info] Read from register nonpar_over.a7[3] -> 0x0000000000000007
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x500
+Writing 8 bytes to offset 0x501: (1, 2, 3, 4, 5, 6, 7, 8)
+[obj info] Write to register nonpar_over.a7[0] <- 0x0000000000000001
+[obj info] Write to register nonpar_over.x1 <- 0x0000000000000002
+[obj info] Write to register nonpar_over.a7[1] <- 0x0000000000000003
+[obj info] Write to register nonpar_over.a6[1] <- 0x0000000000000004
+[obj info] Write to register nonpar_over.a7[2] <- 0x0000000000000005
+[obj info] Write to register nonpar_over.x2 <- 0x0000000000000006
+[obj info] Write to register nonpar_over.a7[3] <- 0x0000000000000007
+[obj info] Write to register nonpar_over.a6[0] <- 0x0000000000000008
+Wrote (1, 2, 3, 4, 5, 6, 7, 8) to 0x501
+Reading 8 bytes from offset 0x501
+[obj info] Read from register nonpar_over.a7[0] -> 0x0000000000000001
+[obj info] Read from register nonpar_over.x1 -> 0x0000000000000002
+[obj info] Read from register nonpar_over.a7[1] -> 0x0000000000000003
+[obj info] Read from register nonpar_over.a6[1] -> 0x0000000000000004
+[obj info] Read from register nonpar_over.a7[2] -> 0x0000000000000005
+[obj info] Read from register nonpar_over.x2 -> 0x0000000000000006
+[obj info] Read from register nonpar_over.a7[3] -> 0x0000000000000007
+[obj info] Read from register nonpar_over.a6[0] -> 0x0000000000000008
+Read (1, 2, 3, 4, 5, 6, 7, 8) from 0x501
+Writing 4 bytes to offset 0x0: (0, 1, 2, 3)
+[obj info] Write to register par_nonover.r1 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x0
+Reading 4 bytes from offset 0x0
+[obj info] Read from register par_nonover.r1 -> 0x03020100
+Read (0, 1, 2, 3) from 0x0
+Writing 4 bytes to offset 0x4: (4, 5, 6, 7)
+[obj info] Write to register par_nonover.r2 <- 0x07060504
+Wrote (4, 5, 6, 7) to 0x4
+Reading 4 bytes from offset 0x4
+[obj info] Read from register par_nonover.r2 -> 0x07060504
+Read (4, 5, 6, 7) from 0x4
+Writing 4 bytes to offset 0x8: (8, 9, 10, 11)
+[obj info] Write to register par_nonover.r3 <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x8
+Reading 4 bytes from offset 0x8
+[obj info] Read from register par_nonover.r3 -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x8
+Now read some partial ranges
+Writing 1 bytes to offset 0x0: (0,)
+[obj info] Partial write to register par_nonover.r1[7:0] <- 0x00
+Wrote (0,) to 0x0
+Reading 1 bytes from offset 0x0
+[obj info] Partial read from register par_nonover.r1[7:0] -> 0x00
+Read (0,) from 0x0
+Writing 1 bytes to offset 0x1: (1,)
+[obj info] Partial write to register par_nonover.r1[15:8] <- 0x01
+Wrote (1,) to 0x1
+Reading 1 bytes from offset 0x1
+[obj info] Partial read from register par_nonover.r1[15:8] -> 0x01
+Read (1,) from 0x1
+Writing 1 bytes to offset 0x2: (2,)
+[obj info] Partial write to register par_nonover.r1[23:16] <- 0x02
+Wrote (2,) to 0x2
+Reading 1 bytes from offset 0x2
+[obj info] Partial read from register par_nonover.r1[23:16] -> 0x02
+Read (2,) from 0x2
+Writing 1 bytes to offset 0x3: (3,)
+[obj info] Partial write to register par_nonover.r1[31:24] <- 0x03
+Wrote (3,) to 0x3
+Reading 1 bytes from offset 0x3
+[obj info] Partial read from register par_nonover.r1[31:24] -> 0x03
+Read (3,) from 0x3
+Writing 1 bytes to offset 0x4: (4,)
+[obj info] Partial write to register par_nonover.r2[7:0] <- 0x04
+Wrote (4,) to 0x4
+Reading 1 bytes from offset 0x4
+[obj info] Partial read from register par_nonover.r2[7:0] -> 0x04
+Read (4,) from 0x4
+Writing 1 bytes to offset 0x5: (5,)
+[obj info] Partial write to register par_nonover.r2[15:8] <- 0x05
+Wrote (5,) to 0x5
+Reading 1 bytes from offset 0x5
+[obj info] Partial read from register par_nonover.r2[15:8] -> 0x05
+Read (5,) from 0x5
+Writing 1 bytes to offset 0x6: (6,)
+[obj info] Partial write to register par_nonover.r2[23:16] <- 0x06
+Wrote (6,) to 0x6
+Reading 1 bytes from offset 0x6
+[obj info] Partial read from register par_nonover.r2[23:16] -> 0x06
+Read (6,) from 0x6
+Writing 1 bytes to offset 0x7: (7,)
+[obj info] Partial write to register par_nonover.r2[31:24] <- 0x07
+Wrote (7,) to 0x7
+Reading 1 bytes from offset 0x7
+[obj info] Partial read from register par_nonover.r2[31:24] -> 0x07
+Read (7,) from 0x7
+Writing 2 bytes to offset 0x0: (0, 1)
+[obj info] Partial write to register par_nonover.r1[15:0] <- 0x0100
+Wrote (0, 1) to 0x0
+Reading 2 bytes from offset 0x0
+[obj info] Partial read from register par_nonover.r1[15:0] -> 0x0100
+Read (0, 1) from 0x0
+Writing 2 bytes to offset 0x1: (1, 2)
+[obj info] Partial write to register par_nonover.r1[23:8] <- 0x0201
+Wrote (1, 2) to 0x1
+Reading 2 bytes from offset 0x1
+[obj info] Partial read from register par_nonover.r1[23:8] -> 0x0201
+Read (1, 2) from 0x1
+Writing 2 bytes to offset 0x2: (2, 3)
+[obj info] Partial write to register par_nonover.r1[31:16] <- 0x0302
+Wrote (2, 3) to 0x2
+Reading 2 bytes from offset 0x2
+[obj info] Partial read from register par_nonover.r1[31:16] -> 0x0302
+Read (2, 3) from 0x2
+Writing 2 bytes to offset 0x4: (4, 5)
+[obj info] Partial write to register par_nonover.r2[15:0] <- 0x0504
+Wrote (4, 5) to 0x4
+Reading 2 bytes from offset 0x4
+[obj info] Partial read from register par_nonover.r2[15:0] -> 0x0504
+Read (4, 5) from 0x4
+Writing 2 bytes to offset 0x5: (5, 6)
+[obj info] Partial write to register par_nonover.r2[23:8] <- 0x0605
+Wrote (5, 6) to 0x5
+Reading 2 bytes from offset 0x5
+[obj info] Partial read from register par_nonover.r2[23:8] -> 0x0605
+Read (5, 6) from 0x5
+Writing 2 bytes to offset 0x6: (6, 7)
+[obj info] Partial write to register par_nonover.r2[31:16] <- 0x0706
+Wrote (6, 7) to 0x6
+Reading 2 bytes from offset 0x6
+[obj info] Partial read from register par_nonover.r2[31:16] -> 0x0706
+Read (6, 7) from 0x6
+Now read/access some overlapping ranges
+Writing 8 bytes to offset 0x0: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x0
+[obj spec-viol] 8 byte read access at offset 0 in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x4: (4, 5, 6, 7, 8, 9, 10, 11)
+[obj spec-viol] 8 byte write access at offset 0x4 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x4
+[obj spec-viol] 8 byte read access at offset 0x4 in par_nonover outside registers or misaligned access
+Now read/access some partial and overlapping ranges
+Writing 4 bytes to offset 0x2: (2, 3, 4, 5)
+[obj spec-viol] 4 byte write access at offset 0x2 in par_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x2
+[obj spec-viol] 4 byte read access at offset 0x2 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x6: (6, 7, 8, 9)
+[obj spec-viol] 4 byte write access at offset 0x6 in par_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x6
+[obj spec-viol] 4 byte read access at offset 0x6 in par_nonover outside registers or misaligned access
+Reading registers of various sizes
+Writing 1 bytes to offset 0x1000000: (0,)
+[obj info] Write to register par_nonover.s1 <- 0x00
+Wrote (0,) to 0x1000000
+Reading 1 bytes from offset 0x1000000
+[obj info] Read from register par_nonover.s1 -> 0x00
+Read (0,) from 0x1000000
+Writing 2 bytes to offset 0x2000000: (0, 1)
+[obj info] Write to register par_nonover.s2 <- 0x0100
+Wrote (0, 1) to 0x2000000
+Reading 2 bytes from offset 0x2000000
+[obj info] Read from register par_nonover.s2 -> 0x0100
+Read (0, 1) from 0x2000000
+Writing 1 bytes to offset 0x2000001: (1,)
+[obj info] Partial write to register par_nonover.s2[15:8] <- 0x01
+Wrote (1,) to 0x2000001
+Reading 1 bytes from offset 0x2000001
+[obj info] Partial read from register par_nonover.s2[15:8] -> 0x01
+Read (1,) from 0x2000001
+Writing 3 bytes to offset 0x3000000: (0, 1, 2)
+[obj info] Write to register par_nonover.s3 <- 0x020100
+Wrote (0, 1, 2) to 0x3000000
+Reading 3 bytes from offset 0x3000000
+[obj info] Read from register par_nonover.s3 -> 0x020100
+Read (0, 1, 2) from 0x3000000
+Writing 2 bytes to offset 0x3000001: (1, 2)
+[obj info] Partial write to register par_nonover.s3[23:8] <- 0x0201
+Wrote (1, 2) to 0x3000001
+Reading 2 bytes from offset 0x3000001
+[obj info] Partial read from register par_nonover.s3[23:8] -> 0x0201
+Read (1, 2) from 0x3000001
+Writing 1 bytes to offset 0x3000002: (2,)
+[obj info] Partial write to register par_nonover.s3[23:16] <- 0x02
+Wrote (2,) to 0x3000002
+Reading 1 bytes from offset 0x3000002
+[obj info] Partial read from register par_nonover.s3[23:16] -> 0x02
+Read (2,) from 0x3000002
+Writing 4 bytes to offset 0x4000000: (0, 1, 2, 3)
+[obj info] Write to register par_nonover.s4 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x4000000
+Reading 4 bytes from offset 0x4000000
+[obj info] Read from register par_nonover.s4 -> 0x03020100
+Read (0, 1, 2, 3) from 0x4000000
+Writing 3 bytes to offset 0x4000001: (1, 2, 3)
+[obj info] Partial write to register par_nonover.s4[31:8] <- 0x030201
+Wrote (1, 2, 3) to 0x4000001
+Reading 3 bytes from offset 0x4000001
+[obj info] Partial read from register par_nonover.s4[31:8] -> 0x030201
+Read (1, 2, 3) from 0x4000001
+Writing 2 bytes to offset 0x4000002: (2, 3)
+[obj info] Partial write to register par_nonover.s4[31:16] <- 0x0302
+Wrote (2, 3) to 0x4000002
+Reading 2 bytes from offset 0x4000002
+[obj info] Partial read from register par_nonover.s4[31:16] -> 0x0302
+Read (2, 3) from 0x4000002
+Writing 1 bytes to offset 0x4000003: (3,)
+[obj info] Partial write to register par_nonover.s4[31:24] <- 0x03
+Wrote (3,) to 0x4000003
+Reading 1 bytes from offset 0x4000003
+[obj info] Partial read from register par_nonover.s4[31:24] -> 0x03
+Read (3,) from 0x4000003
+Writing 5 bytes to offset 0x5000000: (0, 1, 2, 3, 4)
+[obj info] Write to register par_nonover.s5 <- 0x0403020100
+Wrote (0, 1, 2, 3, 4) to 0x5000000
+Reading 5 bytes from offset 0x5000000
+[obj info] Read from register par_nonover.s5 -> 0x0403020100
+Read (0, 1, 2, 3, 4) from 0x5000000
+Writing 4 bytes to offset 0x5000001: (1, 2, 3, 4)
+[obj info] Partial write to register par_nonover.s5[39:8] <- 0x04030201
+Wrote (1, 2, 3, 4) to 0x5000001
+Reading 4 bytes from offset 0x5000001
+[obj info] Partial read from register par_nonover.s5[39:8] -> 0x04030201
+Read (1, 2, 3, 4) from 0x5000001
+Writing 3 bytes to offset 0x5000002: (2, 3, 4)
+[obj info] Partial write to register par_nonover.s5[39:16] <- 0x040302
+Wrote (2, 3, 4) to 0x5000002
+Reading 3 bytes from offset 0x5000002
+[obj info] Partial read from register par_nonover.s5[39:16] -> 0x040302
+Read (2, 3, 4) from 0x5000002
+Writing 2 bytes to offset 0x5000003: (3, 4)
+[obj info] Partial write to register par_nonover.s5[39:24] <- 0x0403
+Wrote (3, 4) to 0x5000003
+Reading 2 bytes from offset 0x5000003
+[obj info] Partial read from register par_nonover.s5[39:24] -> 0x0403
+Read (3, 4) from 0x5000003
+Writing 1 bytes to offset 0x5000004: (4,)
+[obj info] Partial write to register par_nonover.s5[39:32] <- 0x04
+Wrote (4,) to 0x5000004
+Reading 1 bytes from offset 0x5000004
+[obj info] Partial read from register par_nonover.s5[39:32] -> 0x04
+Read (4,) from 0x5000004
+Writing 6 bytes to offset 0x6000000: (0, 1, 2, 3, 4, 5)
+[obj info] Write to register par_nonover.s6 <- 0x050403020100
+Wrote (0, 1, 2, 3, 4, 5) to 0x6000000
+Reading 6 bytes from offset 0x6000000
+[obj info] Read from register par_nonover.s6 -> 0x050403020100
+Read (0, 1, 2, 3, 4, 5) from 0x6000000
+Writing 5 bytes to offset 0x6000001: (1, 2, 3, 4, 5)
+[obj info] Partial write to register par_nonover.s6[47:8] <- 0x0504030201
+Wrote (1, 2, 3, 4, 5) to 0x6000001
+Reading 5 bytes from offset 0x6000001
+[obj info] Partial read from register par_nonover.s6[47:8] -> 0x0504030201
+Read (1, 2, 3, 4, 5) from 0x6000001
+Writing 4 bytes to offset 0x6000002: (2, 3, 4, 5)
+[obj info] Partial write to register par_nonover.s6[47:16] <- 0x05040302
+Wrote (2, 3, 4, 5) to 0x6000002
+Reading 4 bytes from offset 0x6000002
+[obj info] Partial read from register par_nonover.s6[47:16] -> 0x05040302
+Read (2, 3, 4, 5) from 0x6000002
+Writing 3 bytes to offset 0x6000003: (3, 4, 5)
+[obj info] Partial write to register par_nonover.s6[47:24] <- 0x050403
+Wrote (3, 4, 5) to 0x6000003
+Reading 3 bytes from offset 0x6000003
+[obj info] Partial read from register par_nonover.s6[47:24] -> 0x050403
+Read (3, 4, 5) from 0x6000003
+Writing 2 bytes to offset 0x6000004: (4, 5)
+[obj info] Partial write to register par_nonover.s6[47:32] <- 0x0504
+Wrote (4, 5) to 0x6000004
+Reading 2 bytes from offset 0x6000004
+[obj info] Partial read from register par_nonover.s6[47:32] -> 0x0504
+Read (4, 5) from 0x6000004
+Writing 1 bytes to offset 0x6000005: (5,)
+[obj info] Partial write to register par_nonover.s6[47:40] <- 0x05
+Wrote (5,) to 0x6000005
+Reading 1 bytes from offset 0x6000005
+[obj info] Partial read from register par_nonover.s6[47:40] -> 0x05
+Read (5,) from 0x6000005
+Writing 7 bytes to offset 0x7000000: (0, 1, 2, 3, 4, 5, 6)
+[obj info] Write to register par_nonover.s7 <- 0x06050403020100
+Wrote (0, 1, 2, 3, 4, 5, 6) to 0x7000000
+Reading 7 bytes from offset 0x7000000
+[obj info] Read from register par_nonover.s7 -> 0x06050403020100
+Read (0, 1, 2, 3, 4, 5, 6) from 0x7000000
+Writing 6 bytes to offset 0x7000001: (1, 2, 3, 4, 5, 6)
+[obj info] Partial write to register par_nonover.s7[55:8] <- 0x060504030201
+Wrote (1, 2, 3, 4, 5, 6) to 0x7000001
+Reading 6 bytes from offset 0x7000001
+[obj info] Partial read from register par_nonover.s7[55:8] -> 0x060504030201
+Read (1, 2, 3, 4, 5, 6) from 0x7000001
+Writing 5 bytes to offset 0x7000002: (2, 3, 4, 5, 6)
+[obj info] Partial write to register par_nonover.s7[55:16] <- 0x0605040302
+Wrote (2, 3, 4, 5, 6) to 0x7000002
+Reading 5 bytes from offset 0x7000002
+[obj info] Partial read from register par_nonover.s7[55:16] -> 0x0605040302
+Read (2, 3, 4, 5, 6) from 0x7000002
+Writing 4 bytes to offset 0x7000003: (3, 4, 5, 6)
+[obj info] Partial write to register par_nonover.s7[55:24] <- 0x06050403
+Wrote (3, 4, 5, 6) to 0x7000003
+Reading 4 bytes from offset 0x7000003
+[obj info] Partial read from register par_nonover.s7[55:24] -> 0x06050403
+Read (3, 4, 5, 6) from 0x7000003
+Writing 3 bytes to offset 0x7000004: (4, 5, 6)
+[obj info] Partial write to register par_nonover.s7[55:32] <- 0x060504
+Wrote (4, 5, 6) to 0x7000004
+Reading 3 bytes from offset 0x7000004
+[obj info] Partial read from register par_nonover.s7[55:32] -> 0x060504
+Read (4, 5, 6) from 0x7000004
+Writing 2 bytes to offset 0x7000005: (5, 6)
+[obj info] Partial write to register par_nonover.s7[55:40] <- 0x0605
+Wrote (5, 6) to 0x7000005
+Reading 2 bytes from offset 0x7000005
+[obj info] Partial read from register par_nonover.s7[55:40] -> 0x0605
+Read (5, 6) from 0x7000005
+Writing 1 bytes to offset 0x7000006: (6,)
+[obj info] Partial write to register par_nonover.s7[55:48] <- 0x06
+Wrote (6,) to 0x7000006
+Reading 1 bytes from offset 0x7000006
+[obj info] Partial read from register par_nonover.s7[55:48] -> 0x06
+Read (6,) from 0x7000006
+Accessing arrays
+Writing 4 bytes to offset 0x100: (0, 1, 2, 3)
+[obj info] Write to register par_nonover.a1[0][0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x100
+Reading 4 bytes from offset 0x100
+[obj info] Read from register par_nonover.a1[0][0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x100
+Writing 8 bytes to offset 0x100: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x100 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x100
+[obj spec-viol] 8 byte read access at offset 0x100 in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x102: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x102 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x102
+[obj spec-viol] 8 byte read access at offset 0x102 in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x110: (16, 17, 18, 19, 20, 21, 22, 23)
+[obj spec-viol] 8 byte write access at offset 0x110 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x110
+[obj spec-viol] 8 byte read access at offset 0x110 in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x112: (18, 19, 20, 21, 22, 23, 24, 25)
+[obj spec-viol] 8 byte write access at offset 0x112 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x112
+[obj spec-viol] 8 byte read access at offset 0x112 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x200: (0, 1, 2, 3)
+[obj info] Write to register par_nonover.a2[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x200
+Reading 4 bytes from offset 0x200
+[obj info] Read from register par_nonover.a2[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x200
+Writing 8 bytes to offset 0x200: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x200 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x200
+[obj spec-viol] 8 byte read access at offset 0x200 in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x202: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x202 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x202
+[obj spec-viol] 8 byte read access at offset 0x202 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x300: (0, 1, 2, 3)
+[obj info] Write to register par_nonover.a3[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x300
+Reading 4 bytes from offset 0x300
+[obj info] Read from register par_nonover.a3[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x300
+Writing 8 bytes to offset 0x300: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x300 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x300
+[obj spec-viol] 8 byte read access at offset 0x300 in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x302: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x302 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x302
+[obj spec-viol] 8 byte read access at offset 0x302 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x400: (0, 1, 2, 3)
+[obj spec-viol] 4 byte write access at offset 0x400 in par_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x400
+[obj spec-viol] 4 byte read access at offset 0x400 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x404: (4, 5, 6, 7)
+[obj spec-viol] 4 byte write access at offset 0x404 in par_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x404
+[obj spec-viol] 4 byte read access at offset 0x404 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x408: (8, 9, 10, 11)
+[obj info] Write to register par_nonover.a5[0] <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x408
+Reading 4 bytes from offset 0x408
+[obj info] Read from register par_nonover.a5[0] -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x408
+Writing 4 bytes to offset 0x418: (24, 25, 26, 27)
+[obj spec-viol] 4 byte write access at offset 0x418 in par_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x418
+[obj spec-viol] 4 byte read access at offset 0x418 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x41c: (28, 29, 30, 31)
+[obj spec-viol] 4 byte write access at offset 0x41c in par_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x41c
+[obj spec-viol] 4 byte read access at offset 0x41c in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x500: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x500 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x500
+[obj spec-viol] 8 byte read access at offset 0x500 in par_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x501: (1, 2, 3, 4, 5, 6, 7, 8)
+[obj spec-viol] 8 byte write access at offset 0x501 in par_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x501
+[obj spec-viol] 8 byte read access at offset 0x501 in par_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x0: (0, 1, 2, 3)
+[obj info] Write to register nonpar_nonover.r1 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x0
+Reading 4 bytes from offset 0x0
+[obj info] Read from register nonpar_nonover.r1 -> 0x03020100
+Read (0, 1, 2, 3) from 0x0
+Writing 4 bytes to offset 0x4: (4, 5, 6, 7)
+[obj info] Write to register nonpar_nonover.r2 <- 0x07060504
+Wrote (4, 5, 6, 7) to 0x4
+Reading 4 bytes from offset 0x4
+[obj info] Read from register nonpar_nonover.r2 -> 0x07060504
+Read (4, 5, 6, 7) from 0x4
+Writing 4 bytes to offset 0x8: (8, 9, 10, 11)
+[obj info] Write to register nonpar_nonover.r3 <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x8
+Reading 4 bytes from offset 0x8
+[obj info] Read from register nonpar_nonover.r3 -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x8
+Now read some partial ranges
+Writing 1 bytes to offset 0x0: (0,)
+[obj spec-viol] 1 byte write access at offset 0 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x0
+[obj spec-viol] 1 byte read access at offset 0 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x1: (1,)
+[obj spec-viol] 1 byte write access at offset 0x1 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x1
+[obj spec-viol] 1 byte read access at offset 0x1 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x2: (2,)
+[obj spec-viol] 1 byte write access at offset 0x2 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x2
+[obj spec-viol] 1 byte read access at offset 0x2 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x3: (3,)
+[obj spec-viol] 1 byte write access at offset 0x3 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x3
+[obj spec-viol] 1 byte read access at offset 0x3 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x4: (4,)
+[obj spec-viol] 1 byte write access at offset 0x4 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x4
+[obj spec-viol] 1 byte read access at offset 0x4 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x5: (5,)
+[obj spec-viol] 1 byte write access at offset 0x5 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x5
+[obj spec-viol] 1 byte read access at offset 0x5 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x6: (6,)
+[obj spec-viol] 1 byte write access at offset 0x6 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x6
+[obj spec-viol] 1 byte read access at offset 0x6 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x7: (7,)
+[obj spec-viol] 1 byte write access at offset 0x7 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x7
+[obj spec-viol] 1 byte read access at offset 0x7 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x0: (0, 1)
+[obj spec-viol] 2 byte write access at offset 0 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x0
+[obj spec-viol] 2 byte read access at offset 0 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x1: (1, 2)
+[obj spec-viol] 2 byte write access at offset 0x1 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x1
+[obj spec-viol] 2 byte read access at offset 0x1 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x2: (2, 3)
+[obj spec-viol] 2 byte write access at offset 0x2 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x2
+[obj spec-viol] 2 byte read access at offset 0x2 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x4: (4, 5)
+[obj spec-viol] 2 byte write access at offset 0x4 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x4
+[obj spec-viol] 2 byte read access at offset 0x4 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x5: (5, 6)
+[obj spec-viol] 2 byte write access at offset 0x5 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x5
+[obj spec-viol] 2 byte read access at offset 0x5 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x6: (6, 7)
+[obj spec-viol] 2 byte write access at offset 0x6 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x6
+[obj spec-viol] 2 byte read access at offset 0x6 in nonpar_nonover outside registers or misaligned access
+Now read/access some overlapping ranges
+Writing 8 bytes to offset 0x0: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x0
+[obj spec-viol] 8 byte read access at offset 0 in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x4: (4, 5, 6, 7, 8, 9, 10, 11)
+[obj spec-viol] 8 byte write access at offset 0x4 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x4
+[obj spec-viol] 8 byte read access at offset 0x4 in nonpar_nonover outside registers or misaligned access
+Now read/access some partial and overlapping ranges
+Writing 4 bytes to offset 0x2: (2, 3, 4, 5)
+[obj spec-viol] 4 byte write access at offset 0x2 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x2
+[obj spec-viol] 4 byte read access at offset 0x2 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x6: (6, 7, 8, 9)
+[obj spec-viol] 4 byte write access at offset 0x6 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x6
+[obj spec-viol] 4 byte read access at offset 0x6 in nonpar_nonover outside registers or misaligned access
+Reading registers of various sizes
+Writing 1 bytes to offset 0x1000000: (0,)
+[obj info] Write to register nonpar_nonover.s1 <- 0x00
+Wrote (0,) to 0x1000000
+Reading 1 bytes from offset 0x1000000
+[obj info] Read from register nonpar_nonover.s1 -> 0x00
+Read (0,) from 0x1000000
+Writing 2 bytes to offset 0x2000000: (0, 1)
+[obj info] Write to register nonpar_nonover.s2 <- 0x0100
+Wrote (0, 1) to 0x2000000
+Reading 2 bytes from offset 0x2000000
+[obj info] Read from register nonpar_nonover.s2 -> 0x0100
+Read (0, 1) from 0x2000000
+Writing 1 bytes to offset 0x2000001: (1,)
+[obj spec-viol] 1 byte write access at offset 0x2000001 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x2000001
+[obj spec-viol] 1 byte read access at offset 0x2000001 in nonpar_nonover outside registers or misaligned access
+Writing 3 bytes to offset 0x3000000: (0, 1, 2)
+[obj info] Write to register nonpar_nonover.s3 <- 0x020100
+Wrote (0, 1, 2) to 0x3000000
+Reading 3 bytes from offset 0x3000000
+[obj info] Read from register nonpar_nonover.s3 -> 0x020100
+Read (0, 1, 2) from 0x3000000
+Writing 2 bytes to offset 0x3000001: (1, 2)
+[obj spec-viol] 2 byte write access at offset 0x3000001 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x3000001
+[obj spec-viol] 2 byte read access at offset 0x3000001 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x3000002: (2,)
+[obj spec-viol] 1 byte write access at offset 0x3000002 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x3000002
+[obj spec-viol] 1 byte read access at offset 0x3000002 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x4000000: (0, 1, 2, 3)
+[obj info] Write to register nonpar_nonover.s4 <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x4000000
+Reading 4 bytes from offset 0x4000000
+[obj info] Read from register nonpar_nonover.s4 -> 0x03020100
+Read (0, 1, 2, 3) from 0x4000000
+Writing 3 bytes to offset 0x4000001: (1, 2, 3)
+[obj spec-viol] 3 byte write access at offset 0x4000001 in nonpar_nonover outside registers or misaligned access
+Reading 3 bytes from offset 0x4000001
+[obj spec-viol] 3 byte read access at offset 0x4000001 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x4000002: (2, 3)
+[obj spec-viol] 2 byte write access at offset 0x4000002 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x4000002
+[obj spec-viol] 2 byte read access at offset 0x4000002 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x4000003: (3,)
+[obj spec-viol] 1 byte write access at offset 0x4000003 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x4000003
+[obj spec-viol] 1 byte read access at offset 0x4000003 in nonpar_nonover outside registers or misaligned access
+Writing 5 bytes to offset 0x5000000: (0, 1, 2, 3, 4)
+[obj info] Write to register nonpar_nonover.s5 <- 0x0403020100
+Wrote (0, 1, 2, 3, 4) to 0x5000000
+Reading 5 bytes from offset 0x5000000
+[obj info] Read from register nonpar_nonover.s5 -> 0x0403020100
+Read (0, 1, 2, 3, 4) from 0x5000000
+Writing 4 bytes to offset 0x5000001: (1, 2, 3, 4)
+[obj spec-viol] 4 byte write access at offset 0x5000001 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x5000001
+[obj spec-viol] 4 byte read access at offset 0x5000001 in nonpar_nonover outside registers or misaligned access
+Writing 3 bytes to offset 0x5000002: (2, 3, 4)
+[obj spec-viol] 3 byte write access at offset 0x5000002 in nonpar_nonover outside registers or misaligned access
+Reading 3 bytes from offset 0x5000002
+[obj spec-viol] 3 byte read access at offset 0x5000002 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x5000003: (3, 4)
+[obj spec-viol] 2 byte write access at offset 0x5000003 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x5000003
+[obj spec-viol] 2 byte read access at offset 0x5000003 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x5000004: (4,)
+[obj spec-viol] 1 byte write access at offset 0x5000004 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x5000004
+[obj spec-viol] 1 byte read access at offset 0x5000004 in nonpar_nonover outside registers or misaligned access
+Writing 6 bytes to offset 0x6000000: (0, 1, 2, 3, 4, 5)
+[obj info] Write to register nonpar_nonover.s6 <- 0x050403020100
+Wrote (0, 1, 2, 3, 4, 5) to 0x6000000
+Reading 6 bytes from offset 0x6000000
+[obj info] Read from register nonpar_nonover.s6 -> 0x050403020100
+Read (0, 1, 2, 3, 4, 5) from 0x6000000
+Writing 5 bytes to offset 0x6000001: (1, 2, 3, 4, 5)
+[obj spec-viol] 5 byte write access at offset 0x6000001 in nonpar_nonover outside registers or misaligned access
+Reading 5 bytes from offset 0x6000001
+[obj spec-viol] 5 byte read access at offset 0x6000001 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x6000002: (2, 3, 4, 5)
+[obj spec-viol] 4 byte write access at offset 0x6000002 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x6000002
+[obj spec-viol] 4 byte read access at offset 0x6000002 in nonpar_nonover outside registers or misaligned access
+Writing 3 bytes to offset 0x6000003: (3, 4, 5)
+[obj spec-viol] 3 byte write access at offset 0x6000003 in nonpar_nonover outside registers or misaligned access
+Reading 3 bytes from offset 0x6000003
+[obj spec-viol] 3 byte read access at offset 0x6000003 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x6000004: (4, 5)
+[obj spec-viol] 2 byte write access at offset 0x6000004 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x6000004
+[obj spec-viol] 2 byte read access at offset 0x6000004 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x6000005: (5,)
+[obj spec-viol] 1 byte write access at offset 0x6000005 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x6000005
+[obj spec-viol] 1 byte read access at offset 0x6000005 in nonpar_nonover outside registers or misaligned access
+Writing 7 bytes to offset 0x7000000: (0, 1, 2, 3, 4, 5, 6)
+[obj info] Write to register nonpar_nonover.s7 <- 0x06050403020100
+Wrote (0, 1, 2, 3, 4, 5, 6) to 0x7000000
+Reading 7 bytes from offset 0x7000000
+[obj info] Read from register nonpar_nonover.s7 -> 0x06050403020100
+Read (0, 1, 2, 3, 4, 5, 6) from 0x7000000
+Writing 6 bytes to offset 0x7000001: (1, 2, 3, 4, 5, 6)
+[obj spec-viol] 6 byte write access at offset 0x7000001 in nonpar_nonover outside registers or misaligned access
+Reading 6 bytes from offset 0x7000001
+[obj spec-viol] 6 byte read access at offset 0x7000001 in nonpar_nonover outside registers or misaligned access
+Writing 5 bytes to offset 0x7000002: (2, 3, 4, 5, 6)
+[obj spec-viol] 5 byte write access at offset 0x7000002 in nonpar_nonover outside registers or misaligned access
+Reading 5 bytes from offset 0x7000002
+[obj spec-viol] 5 byte read access at offset 0x7000002 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x7000003: (3, 4, 5, 6)
+[obj spec-viol] 4 byte write access at offset 0x7000003 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x7000003
+[obj spec-viol] 4 byte read access at offset 0x7000003 in nonpar_nonover outside registers or misaligned access
+Writing 3 bytes to offset 0x7000004: (4, 5, 6)
+[obj spec-viol] 3 byte write access at offset 0x7000004 in nonpar_nonover outside registers or misaligned access
+Reading 3 bytes from offset 0x7000004
+[obj spec-viol] 3 byte read access at offset 0x7000004 in nonpar_nonover outside registers or misaligned access
+Writing 2 bytes to offset 0x7000005: (5, 6)
+[obj spec-viol] 2 byte write access at offset 0x7000005 in nonpar_nonover outside registers or misaligned access
+Reading 2 bytes from offset 0x7000005
+[obj spec-viol] 2 byte read access at offset 0x7000005 in nonpar_nonover outside registers or misaligned access
+Writing 1 bytes to offset 0x7000006: (6,)
+[obj spec-viol] 1 byte write access at offset 0x7000006 in nonpar_nonover outside registers or misaligned access
+Reading 1 bytes from offset 0x7000006
+[obj spec-viol] 1 byte read access at offset 0x7000006 in nonpar_nonover outside registers or misaligned access
+Accessing arrays
+Writing 4 bytes to offset 0x100: (0, 1, 2, 3)
+[obj info] Write to register nonpar_nonover.a1[0][0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x100
+Reading 4 bytes from offset 0x100
+[obj info] Read from register nonpar_nonover.a1[0][0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x100
+Writing 8 bytes to offset 0x100: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x100 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x100
+[obj spec-viol] 8 byte read access at offset 0x100 in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x102: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x102 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x102
+[obj spec-viol] 8 byte read access at offset 0x102 in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x110: (16, 17, 18, 19, 20, 21, 22, 23)
+[obj spec-viol] 8 byte write access at offset 0x110 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x110
+[obj spec-viol] 8 byte read access at offset 0x110 in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x112: (18, 19, 20, 21, 22, 23, 24, 25)
+[obj spec-viol] 8 byte write access at offset 0x112 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x112
+[obj spec-viol] 8 byte read access at offset 0x112 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x200: (0, 1, 2, 3)
+[obj info] Write to register nonpar_nonover.a2[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x200
+Reading 4 bytes from offset 0x200
+[obj info] Read from register nonpar_nonover.a2[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x200
+Writing 8 bytes to offset 0x200: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x200 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x200
+[obj spec-viol] 8 byte read access at offset 0x200 in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x202: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x202 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x202
+[obj spec-viol] 8 byte read access at offset 0x202 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x300: (0, 1, 2, 3)
+[obj info] Write to register nonpar_nonover.a3[0] <- 0x03020100
+Wrote (0, 1, 2, 3) to 0x300
+Reading 4 bytes from offset 0x300
+[obj info] Read from register nonpar_nonover.a3[0] -> 0x03020100
+Read (0, 1, 2, 3) from 0x300
+Writing 8 bytes to offset 0x300: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x300 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x300
+[obj spec-viol] 8 byte read access at offset 0x300 in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x302: (2, 3, 4, 5, 6, 7, 8, 9)
+[obj spec-viol] 8 byte write access at offset 0x302 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x302
+[obj spec-viol] 8 byte read access at offset 0x302 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x400: (0, 1, 2, 3)
+[obj spec-viol] 4 byte write access at offset 0x400 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x400
+[obj spec-viol] 4 byte read access at offset 0x400 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x404: (4, 5, 6, 7)
+[obj spec-viol] 4 byte write access at offset 0x404 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x404
+[obj spec-viol] 4 byte read access at offset 0x404 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x408: (8, 9, 10, 11)
+[obj info] Write to register nonpar_nonover.a5[0] <- 0x0b0a0908
+Wrote (8, 9, 10, 11) to 0x408
+Reading 4 bytes from offset 0x408
+[obj info] Read from register nonpar_nonover.a5[0] -> 0x0b0a0908
+Read (8, 9, 10, 11) from 0x408
+Writing 4 bytes to offset 0x418: (24, 25, 26, 27)
+[obj spec-viol] 4 byte write access at offset 0x418 in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x418
+[obj spec-viol] 4 byte read access at offset 0x418 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x41c: (28, 29, 30, 31)
+[obj spec-viol] 4 byte write access at offset 0x41c in nonpar_nonover outside registers or misaligned access
+Reading 4 bytes from offset 0x41c
+[obj spec-viol] 4 byte read access at offset 0x41c in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x500: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj spec-viol] 8 byte write access at offset 0x500 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x500
+[obj spec-viol] 8 byte read access at offset 0x500 in nonpar_nonover outside registers or misaligned access
+Writing 8 bytes to offset 0x501: (1, 2, 3, 4, 5, 6, 7, 8)
+[obj spec-viol] 8 byte write access at offset 0x501 in nonpar_nonover outside registers or misaligned access
+Reading 8 bytes from offset 0x501
+[obj spec-viol] 8 byte read access at offset 0x501 in nonpar_nonover outside registers or misaligned access
+Writing 4 bytes to offset 0x0: (3, 2, 1, 0)
+[obj info] Write to register par_over_be.r1 <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x0
+Reading 4 bytes from offset 0x0
+[obj info] Read from register par_over_be.r1 -> 0x03020100
+Read (3, 2, 1, 0) from 0x0
+Writing 4 bytes to offset 0x4: (7, 6, 5, 4)
+[obj info] Write to register par_over_be.r2 <- 0x07060504
+Wrote (7, 6, 5, 4) to 0x4
+Reading 4 bytes from offset 0x4
+[obj info] Read from register par_over_be.r2 -> 0x07060504
+Read (7, 6, 5, 4) from 0x4
+Writing 4 bytes to offset 0x8: (11, 10, 9, 8)
+[obj info] Write to register par_over_be.r3 <- 0x0b0a0908
+Wrote (11, 10, 9, 8) to 0x8
+Reading 4 bytes from offset 0x8
+[obj info] Read from register par_over_be.r3 -> 0x0b0a0908
+Read (11, 10, 9, 8) from 0x8
+Now read some partial ranges
+Writing 1 bytes to offset 0x0: (3,)
+[obj info] Partial write to register par_over_be.r1[31:24] <- 0x03
+Wrote (3,) to 0x0
+Reading 1 bytes from offset 0x0
+[obj info] Partial read from register par_over_be.r1[31:24] -> 0x03
+Read (3,) from 0x0
+Writing 1 bytes to offset 0x1: (2,)
+[obj info] Partial write to register par_over_be.r1[23:16] <- 0x02
+Wrote (2,) to 0x1
+Reading 1 bytes from offset 0x1
+[obj info] Partial read from register par_over_be.r1[23:16] -> 0x02
+Read (2,) from 0x1
+Writing 1 bytes to offset 0x2: (1,)
+[obj info] Partial write to register par_over_be.r1[15:8] <- 0x01
+Wrote (1,) to 0x2
+Reading 1 bytes from offset 0x2
+[obj info] Partial read from register par_over_be.r1[15:8] -> 0x01
+Read (1,) from 0x2
+Writing 1 bytes to offset 0x3: (0,)
+[obj info] Partial write to register par_over_be.r1[7:0] <- 0x00
+Wrote (0,) to 0x3
+Reading 1 bytes from offset 0x3
+[obj info] Partial read from register par_over_be.r1[7:0] -> 0x00
+Read (0,) from 0x3
+Writing 1 bytes to offset 0x4: (7,)
+[obj info] Partial write to register par_over_be.r2[31:24] <- 0x07
+Wrote (7,) to 0x4
+Reading 1 bytes from offset 0x4
+[obj info] Partial read from register par_over_be.r2[31:24] -> 0x07
+Read (7,) from 0x4
+Writing 1 bytes to offset 0x5: (6,)
+[obj info] Partial write to register par_over_be.r2[23:16] <- 0x06
+Wrote (6,) to 0x5
+Reading 1 bytes from offset 0x5
+[obj info] Partial read from register par_over_be.r2[23:16] -> 0x06
+Read (6,) from 0x5
+Writing 1 bytes to offset 0x6: (5,)
+[obj info] Partial write to register par_over_be.r2[15:8] <- 0x05
+Wrote (5,) to 0x6
+Reading 1 bytes from offset 0x6
+[obj info] Partial read from register par_over_be.r2[15:8] -> 0x05
+Read (5,) from 0x6
+Writing 1 bytes to offset 0x7: (4,)
+[obj info] Partial write to register par_over_be.r2[7:0] <- 0x04
+Wrote (4,) to 0x7
+Reading 1 bytes from offset 0x7
+[obj info] Partial read from register par_over_be.r2[7:0] -> 0x04
+Read (4,) from 0x7
+Writing 2 bytes to offset 0x0: (3, 2)
+[obj info] Partial write to register par_over_be.r1[31:16] <- 0x0302
+Wrote (3, 2) to 0x0
+Reading 2 bytes from offset 0x0
+[obj info] Partial read from register par_over_be.r1[31:16] -> 0x0302
+Read (3, 2) from 0x0
+Writing 2 bytes to offset 0x1: (2, 1)
+[obj info] Partial write to register par_over_be.r1[23:8] <- 0x0201
+Wrote (2, 1) to 0x1
+Reading 2 bytes from offset 0x1
+[obj info] Partial read from register par_over_be.r1[23:8] -> 0x0201
+Read (2, 1) from 0x1
+Writing 2 bytes to offset 0x2: (1, 0)
+[obj info] Partial write to register par_over_be.r1[15:0] <- 0x0100
+Wrote (1, 0) to 0x2
+Reading 2 bytes from offset 0x2
+[obj info] Partial read from register par_over_be.r1[15:0] -> 0x0100
+Read (1, 0) from 0x2
+Writing 2 bytes to offset 0x4: (7, 6)
+[obj info] Partial write to register par_over_be.r2[31:16] <- 0x0706
+Wrote (7, 6) to 0x4
+Reading 2 bytes from offset 0x4
+[obj info] Partial read from register par_over_be.r2[31:16] -> 0x0706
+Read (7, 6) from 0x4
+Writing 2 bytes to offset 0x5: (6, 5)
+[obj info] Partial write to register par_over_be.r2[23:8] <- 0x0605
+Wrote (6, 5) to 0x5
+Reading 2 bytes from offset 0x5
+[obj info] Partial read from register par_over_be.r2[23:8] -> 0x0605
+Read (6, 5) from 0x5
+Writing 2 bytes to offset 0x6: (5, 4)
+[obj info] Partial write to register par_over_be.r2[15:0] <- 0x0504
+Wrote (5, 4) to 0x6
+Reading 2 bytes from offset 0x6
+[obj info] Partial read from register par_over_be.r2[15:0] -> 0x0504
+Read (5, 4) from 0x6
+Now read/access some overlapping ranges
+Writing 8 bytes to offset 0x0: (3, 2, 1, 0, 7, 6, 5, 4)
+[obj info] Write to register par_over_be.r1 <- 0x0000000003020100
+[obj info] Write to register par_over_be.r2 <- 0x0000000007060504
+Wrote (3, 2, 1, 0, 7, 6, 5, 4) to 0x0
+Reading 8 bytes from offset 0x0
+[obj info] Read from register par_over_be.r1 -> 0x0000000003020100
+[obj info] Read from register par_over_be.r2 -> 0x0000000007060504
+Read (3, 2, 1, 0, 7, 6, 5, 4) from 0x0
+Writing 8 bytes to offset 0x4: (7, 6, 5, 4, 11, 10, 9, 8)
+[obj info] Write to register par_over_be.r2 <- 0x0000000007060504
+[obj info] Write to register par_over_be.r3 <- 0x000000000b0a0908
+Wrote (7, 6, 5, 4, 11, 10, 9, 8) to 0x4
+Reading 8 bytes from offset 0x4
+[obj info] Read from register par_over_be.r2 -> 0x0000000007060504
+[obj info] Read from register par_over_be.r3 -> 0x000000000b0a0908
+Read (7, 6, 5, 4, 11, 10, 9, 8) from 0x4
+Now read/access some partial and overlapping ranges
+Writing 4 bytes to offset 0x2: (1, 0, 7, 6)
+[obj info] Partial write to register par_over_be.r1[15:0] <- 0x0100
+[obj info] Partial write to register par_over_be.r2[31:16] <- 0x0706
+Wrote (1, 0, 7, 6) to 0x2
+Reading 4 bytes from offset 0x2
+[obj info] Partial read from register par_over_be.r1[15:0] -> 0x0100
+[obj info] Partial read from register par_over_be.r2[31:16] -> 0x0706
+Read (1, 0, 7, 6) from 0x2
+Writing 4 bytes to offset 0x6: (5, 4, 11, 10)
+[obj info] Partial write to register par_over_be.r2[15:0] <- 0x0504
+[obj info] Partial write to register par_over_be.r3[31:16] <- 0x0b0a
+Wrote (5, 4, 11, 10) to 0x6
+Reading 4 bytes from offset 0x6
+[obj info] Partial read from register par_over_be.r2[15:0] -> 0x0504
+[obj info] Partial read from register par_over_be.r3[31:16] -> 0x0b0a
+Read (5, 4, 11, 10) from 0x6
+Reading registers of various sizes
+Writing 1 bytes to offset 0x1000000: (0,)
+[obj info] Write to register par_over_be.s1 <- 0x00
+Wrote (0,) to 0x1000000
+Reading 1 bytes from offset 0x1000000
+[obj info] Read from register par_over_be.s1 -> 0x00
+Read (0,) from 0x1000000
+Writing 2 bytes to offset 0x2000000: (1, 0)
+[obj info] Write to register par_over_be.s2 <- 0x0100
+Wrote (1, 0) to 0x2000000
+Reading 2 bytes from offset 0x2000000
+[obj info] Read from register par_over_be.s2 -> 0x0100
+Read (1, 0) from 0x2000000
+Writing 1 bytes to offset 0x2000001: (0,)
+[obj info] Partial write to register par_over_be.s2[7:0] <- 0x00
+Wrote (0,) to 0x2000001
+Reading 1 bytes from offset 0x2000001
+[obj info] Partial read from register par_over_be.s2[7:0] -> 0x00
+Read (0,) from 0x2000001
+Writing 3 bytes to offset 0x3000000: (2, 1, 0)
+[obj info] Write to register par_over_be.s3 <- 0x020100
+Wrote (2, 1, 0) to 0x3000000
+Reading 3 bytes from offset 0x3000000
+[obj info] Read from register par_over_be.s3 -> 0x020100
+Read (2, 1, 0) from 0x3000000
+Writing 2 bytes to offset 0x3000001: (1, 0)
+[obj info] Partial write to register par_over_be.s3[15:0] <- 0x0100
+Wrote (1, 0) to 0x3000001
+Reading 2 bytes from offset 0x3000001
+[obj info] Partial read from register par_over_be.s3[15:0] -> 0x0100
+Read (1, 0) from 0x3000001
+Writing 1 bytes to offset 0x3000002: (0,)
+[obj info] Partial write to register par_over_be.s3[7:0] <- 0x00
+Wrote (0,) to 0x3000002
+Reading 1 bytes from offset 0x3000002
+[obj info] Partial read from register par_over_be.s3[7:0] -> 0x00
+Read (0,) from 0x3000002
+Writing 4 bytes to offset 0x4000000: (3, 2, 1, 0)
+[obj info] Write to register par_over_be.s4 <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x4000000
+Reading 4 bytes from offset 0x4000000
+[obj info] Read from register par_over_be.s4 -> 0x03020100
+Read (3, 2, 1, 0) from 0x4000000
+Writing 3 bytes to offset 0x4000001: (2, 1, 0)
+[obj info] Partial write to register par_over_be.s4[23:0] <- 0x020100
+Wrote (2, 1, 0) to 0x4000001
+Reading 3 bytes from offset 0x4000001
+[obj info] Partial read from register par_over_be.s4[23:0] -> 0x020100
+Read (2, 1, 0) from 0x4000001
+Writing 2 bytes to offset 0x4000002: (1, 0)
+[obj info] Partial write to register par_over_be.s4[15:0] <- 0x0100
+Wrote (1, 0) to 0x4000002
+Reading 2 bytes from offset 0x4000002
+[obj info] Partial read from register par_over_be.s4[15:0] -> 0x0100
+Read (1, 0) from 0x4000002
+Writing 1 bytes to offset 0x4000003: (0,)
+[obj info] Partial write to register par_over_be.s4[7:0] <- 0x00
+Wrote (0,) to 0x4000003
+Reading 1 bytes from offset 0x4000003
+[obj info] Partial read from register par_over_be.s4[7:0] -> 0x00
+Read (0,) from 0x4000003
+Writing 5 bytes to offset 0x5000000: (4, 3, 2, 1, 0)
+[obj info] Write to register par_over_be.s5 <- 0x0403020100
+Wrote (4, 3, 2, 1, 0) to 0x5000000
+Reading 5 bytes from offset 0x5000000
+[obj info] Read from register par_over_be.s5 -> 0x0403020100
+Read (4, 3, 2, 1, 0) from 0x5000000
+Writing 4 bytes to offset 0x5000001: (3, 2, 1, 0)
+[obj info] Partial write to register par_over_be.s5[31:0] <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x5000001
+Reading 4 bytes from offset 0x5000001
+[obj info] Partial read from register par_over_be.s5[31:0] -> 0x03020100
+Read (3, 2, 1, 0) from 0x5000001
+Writing 3 bytes to offset 0x5000002: (2, 1, 0)
+[obj info] Partial write to register par_over_be.s5[23:0] <- 0x020100
+Wrote (2, 1, 0) to 0x5000002
+Reading 3 bytes from offset 0x5000002
+[obj info] Partial read from register par_over_be.s5[23:0] -> 0x020100
+Read (2, 1, 0) from 0x5000002
+Writing 2 bytes to offset 0x5000003: (1, 0)
+[obj info] Partial write to register par_over_be.s5[15:0] <- 0x0100
+Wrote (1, 0) to 0x5000003
+Reading 2 bytes from offset 0x5000003
+[obj info] Partial read from register par_over_be.s5[15:0] -> 0x0100
+Read (1, 0) from 0x5000003
+Writing 1 bytes to offset 0x5000004: (0,)
+[obj info] Partial write to register par_over_be.s5[7:0] <- 0x00
+Wrote (0,) to 0x5000004
+Reading 1 bytes from offset 0x5000004
+[obj info] Partial read from register par_over_be.s5[7:0] -> 0x00
+Read (0,) from 0x5000004
+Writing 6 bytes to offset 0x6000000: (5, 4, 3, 2, 1, 0)
+[obj info] Write to register par_over_be.s6 <- 0x050403020100
+Wrote (5, 4, 3, 2, 1, 0) to 0x6000000
+Reading 6 bytes from offset 0x6000000
+[obj info] Read from register par_over_be.s6 -> 0x050403020100
+Read (5, 4, 3, 2, 1, 0) from 0x6000000
+Writing 5 bytes to offset 0x6000001: (4, 3, 2, 1, 0)
+[obj info] Partial write to register par_over_be.s6[39:0] <- 0x0403020100
+Wrote (4, 3, 2, 1, 0) to 0x6000001
+Reading 5 bytes from offset 0x6000001
+[obj info] Partial read from register par_over_be.s6[39:0] -> 0x0403020100
+Read (4, 3, 2, 1, 0) from 0x6000001
+Writing 4 bytes to offset 0x6000002: (3, 2, 1, 0)
+[obj info] Partial write to register par_over_be.s6[31:0] <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x6000002
+Reading 4 bytes from offset 0x6000002
+[obj info] Partial read from register par_over_be.s6[31:0] -> 0x03020100
+Read (3, 2, 1, 0) from 0x6000002
+Writing 3 bytes to offset 0x6000003: (2, 1, 0)
+[obj info] Partial write to register par_over_be.s6[23:0] <- 0x020100
+Wrote (2, 1, 0) to 0x6000003
+Reading 3 bytes from offset 0x6000003
+[obj info] Partial read from register par_over_be.s6[23:0] -> 0x020100
+Read (2, 1, 0) from 0x6000003
+Writing 2 bytes to offset 0x6000004: (1, 0)
+[obj info] Partial write to register par_over_be.s6[15:0] <- 0x0100
+Wrote (1, 0) to 0x6000004
+Reading 2 bytes from offset 0x6000004
+[obj info] Partial read from register par_over_be.s6[15:0] -> 0x0100
+Read (1, 0) from 0x6000004
+Writing 1 bytes to offset 0x6000005: (0,)
+[obj info] Partial write to register par_over_be.s6[7:0] <- 0x00
+Wrote (0,) to 0x6000005
+Reading 1 bytes from offset 0x6000005
+[obj info] Partial read from register par_over_be.s6[7:0] -> 0x00
+Read (0,) from 0x6000005
+Writing 7 bytes to offset 0x7000000: (6, 5, 4, 3, 2, 1, 0)
+[obj info] Write to register par_over_be.s7 <- 0x06050403020100
+Wrote (6, 5, 4, 3, 2, 1, 0) to 0x7000000
+Reading 7 bytes from offset 0x7000000
+[obj info] Read from register par_over_be.s7 -> 0x06050403020100
+Read (6, 5, 4, 3, 2, 1, 0) from 0x7000000
+Writing 6 bytes to offset 0x7000001: (5, 4, 3, 2, 1, 0)
+[obj info] Partial write to register par_over_be.s7[47:0] <- 0x050403020100
+Wrote (5, 4, 3, 2, 1, 0) to 0x7000001
+Reading 6 bytes from offset 0x7000001
+[obj info] Partial read from register par_over_be.s7[47:0] -> 0x050403020100
+Read (5, 4, 3, 2, 1, 0) from 0x7000001
+Writing 5 bytes to offset 0x7000002: (4, 3, 2, 1, 0)
+[obj info] Partial write to register par_over_be.s7[39:0] <- 0x0403020100
+Wrote (4, 3, 2, 1, 0) to 0x7000002
+Reading 5 bytes from offset 0x7000002
+[obj info] Partial read from register par_over_be.s7[39:0] -> 0x0403020100
+Read (4, 3, 2, 1, 0) from 0x7000002
+Writing 4 bytes to offset 0x7000003: (3, 2, 1, 0)
+[obj info] Partial write to register par_over_be.s7[31:0] <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x7000003
+Reading 4 bytes from offset 0x7000003
+[obj info] Partial read from register par_over_be.s7[31:0] -> 0x03020100
+Read (3, 2, 1, 0) from 0x7000003
+Writing 3 bytes to offset 0x7000004: (2, 1, 0)
+[obj info] Partial write to register par_over_be.s7[23:0] <- 0x020100
+Wrote (2, 1, 0) to 0x7000004
+Reading 3 bytes from offset 0x7000004
+[obj info] Partial read from register par_over_be.s7[23:0] -> 0x020100
+Read (2, 1, 0) from 0x7000004
+Writing 2 bytes to offset 0x7000005: (1, 0)
+[obj info] Partial write to register par_over_be.s7[15:0] <- 0x0100
+Wrote (1, 0) to 0x7000005
+Reading 2 bytes from offset 0x7000005
+[obj info] Partial read from register par_over_be.s7[15:0] -> 0x0100
+Read (1, 0) from 0x7000005
+Writing 1 bytes to offset 0x7000006: (0,)
+[obj info] Partial write to register par_over_be.s7[7:0] <- 0x00
+Wrote (0,) to 0x7000006
+Reading 1 bytes from offset 0x7000006
+[obj info] Partial read from register par_over_be.s7[7:0] -> 0x00
+Read (0,) from 0x7000006
+Accessing arrays
+Writing 4 bytes to offset 0x100: (3, 2, 1, 0)
+[obj info] Write to register par_over_be.a1[0][0] <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x100
+Reading 4 bytes from offset 0x100
+[obj info] Read from register par_over_be.a1[0][0] -> 0x03020100
+Read (3, 2, 1, 0) from 0x100
+Writing 8 bytes to offset 0x100: (3, 2, 1, 0, 7, 6, 5, 4)
+[obj info] Write to register par_over_be.a1[0][0] <- 0x0000000003020100
+[obj info] Write to register par_over_be.a1[0][1] <- 0x0000000007060504
+Wrote (3, 2, 1, 0, 7, 6, 5, 4) to 0x100
+Reading 8 bytes from offset 0x100
+[obj info] Read from register par_over_be.a1[0][0] -> 0x0000000003020100
+[obj info] Read from register par_over_be.a1[0][1] -> 0x0000000007060504
+Read (3, 2, 1, 0, 7, 6, 5, 4) from 0x100
+Writing 8 bytes to offset 0x102: (1, 0, 7, 6, 5, 4, 11, 10)
+[obj info] Partial write to register par_over_be.a1[0][0][15:0] <- 0x0100
+[obj info] Write to register par_over_be.a1[0][1] <- 0x0000000007060504
+[obj info] Partial write to register par_over_be.a1[0][2][31:16] <- 0x0b0a
+Wrote (1, 0, 7, 6, 5, 4, 11, 10) to 0x102
+Reading 8 bytes from offset 0x102
+[obj info] Partial read from register par_over_be.a1[0][0][15:0] -> 0x0100
+[obj info] Read from register par_over_be.a1[0][1] -> 0x0000000007060504
+[obj info] Partial read from register par_over_be.a1[0][2][31:16] -> 0x0b0a
+Read (1, 0, 7, 6, 5, 4, 11, 10) from 0x102
+Writing 8 bytes to offset 0x110: (19, 18, 17, 16, 23, 22, 21, 20)
+[obj info] Write to register par_over_be.a1[1][0] <- 0x0000000013121110
+[obj info] Write to register par_over_be.a1[1][1] <- 0x0000000017161514
+Wrote (19, 18, 17, 16, 23, 22, 21, 20) to 0x110
+Reading 8 bytes from offset 0x110
+[obj info] Read from register par_over_be.a1[1][0] -> 0x0000000013121110
+[obj info] Read from register par_over_be.a1[1][1] -> 0x0000000017161514
+Read (19, 18, 17, 16, 23, 22, 21, 20) from 0x110
+Writing 8 bytes to offset 0x112: (17, 16, 23, 22, 21, 20, 27, 26)
+[obj info] Partial write to register par_over_be.a1[1][0][15:0] <- 0x1110
+[obj info] Write to register par_over_be.a1[1][1] <- 0x0000000017161514
+[obj info] Partial write to register par_over_be.a1[1][2][31:16] <- 0x1b1a
+Wrote (17, 16, 23, 22, 21, 20, 27, 26) to 0x112
+Reading 8 bytes from offset 0x112
+[obj info] Partial read from register par_over_be.a1[1][0][15:0] -> 0x1110
+[obj info] Read from register par_over_be.a1[1][1] -> 0x0000000017161514
+[obj info] Partial read from register par_over_be.a1[1][2][31:16] -> 0x1b1a
+Read (17, 16, 23, 22, 21, 20, 27, 26) from 0x112
+Writing 4 bytes to offset 0x200: (3, 2, 1, 0)
+[obj info] Write to register par_over_be.a2[0] <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x200
+Reading 4 bytes from offset 0x200
+[obj info] Read from register par_over_be.a2[0] -> 0x03020100
+Read (3, 2, 1, 0) from 0x200
+Writing 8 bytes to offset 0x200: (3, 2, 1, 0, 7, 6, 5, 4)
+[obj spec-viol] 4 byte write access at offset 0x200 in par_over_be outside registers or misaligned access
+Reading 8 bytes from offset 0x200
+[obj spec-viol] 4 byte read access at offset 0x200 in par_over_be outside registers or misaligned access
+Writing 8 bytes to offset 0x202: (1, 0, 7, 6, 5, 4, 11, 10)
+[obj spec-viol] 6 byte write access at offset 0x202 in par_over_be outside registers or misaligned access
+Reading 8 bytes from offset 0x202
+[obj spec-viol] 6 byte read access at offset 0x202 in par_over_be outside registers or misaligned access
+Writing 4 bytes to offset 0x300: (3, 2, 1, 0)
+[obj info] Write to register par_over_be.a3[0] <- 0x03020100
+Wrote (3, 2, 1, 0) to 0x300
+Reading 4 bytes from offset 0x300
+[obj info] Read from register par_over_be.a3[0] -> 0x03020100
+Read (3, 2, 1, 0) from 0x300
+Writing 8 bytes to offset 0x300: (3, 2, 1, 0, 7, 6, 5, 4)
+[obj info] Write to register par_over_be.a3[0] <- 0x0000000003020100
+[obj info] Write to register par_over_be.a4[0] <- 0x0000000007060504
+Wrote (3, 2, 1, 0, 7, 6, 5, 4) to 0x300
+Reading 8 bytes from offset 0x300
+[obj info] Read from register par_over_be.a3[0] -> 0x0000000003020100
+[obj info] Read from register par_over_be.a4[0] -> 0x0000000007060504
+Read (3, 2, 1, 0, 7, 6, 5, 4) from 0x300
+Writing 8 bytes to offset 0x302: (1, 0, 7, 6, 5, 4, 11, 10)
+[obj info] Partial write to register par_over_be.a3[0][15:0] <- 0x0100
+[obj info] Write to register par_over_be.a4[0] <- 0x0000000007060504
+[obj info] Partial write to register par_over_be.a3[1][31:16] <- 0x0b0a
+Wrote (1, 0, 7, 6, 5, 4, 11, 10) to 0x302
+Reading 8 bytes from offset 0x302
+[obj info] Partial read from register par_over_be.a3[0][15:0] -> 0x0100
+[obj info] Read from register par_over_be.a4[0] -> 0x0000000007060504
+[obj info] Partial read from register par_over_be.a3[1][31:16] -> 0x0b0a
+Read (1, 0, 7, 6, 5, 4, 11, 10) from 0x302
+Writing 4 bytes to offset 0x400: (3, 2, 1, 0)
+[obj spec-viol] 4 byte write access at offset 0x400 in par_over_be outside registers or misaligned access
+Reading 4 bytes from offset 0x400
+[obj spec-viol] 4 byte read access at offset 0x400 in par_over_be outside registers or misaligned access
+Writing 4 bytes to offset 0x404: (7, 6, 5, 4)
+[obj spec-viol] 4 byte write access at offset 0x404 in par_over_be outside registers or misaligned access
+Reading 4 bytes from offset 0x404
+[obj spec-viol] 4 byte read access at offset 0x404 in par_over_be outside registers or misaligned access
+Writing 4 bytes to offset 0x408: (11, 10, 9, 8)
+[obj info] Write to register par_over_be.a5[0] <- 0x0b0a0908
+Wrote (11, 10, 9, 8) to 0x408
+Reading 4 bytes from offset 0x408
+[obj info] Read from register par_over_be.a5[0] -> 0x0b0a0908
+Read (11, 10, 9, 8) from 0x408
+Writing 4 bytes to offset 0x418: (27, 26, 25, 24)
+[obj spec-viol] 4 byte write access at offset 0x418 in par_over_be outside registers or misaligned access
+Reading 4 bytes from offset 0x418
+[obj spec-viol] 4 byte read access at offset 0x418 in par_over_be outside registers or misaligned access
+Writing 4 bytes to offset 0x41c: (31, 30, 29, 28)
+[obj spec-viol] 4 byte write access at offset 0x41c in par_over_be outside registers or misaligned access
+Reading 4 bytes from offset 0x41c
+[obj spec-viol] 4 byte read access at offset 0x41c in par_over_be outside registers or misaligned access
+Writing 8 bytes to offset 0x500: (0, 1, 2, 3, 4, 5, 6, 7)
+[obj info] Write to register par_over_be.a6[2] <- 0x0000000000000000
+[obj info] Write to register par_over_be.a7[0] <- 0x0000000000000001
+[obj info] Write to register par_over_be.x1 <- 0x0000000000000002
+[obj info] Write to register par_over_be.a7[1] <- 0x0000000000000003
+[obj info] Write to register par_over_be.a6[1] <- 0x0000000000000004
+[obj info] Write to register par_over_be.a7[2] <- 0x0000000000000005
+[obj info] Write to register par_over_be.x2 <- 0x0000000000000006
+[obj info] Write to register par_over_be.a7[3] <- 0x0000000000000007
+Wrote (0, 1, 2, 3, 4, 5, 6, 7) to 0x500
+Reading 8 bytes from offset 0x500
+[obj info] Read from register par_over_be.a6[2] -> 0x0000000000000000
+[obj info] Read from register par_over_be.a7[0] -> 0x0000000000000001
+[obj info] Read from register par_over_be.x1 -> 0x0000000000000002
+[obj info] Read from register par_over_be.a7[1] -> 0x0000000000000003
+[obj info] Read from register par_over_be.a6[1] -> 0x0000000000000004
+[obj info] Read from register par_over_be.a7[2] -> 0x0000000000000005
+[obj info] Read from register par_over_be.x2 -> 0x0000000000000006
+[obj info] Read from register par_over_be.a7[3] -> 0x0000000000000007
+Read (0, 1, 2, 3, 4, 5, 6, 7) from 0x500
+Writing 8 bytes to offset 0x501: (1, 2, 3, 4, 5, 6, 7, 8)
+[obj info] Write to register par_over_be.a7[0] <- 0x0000000000000001
+[obj info] Write to register par_over_be.x1 <- 0x0000000000000002
+[obj info] Write to register par_over_be.a7[1] <- 0x0000000000000003
+[obj info] Write to register par_over_be.a6[1] <- 0x0000000000000004
+[obj info] Write to register par_over_be.a7[2] <- 0x0000000000000005
+[obj info] Write to register par_over_be.x2 <- 0x0000000000000006
+[obj info] Write to register par_over_be.a7[3] <- 0x0000000000000007
+[obj info] Write to register par_over_be.a6[0] <- 0x0000000000000008
+Wrote (1, 2, 3, 4, 5, 6, 7, 8) to 0x501
+Reading 8 bytes from offset 0x501
+[obj info] Read from register par_over_be.a7[0] -> 0x0000000000000001
+[obj info] Read from register par_over_be.x1 -> 0x0000000000000002
+[obj info] Read from register par_over_be.a7[1] -> 0x0000000000000003
+[obj info] Read from register par_over_be.a6[1] -> 0x0000000000000004
+[obj info] Read from register par_over_be.a7[2] -> 0x0000000000000005
+[obj info] Read from register par_over_be.x2 -> 0x0000000000000006
+[obj info] Read from register par_over_be.a7[3] -> 0x0000000000000007
+[obj info] Read from register par_over_be.a6[0] -> 0x0000000000000008
+Read (1, 2, 3, 4, 5, 6, 7, 8) from 0x501

@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_porting_fail.dml:21:5: error EPOVERRIDE: Need to insert 'is inferior_x' so it applies to register r. Please check if inferior_x should be applied directly to r or on a parent object, and do that manually
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting_fail\tags:4: found here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_porting_fail.dml:23:5: error EPOVERRIDE: Need to insert 'is inferior_x' so it applies to register r. Please check if inferior_x should be applied directly to r or on a parent object, and do that manually
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting_fail\tags:5: found here
+*** Failed to apply 2 out of 8 porting tags; partial result saved to C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\porting_fail\T_porting_fail.dml. Consider applying the failed tags manually.

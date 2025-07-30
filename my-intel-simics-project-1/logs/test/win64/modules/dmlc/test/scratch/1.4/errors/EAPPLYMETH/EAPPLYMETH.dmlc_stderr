@@ -1,0 +1,11 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:16:9: error EAPPLYMETH: call to method '_t.templates.t.multi_out' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:16:9:   perform this method call either as a standalone statement or as an initializer (e.g., as the RHS of an assignment)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:21:9: error EAPPLYMETH: call to method '_t.templates.t.throwing' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:21:9:   perform this method call either as a standalone statement or as an initializer (e.g., as the RHS of an assignment)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:29:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:32:6: error EAPPLYMETH: call to method 'cast(x, t).multi_out' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:32:6:   perform this method call either as a standalone statement or as an initializer (e.g., as the RHS of an assignment)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:34:6: error EAPPLYMETH: call to method 'cast(x, t).throwing' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:34:6:   perform this method call either as a standalone statement or as an initializer (e.g., as the RHS of an assignment)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:36:29: error EAPPLYMETH: call to method 'cast(test.u, t).throwing' in unsupported context
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAPPLYMETH.dml:36:29:   perform this method call either as a standalone statement or as an initializer (e.g., as the RHS of an assignment)

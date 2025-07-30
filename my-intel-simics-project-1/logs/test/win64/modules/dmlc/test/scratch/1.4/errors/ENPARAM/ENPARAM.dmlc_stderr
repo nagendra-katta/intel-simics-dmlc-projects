@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENPARAM.dml:25:1: In con
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1487:5: error ENPARAM: no assignment to parameter 'classname'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENPARAM.dml:9:1: In g1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENPARAM.dml:11:5: error ENPARAM: no assignment to parameter 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENPARAM.dml:20:1: In g2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENPARAM.dml:16:5: error ENPARAM: no assignment to parameter 'p'

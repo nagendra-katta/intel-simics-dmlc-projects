@@ -1,0 +1,24 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:31:22: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:31:22:   missing initializer(s) for member(s) 'y'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:31:22:   (partial initialization must be explicit through trailing '...', e.g. '{.a = a, ...}')
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:36:10: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:36:10:   missing initializer(s) for member(s) 'j'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:36:10:   (partial initialization must be explicit through trailing '...', e.g. '{.a = a, ...}')
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:40:22: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:40:22:   duplicate initializer for member 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:43:22: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:43:22:   'bad' is not a member of struct_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:48:10: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:48:10:   'bad' is not a member of struct _anon_struct_0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:56:25: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:56:25:   missing initializer(s) for member(s) 'y'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:56:25:   (partial initialization must be explicit through trailing '...', e.g. '{.a = a, ...}')
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:59:25: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:59:25:   duplicate initializer for member 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:62:25: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:62:25:   'bad' is not a member of bitfields_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:67:10: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:67:10:   missing initializer(s) for member(s) 'j'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:67:10:   (partial initialization must be explicit through trailing '...', e.g. '{.a = a, ...}')
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:73:10: error EDATAINIT: invalid data initializer: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EDATAINIT.dml:73:10:   'bad' is not a member of bitfields (backing type: uint32)

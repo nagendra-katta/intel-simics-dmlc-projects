@@ -1,0 +1,1 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESYNTAX_12.dml:10:16: error ESYNTAX: syntax error at '"foobar"': not one of "big-endian" or "little-endian"

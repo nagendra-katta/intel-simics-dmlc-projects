@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBITRO_2.dml:12:9: error EBITRO: bit range of field 'b.r.f1' overlaps with field 'b.r.f2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBITRO_2.dml:14:9: field b.r.f2 defined here

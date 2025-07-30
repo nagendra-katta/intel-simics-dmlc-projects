@@ -1,0 +1,9 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:11:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:13:9: error ENBOOL: non-boolean condition: '4' of type 'uint8'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:17:9: error ENBOOL: non-boolean condition: '1.1' of type 'double'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:22:10: error ENBOOL: non-boolean condition: 'x[2:1]' of type 'uint2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:28:10: error ENBOOL: non-boolean condition: 'x[x:x]' of type 'uint64'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:33:9: error ENBOOL: non-boolean condition: 't' of type 't_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:37:11: error ENBOOL: non-boolean condition: 'tt' of type 't_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:41:9: error ENBOOL: non-boolean condition: '*p' of type 'void'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENBOOL.dml:45:30: error ENBOOL: non-boolean condition: '2' of type 'uint8'

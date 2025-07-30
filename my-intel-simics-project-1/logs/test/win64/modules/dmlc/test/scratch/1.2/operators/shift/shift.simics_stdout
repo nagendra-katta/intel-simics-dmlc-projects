@@ -1,0 +1,18 @@
+WARNING: module 'dml-test-shift' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] 0 << 8
+[obj info] 0 >> 8
+[obj info] 1 << 8
+[obj info] 1 >> 8
+[obj info] 256 >> 8
+[obj info] 1 << 32
+[obj info] 1 >> 32
+[obj info] 1 << 64
+[obj info] 0x100000000 >> 32
+[obj info] value <<= 8
+[obj info] value = value << 8
+[obj info] value >>= 8
+[obj info] value = value >> 8
+[obj info] svalue = svalue >> 8
+[obj info] svalue = (svalue >> 4) >> 4
+[obj info] svalue = (svalue << 4) >> 4
+[obj info] svalue = (svalue << 8) >> 8

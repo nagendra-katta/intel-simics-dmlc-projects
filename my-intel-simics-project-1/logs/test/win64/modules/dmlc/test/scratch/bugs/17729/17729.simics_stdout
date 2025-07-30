@@ -1,0 +1,6 @@
+WARNING: module 'dml-test-17729' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] foo 0 0: 0
+[obj info] foo 0 1: 5
+[obj info] foo 1 0: 2
+[obj info] foo 1 1: 7
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_17729.py

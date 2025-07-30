@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\testing.dml:23:9: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\operators\T_apply_2.dml:11:5: error EPTYPE: wrong type for parameter 1 in function call
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\operators\T_apply_2.dml:11:5:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\operators\T_apply_2.dml:11:5:   expected: int32

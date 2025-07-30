@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-array_qname' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] qn1 = b.ra[1]
+[obj info] qn2 = b.ra[1]
+[obj info] qn3 = b.ra[1]
+[obj info] qn4 = b.ra[1]

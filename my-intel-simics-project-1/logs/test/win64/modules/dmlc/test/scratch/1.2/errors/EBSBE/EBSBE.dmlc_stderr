@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSBE.dml:13:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSBE.dml:15:7: error EBSBE: bitslice with big-endian bit order and uncertain bit width
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSBE.dml:22:10: error EBSBE: bitslice with big-endian bit order and uncertain bit width
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSBE.dml:24:9: error EBSBE: bitslice with big-endian bit order and uncertain bit width
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSBE.dml:26:10: error EBSBE: bitslice with big-endian bit order and uncertain bit width

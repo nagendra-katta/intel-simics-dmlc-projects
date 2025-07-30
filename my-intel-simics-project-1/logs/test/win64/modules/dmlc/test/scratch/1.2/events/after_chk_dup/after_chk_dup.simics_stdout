@@ -1,0 +1,21 @@
+WARNING: module 'dml-test-after_chk_dup' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\events\T_after_chk_dup.py
+[obj info] running alttest
+WARNING: module 'dml-test-after_chk_dup' is not thread safe. Turning Multimachine Accelerator off.
+┌──────┬──────┬───────────┐
+│Cycle │Object│Description│
+├──────┼──────┼───────────┤
+│100000│obj   │a.m        │
+│200000│obj   │b.m        │
+│300000│obj   │c[$i].m    │
+│400000│obj   │c[$i].m    │
+│500000│obj   │d[$i].m    │
+│600000│obj   │d[$i].m    │
+└──────┴──────┴───────────┘
+Running 2 s
+[obj.bank.a info] running a.m
+[obj.bank.b info] running b.m
+[obj.bank.c[0] info] running c[0].m
+[obj.bank.c[1] info] running c[1].m
+[obj.bank.d[0] info] running d[0].m
+[obj.bank.d[1] info] running d[1].m

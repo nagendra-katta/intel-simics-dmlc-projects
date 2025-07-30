@@ -1,0 +1,16 @@
+WARNING: module 'dml-test-partial_access_log' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\lib\T_partial_access_log.py
+[obj.bank.le info] Read from register le.r -> 0x04030201
+[obj.bank.le info] Partial read from register le.r[15:8] -> 0x02
+[obj.bank.le info] Partial read from register le.r[31:8] -> 0x040302
+[obj.bank.le info] Write to register le.r <- 0x01234567
+[obj.bank.le info] Partial write to register le.r[15:8] <- 0x03
+[obj.bank.le info] Partial write to register le.r[31:8] <- 0x012345
+[obj.bank.le info] Partially setting register le.r[31:8] <- 0x012345
+[obj.bank.be info] Read from register be.r -> 0x04030201
+[obj.bank.be info] Partial read from register be.r[15:8] -> 0x02
+[obj.bank.be info] Partial read from register be.r[31:8] -> 0x040302
+[obj.bank.be info] Write to register be.r <- 0x01234567
+[obj.bank.be info] Partial write to register be.r[15:8] <- 0x03
+[obj.bank.be info] Partial write to register be.r[31:8] <- 0x012345
+[obj.bank.be info] Partially setting register be.r[31:8] <- 0x012345

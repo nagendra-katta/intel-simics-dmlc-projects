@@ -1,0 +1,31 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:23:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:75:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:83:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:85:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:88:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:73:1: error ENAMECOLL: name collision on 'tr0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:75:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:78:1: error ENAMECOLL: name collision on 't1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:80:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:83:1: error ENAMECOLL: name collision on 'tr1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:85:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:88:1: error ENAMECOLL: name collision on 'tr2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:90:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:51:8: error EEXTERNINCOMP: incompatible extern declarations for 't4': type mismatch
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:51:8: this declaration specifies the type: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:48:8: conflicting declaration, which specifies the type: int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:6:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:11:1: error ENAMECOLL: name collision on 'bar'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:9:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:19:1: In method_clash_1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:17:5: error ENAMECOLL: name collision on 'bar'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:15:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:31:1: In method_clash_2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:29:5: error ENAMECOLL: name collision on 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:26:9: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:57:1: In p0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:61:5: error ENAMECOLL: name collision on 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:59:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:64:1: In p2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:68:5: error ENAMECOLL: name collision on 'baz'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENAMECOLL.dml:66:5: conflicting definition

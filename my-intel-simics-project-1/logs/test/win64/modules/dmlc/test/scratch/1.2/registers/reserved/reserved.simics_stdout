@@ -1,0 +1,11 @@
+WARNING: module 'dml-test-reserved' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_reserved.py
+[sim info] Setting attribute mem.map
+[obj.bank.regs info] Write to register regs.r1 (addr 0) <- 0x00000000
+[obj.bank.regs info] Write to register regs.r1 (addr 0) <- 0x00000000
+[obj.bank.regs spec-viol] Write to reserved bits in register regs.r1
+[obj.bank.regs info] Write to register regs.r1 (addr 0) <- 0xffffffff
+[obj.bank.regs spec-viol] Write to reserved bits in register regs.r1
+[obj.bank.regs info] Write to register regs.r1 (addr 0) <- 0xffffffff
+[obj.bank.regs info] Write to register regs.r1 (addr 0) <- 0xffff00ff
+[obj.bank.regs info] Write to register regs.r1 (addr 0) <- 0xffff00ff

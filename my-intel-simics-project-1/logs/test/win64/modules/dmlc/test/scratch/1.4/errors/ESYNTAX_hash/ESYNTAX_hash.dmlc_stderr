@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_hash.dml:14:5: error ESYNTAX: syntax error at '#else3': illegal # symbol
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_hash.dml:18:5: error ESYNTAX: syntax error at '#': illegal character

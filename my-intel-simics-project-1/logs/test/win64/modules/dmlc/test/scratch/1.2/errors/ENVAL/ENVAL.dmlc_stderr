@@ -1,0 +1,12 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:24:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:28:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:30:6: error ENVAL: not a value: $a
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:32:6: error ENVAL: not a value: $a
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:34:14: error ENVAL: not a value: $b.g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:36:5: error ENVAL: not a value: [1,2,3]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:38:6: error ENVAL: not a value: $c
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:40:5: error ENVAL: not a value: [1,2,3]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:42:6: error ENVAL: not a value: $untyped_method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:44:6: error ENVAL: not a value: $nonthrowing_method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:47:21: error ENVAL: not a value: []
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENVAL.dml:52:6: error ENVAL: not a value: x.foo

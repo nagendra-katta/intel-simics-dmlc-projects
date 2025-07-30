@@ -1,0 +1,2 @@
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\structure\T_trait_largearray.py
+WARNING: module 'dml-test-trait_largearray' is not thread safe. Turning Multimachine Accelerator off.

@@ -1,0 +1,10 @@
+WARNING: module 'dml-test-map_target_connect' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\lib\T_map_target_connect.py
+[obj error] x.target not set, transaction terminated
+[obj error] x.target not set, transaction terminated
+[obj info] read 8 bytes @ 0x100 in obj.bank.z
+[obj info] wrote 8 bytes @ 0x100 in obj.bank.z
+[obj.bank.z spec-viol] 8 byte read access at offset 0 in z outside registers or misaligned access
+[obj info] failed to read 8 bytes @ 0x0 in obj.bank.z
+[obj.bank.z spec-viol] 8 byte write access at offset 0 in z outside registers or misaligned access
+[obj info] failed to write 8 bytes @ 0x0 in obj.bank.z

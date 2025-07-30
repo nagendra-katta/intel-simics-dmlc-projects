@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-anonymous_objs' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] hello

@@ -1,0 +1,3 @@
+WARNING: module 'dml-test-call_iface' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] RAISE
+[obj info] LOWER

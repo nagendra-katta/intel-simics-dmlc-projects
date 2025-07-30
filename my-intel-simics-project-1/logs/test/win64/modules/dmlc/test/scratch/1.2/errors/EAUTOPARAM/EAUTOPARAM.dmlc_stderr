@@ -1,0 +1,12 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:30:1: In a1[$i < 4]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:32:5: error EAUTOPARAM: bad declaration of automatic parameter 'i'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:36:1: In a2[$dev < 4]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:186:5: error EAUTOPARAM: bad declaration of automatic parameter 'dev'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:9:1: In p0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:11:5: error EAUTOPARAM: bad declaration of automatic parameter 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:14:1: In p1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:17:5: error EAUTOPARAM: bad declaration of automatic parameter 'bar'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:20:1: In p2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:22:5: error EAUTOPARAM: bad declaration of automatic parameter 'qname'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:25:1: In p3
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAUTOPARAM.dml:27:5: error EAUTOPARAM: bad declaration of automatic parameter 'qname'

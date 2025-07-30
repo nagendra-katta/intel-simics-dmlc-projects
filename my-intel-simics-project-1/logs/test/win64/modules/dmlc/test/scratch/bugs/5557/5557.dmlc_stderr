@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_5557.dml:26:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_5557.dml:28:5: error ETYPE: unknown type: 'registers_t'

@@ -1,0 +1,9 @@
+WARNING: module 'dml-test-obj_lists' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] 0
+[obj info] 1
+[obj info] 2
+[obj info] 3
+[obj info] 4
+[obj info] 5
+[obj info] 6
+[obj info] 7

@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ECONSTP_stringlit.dml:12:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ECONSTP_stringlit.dml:14:5: error ECONSTP: passing const reference for nonconst parameter s in method call

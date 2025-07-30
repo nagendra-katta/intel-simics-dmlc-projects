@@ -1,0 +1,12 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:28:9: error ENSHARED: untyped parameter a in template y does not belong to the template type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:11:5: declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:30:9: error ENSHARED: non-shared method b in template y does not belong to the template type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:14:15: declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:32:9: error ENSHARED: subobject c in template y does not belong to the template type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:16:9: declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:34:9: error ENSHARED: conditional session variable d in template y does not belong to the template type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:18:9: declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:36:9: error ENSHARED: conditional saved variable e in template y does not belong to the template type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:20:9: declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:38:9: error ENSHARED: hook f in template y does not belong to the template type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENSHARED.dml:22:9: declared here

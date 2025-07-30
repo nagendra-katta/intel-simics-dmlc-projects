@@ -1,0 +1,3 @@
+*** Failed to look up class 'garbage' when registering port 'x' in class 'test'
+*** Exception in the init function for module dml-test-bad_subobj_connect:
+  No class garbage found

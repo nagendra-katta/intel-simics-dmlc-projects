@@ -1,0 +1,3 @@
+WARNING: module 'dml-test-float' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] f = 0.12345678901234566
+[obj info] f = 0.500000

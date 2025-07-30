@@ -1,0 +1,10 @@
+WARNING: module 'dml-test-constprop' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] foo 0xffff
+[obj info] foo 0xffff
+[obj info] foo 0xffff
+[obj info] bar 0xffffffffffffffff -1
+[obj info] bar 0xffffffffffffffff -1
+[obj info] bar 0xffffffffffffffff -1
+[obj info] bar 0xffffffffffffffff -1
+[obj info] bar 0xffffffffffffffff -1
+[obj info] bar 0xffffffffffffffff -1

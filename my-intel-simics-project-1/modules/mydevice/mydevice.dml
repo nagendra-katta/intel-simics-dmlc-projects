@@ -1,0 +1,14 @@
+dml 1.4;
+
+device mydevice;
+param desc = "sample DML device";
+param documentation = "This is a very simple device.";
+
+bank regs {
+    register counter size 4 @ 0x0000 is (read) {
+        method read() -> (uint64) {
+            log info: "read from counter";
+            return 42;
+        }
+    }
+}

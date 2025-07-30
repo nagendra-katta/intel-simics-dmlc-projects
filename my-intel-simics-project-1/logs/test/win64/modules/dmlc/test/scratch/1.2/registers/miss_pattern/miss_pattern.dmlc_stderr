@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_miss_pattern.dml:109:5: warning WEXPERIMENTAL_UNMAPPED: Use of unsupported feature: _unmapped_write_access
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_miss_pattern.dml:87:5: warning WEXPERIMENTAL_UNMAPPED: Use of unsupported feature: _unmapped_write_access
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_miss_pattern.dml:77:5: warning WEXPERIMENTAL_UNMAPPED: Use of unsupported feature: _unmapped_read_access
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_miss_pattern.dml:58:5: warning WEXPERIMENTAL_UNMAPPED: Use of unsupported feature: _unmapped_write_access
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_miss_pattern.dml:49:5: warning WEXPERIMENTAL_UNMAPPED: Use of unsupported feature: _unmapped_read_access

@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_arg_inits.dml:19:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_arg_inits.dml:23:7: error ESYNTAX: syntax error at '{': the argument for an untyped parameter must be a simple expression
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_arg_inits.dml:25:7: error ESYNTAX: syntax error at '{': variadic arguments must be simple expressions

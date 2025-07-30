@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-charlit' is not thread safe. Turning Multimachine Accelerator off.

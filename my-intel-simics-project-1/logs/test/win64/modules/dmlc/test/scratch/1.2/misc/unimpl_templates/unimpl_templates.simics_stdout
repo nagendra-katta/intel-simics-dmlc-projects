@@ -1,0 +1,110 @@
+WARNING: module 'dml-test-unimpl_templates' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_unimpl_templates.py
+[o.bank.regs unimpl] Write to unimplemented register regs.r1 (0x10) (value written = 0x00001267).
+[o.bank.regs unimpl] Write to unimplemented register regs.r3 (0x30) (value written = 0x00001267).
+[o.bank.regs spec-viol] Write to read-only register regs.r4 (value written = 0x00001267).
+[o.bank.regs unimpl] Write to unimplemented register regs.r5 (0x50) (value written = 0x00001267).
+[o.bank.with_fields unimpl] Write to unimplemented register with_fields.r6 (0x10) (value written = 0x00001267).
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r6.f (0x10) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r7.f (0x20) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.regs unimpl] Read from unimplemented register regs.r1 (0x00000010) (contents = 0x0000126a).
+[o.bank.regs unimpl] Read from unimplemented register regs.r2 (0x00000020) (contents = 0x0000126a).
+[o.bank.regs unimpl] Read from unimplemented register regs.r4 (0x00000040) (contents = 0x00000000).
+[o.bank.regs spec-viol] Read from write-only register regs.r5 (returning 0).
+[o.bank.with_fields unimpl] Read from unimplemented register with_fields.r6 (0x00000010) (contents = 0x00000000).
+[o.bank.regs unimpl] Write to unimplemented register regs.r1 (0x10) (value written = 0x00001271).
+[o.bank.regs unimpl] Write to unimplemented register regs.r3 (0x30) (value written = 0x00001271).
+[o.bank.regs spec-viol] Write to read-only register regs.r4 (value written = 0x00001271).
+[o.bank.regs unimpl] Write to unimplemented register regs.r5 (0x50) (value written = 0x00001271).
+[o.bank.with_fields unimpl] Write to unimplemented register with_fields.r6 (0x10) (value written = 0x00001271).
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r6.f (0x10) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r7.f (0x20) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.regs unimpl] Write to unimplemented register regs.r1 (0x10) (value written = 0x00001274).
+[o.bank.regs unimpl] Write to unimplemented register regs.r3 (0x30) (value written = 0x00001274).
+[o.bank.regs spec-viol] Write to read-only register regs.r4 (value written = 0x00001274).
+[o.bank.regs unimpl] Write to unimplemented register regs.r5 (0x50) (value written = 0x00001274).
+[o.bank.with_fields unimpl] Write to unimplemented register with_fields.r6 (0x10) (value written = 0x00001274).
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r6.f (0x10) (value written = 0x00000000, contents = 0x00000001), will not warn again.
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r7.f (0x20) (value written = 0x00000000, contents = 0x00000001), will not warn again.
+[o.bank.regs unimpl] Read from unimplemented register regs.r1 (0x00000010) (contents = 0x00001274).
+[o.bank.regs unimpl] Read from unimplemented register regs.r2 (0x00000020) (contents = 0x00001274).
+[o.bank.regs unimpl] Read from unimplemented register regs.r4 (0x00000040) (contents = 0x00000000).
+[o.bank.regs spec-viol] Read from write-only register regs.r5 (returning 0).
+[o.bank.with_fields unimpl] Read from unimplemented register with_fields.r6 (0x00000010) (contents = 0x00000000).
+[o.bank.regs unimpl] Read from unimplemented register regs.r1 (0x00000010) (contents = 0x00001274).
+[o.bank.regs unimpl] Read from unimplemented register regs.r2 (0x00000020) (contents = 0x00001274).
+[o.bank.regs unimpl] Read from unimplemented register regs.r4 (0x00000040) (contents = 0x00000000).
+[o.bank.regs spec-viol] Read from write-only register regs.r5 (returning 0).
+[o.bank.with_fields unimpl] Read from unimplemented register with_fields.r6 (0x00000010) (contents = 0x00000000).
+[o.bank.regs unimpl] Write to unimplemented register regs.r1 (0x10) (value written = 0x0000127b).
+[o.bank.regs unimpl] Write to unimplemented register regs.r3 (0x30) (value written = 0x0000127b).
+[o.bank.regs spec-viol] Write to read-only register regs.r4 (value written = 0x0000127b).
+[o.bank.regs unimpl] Write to unimplemented register regs.r5 (0x50) (value written = 0x0000127b).
+[o.bank.with_fields unimpl] Write to unimplemented register with_fields.r6 (0x10) (value written = 0x0000127b).
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r6.f (0x10) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r7.f (0x20) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.regs unimpl] Write to unimplemented register regs.r1 (0x10) (value written = 0x0000127e).
+[o.bank.regs unimpl] Write to unimplemented register regs.r3 (0x30) (value written = 0x0000127e).
+[o.bank.regs spec-viol] Write to read-only register regs.r4 (value written = 0x0000127e).
+[o.bank.regs unimpl] Write to unimplemented register regs.r5 (0x50) (value written = 0x0000127e).
+[o.bank.with_fields unimpl] Write to unimplemented register with_fields.r6 (0x10) (value written = 0x0000127e).
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r6.f (0x10) (value written = 0x00000000, contents = 0x00000001), will not warn again.
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r7.f (0x20) (value written = 0x00000000, contents = 0x00000001), will not warn again.
+[o.bank.regs unimpl] Read from unimplemented register regs.r1 (0x00000010) (contents = 0x0000127e).
+[o.bank.regs unimpl] Read from unimplemented register regs.r2 (0x00000020) (contents = 0x0000127e).
+[o.bank.regs unimpl] Read from unimplemented register regs.r4 (0x00000040) (contents = 0x00000000).
+[o.bank.regs spec-viol] Read from write-only register regs.r5 (returning 0).
+[o.bank.with_fields unimpl] Read from unimplemented register with_fields.r6 (0x00000010) (contents = 0x00000000).
+[o.bank.regs unimpl] Read from unimplemented register regs.r1 (0x00000010) (contents = 0x0000127e).
+[o.bank.regs unimpl] Read from unimplemented register regs.r2 (0x00000020) (contents = 0x0000127e).
+[o.bank.regs unimpl] Read from unimplemented register regs.r4 (0x00000040) (contents = 0x00000000).
+[o.bank.regs spec-viol] Read from write-only register regs.r5 (returning 0).
+[o.bank.with_fields unimpl] Read from unimplemented register with_fields.r6 (0x00000010) (contents = 0x00000000).
+[o.bank.regs unimpl] Write to unimplemented register regs.r1 (0x10) (value written = 0x00001285).
+[o.bank.regs info] Write to register regs.r1 (addr 0x10) <- 0x00001285
+[o.bank.regs info] Write to register regs.r2 (addr 0x20) <- 0x00001285
+[o.bank.regs unimpl] Write to unimplemented register regs.r3 (0x30) (value written = 0x00001285).
+[o.bank.regs info] Write to register regs.r3 (addr 0x30) <- 0x00001285
+[o.bank.regs spec-viol] Write to read-only register regs.r4 (value written = 0x00001285).
+[o.bank.regs unimpl] Write to unimplemented register regs.r5 (0x50) (value written = 0x00001285).
+[o.bank.regs info] Write to register regs.r5 (addr 0x50) <- 0x00001285
+[o.bank.with_fields unimpl] Write to unimplemented register with_fields.r6 (0x10) (value written = 0x00001285).
+[o.bank.with_fields info] Write to register with_fields.r6 (addr 0x10) <- 0x00001285
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r6.f (0x10) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.with_fields info] Write to register with_fields.r7 (addr 0x20) <- 0x00001285
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r7.f (0x20) (value written = 0x00000001, contents = 0x00000000), will not warn again.
+[o.bank.regs unimpl] Write to unimplemented register regs.r1 (0x10) (value written = 0x00001288).
+[o.bank.regs info] Write to register regs.r1 (addr 0x10) <- 0x00001288
+[o.bank.regs info] Write to register regs.r2 (addr 0x20) <- 0x00001288
+[o.bank.regs unimpl] Write to unimplemented register regs.r3 (0x30) (value written = 0x00001288).
+[o.bank.regs info] Write to register regs.r3 (addr 0x30) <- 0x00001288
+[o.bank.regs spec-viol] Write to read-only register regs.r4 (value written = 0x00001288).
+[o.bank.regs unimpl] Write to unimplemented register regs.r5 (0x50) (value written = 0x00001288).
+[o.bank.regs info] Write to register regs.r5 (addr 0x50) <- 0x00001288
+[o.bank.with_fields unimpl] Write to unimplemented register with_fields.r6 (0x10) (value written = 0x00001288).
+[o.bank.with_fields info] Write to register with_fields.r6 (addr 0x10) <- 0x00001288
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r6.f (0x10) (value written = 0x00000000, contents = 0x00000001), will not warn again.
+[o.bank.with_fields info] Write to register with_fields.r7 (addr 0x20) <- 0x00001288
+[o.bank.with_fields unimpl] Write to unimplemented field with_fields.r7.f (0x20) (value written = 0x00000000, contents = 0x00000001), will not warn again.
+[o.bank.regs unimpl] Read from unimplemented register regs.r1 (0x00000010) (contents = 0x00001288).
+[o.bank.regs info] Read from register regs.r1 (addr 0x10) -> 0x00001288
+[o.bank.regs unimpl] Read from unimplemented register regs.r2 (0x00000020) (contents = 0x00001288).
+[o.bank.regs info] Read from register regs.r2 (addr 0x20) -> 0x00001288
+[o.bank.regs info] Read from register regs.r3 (addr 0x30) -> 0x00001288
+[o.bank.regs unimpl] Read from unimplemented register regs.r4 (0x00000040) (contents = 0x00000000).
+[o.bank.regs info] Read from register regs.r4 (addr 0x40) -> 0x00000000
+[o.bank.regs spec-viol] Read from write-only register regs.r5 (returning 0).
+[o.bank.with_fields unimpl] Read from unimplemented register with_fields.r6 (0x00000010) (contents = 0x00000000).
+[o.bank.with_fields info] Read from register with_fields.r6 (addr 0x10) -> 0x00000000
+[o.bank.with_fields info] Read from register with_fields.r7 (addr 0x20) -> 0x00000000
+[o.bank.regs unimpl] Read from unimplemented register regs.r1 (0x00000010) (contents = 0x00001288).
+[o.bank.regs info] Read from register regs.r1 (addr 0x10) -> 0x00001288
+[o.bank.regs unimpl] Read from unimplemented register regs.r2 (0x00000020) (contents = 0x00001288).
+[o.bank.regs info] Read from register regs.r2 (addr 0x20) -> 0x00001288
+[o.bank.regs info] Read from register regs.r3 (addr 0x30) -> 0x00001288
+[o.bank.regs unimpl] Read from unimplemented register regs.r4 (0x00000040) (contents = 0x00000000).
+[o.bank.regs info] Read from register regs.r4 (addr 0x40) -> 0x00000000
+[o.bank.regs spec-viol] Read from write-only register regs.r5 (returning 0).
+[o.bank.with_fields unimpl] Read from unimplemented register with_fields.r6 (0x00000010) (contents = 0x00000000).
+[o.bank.with_fields info] Read from register with_fields.r6 (addr 0x10) -> 0x00000000
+[o.bank.with_fields info] Read from register with_fields.r7 (addr 0x20) -> 0x00000000

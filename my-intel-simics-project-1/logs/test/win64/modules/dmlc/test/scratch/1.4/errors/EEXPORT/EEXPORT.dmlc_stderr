@@ -1,0 +1,8 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:10:1: error EEXPORT: cannot export this method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:12:1: exported here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:15:7: error EEXPORT: cannot export this method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:17:1: exported here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:20:7: error EEXPORT: cannot export this method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:24:1: exported here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEXPORT.dml:33:8: error ENOBJ: object expected: test.t.templates.t.s

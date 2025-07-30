@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESHNEG.dml:8:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESHNEG.dml:10:7: error ESHNEG: shift with negative shift count: '-1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ESHNEG.dml:12:7: error ESHNEG: shift with negative shift count: '-1

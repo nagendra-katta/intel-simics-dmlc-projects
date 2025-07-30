@@ -1,0 +1,13 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:15:20: error EANONSTRUCT: struct declaration not allowed in a function argument type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:17:20: error EANONSTRUCT: struct declaration not allowed in a function argument type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:21:1: error EANONSTRUCT: struct declaration not allowed in a function return type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:25:21: error EANONSTRUCT: struct declaration not allowed in a method argument
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:27:13: error EANONSTRUCT: struct declaration not allowed in a method return type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:29:11: error EANONSTRUCT: struct declaration not allowed in a parameter type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:10:10: error EANONSTRUCT: struct declaration not allowed in a method argument
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:12:9: error EANONSTRUCT: struct declaration not allowed in a method return type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:32:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:34:5: error EANONSTRUCT: struct declaration not allowed in a 'new' expression
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:36:5: error EANONSTRUCT: struct declaration not allowed in a 'sizeoftype' expression
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EANONSTRUCT.dml:38:5: error EANONSTRUCT: struct declaration not allowed in a 'cast' expression

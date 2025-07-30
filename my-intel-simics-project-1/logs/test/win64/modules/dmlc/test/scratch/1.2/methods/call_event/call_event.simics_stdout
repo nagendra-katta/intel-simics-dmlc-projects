@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-call_event' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] CALLBACK

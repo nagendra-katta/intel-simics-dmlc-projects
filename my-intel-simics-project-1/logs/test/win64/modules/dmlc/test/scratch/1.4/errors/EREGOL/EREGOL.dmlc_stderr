@@ -1,0 +1,29 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:11:5: error EREGOL: overlapping registers: 'b1.a' and 'b1.b'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:13:5: register b1.b defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:21:5: error EREGOL: overlapping registers: 'b2.a[1]' and 'b2.b[1]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:22:5: register b2.b[i < 2] defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: error EREGOL: overlapping registers: 'b3.channel[0].r0' and 'b3.channel[1].r0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: register b3.channel[i < 5].r0 defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: error EREGOL: overlapping registers: 'b3.channel[1].r0' and 'b3.channel[2].r0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: register b3.channel[i < 5].r0 defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: error EREGOL: overlapping registers: 'b3.channel[2].r0' and 'b3.channel[3].r0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: register b3.channel[i < 5].r0 defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: error EREGOL: overlapping registers: 'b3.channel[3].r0' and 'b3.channel[4].r0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:29:9: register b3.channel[i < 5].r0 defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:36:5: error EREGOL: overlapping registers: 'b4.r[0]' and 'b4.r[2]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:36:5: register b4.r[i < 3] defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:43:5: error EREGOL: overlapping registers: 'b5.r[0]' and 'b5.r[2]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:43:5: register b5.r[i < 3] defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:53:4: error EREGOL: overlapping registers: 'b6.CONFLICT0' and 'b6.G[0].X'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:59:21: register b6.G[i < 2].X defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:56:4: error EREGOL: overlapping registers: 'b6.CONFLICT200' and 'b6.G[1].X'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:59:21: register b6.G[i < 2].X defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:65:5: error EREGOL: overlapping registers: 'b7.r[1][0]' and 'b7.r[0][1]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:65:5: register b7.r[i < 2][j < 2] defined here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:70:25: error EIDXVAR: expression may not depend on the index variable i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:85:37: error EIDXVAR: expression may not depend on the index variable i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:87:37: error EIDXVAR: expression may not depend on the index variable j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:89:37: error EIDXVAR: expression may not depend on the index variable k
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:79:17: error EREGOL: overlapping registers: 'g[i < 2].sd[j < 2].g[k < 2].b.a' and 'g[i < 2].sd[j < 2].g[k < 2].b.b'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EREGOL.dml:81:17: register g[i < 2].sd[j < 2].g[k < 2].b.b defined here

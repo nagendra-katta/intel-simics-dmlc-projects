@@ -1,0 +1,8 @@
+WARNING: module 'dml-test-log_new' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\statements\T_log_new.py
+[obj info] INFO
+[obj spec-viol] SPEC_VIOL_
+[obj unimpl] UNIMPL_
+[obj warning] WARNING
+[obj error] ERROR
+[obj critical] CRITICAL

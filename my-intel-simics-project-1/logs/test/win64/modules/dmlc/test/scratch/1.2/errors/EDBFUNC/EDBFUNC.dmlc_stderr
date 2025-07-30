@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDBFUNC.dml:6:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDBFUNC.dml:15:26: error EDBFUNC: duplicate bank function number: 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDBFUNC.dml:10:26: conflicting bank
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDBFUNC.dml:20:26: error EDBFUNC: duplicate bank function number: 2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDBFUNC.dml:20:26: conflicting bank

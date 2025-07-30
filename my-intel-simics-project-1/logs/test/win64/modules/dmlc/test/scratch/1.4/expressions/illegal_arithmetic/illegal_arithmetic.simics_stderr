@@ -1,0 +1,6 @@
+*** C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_illegal_arithmetic.dml:14: integer division by zero
+*** C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_illegal_arithmetic.dml:15: integer modulo by zero
+*** C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_illegal_arithmetic.dml:16: integer division by zero
+*** C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_illegal_arithmetic.dml:17: integer modulo by zero
+*** C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_illegal_arithmetic.dml:24: negative shift count
+*** C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_illegal_arithmetic.dml:25: negative shift count

@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-cast' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] -24 127 -128 255 true 000001B4178BCE00

@@ -1,0 +1,8 @@
+WARNING: module 'dml-test-bankarray' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_bankarray.py
+[obj.bank.regs[0] info] read regs[0].r -> 0xbadc0ffe
++++ dev_util.tuple_to_value_to_le is deprecated.
+    Use 'int.from_bytes(t, 'little')' instead.
+[obj.bank.regs[1] info] read regs[1].r -> 0xdeadbeef
+[obj.bank.regs[0] info] read regs[0].r -> 0xbadc0ffe
+[obj.bank.regs[1] info] read regs[1].r -> 0xdeadbeef

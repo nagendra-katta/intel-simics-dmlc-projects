@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-neq_obj' is not thread safe. Turning Multimachine Accelerator off.

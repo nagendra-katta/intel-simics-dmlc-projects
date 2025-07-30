@@ -1,0 +1,10 @@
+WARNING: module 'dml-test-unmapped_access' is not thread safe. Turning Multimachine Accelerator off.
+[obj.bank.b spec-viol] Write outside fields in register b.r1, bitranges;
+	15:0 (value written = 0b1111111111111111, previous value = 0b0000111100001111)
+[obj.bank.b spec-viol] Write outside fields in register b.r1_2, bitranges;
+	15:8 (value written = 0b11111111, previous value = 0b00001111)
+	3:0 (value written = 0b1111, previous value = 0b0000)
+[obj.bank.b spec-viol] Write outside fields in register b.r2, bitranges;
+	15:8 (value written = 0b11110000, previous value = 0b00001111)
+	3:0 (value written = 0b1111, previous value = 0b0000)
+[obj.bank.b info] Overridden write_register: 0xfff0fff0

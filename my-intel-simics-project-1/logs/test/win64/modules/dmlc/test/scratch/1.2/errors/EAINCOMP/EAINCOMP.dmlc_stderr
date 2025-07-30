@@ -1,0 +1,9 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:8:1: In b0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:11:5: error EAINCOMP: incompatible array declarations: mismatching index variables
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:13:5: conflicting declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:16:1: In b1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:18:5: error EAINCOMP: incompatible array declarations: mismatching array sizes
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:20:5: conflicting declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:23:1: In b2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:25:5: error EAINCOMP: incompatible array declarations: mixing declarations with different number of array dimensions
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAINCOMP.dml:27:5: conflicting declaration

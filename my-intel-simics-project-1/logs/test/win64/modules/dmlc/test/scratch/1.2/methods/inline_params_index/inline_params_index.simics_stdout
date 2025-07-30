@@ -1,0 +1,3 @@
+WARNING: module 'dml-test-inline_params_index' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] 2 1 5
+test attribute returned false

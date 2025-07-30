@@ -1,0 +1,1 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_time_unit.dml:17:13: error ESYNTAX: syntax error at 'invalid': expected time unit ('s' or 'ps' or 'cycles')

@@ -1,0 +1,13 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:18:5: error EMETH: incompatible method definitions: mismatching types in input argument p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:11:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:21:1: In g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:26:14: error EMETH: incompatible method definitions: mismatching types in input argument p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:13:14: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:23:11: error EMETH: incompatible method definitions: mismatching types in input argument p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:12:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:35:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:39:5: error ECONSTP: passing const reference for nonconst parameter 1 in function call
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:41:5: error ECONSTP: passing const reference for nonconst parameter 2 in function call
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:43:5: error EPTYPE: wrong type for parameter 3 in function call
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:43:5:   got:      function(pointer to void,pointer to int,pointer to function() returning void) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\lenient_typechecking.dml:43:5:   expected: pointer to function() returning void

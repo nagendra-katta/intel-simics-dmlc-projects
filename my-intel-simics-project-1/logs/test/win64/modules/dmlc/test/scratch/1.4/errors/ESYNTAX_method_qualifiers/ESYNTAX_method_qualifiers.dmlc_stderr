@@ -1,0 +1,14 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:11:1: error ESYNTAX: syntax error: startup methods may not have input parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:13:1: error ESYNTAX: syntax error: non-memoized startup methods may not have returnvalues or be throwing
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:15:1: error ESYNTAX: syntax error: non-memoized startup methods may not have returnvalues or be throwing
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:17:1: error ESYNTAX: syntax error: startup methods may not be declared 'default'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:23:1: error ESYNTAX: syntax error: memoized methods must have return values and/or be throwing
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:25:1: error ESYNTAX: syntax error: startup methods may not have input parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:27:1: error ESYNTAX: syntax error: startup methods may not be declared 'default'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:38:5: error ESYNTAX: syntax error: startup methods may not have input parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:40:5: error ESYNTAX: syntax error: non-memoized startup methods may not have returnvalues or be throwing
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:42:5: error ESYNTAX: syntax error: non-memoized startup methods may not have returnvalues or be throwing
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:44:5: error ESYNTAX: syntax error: startup methods may not be declared 'default'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:52:5: error ESYNTAX: syntax error: memoized methods must have return values and/or be throwing
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:54:5: error ESYNTAX: syntax error: startup methods may not have input parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_method_qualifiers.dml:58:5: error ESYNTAX: syntax error: startup methods may not be declared 'default'

@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELLEV.dml:7:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELLEV.dml:9:17: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELLEV.dml:9:17:   got:      bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELLEV.dml:9:17:   expected: integer type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELLEV.dml:11:17: error ELLEV: log level must be an integer between 1 and 4
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELLEV.dml:13:17: error ELLEV: log level must be an integer between 1 and 4

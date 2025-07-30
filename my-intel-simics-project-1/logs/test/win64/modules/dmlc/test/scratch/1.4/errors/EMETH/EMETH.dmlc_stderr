@@ -1,0 +1,37 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:41:5: error EMETH: incompatible method definitions: mismatching types in input argument fallback
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:18:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:48:5: error EMETH: incompatible method definitions: mismatching types in output argument 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:18:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:76:1: error EMETH: incompatible method definitions: different inline args
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:12:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:83:5: error EMETH: incompatible method definitions: mismatching types in input argument a
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:14:21: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:86:25: error EMETH: incompatible method definitions: mismatching types in return value
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:15:29: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:89:27: error EMETH: incompatible method definitions: mismatching types in return value 2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:16:44: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:79:7: error EMETH: incompatible method definitions: different nothrow annotations
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:13:11: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:53:1: In g4
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:55:11: error EMETH: incompatible method definitions: overridden method is declared independent, but the overriding method is not
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:22:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:59:5: error EMETH: incompatible method definitions: overriding method is declared independent, but the overridden method is not
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:15:11: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:64:1: In g5
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:66:5: error EMETH: incompatible method definitions: overriding method is declared startup, but the overridden method is not
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:22:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:70:5: error EMETH: incompatible method definitions: overriding method is declared startup, but the overridden method is not
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:25:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:112:15: error EMETH: incompatible method definitions: different number of input parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:112:15: error EMETH: incompatible method definitions: different number of input parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:119:15: error EMETH: incompatible method definitions: different number of output parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:135:15: error EMETH: incompatible method definitions: interface method is variadic
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:119:15: error EMETH: incompatible method definitions: different number of output parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:135:15: error EMETH: incompatible method definitions: interface method is variadic
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:128:15: error EARGT: wrong type in method parameter 'c' when implementing 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:128:15:   got:      'pointer to char'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:128:15:   expected: 'int32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:128:15: error EARGT: wrong type in method parameter 'c' when implementing 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:128:15:   got:      'pointer to char'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMETH.dml:128:15:   expected: 'int32'

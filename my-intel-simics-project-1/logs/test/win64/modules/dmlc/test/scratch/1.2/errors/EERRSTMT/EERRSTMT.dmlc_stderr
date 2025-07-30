@@ -1,0 +1,38 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:41:13: In g1.port.g.p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2040:9: error EERRSTMT: Cannot declare a port underneath a group named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:39:13: In g1.port.g.s
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2051:9: error EERRSTMT: Cannot declare a subdevice underneath a group named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:36:9: In g1.port.p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2040:9: error EERRSTMT: Cannot declare a port underneath a group named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:34:9: In g1.port.s
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2051:9: error EERRSTMT: Cannot declare a subdevice underneath a group named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:52:5: In g3.port
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2048:10: error EERRSTMT: A subdevice may not be named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:18:1: In p3
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:20:5: error EERRSTMT: explicit error
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:22:1: In p4
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:24:5: error EERRSTMT: foo
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:27:1: In port
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2048:10: error EERRSTMT: A subdevice may not be named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:62:17: In s.g1.port.g.p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2040:9: error EERRSTMT: Cannot declare a port underneath a group named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:60:17: In s.g1.port.g.s
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2051:9: error EERRSTMT: Cannot declare a subdevice underneath a group named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:68:9: In s.g2.port
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2048:10: error EERRSTMT: A subdevice may not be named 'port'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:7:7: In m_dml14
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:10:9: error EERRSTMT: xyz
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EERRSTMT_dml14.dml:18:9: error EERRSTMT: forced compilation error in source code
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:27:1: In template event
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:49:5: In e.stop
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:2029:13: error EERRSTMT: parameter 'repeat' is undefined
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:39:1: In m3
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:41:5: error EERRSTMT: message one
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:44:5: error EERRSTMT: message two
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:34:1: In m2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:36:5: error EERRSTMT: 
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:29:1: In m1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:31:5: error EERRSTMT: forced compilation error in source code
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EERRSTMT.dml:13:1: In template bank
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:731:5: In b._unmapped_read_access
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:740:17: error EERRSTMT: the 'miss_pattern' parameter must be an integer constant in the range 0..255

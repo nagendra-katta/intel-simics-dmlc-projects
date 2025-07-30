@@ -1,0 +1,5 @@
+C:\\Users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\operators\\T_assign_1.dml: In function 'get_runtest':
+C:\\Users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.2\\operators\\T_assign_1.dml:34:57: error: operation on 'v11_i' may be undefined [-Werror=sequence-point]
+   34 |     a[i++] += 19;
+      |                                                         ^ 
+cc1.exe: all warnings being treated as errors

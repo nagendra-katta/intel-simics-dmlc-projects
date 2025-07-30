@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-immediate_after_basic' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\statements\T_immediate_after_basic.py

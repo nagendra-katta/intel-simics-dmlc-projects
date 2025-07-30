@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\ECYCLICIMP_1.dml:9:1: error ECYCLICIMP: cyclic import
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\ECYCLICIMP_2.dml:8:1: via here

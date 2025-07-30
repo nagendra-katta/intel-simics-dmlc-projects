@@ -1,0 +1,28 @@
+         269763 function calls (264367 primitive calls) in 0.524 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 935 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+ 3227/994    0.074    0.000    0.112    0.000 codegen.py:1437(eval_type)
+      492    0.070    0.000    0.070    0.000 {built-in method nt._getfinalpathname}
+      935    0.061    0.000    0.063    0.000 {built-in method nt.stat}
+       67    0.042    0.001    0.048    0.001 {built-in method _pickle.loads}
+    31180    0.022    0.000    0.028    0.000 ast.py:15(__getitem__)
+        1    0.022    0.022    0.022    0.022 dml12_parsetab.py:1(<module>)
+       71    0.019    0.000    0.019    0.000 {method 'decompress' of '_bz2.BZ2Decompressor' objects}
+        1    0.014    0.014    0.169    0.169 structure.py:74(mkglobals)
+    54481    0.014    0.000    0.019    0.000 {built-in method builtins.isinstance}
+       75    0.009    0.000    0.009    0.000 {built-in method io.open}
+        1    0.007    0.007    0.007    0.007 {built-in method marshal.loads}
+      484    0.006    0.000    0.012    0.000 pathlib.py:56(parse_parts)
+     3114    0.006    0.000    0.012    0.000 types.py:1474(parse_type)
+     1625    0.005    0.000    0.006    0.000 ntpath.py:150(splitdrive)
+   206/68    0.004    0.000    0.025    0.000 {method 'read' of '_io.BufferedReader' objects}
+      143    0.004    0.000    0.005    0.000 ntpath.py:206(split)
+        1    0.004    0.004    0.294    0.294 toplevel.py:359(parse_main_file)
+  278/126    0.003    0.000    0.010    0.000 sre_parse.py:494(_parse)
+     3928    0.003    0.000    0.003    0.000 {method 'match' of 're.Pattern' objects}
+       67    0.003    0.000    0.003    0.000 _compression.py:59(close)
+
+

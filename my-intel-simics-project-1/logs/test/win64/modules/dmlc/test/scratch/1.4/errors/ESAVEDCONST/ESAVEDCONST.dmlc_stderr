@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESAVEDCONST.dml:6:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESAVEDCONST.dml:24:1: error ESAVEDCONST: saved variable declared with (partially) const-qualified type int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESAVEDCONST.dml:27:1: error ESAVEDCONST: saved variable declared with (partially) const-qualified type array of size 4 of const int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESAVEDCONST.dml:30:1: error ESAVEDCONST: saved variable declared with (partially) const-qualified type s_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESAVEDCONST.dml:33:1: error ESAVEDCONST: saved variable declared with (partially) const-qualified type lo_t

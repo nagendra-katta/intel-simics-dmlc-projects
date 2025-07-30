@@ -1,0 +1,62 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:6:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:66:16: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:66:16:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:66:16:   expected: integer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:71:18: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:71:18:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:71:18:   expected: integer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:13:9: In B.r1.f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   expected: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   expected: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   expected: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   expected: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   expected: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:12:5: In B.r1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:15:34:   expected: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:6:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:26:28: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:26:28:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:26:28:   expected: integer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:9:23: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:9:23:   got:      uint8
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:9:23:   expected: string
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:21:35: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:21:35:   got:      uint8
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:21:35:   expected: string
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:30:26: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:30:26:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:30:26:   expected: utf-8 encoded string
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:34:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:36:30: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:36:30:   got:      bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:36:30:   expected: integer type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:40:8: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:40:8:   got:      double
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:40:8:   expected: integer type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:43:7: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:43:7:   got:      double
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:43:7:   expected: integer type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:54:11: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:54:11:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:54:11:   expected: integer type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:57:6: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:57:6:   got:      bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:57:6:   expected: float or integer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:59:6: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:59:6:   got:      bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:59:6:   expected: float or integer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:61:6: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:61:6:   got:      bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBTYPE.dml:61:6:   expected: float or integer

@@ -1,0 +1,8 @@
+WARNING: module 'dml-test-destroy' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_destroy.py
+Deleting
+[o info] destroy-event ev
+[o info] destroy-event ev_arr[1][1]
+[o info] destroy-device
+Done
+Events not triggered

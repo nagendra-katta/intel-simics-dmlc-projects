@@ -1,0 +1,118 @@
+WARNING: module 'dml-test-inquiry' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_inquiry.py
+offset: 0
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0) -> 0x00000000000000de
+  size: 2
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x0000000000002211
+[obj.bank.b info] Read from register b.r (addr 0) -> 0x000000000000c0de
+  size: 3
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x0000000000332211
+[obj.bank.b info] Read from register b.r (addr 0) -> 0x0000000000adc0de
+  size: 4
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x0000000044332211
+[obj.bank.b info] Read from register b.r (addr 0) -> 0x00000000baadc0de
+  size: 5
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x0000005544332211
+[obj.bank.b info] Read from register b.r (addr 0) -> 0x000000efbaadc0de
+  size: 6
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x0000665544332211
+[obj.bank.b info] Read from register b.r (addr 0) -> 0x0000beefbaadc0de
+  size: 7
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x0077665544332211
+[obj.bank.b info] Read from register b.r (addr 0) -> 0x00adbeefbaadc0de
+  size: 8
+[obj.bank.b info] Write to register b.r (addr 0) <- 0x8877665544332211
+[obj.bank.b info] Read from register b.r (addr 0) -> 0xdeadbeefbaadc0de
+offset: 1
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0x1) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0x1) -> 0x00000000000000c0
+  size: 2
+[obj.bank.b info] Write to register b.r (addr 0x1) <- 0x0000000000002211
+[obj.bank.b info] Read from register b.r (addr 0x1) -> 0x000000000000adc0
+  size: 3
+[obj.bank.b info] Write to register b.r (addr 0x1) <- 0x0000000000332211
+[obj.bank.b info] Read from register b.r (addr 0x1) -> 0x0000000000baadc0
+  size: 4
+[obj.bank.b info] Write to register b.r (addr 0x1) <- 0x0000000044332211
+[obj.bank.b info] Read from register b.r (addr 0x1) -> 0x00000000efbaadc0
+  size: 5
+[obj.bank.b info] Write to register b.r (addr 0x1) <- 0x0000005544332211
+[obj.bank.b info] Read from register b.r (addr 0x1) -> 0x000000beefbaadc0
+  size: 6
+[obj.bank.b info] Write to register b.r (addr 0x1) <- 0x0000665544332211
+[obj.bank.b info] Read from register b.r (addr 0x1) -> 0x0000adbeefbaadc0
+  size: 7
+[obj.bank.b info] Write to register b.r (addr 0x1) <- 0x0077665544332211
+[obj.bank.b info] Read from register b.r (addr 0x1) -> 0x00deadbeefbaadc0
+offset: 2
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0x2) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0x2) -> 0x00000000000000ad
+  size: 2
+[obj.bank.b info] Write to register b.r (addr 0x2) <- 0x0000000000002211
+[obj.bank.b info] Read from register b.r (addr 0x2) -> 0x000000000000baad
+  size: 3
+[obj.bank.b info] Write to register b.r (addr 0x2) <- 0x0000000000332211
+[obj.bank.b info] Read from register b.r (addr 0x2) -> 0x0000000000efbaad
+  size: 4
+[obj.bank.b info] Write to register b.r (addr 0x2) <- 0x0000000044332211
+[obj.bank.b info] Read from register b.r (addr 0x2) -> 0x00000000beefbaad
+  size: 5
+[obj.bank.b info] Write to register b.r (addr 0x2) <- 0x0000005544332211
+[obj.bank.b info] Read from register b.r (addr 0x2) -> 0x000000adbeefbaad
+  size: 6
+[obj.bank.b info] Write to register b.r (addr 0x2) <- 0x0000665544332211
+[obj.bank.b info] Read from register b.r (addr 0x2) -> 0x0000deadbeefbaad
+offset: 3
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0x3) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0x3) -> 0x00000000000000ba
+  size: 2
+[obj.bank.b info] Write to register b.r (addr 0x3) <- 0x0000000000002211
+[obj.bank.b info] Read from register b.r (addr 0x3) -> 0x000000000000efba
+  size: 3
+[obj.bank.b info] Write to register b.r (addr 0x3) <- 0x0000000000332211
+[obj.bank.b info] Read from register b.r (addr 0x3) -> 0x0000000000beefba
+  size: 4
+[obj.bank.b info] Write to register b.r (addr 0x3) <- 0x0000000044332211
+[obj.bank.b info] Read from register b.r (addr 0x3) -> 0x00000000adbeefba
+  size: 5
+[obj.bank.b info] Write to register b.r (addr 0x3) <- 0x0000005544332211
+[obj.bank.b info] Read from register b.r (addr 0x3) -> 0x000000deadbeefba
+offset: 4
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0x4) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0x4) -> 0x00000000000000ef
+  size: 2
+[obj.bank.b info] Write to register b.r (addr 0x4) <- 0x0000000000002211
+[obj.bank.b info] Read from register b.r (addr 0x4) -> 0x000000000000beef
+  size: 3
+[obj.bank.b info] Write to register b.r (addr 0x4) <- 0x0000000000332211
+[obj.bank.b info] Read from register b.r (addr 0x4) -> 0x0000000000adbeef
+  size: 4
+[obj.bank.b info] Write to register b.r (addr 0x4) <- 0x0000000044332211
+[obj.bank.b info] Read from register b.r (addr 0x4) -> 0x00000000deadbeef
+offset: 5
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0x5) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0x5) -> 0x00000000000000be
+  size: 2
+[obj.bank.b info] Write to register b.r (addr 0x5) <- 0x0000000000002211
+[obj.bank.b info] Read from register b.r (addr 0x5) -> 0x000000000000adbe
+  size: 3
+[obj.bank.b info] Write to register b.r (addr 0x5) <- 0x0000000000332211
+[obj.bank.b info] Read from register b.r (addr 0x5) -> 0x0000000000deadbe
+offset: 6
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0x6) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0x6) -> 0x00000000000000ad
+  size: 2
+[obj.bank.b info] Write to register b.r (addr 0x6) <- 0x0000000000002211
+[obj.bank.b info] Read from register b.r (addr 0x6) -> 0x000000000000dead
+offset: 7
+  size: 1
+[obj.bank.b info] Write to register b.r (addr 0x7) <- 0x0000000000000011
+[obj.bank.b info] Read from register b.r (addr 0x7) -> 0x00000000000000de

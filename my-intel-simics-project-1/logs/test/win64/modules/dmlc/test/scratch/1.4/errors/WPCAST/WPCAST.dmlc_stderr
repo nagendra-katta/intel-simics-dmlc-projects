@@ -1,0 +1,65 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:20:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:24:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:24:9:   old base type: layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:24:9:   new base type: uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:24:9:   perhaps you meant the new base type to be uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:26:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:26:9:   old base type: layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:26:9:   new base type: int32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:26:9:   perhaps you meant the new base type to be int32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:28:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:28:9:   old base type: layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:28:9:   new base type: uint16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:28:9:   perhaps you meant the new base type to be uint16_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:30:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:30:9:   old base type: layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:30:9:   new base type: int16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:30:9:   perhaps you meant the new base type to be int16_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:44:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:44:9:   old base type: uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:44:9:   new base type: uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:44:9:   perhaps you meant the new base type to be uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:46:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:46:9:   old base type: uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:46:9:   new base type: int32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:46:9:   perhaps you meant the new base type to be int32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:48:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:48:9:   old base type: uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:48:9:   new base type: uint16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:48:9:   perhaps you meant the new base type to be uint16_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:50:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:50:9:   old base type: uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:50:9:   new base type: int16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:50:9:   perhaps you meant the new base type to be int16_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:64:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:64:9:   old base type: array of size 3 of array of size 5 of layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:64:9:   new base type: uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:64:9:   perhaps you meant the new base type to be uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:66:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:66:9:   old base type: array of size 3 of array of size 5 of layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:66:9:   new base type: int32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:66:9:   perhaps you meant the new base type to be int32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:68:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:68:9:   old base type: array of size 3 of array of size 5 of layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:68:9:   new base type: uint16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:68:9:   perhaps you meant the new base type to be uint16_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:70:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:70:9:   old base type: array of size 3 of array of size 5 of layout
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:70:9:   new base type: int16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:70:9:   perhaps you meant the new base type to be int16_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:84:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:84:9:   old base type: array of size 3 of array of size 5 of uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:84:9:   new base type: uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:84:9:   perhaps you meant the new base type to be uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:86:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:86:9:   old base type: array of size 3 of array of size 5 of uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:86:9:   new base type: int32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:86:9:   perhaps you meant the new base type to be int32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:88:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:88:9:   old base type: array of size 3 of array of size 5 of uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:88:9:   new base type: uint16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:88:9:   perhaps you meant the new base type to be uint16_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:90:9: warning WPCAST: very suspect pointer-to-pointer cast: the new base type has incompatible representation. This could lead to your code getting mangled by the C compiler, with unpredictable results.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:90:9:   old base type: array of size 3 of array of size 5 of uint32_le_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:90:9:   new base type: int16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WPCAST.dml:90:9:   perhaps you meant the new base type to be int16_le_t

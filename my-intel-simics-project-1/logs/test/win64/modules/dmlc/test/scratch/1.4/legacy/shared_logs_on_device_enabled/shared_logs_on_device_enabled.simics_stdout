@@ -1,0 +1,7 @@
+WARNING: module 'dml-test-shared_logs_on_device_enabled' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] hello from test
+[obj info] hello from g
+[obj info] hello from g.c[1]
+[obj info] hello from g.s[2]
+[obj info] hello from g.s[2].c[3][5]
+[obj info] hello from g.s[2].c[3][5].s

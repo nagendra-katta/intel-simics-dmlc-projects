@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBFLD.dml:10:5: error EBFLD: illegal bitfields definition: non-integer field
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBFLD.dml:15:5: error EBFLD: illegal bitfields definition: field x has wrong size
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBFLD.dml:20:5: error EBFLD: illegal bitfields definition: field x has wrong size
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBFLD.dml:26:1: error EBFLD: illegal bitfields definition: bitfields width is > 64
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBFLD.dml:35:5: error EBFLD: illegal bitfields definition: non-integer field

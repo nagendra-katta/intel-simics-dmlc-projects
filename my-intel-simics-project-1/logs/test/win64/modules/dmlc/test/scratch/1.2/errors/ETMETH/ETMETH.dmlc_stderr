@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETMETH.dml:17:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETMETH.dml:27:1: In p0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETMETH.dml:20:5: warning WEXPERIMENTAL: Use of unsupported feature: method with two default declarations
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETMETH.dml:27:13: In template b
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETMETH.dml:18:8: In template a
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETMETH.dml:11:5: error ETMETH: attempt to override non-shared method m with shared method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETMETH.dml:20:5: shared method definition

@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-after_array' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\events\T_after_array.py
+[obj info] running alttest
+[obj info] running c[0].m
+[obj info] running c[1].m

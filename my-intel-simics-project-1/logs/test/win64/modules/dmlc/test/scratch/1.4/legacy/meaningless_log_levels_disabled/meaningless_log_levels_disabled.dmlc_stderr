@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:17:11: In good_logs.test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:24:9: warning WREDUNDANTLEVEL: 'X then Y' log level has no effect when the levels are the same
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:30:11: In bad_logs.test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:33:13: error ELLEV: log level must be 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:36:13: error ELLEV: log level must be 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:39:13: error ELLEV: log level must be 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:43:13: error ELLEV: log level must be a 1 or 5 constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:46:13: error ELLEV: log level must be a 1 or 5 constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:50:13: error ELLEV: log level must be 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\meaningless_log_levels.dml:52:13: error ELLEV: log level must be a 1 or 5 constant

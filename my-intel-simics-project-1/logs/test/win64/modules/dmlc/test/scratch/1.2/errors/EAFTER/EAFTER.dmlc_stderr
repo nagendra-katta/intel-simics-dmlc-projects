@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAFTER.dml:17:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAFTER.dml:20:5: error EAFTER: illegal 'after' statement with callback method 'inc': every method input parameter must be of serializable type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAFTER.dml:9:1: method declaration
+method parameter 'v' is of unserializable type: pointer to int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAFTER.dml:22:5: error EAFTER: illegal 'after' statement with callback method 'one': method must not have any output parameters
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAFTER.dml:13:1: method declaration

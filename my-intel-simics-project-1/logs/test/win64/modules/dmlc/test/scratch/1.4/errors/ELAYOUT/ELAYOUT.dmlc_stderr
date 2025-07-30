@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELAYOUT.dml:19:1: error ELAYOUT: illegal layout definition: extern layout not permitted, use 'struct { }' instead
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELAYOUT.dml:13:5: error ELAYOUT: illegal layout definition: illegal layout member type: long
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ELAYOUT.dml:15:5: error ELAYOUT: illegal layout definition: illegal layout member type: size_t

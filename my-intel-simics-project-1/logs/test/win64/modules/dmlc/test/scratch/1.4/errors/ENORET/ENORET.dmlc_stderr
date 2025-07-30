@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENORET.dml:86:40: error ENORET: missing return statement in method with output argument
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENORET.dml:128:5: In m9
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENORET.dml:81:37: error ENORET: missing return statement in method with output argument
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENORET.dml:26:7: In m3
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENORET.dml:26:7: error ENORET: missing return statement in method with output argument
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENORET.dml:20:7: In m2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENORET.dml:20:7: error ENORET: missing return statement in method with output argument

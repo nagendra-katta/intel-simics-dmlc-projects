@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device name="test" bitorder="le">
+  <bank name="b" byte_order="little-endian">
+    <register name="R1" offset="0" size="4">
+      <field name="all" msb="31" lsb="0" />
+    </register>
+    <register name="R2" offset="4" size="4">
+      <field name="ab" desc="12" msb="2" lsb="0" />
+      <field name="c" desc="3" msb="3" lsb="3" />
+      <field name="d[0]" desc="4" msb="4" lsb="4" />
+      <field name="d[1]" desc="4" msb="5" lsb="5" />
+      <field name="g" desc="7" msb="7" lsb="7" />
+    </register>
+    <register name="R3" offset="8" size="4">
+    </register>
+  </bank>
+</device>

@@ -1,0 +1,21 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:9:1: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:14:1: error ENOVERRIDE: parameter 'p0' not declared previously. To declare and define a new parameter, use the ':=' syntax.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:9:13: enabled by the explicit_param_decls provisional feature
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:23:11: error EOVERRIDE: the parameter 'p1b' has already been declared (':=' syntax may not be used for parameter overrides)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:21:1: existing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:29:11: error EOVERRIDE: the parameter 'p2b' has already been declared (':default' syntax may not be used for parameter overrides)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:31:1: existing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:54:1: In g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:57:15: error EOVERRIDE: the parameter 'p3b' has already been declared (':=' syntax may not be used for parameter overrides)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:35:5: existing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:60:15: error EOVERRIDE: the parameter 'p4b' has already been declared (':default' syntax may not be used for parameter overrides)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:38:5: existing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:54:12: In template t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:40:5: error ENOVERRIDE: parameter 'p5' not declared previously. To declare and define a new parameter, use the ':default' syntax.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:9:13: enabled by the explicit_param_decls provisional feature
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:63:15: error EOVERRIDE: the parameter 'p6b' has already been declared (':=' syntax may not be used for parameter overrides)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:43:5: existing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:66:15: error EOVERRIDE: the parameter 'p7b' has already been declared (':=' syntax may not be used for parameter overrides)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:46:5: existing declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:69:15: error EOVERRIDE: the parameter 'p8b' has already been declared (':default' syntax may not be used for parameter overrides)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\provisional\T_explicit_param_decls_EOVERRIDE.dml:49:5: existing declaration

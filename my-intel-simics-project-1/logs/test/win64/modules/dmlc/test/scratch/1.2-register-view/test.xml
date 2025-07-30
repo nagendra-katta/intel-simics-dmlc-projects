@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device name="test" bitorder="le">
+  <bank name="b" desc="Description for b" byte_order="little-endian">
+    <register name="R1" desc="R1" offset="0" size="4">
+    </register>
+    <register name="R2" desc="R2" offset="4" size="4">
+    </register>
+    <register name="R3" vsize="2 2" desc="R3" offset="8 12 16 20" size="4">
+    </register>
+  </bank>
+  <bank name="ba" vsize="3" byte_order="little-endian">
+    <register name="R1" desc="R1" offset="0 0 0" size="4">
+      <field name="all" msb="31" lsb="0" />
+    </register>
+    <register name="R2" desc="R2" offset="4 4 4" size="4">
+    </register>
+    <register name="R3" vsize="2 2" desc="R3" offset="8 12 16 20 8 12 16 20 8 12 16 20" size="4">
+    </register>
+  </bank>
+  <bank name="baa" vsize="3 3" desc="Description for baa" byte_order="little-endian">
+    <register name="R1" desc="R1" offset="0 0 0 0 0 0 0 0 0" size="4">
+      <field name="all" msb="31" lsb="0" />
+    </register>
+    <register name="R2" desc="R2" offset="4 4 4 4 4 4 4 4 4" size="4">
+    </register>
+    <register name="R3" vsize="2 2" desc="R3" offset="8 12 16 20 8 12 16 20 8 12 16 20 8 12 16 20 8 12 16 20 8 12 16 20 8 12 16 20 8 12 16 20 8 12 16 20" size="4">
+    </register>
+  </bank>
+  <bank name="be" byte_order="big-endian">
+    <register name="r" offset="0" size="4">
+    </register>
+  </bank>
+  <bank name="bg" byte_order="little-endian">
+    <group name="g" vsize="2">
+      <group name="h">
+        <group name="i" vsize="2">
+          <register name="r" offset="0 40 80 120" size="4">
+          </register>
+          <register name="rma" vsize="2 2" offset="20 24 28 32 60 64 68 72 100 104 108 112 140 144 148 152" size="4">
+          </register>
+          <register name="ru" vsize="3" offset="4 -1 12 44 -1 52 84 -1 92 124 -1 132" size="4">
+          </register>
+        </group>
+      </group>
+    </group>
+  </bank>
+  <bank name="exc" byte_order="little-endian">
+    <register name="r" offset="0" size="4">
+    </register>
+  </bank>
+  <bank name="le" byte_order="little-endian">
+    <register name="r" offset="0" size="4">
+    </register>
+  </bank>
+  <bank name="u" byte_order="little-endian">
+    <register name="R1" desc="R1" offset="0" size="4">
+    </register>
+    <register name="R2" desc="R2" offset="4" size="4">
+    </register>
+    <register name="R3" vsize="2 2" desc="R3" offset="8 12 16 20" size="4">
+    </register>
+  </bank>
+</device>

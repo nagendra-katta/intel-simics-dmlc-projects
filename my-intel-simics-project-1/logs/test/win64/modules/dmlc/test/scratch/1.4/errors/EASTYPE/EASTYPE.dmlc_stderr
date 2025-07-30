@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EASTYPE.dml:17:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EASTYPE.dml:20:17: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EASTYPE.dml:20:17:   got:      template type t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EASTYPE.dml:20:17:   expected: u

@@ -1,0 +1,8 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1348:21: In b.r4.f.set
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOC.dml:45:18: error ENALLOC: object is not allocated at run-time: b.r4.f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1373:21: In b.r3.f.get
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOC.dml:34:26: error ENALLOC: object is not allocated at run-time: b.r3.f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1390:9: In b.r2.set
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOC.dml:23:14: error ENALLOC: object is not allocated at run-time: b.r2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1395:9: In b.r1.get
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOC.dml:14:22: error ENALLOC: object is not allocated at run-time: b.r1

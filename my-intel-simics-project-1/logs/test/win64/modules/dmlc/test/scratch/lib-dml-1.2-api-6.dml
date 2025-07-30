@@ -1,0 +1,21 @@
+dml 1.2;
+device test;
+/// COMPILE-ONLY
+/// DMLC-FLAG --no-compat=broken_unused_types
+import "arinc-429.dml";
+import "crc.dml";
+import "dml-builtins.dml";
+import "dml12-compatibility.dml";
+import "ethernet.dml";
+import "io-memory.dml";
+import "simics-api.dml";
+import "simics-breakpoints.dml";
+import "simics-configuration.dml";
+import "simics-device.dml";
+import "simics-event.dml";
+import "simics-hindsight.dml";
+import "simics-memory.dml";
+import "simics-processor.dml";
+import "simics-types.dml";
+import "utility.dml";
+

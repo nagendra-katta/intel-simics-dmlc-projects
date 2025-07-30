@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-register_2' is not thread safe. Turning Multimachine Accelerator off.

@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\testing.dml:23:9: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_5182.dml:18:14: error EREF: reference to unknown object '$dram.map_demap'

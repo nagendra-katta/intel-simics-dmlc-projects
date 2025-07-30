@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSIGN_target_type.dml:9:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSIGN_target_type.dml:16:8: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSIGN_target_type.dml:16:8:   got:      function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSIGN_target_type.dml:16:8:   expected: function() returning void

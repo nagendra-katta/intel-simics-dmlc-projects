@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:19:9: In b0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:17:1: error EUNINITIALIZED: value of parameter mapped_registers is not yet initialized
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:24:9: In b1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:22:1: error EUNINITIALIZED: value of parameter unmapped_registers is not yet initialized
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:29:9: In b2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:27:1: error EUNINITIALIZED: value of parameter numbered_registers is not yet initialized
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:34:9: In c
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:32:1: error EUNINITIALIZED: value of parameter interfaces is not yet initialized
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:13:9: In p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNINITIALIZED.dml:7:7: error EUNINITIALIZED: value of parameter banks is not yet initialized

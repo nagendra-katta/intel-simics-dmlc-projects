@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-trait_identity' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_trait_identity.py

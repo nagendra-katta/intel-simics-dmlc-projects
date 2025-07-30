@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-vect_select' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] 2
+[obj info] 6
+[obj info] 5
+test attribute returned false

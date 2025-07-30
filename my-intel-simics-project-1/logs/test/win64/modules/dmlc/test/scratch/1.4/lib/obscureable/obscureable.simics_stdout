@@ -1,0 +1,17 @@
+WARNING: module 'dml-test-obscureable' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] test_bank.r name is r
+[obj info] test_bank.t name is r6
+[obj info] test_bank.r qname is test_bank.r
+[obj info] test_bank.t qname is test_bank.r6
+[obj info] test_bank.r.f name is f
+[obj info] test_bank.r.s name is f15_8
+[obj info] test_bank.t.f name is f
+[obj info] test_bank.t.s name is f15_8
+[obj info] test_bank.r.f qname is test_bank.r.f
+[obj info] test_bank.r.s qname is test_bank.r.f15_8
+[obj info] test_bank.t.f qname is test_bank.r6.f
+[obj info] test_bank.t.s qname is test_bank.r6.f15_8
+[obj info] a name is a
+[obj info] b name is secret_bank1
+[obj info] a qname is a
+[obj info] b qname is secret_bank1

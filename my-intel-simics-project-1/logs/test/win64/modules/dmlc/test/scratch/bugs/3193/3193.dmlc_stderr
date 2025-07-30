@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1554:17: In b1.r.write
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_3193.dml:18:13: error EPTYPE: wrong type for parameter p in method call
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_3193.dml:18:13:   got:      uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_3193.dml:18:13:   expected: struct s

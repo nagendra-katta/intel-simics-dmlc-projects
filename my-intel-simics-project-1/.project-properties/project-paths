@@ -1,0 +1,5 @@
+project: C:\Users\nagen\simics-projects\my-intel-simics-project-1
+simics-root: C:\Users\nagen\AppData\Local\Programs\Simics\simics-7.38.0
+simics-model-builder: C:\Users\nagen\AppData\Local\Programs\Simics\simics-7.38.0
+simics-python: C:\Users\nagen\AppData\Local\Programs\Simics\simics-python-7.10.0
+mingw: None

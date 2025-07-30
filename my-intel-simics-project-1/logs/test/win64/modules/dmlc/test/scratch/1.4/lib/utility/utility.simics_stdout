@@ -1,0 +1,55 @@
+WARNING: module 'dml-test-utility' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\lib\T_utility.py
+[obj.bank.b spec-viol] Write to read-only register b.read_only (value written = 0xdeadbeef, contents = 0xdeadbeef).
+[obj.bank.b spec-viol] Write to read-only register b.read_only (value written = 0xbe00, contents = 0xdeadbeef).
+[obj.bank.b spec-viol] Write to read-only register b.read_only (value written = 0x11111111, contents = 0xdeadbeef).
+[obj.bank.b spec-viol] Write to reserved register b.reserved (value written = 0xdeadbeef, contents = 0xdeadbeef), will not warn again.
+[obj.bank.b spec-viol] Write to read-only field b.fields0.read_only (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to read-only field b.fields0.read_only (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to reserved field b.fields0.reserved2 (value written = 0, contents = 0x1), will not warn again.
+[obj.bank.b spec-viol] Read from write-only register b.write_only (returning 0).
+[obj.bank.b spec-viol] Read from write-only register b.write_only (returning 0).
+[obj.bank.b spec-viol] Write outside fields in register b.fields3_2[0], bitranges;
+	7:6 (value written = 0b11, previous value = 0b00)
+	4:3 (value written = 0b11, previous value = 0b00)
+	1:0 (value written = 0b11, previous value = 0b00)
+[obj.bank.b spec-viol] Write outside fields in register b.fields3_2[1], bitranges;
+	7:6 (value written = 0b10, previous value = 0b00)
+	1:0 (value written = 0b01, previous value = 0b00)
+[obj.bank.b unimpl] Write to unimplemented register b.unimpl (value written = 0x5, contents = 0).
+[obj.bank.b unimpl] Write to unimplemented register b.write_unimpl (value written = 0x5, contents = 0).
+[obj.bank.b unimpl] Read from unimplemented register b.unimpl (contents = 0x5).
+[obj.bank.b unimpl] Read from unimplemented register b.read_unimpl (contents = 0x5).
+[obj.bank.b unimpl] Write to unimplemented field b.fields2.unimpl (value written = 0x1, contents = 0).
+[obj.bank.b unimpl] Write to unimplemented field b.fields2.write_unimpl (value written = 0x1, contents = 0).
+[obj.bank.b unimpl] Write to unimplemented field b.fields2.silent_unimpl (value written = 0x1, contents = 0).
+[obj.bank.b unimpl] Write to unimplemented register b.unimpl (value written = 0x5, contents = 0x4).
+[obj.bank.b unimpl] Write to unimplemented register b.write_unimpl (value written = 0x5, contents = 0x4).
+[obj.bank.b unimpl] Write to unimplemented register b.silent_unimpl (value written = 0x5, contents = 0x4).
+[obj.bank.b unimpl] Read from unimplemented register b.unimpl (contents = 0x5).
+[obj.bank.b unimpl] Read from unimplemented register b.read_unimpl (contents = 0x5).
+[obj.bank.b unimpl] Read from unimplemented register b.silent_unimpl (contents = 0x5).
+[obj.bank.b unimpl] Write to unimplemented field b.fields2.unimpl (value written = 0, contents = 0x1).
+[obj.bank.b unimpl] Write to unimplemented field b.fields2.write_unimpl (value written = 0, contents = 0x1).
+[obj.bank.b unimpl] Write to unimplemented field b.fields2.silent_unimpl (value written = 0, contents = 0x1).
+[obj.bank.b spec-viol] Write to constant register b.constant0 (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to constant field b.fields4.constant1 (value written = 0, contents = 0x3).
+[obj.bank.b spec-viol] Write to constant register b.constant1 (value written = 0, contents = 0x1).
+[obj.bank.b spec-viol] Write to constant field b.fields4.constant0 (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to constant register b.constant0 (value written = 0xa, contents = 0).
+[obj.bank.b spec-viol] Write to constant register b.constant1 (value written = 0xa, contents = 0x1).
+[obj.bank.b spec-viol] Write to constant field b.fields4.constant0 (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to constant field b.fields4.constant1 (value written = 0, contents = 0x3).
+[obj.bank.b spec-viol] Write to constant field b.fields5.constant0 (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to constant register b.zeros (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to constant register b.ones (value written = 0, contents = 0xffffffff).
+[obj.bank.b spec-viol] Write to constant field b.fields6.zeros (value written = 0x1, contents = 0).
+[obj.bank.b spec-viol] Write to constant field b.fields6.ones (value written = 0, contents = 0x1).
+[obj.bank.b spec-viol] Write to constant field b.fields6.many_ones (value written = 0xe, contents = 0xf).
+[obj.bank.b spec-viol] Read from poorly or non-documented register b.undocumented0 (contents = 0).
+[obj.bank.b spec-viol] Read from poorly or non-documented field b.fields8.undocumented (contents = 0).
+[obj.bank.b spec-viol] Read from poorly or non-documented register b.undocumented0 (contents = 0).
+[obj.bank.b spec-viol] Read from poorly or non-documented register b.undocumented1 (contents = 0).
+[obj.bank.b spec-viol] Read from poorly or non-documented field b.fields8.undocumented (contents = 0).
+[obj.bank.b spec-viol] Write to poorly or non-documented register b.undocumented0 (value written = 0, contents = 0).
+[obj.bank.b spec-viol] Write to poorly or non-documented field b.fields8.undocumented (value written = 0, contents = 0).

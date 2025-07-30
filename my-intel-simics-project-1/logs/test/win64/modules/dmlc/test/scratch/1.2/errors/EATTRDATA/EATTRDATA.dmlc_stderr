@@ -1,0 +1,9 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:11:1: error EATTRDATA: cannot define both 'allocate_type' parameter and local data objects
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:13:31: 'allocate_type' set here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:15:5: data object declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:19:1: error EATTRDATA: cannot define both 'allocate_type' parameter and local data objects
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:21:31: 'allocate_type' set here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:24:9: data object declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:29:1: error EATTRDATA: cannot define both 'allocate_type' parameter and local data objects
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:31:31: 'allocate_type' set here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EATTRDATA.dml:35:5: data object declared here

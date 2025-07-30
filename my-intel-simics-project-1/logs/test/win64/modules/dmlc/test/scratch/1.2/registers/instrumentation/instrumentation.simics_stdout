@@ -1,0 +1,9 @@
+WARNING: module 'dml-test-instrumentation' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_instrumentation.py
+[obj.bank.b1 spec-viol] 4 byte read access at offset 0xc in b1 (addr 0xc) outside registers or misaligned access
+[obj.bank.b1 spec-viol] 4 byte read access at offset 0xc in b1 (addr 0xc) outside registers or misaligned access
+[obj.bank.b1 error] Forbidden to read value if the access missed
+[obj.bank.b1 spec-viol] 4 byte read access at offset 0xc in b1 (addr 0xc) outside registers or misaligned access
+[obj.bank.ba[0] error] Forbidden to read value if the access missed
+[obj.bank.ba[1] error] Forbidden to read value if the access missed
+[obj.bank.b1 spec-viol] 4 byte read access at offset 0xfffffffffffffffc in b1 (addr 0xfffffffffffffffc) outside registers or misaligned access

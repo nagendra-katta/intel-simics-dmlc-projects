@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\T_unimpl_templates.dml:25:24: In template unimplemented
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\utility.dml:607:8: In template _unimpl_base_write_warn
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1661:9: In with_fields.r6.f.write
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\utility.dml:559:21: warning WWRNSTMT: unimplemented template used in both field and register

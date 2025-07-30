@@ -1,0 +1,18 @@
+WARNING: module 'dml-test-miss_pattern' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_miss_pattern.py
+[obj.bank.ob spec-viol] 2 byte read access at offset 0x1 in ob (addr 0x1) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte read access at offset 0x3 in ob (addr 0x3) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte read access at offset 0x20 in ob (addr 0x20) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte read access at offset 0x22 in ob (addr 0x22) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x1 in ob (addr 0x1) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x3 in ob (addr 0x3) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x20 in ob (addr 0x20) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x22 in ob (addr 0x22) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte read access at offset 0x11 in ob (addr 0x11) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte read access at offset 0x13 in ob (addr 0x13) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x11 in ob (addr 0x11) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x13 in ob (addr 0x13) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x30 in ob (addr 0x30) outside registers or misaligned access
+[obj.bank.ob spec-viol] 2 byte write access at offset 0x32 in ob (addr 0x32) outside registers or misaligned access
+[obj.bank.f spec-viol] 4 byte read access at offset 0x2 in f (addr 0x2) outside registers or misaligned access
+[obj.bank.f spec-viol] 1 byte read access at offset 0x3 in f (addr 0x3) outside registers or misaligned access

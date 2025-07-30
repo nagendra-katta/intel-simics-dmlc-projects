@@ -1,0 +1,12 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:12:14: error ETYPE: unknown type: 'foo_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:6:7: In etype
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:23:12: error ETYPE: unknown type: 'undefined_type_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:19:5: error ETYPE: unknown type: 'undefined_type_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:15:1: error ETYPE: unknown type: 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:26:1: error ETYPE: unknown type: 'xyz_interface_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:35:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:37:5: error ETYPE: unknown type: 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:39:23: error ETYPE: unknown type: 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:42:9: error ETYPE: unknown type: 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:44:5: error ETYPE: unknown type: 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ETYPE.dml:46:5: error ETYPE: unknown type: 'foo'

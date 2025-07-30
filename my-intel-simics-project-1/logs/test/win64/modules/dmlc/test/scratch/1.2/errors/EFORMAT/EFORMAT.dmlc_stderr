@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EFORMAT.dml:7:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EFORMAT.dml:9:5: error EFORMAT: malformed format string: unknown format at position 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EFORMAT.dml:11:5: error EFORMAT: malformed format string: unknown format at position 1

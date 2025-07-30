@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETLVALS.dml:18:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETLVALS.dml:22:8: error ERETLVALS: wrong number of return value recipients: Expected 3, got 0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETLVALS.dml:24:5: error ERETLVALS: wrong number of return value recipients: Expected 3, got 1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETLVALS.dml:26:5: error ERETLVALS: wrong number of return value recipients: Expected 3, got 2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETLVALS.dml:28:5: error ERETLVALS: wrong number of return value recipients: Expected 1, got 2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ERETLVALS.dml:30:5: error ERETLVALS: wrong number of return value recipients: Expected 1, got 2

@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-static_indexed' is not thread safe. Turning Multimachine Accelerator off.

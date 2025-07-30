@@ -1,0 +1,20 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:935:1: internal compiler error ICE: Unexpected exception 'Trait('y', [])' in _get_attribute_info
+Traceback (most recent call last):
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\dmlc.py", line 714, in main
+    dml.c_backend.generate(dev, headers, footers, outputbase,
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3529, in generate
+    generate_cfile(device, footers, prefix, hfilename,
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3308, in generate_cfile
+    generate_cfile_body(device, footers, full_module, filename_prefix)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3442, in generate_cfile_body
+    generate_init_trait_vtables(device, trait_param_values)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 2667, in generate_init_trait_vtables
+    generate_tinit(trait)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 2424, in generate_tinit
+    args.append(method_tinit_arg(trait, parent,
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 2304, in method_tinit_arg
+    impl_path.extend(impl_trait.ancestry_paths[vtable_trait][0])
+KeyError: Trait('y', [])
+*** An unexpected dmlc error occurred!
+    Please report this incident, together with the details
+    found in the dmlc-error.log file.

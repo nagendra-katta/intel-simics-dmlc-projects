@@ -1,0 +1,2 @@
+dmlc: ***Features for internal testing are enabled!!! These are near-guaranteed to NOT SURVIVE in their current form. They are COMPLETELY UNSUPPORTED. The DMLC developers WILL NOT respect their use. NEVER enable this flag for any kind of production code!!!***
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\hooks\T_hook_traitmember.dml:14:12: warning WEXPERIMENTAL: Use of unsupported feature: ***FEATURE FOR INTERNAL TESTING***: hook arrays

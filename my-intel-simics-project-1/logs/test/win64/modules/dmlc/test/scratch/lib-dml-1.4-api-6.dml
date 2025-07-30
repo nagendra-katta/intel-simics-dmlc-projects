@@ -1,0 +1,9 @@
+dml 1.4;
+device test;
+/// COMPILE-ONLY
+/// DMLC-FLAG --no-compat=broken_unused_types
+import "dml-builtins.dml";
+import "dml12-compatibility.dml";
+import "internal.dml";
+import "utility.dml";
+

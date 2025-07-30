@@ -1,0 +1,7 @@
+dmlc: ***Features for internal testing are enabled!!! These are near-guaranteed to NOT SURVIVE in their current form. They are COMPLETELY UNSUPPORTED. The DMLC developers WILL NOT respect their use. NEVER enable this flag for any kind of production code!!!***
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARRAY.dml:12:12: warning WEXPERIMENTAL: Use of unsupported feature: ***FEATURE FOR INTERNAL TESTING***: hook arrays
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARRAY.dml:16:9: error EARRAY: cannot use an array as a value: '_t.h'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARRAY.dml:18:10: error EARRAY: cannot use an array as a value: '_t.h[0]'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARRAY.dml:26:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARRAY.dml:28:17: error EARRAY: cannot use an array as a value: 'test.t.h'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARRAY.dml:30:19: error EARRAY: cannot use an array as a value: 'test.t.h[0]'

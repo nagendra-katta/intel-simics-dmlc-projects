@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAFTERSENDNOW.dml:12:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAFTERSENDNOW.dml:16:5: error EAFTERSENDNOW: illegal 'after' statement with callback 'h1.send_now': every message component of 'h1' must be of serializable type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAFTERSENDNOW.dml:16:5:   message component comp0 is of unserializable type: pointer to int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAFTERSENDNOW.dml:18:5: error EAFTERSENDNOW: illegal 'after' statementbound to hook 'h2' with callback 'h1.send_now': every message component of 'h1' not provided through a message component parameter of the 'after' must be of serializable type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAFTERSENDNOW.dml:18:5:   message component comp0 is of unserializable type: pointer to int

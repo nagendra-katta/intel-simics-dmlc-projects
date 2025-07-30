@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-15852' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_15852.py
+<int_register_interface_t interface of obj>
+<int_register_interface_t interface of obj>
+<int_register_interface_t interface of obj>

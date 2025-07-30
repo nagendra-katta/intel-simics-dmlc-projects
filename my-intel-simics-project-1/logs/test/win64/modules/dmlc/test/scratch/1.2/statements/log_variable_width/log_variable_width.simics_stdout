@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-log_variable_width' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] >>    7<<

@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:6:1: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:35:1: error ESERIALIZE: unserializable type: f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:46:1: error ESERIALIZE: unserializable type: function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:31:1: error ESERIALIZE: unserializable type: pointer to int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:28:1: error ESERIALIZE: unserializable type: pointer to void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:40:1: error ESERIALIZE: unserializable type: int_vect
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:15:7: In m
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:17:5: error ESERIALIZE: unserializable type: pointer to void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:21:5: error ESERIALIZE: unserializable type: array of size cast(num, int64 ) of int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESERIALIZE.dml:24:5: error ESERIALIZE: unserializable type: array of size cast(size, int64 ) of int

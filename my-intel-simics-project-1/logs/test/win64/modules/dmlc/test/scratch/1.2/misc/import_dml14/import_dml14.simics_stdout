@@ -1,0 +1,11 @@
+WARNING: module 'dml-test-import_dml14' is not thread safe. Turning Multimachine Accelerator off.
+[obj.port.p info] call nothrow_shared_default
+[obj.port.p error] Unexpected exception in p.nothrow_shared_default, ignoring
+[obj.port.p info] call nothrow_shared_abstract
+[obj.port.p error] Unexpected exception in p.nothrow_shared_abstract, ignoring
+[obj.port.p info] call nothrow_method
+[obj.port.p error] Unexpected exception in p.nothrow_method, ignoring
+[obj.bank.field_regs info] r4.f write
+[obj.bank.field_regs info] r5.write 345600
+[obj.bank.field_regs info] r5.f read
+[obj info] Once logging

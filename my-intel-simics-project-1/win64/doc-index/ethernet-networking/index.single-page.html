@@ -1,0 +1,2362 @@
+<!doctype html>
+<meta charset=utf8>
+<link rel=stylesheet href="../simics.css">
+<title>Ethernet Networking Technology Guide</title>
+
+<section class="page" id="index.html"><h1>Ethernet Networking Technology Guide</h1>
+ 
+  
+  
+  
+<p>
+  
+  
+  
+  
+</p></section><section class="page" id="ethernet-guide-introduction.html"><h1 class="jdocu"><a id="ethernet-guide-introduction.html:ethernet-guide-introduction">1 Introduction</a></h1>
+<p>
+
+</p><p>
+This guide explains how to use Simics to simulate Ethernet networks as well as
+how to connect the simulation to real networks.
+</p><p>
+</p></section><section class="page" id="simicsnet.html"><h1 class="jdocu"><a id="simicsnet.html:simicsnet">2 Network Simulation</a></h1>
+<p>
+
+</p><p>
+This chapter describes how Simics models Ethernet networking.
+</p><p>
+
+
+
+
+
+
+</p><p>
+</p></section><section class="page" id="ethernet-links.html"><h1 class="jdocu"><a id="ethernet-links.html:Ethernet-Links">2.1 Ethernet Links</a></h1>
+<p>
+<a id="ethernet-links.html:Ethernet-link"></a>
+
+</p><p>
+Connecting simulated machines over a simulated <a id="ethernet-links.html:Ethernet">Ethernet</a> connection
+is done by creating a <em>link</em> using one of the components in
+the <b>eth-links</b>
+module: <b><a id="ethernet-links.html:ethernet-cable">ethernet-cable</a></b>,
+<b><a id="ethernet-links.html:ethernet-hub">ethernet-hub</a></b>
+or <b><a id="ethernet-links.html:ethernet_switch">ethernet_switch</a></b>. Any of these components can
+connect to the Ethernet devices of the simulated machines. They model Ethernet
+at the frame level, in that they perform delivery of complete frames sent from
+one device to another, and do not model collisions or lower-level signaling
+details. Each of the three Ethernet links have their own particularities:
+</p><p>
+</p><dl><dt id="ethernet-links.html:dt:ethernet_cable"><a href="#ethernet-links.html:dt:ethernet_cable"><b>ethernet_cable</b></a></dt><dd>An Ethernet cable can only be connected to two
+devices, since, as a real Ethernet cable, it only has two ends. Apart from
+transporting Ethernet frames back and forth, an Ethernet cable models whether
+the signal is up or down.</dd><dt id="ethernet-links.html:dt:ethernet_hub"><a href="#ethernet-links.html:dt:ethernet_hub"><b>ethernet_hub</b></a></dt><dd>An ethernet_hub is the simplest Ethernet link model:
+all frames are broadcast to all devices connected to the hub. It works like a
+traditional hub or coaxial cable.</dd><dt id="ethernet-links.html:dt:ethernet_switch"><a href="#ethernet-links.html:dt:ethernet_switch"><b>ethernet_switch</b></a></dt><dd>An ethernet_switch also allows the connection of
+multiple devices, but functions rather like a switch: as it learns what
+MAC addresses the different devices have, it stops broadcasting and
+transports the frame more selectively. This can substantially improve
+simulation performance when several devices are talking on the link,
+and even more so when the simulation is distributed.</dd></dl><p>As all three models work more or less at the frame level; they can be used for
+any type of Ethernet connection, without limitations due to speed or
+technology. Traffic sent over the link can be anything,
+including <a id="ethernet-links.html:TCPIP">TCP/IP</a> or any other protocol stack that works on top of
+Ethernet. The link does not need to be configured for the intended use.
+</p><p>
+The three components are provided in the <b><a id="ethernet-links.html:eth-links">eth-links</a></b>
+module. They can be manipulated in the same way as any other component: after
+importing <b>eth-links</b>,
+the <b>create-ethernet-cable/hub/switch</b> commands are made available.
+They create non-instantiated components:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>create-ethernet-hub</b>
+Created non-instantiated 'ethernet-hub' component 'ethernet_hub0'.
+</pre><p>
+</p><p>
+The name will be automatically chosen by Simics unless it is provided as an
+argument to the command:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>create-ethernet-hub my_ethernet_hub</b>
+Created non-instantiated 'ethernet-hub' component 'my_ethernet_hub'.
+</pre><p>
+</p><p>
+When a link component has been created, it is possible to connect the network
+devices by running the <b>connect</b> command for each Ethernet port. For
+demonstration, we will use x86 machines from the <em>QSP-x86</em>
+package. Start the simulation with the <code>firststeps-multi.simics</code>
+start script and run the following commands:
+</p><p>
+
+
+
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>create-ethernet-hub my_ethernet_hub</b>
+Created non-instantiated 'ethernet_hub' component 'my_ethernet_hub'
+simics&gt; <b>connect board0.mb.sb.eth_slot my_ethernet_hub.device0</b>
+simics&gt;
+</pre><p>
+</p><p>
+To find a connector which is not connected for
+<b>ethernet_cable/hub/switch</b> components
+the <b>get-free-connector</b> command can be used. This command
+returns the name of a free connector:
+</p><pre class="jdocu_small">simics&gt; <b>my_ethernet_hub.get-free-connector</b>
+"my_ethernet_hub.device1"
+</pre><p>
+</p><p>
+Together the <b>get-free-connector</b> and <b>connect</b>
+commands can be used to connect a Ethernet device to a free connector:
+</p><pre class="jdocu_small">simics&gt; <b>connect (my_ethernet_hub.get-free-connector) board1.mb.sb.eth_slot</b>
+</pre><p>
+</p><p>
+Now, when all of the components of the system are configured and connected
+together, instantiate the link components:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>instantiate-components</b>
+</pre><p>
+</p><p>
+It is also possible to create instantiated links with the
+<b>new-ethernet-cable/hub/switch</b> commands, but note that this only
+works if there is already at least one instantiated top-level component in the
+simulation.
+</p><p>
+</p></section><section class="page" id="ethernet-vlan-switch.html"><h1 class="jdocu"><a id="ethernet-vlan-switch.html:Ethernet-VLAN-Switch">2.2 Ethernet VLAN Switch</a></h1>
+<p>
+<a id="ethernet-vlan-switch.html:ethernet-vlan-switch"></a>
+<a id="ethernet-vlan-switch.html:VLAN"></a>
+
+</p><p>
+The <b>ethernet_switch</b> described in the previous section
+complains if it receives frames tagged with VLAN information. For VLAN
+the <b>eth-links</b> provides a <a id="ethernet-vlan-switch.html:IEEE-802.1Q">IEEE 802.1Q</a> VLAN
+aware switch: <b>ethernet_vlan_switch</b>.
+ </p><p>
+</p><div class="note">
+<b>Note:</b>
+This section assumes you know what VLAN is. It only shows how to
+configure and use the ethernet_vlan_switch.
+</div>The VLAN switch has the same functionality as the basic Ethernet
+switch, but the interface is different to handle the added complexity
+of VLAN. You need to add VLAN groups to the switch before you can
+connect Ethernet devices to it. Each VLAN group has its own set of
+connectors.
+<p>
+The VLAN switch is created in the same way as the other Ethernet link
+components:
+</p><p>
+
+
+
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>create-ethernet-vlan-switch evs</b>
+Created non-instantiated 'ethernet_vlan_switch' component 'evs'
+</pre><p>
+</p><p>
+Once the link has been created you need to add VLAN groups to it:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>evs.add-vlan 1</b>
+</pre><p>
+</p><p>
+Each VLAN group adds two kinds of connectors:
+vlan_<em>X</em>_dev<em>Y</em> and vlan_<em>X</em>_trunk_dev<em>Y</em>,
+where <em>X</em> is the VLAN group id and <em>Y</em> is the an identifier
+for the connector. When a connector of one kind is used the switch
+automatically creates a new empty connector of the same kind with a
+new identifier.
+</p><p>
+Use the vlan_<em>X</em>_dev<em>Y</em> connectors to connect devices which
+do not expect or add VLAN tags. For example, to connect the first network 
+port of the <i>QSP-x86</i> machine created by the 
+<code>firststeps-multi.simics</code> script:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>connect board0.mb.sb.eth_slot evs.vlan_1_dev0</b>
+</pre><p>
+</p><p>
+Frames sent from the switch on these connections will not have any
+VLAN tags and the switch will generate a warning if it receives a
+tagged frame on such a connection.
+</p><p>
+Each VLAN group also has trunk connectors. On these connections the
+switch will parse frames sent to the switch to find which VLAN group
+they should be sent to and the switch will ensure that outgoing frames
+are tagged with the correct VLAN group.
+</p><p>
+To avoid having to keep track of the connector identifiers you can use
+<b>get-free-connector</b> to get an available non-trunk connector
+for a VLAN group:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>evs.get-free-connector 1</b>
+"evs.vlan_1_dev1"
+simics&gt; <b>connect board1.mb.sb.eth_slot (evs.get-free-connector 1)</b>
+simics&gt; <b>evs.get-free-connector 1</b>
+"evs.vlan_1_dev2"
+</pre><p>
+</p><p>
+and <b>get-free-trunk-connector</b> to get an available trunk
+connector for a VLAN group:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>evs.get-free-trunk-connector 1</b>
+"evs.vlan_1_trunk_dev0"
+</pre><p>
+</p><p>
+</p></section><section class="page" id="link-object-timing.html"><h1 class="jdocu"><a id="link-object-timing.html:Link-Object-Timing">2.3 Link Object Timing</a></h1>
+<p>
+<a id="link-object-timing.html:latency"></a>
+
+</p><p>
+All frames that are sent over a link are delivered to the receiving devices
+after a small delay.  The delay is the same for every frame, and is called the
+<em>latency</em> of the link.  Each link object has a <i>goal_latency</i>
+configuration parameter that controls the ideal latency the link wants to
+obtain.
+</p><p>
+Link objects are most often used to communicate between network devices using
+separate clocks. Due to way how Simics handles simulated time, different clocks
+are not always completely synchronized.  In order to avoid indeterministic
+simulation, the link latency must be high enough that any data sent over the
+link will never reach the recipient at a point in time it has already passed.
+This imposes a lower boundary on the latency, called the <em><a id="link-object-timing.html:minimumlatency">minimum
+latency</a></em> of the link.  The value of the minimum latency depends on
+the simulation setup, in particular whether the simulation is multithreaded or
+</p><p>
+distributed across several Simics processes.  See chapter "Scaling
+Simics" of the <em>Simics User's Guide</em> for more information
+about links and latencies.
+</p><p>
+The latency of a link can be specified in
+the <b>create-ethernet-cable/hub/switch</b> command as a time in
+seconds. If the latency of a link is set too low, it will be automatically
+adjusted to the lowest value allowed by the setup when the component is
+instantiated. For example, when creating two instances of
+the <i>QSP-x86</i> machine and connecting them to an Ethernet link
+with a too low latency, Simics will adjust the latency automatically. Let us
+look at an example with the <code>firststeps-multi.simics</code> script. It
+uses the <b>new-</b> command to create instantiated components instead of
+the <b>create-</b> variant:
+</p><p>
+
+
+
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>new-ethernet-hub goal_latency = 0.000001</b>
+Created instantiated 'ethernet_hub' component 'ethernet_hub0'
+simics&gt; <b>connect board0.mb.sb.eth_slot ethernet_hub0.device0</b>
+simics&gt; <b>connect board1.mb.sb.eth_slot ethernet_hub0.device1</b>
+</pre><p>
+</p><p>
+The <em>effective latency</em> of a link can be displayed by the
+<b>status</b> command provided by the link object. The actual Ethernet links
+are not created until the components are instantiated. To get access to the
+Ethernet link implementation, just request the <b>link</b> object in the
+component:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>ethernet_hub0.link.status</b>
+Status of ethernet_hub0.link [class eth-hub-link]
+=================================================
+
+    Effective latency : 10.0 ms
+
+    Connected devices : ('board0.mb.sb.phy', 'board0.cell')
+                        ('board1.mb.sb.phy', 'board1.cell')
+</pre><p>
+</p><p>
+Note the higher effective latency the link obtained, despite a goal latency of
+1us. The default latency can be adjusted using the <b>set-min-latency</b>
+command.
+</p><p>
+</p></section><section class="page" id="ip-services.html"><h1 class="jdocu"><a id="ip-services.html:IP-Services">2.4 IP Services</a></h1>
+<p>
+
+</p><p>
+It is often useful to let the simulated machines use services (e.g. DHCP service)
+available on the simulated network. Normally these services run on
+servers connected to the network. To avoid having to set up simulated servers
+just to provide them, Simics implements a <em><a id="ip-services.html:service-node">service node</a></em>
+instead.
+</p><p>
+The <a id="ip-services.html:service-nodeservice_node_comp"></a><b>service_node_comp</b>
+component class, available after importing the <b>std-comp</b>
+module, provides a virtual network node that acts as a server for a number of
+TCP/IP-based protocols, and as an IP router between simulated networks.  It
+handles both <a id="ip-services.html:IPv4">IPv4</a> and <a id="ip-services.html:IPv6">IPv6</a> protocol versions.  The
+supported services are:
+</p><p>
+</p><ul>
+<li>IP based Routing (v4 and v6)</li>
+<li>RARP (v4)</li>
+<li>DHCP/BOOTP (v4) and DHCPv6 (v6)</li>
+<li>DNS (v4 and v6)</li>
+<li>FTP (v4) (see section <i>Using FTP Service</i> of <i>Simics User
+ Manual</i> and <b>ftp-service</b> class description in <i>Simics
+ Reference Manual</i>)</li>
+<li>TFTP (v4)</li>
+<li>Real network connections (see chapter <a class="reference" href="#real-network.html">3</a>)</li>
+
+</ul>
+<p>
+There can be any number of <b>service_node_comp</b> components, and each
+one can be connected to any number of Ethernet links.  In most configurations,
+however, there will be a single service node. A service node can be created
+using the <b>create/new-service-node-comp</b> commands:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module std-comp</b>
+simics&gt; <b>new-service-node-comp sn0</b>
+Created instantiated 'service_node_comp' component 'sn0'.
+</pre><p>
+</p><p>
+This service node can then be connected to an Ethernet link component. Note
+that the service-node IP address on the link must be specified:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>sn0.connect-to-link ethernet_hub0 10.10.0.1</b>
+Adding host info for IP 10.10.0.1: simics0.network.sim<img alt="Line break" src="nextline.png">
+MAC: 20:20:20:20:20:00
+simics&gt;
+</pre><p>
+</p><p>
+The rest of the configuration can be done <em>when the service node has been
+instantiated</em>, using the available commands, such as:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>sn0.list-host-info</b>
+IP         name.domain          MAC
+-------------------------------------------------
+10.10.0.1  simics0.network.sim  20:20:20:20:20:00
+simics&gt;
+</pre><p>
+</p><p>
+
+</p></section><section class="page" id="ip-based-routing.html"><h1 class="jdocu"><a id="ip-based-routing.html:IP-Based-Routing">2.4.1 IP Based Routing</a></h1>
+<p>
+<a id="ip-based-routing.html:routing"></a>
+<a id="ip-based-routing.html:IProuting"></a>
+
+</p><p>
+Simics' <em>service node</em> can provide IP based routing between Ethernet
+links, allowing machines attached to different networks to communicate with
+each other.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+To use the routing mechanisms, simulated machines must use the
+<a id="ip-based-routing.html:IPaddress"></a>IP address of the service node as a
+<a id="ip-based-routing.html:routinggateway"></a><em><a id="ip-based-routing.html:gateway">gateway</a></em> for IP based
+traffic. Configuring a gateway requires system administration skills,
+and the exact procedure depends on the target operating system.</div>Each connection of the service-node to an Ethernet link implies a default route
+to that link. For example, connecting a service node with the
+address <code>192.168.0.1/24</code> to <b>link1</b> implies that all
+packets matching this network and mask combination will be routed
+to <b>link1</b> automatically. This often solves the most common routing
+needs.
+<p>
+In addition, the service node contains an internal IP routing table that is
+used for packet routing between connected links.  The routing table can be
+viewed using the <b>&lt;service_node_comp&gt;.route</b> command:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>sn0.route</b>
+Destination  Netmask  Gateway  Link 
+------------------------------------
+10.10.0.0    24                link0
+</pre><p>
+</p><p>
+The output is quite similar to <code>route</code> command available on many
+systems. The <i>destination</i> and <i>netmask</i> fields specify a target that
+can be either a network (i.e., a range of addresses) or a single host (with
+netmask <code>255.255.255.255</code>). For packets with this target as their
+destination, the <i>link</i> field specifies the Ethernet link the packet
+should be sent to.
+</p><p>
+New entries can be added to the routing table with the
+<a id="ip-based-routing.html:routingroute-add"></a>
+<b>&lt;service_node_comp&gt;.route-add</b> command. If there is a service node
+called <b>sn0</b> connected to two links called
+<b>link0</b> and <b>link1</b>, it would for example possible to set up
+routes like this:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>sn0.route-add 192.168.0.0 255.255.0.0 link = link0</b>
+simics&gt; <b>sn0.route-add 192.168.1.0/26 link = link1</b>
+simics&gt; <b>sn0.route-add 10.10.0.0 255.255.0.0 192.168.0.1 link0</b>
+simics&gt; <b>sn0.route-add 0.0.0.0 255.255.255.255 192.168.1.1 link1</b>
+simics&gt; <b>sn0.route</b>
+Destination  Netmask  Gateway      Link 
+----------------------------------------
+192.168.0.0  16                    link0
+192.168.1.0  26                    link1
+10.10.0.0    16       192.168.0.1  link0
+default               192.168.1.1  link1
+</pre><p>
+</p><p>
+The destination address and the netmask identify the target, and
+should be given as strings in dotted decimal form. If the target is a
+single host, the netmask should be given as
+<code>"255.255.255.255"</code>.
+</p><p>
+</p></section><section class="page" id="dhcp-and-bootp.html"><h1 class="jdocu"><a id="dhcp-and-bootp.html:DHCP-and-BOOTP">2.4.2 DHCP and BOOTP</a></h1>
+<p>
+<a id="dhcp-and-bootp.html:BOOTP"></a>
+<a id="dhcp-and-bootp.html:DHCP"></a>
+
+</p><p>
+A service node can act as a
+<i>Dynamic Host Configuration Protocol</i> (DHCP) or <i>Bootstrap Protocol</i>
+(BOOTP) server, responding to requests from clients that can read their network
+configuration from such a server.  The DHCP protocol is an extension of the
+BOOTP protocol, and for many uses the feature set is more or less the same.
+The Simics implementation uses the same configuration for both services.
+</p><p>
+The service node has a table that maps <a id="dhcp-and-bootp.html:MAC-address"></a>MAC addresses to
+<a id="dhcp-and-bootp.html:IPaddress"></a>IP addresses and domain name. This is used to answer DHCP
+or BOOTP requests.The <b>&lt;service_node_comp&gt;.add-host</b>
+<a id="dhcp-and-bootp.html:DHCPadd-host"></a> command can add entries to this table:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>sn0.add-host 10.10.0.1 node1 mac="10:10:10:10:10:01"</b>
+Adding host info for IP 10.10.0.1: node1.network.sim<img alt="Line break" src="nextline.png">
+MAC:10:10:10:10:10:01
+</pre><p>
+</p><p>
+The <b>&lt;service_node_comp&gt;.list-host-info</b> command prints the current
+contents of the table:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>sn0.list-host-info</b>
+IP         name.domain          MAC              
+-------------------------------------------------
+10.10.0.0  simics0.network.sim  20:20:20:20:20:00
+10.10.0.1  node1.network.sim    10:10:10:10:10:01
+</pre><p>
+</p><p>
+<a id="dhcp-and-bootp.html:DHCPdhcp-add-pool"></a> The <b>&lt;service_node_comp&gt;.dhcp-add-pool</b>
+command adds dynamic DHCP leases, from which new clients will be automatically
+assigned an address on request. When an entry from the pool is given out, the
+new mapping is stored in the internal host info table, including a generated
+name that can be found through DNS queries. If a DHCP client's MAC address
+matches an entry in the table, it is assigned the corresponding IP address. If
+there is no matching MAC address, the dynamic address pools will be searched
+for an available IP address.
+</p><p>
+The DHCP implementation in <b>service-node</b> is simple, and might not
+work with all DHCP clients.
+</p><p>
+</p></section><section class="page" id="dns.html"><h1 class="jdocu"><a id="dns.html:DNS">2.4.3 DNS</a></h1>
+<p>
+<a id="dns.html:DNS"></a>
+
+</p><p>
+The service node includes the functionality of a simple <i>Domain Name
+Server</i> (DNS), that a simulated client can use to translate a
+host/domain name into an IP address and vice versa. The DNS service is
+based on the same host table as the DHCP service, and only answers
+requests for A and PTR records.
+</p><p>
+For entries in the table that will only be used to answer DNS requests, and not
+for DHCP, the MAC address can be left out.  <a id="dns.html:DNSadd-host"></a>
+The <b>&lt;service_node_comp&gt;.add-host</b> command can be used to add table
+entries, and the <b>&lt;service_node_comp&gt;.list-host-info</b> command prints
+the current table.  By default, all host entries will use
+the <code>network.sim</code> domain.
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>sn0.add-host 10.10.0.1 donut</b>
+Adding host info for IP 10.10.0.1: donut.network.sim
+simics&gt; <b>sn0.add-host 10.11.0.1 foo other.domain</b>
+Adding host info for IP 10.11.0.1: foo.other.domain
+simics&gt; <b>sn0.list-host-info</b>
+IP         name.domain          MAC              
+-------------------------------------------------
+10.10.0.0  simics0.network.sim  20:20:20:20:20:00
+10.10.0.1  donut.network.sim    10:10:10:10:10:01
+10.11.0.1  foo.other.domain                      
+</pre><p>
+</p><p>
+For dynamic DHCP addresses, a DNS name will be added for the new IP number, so
+that any of these addresses can be found by the DNS service. When connected to
+a real network, the DNS service can do external lookups for names it does not
+recognize.
+</p><p>
+</p></section><section class="page" id="tftp.html"><h1 class="jdocu"><a id="tftp.html:TFTP">2.4.4 TFTP</a></h1>
+<p>
+<a id="tftp.html:TFTP"></a>
+
+</p><p>
+The service node also supports the <i>Trivial File Transfer Protocol</i> (TFTP,
+see <em>RFC 1350</em>) which allows to transfer files between the host
+system (running the simulation) and a simulated (target) client. TFTP is often
+used during network booting, together with the BOOTP facilities, to load OS
+kernels and images, and it can also be used interactively with
+the <code>tftp</code> command found on many systems.
+</p><p>
+Files to be transferred from the host system to the simulated client should be
+placed in a directory in the Simics path. This is the standard path used by
+image objects: <b>list-directories</b> will print its current value, while
+<b>add-directory</b> will add a directory to the path list. The
+current working directory is also automatically included.
+</p><p>
+Files transferred from the simulated client to the host will end up in the
+current working directory. When running Simics in graphical mode, this will be
+the project directory; from the command line or without a project, it will
+be the directory Simics was started from.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+TFTP is based on UDP, and each packet is acknowledged individually before
+the transfer is allowed to continue. Depending on the latency of the link, the
+transfer of large files can be slow. In that case, ensuring that the link uses
+a lower latency will increase performance.</div>A short example, assuming the target machine is running Linux with TFTP
+installed, has already booted, and has a working service node properly
+connected. We bring up the target's network interface:
+<p>
+</p><pre class="jdocu_small">joe@computer: ~#<b> ifconfig eth0 10.10.0.10 up</b>
+</pre><p>
+</p><p>
+And we transfer the file <code>myfile.txt</code> from the host machine:
+</p><pre class="jdocu_small">joe@computer: ~#<b> tftp -l myfile.txt -r myfile.txt -g 10.10.0.1</b>
+</pre><p>
+</p></section><section class="page" id="observing-network-traffic.html"><h1 class="jdocu"><a id="observing-network-traffic.html:Observing-Network-Traffic">2.5 Observing Network Traffic</a></h1>
+<p>
+
+</p><p>
+Simics proposes several ways of listening to the network traffic on one, or all
+Ethernet links. Simics includes ready-to-use traffic dumping capabilities,
+using external network monitoring tools. It also provides an Ethernet probe and
+Ethernet snooper capabilities, giving access to a programmatic interface for
+listening to the network traffic.
+</p><p>
+
+
+
+</p><p>
+</p></section><section class="page" id="traffic-monitoring-software.html"><h1 class="jdocu"><a id="traffic-monitoring-software.html:Traffic-Monitoring-Software">2.5.1 Traffic Monitoring Software</a></h1>
+<p>
+
+</p><p>
+Simics provides several commands to dump the traffic on one or several Ethernet
+links. These commands use existing file formats and network monitoring tools to
+present the results:
+</p><p>
+</p><dl><dt id="traffic-monitoring-software.html:dt:pcap-dump"><a href="#traffic-monitoring-software.html:dt:pcap-dump"><b>pcap-dump</b></a></dt><dd>The <b>&lt;ethernet_link&gt;.pcap-dump</b> command
+dumps the traffic of a specific Ethernet link to a file that can be read
+by <code>tcpdump</code> or any compatible program like <code>Wireshark</code>
+(<a class="jdocu" href="https://www.wireshark.org" rel="noopener noreferrer" target="_top">https://www.wireshark.org</a>). A global <b>pcap-dump</b> also exists to
+dump the traffic of all Ethernet links of the simulation in the same file.</dd><dt id="traffic-monitoring-software.html:dt:tcpdump"><a href="#traffic-monitoring-software.html:dt:tcpdump"><b>tcpdump</b></a></dt><dd>The <b>tcpdump</b> command works
+as <b>pcap-dump</b>, but the traffic is redirected to a <code>tcpdump</code>
+instance running in a separate window (for Linux only).</dd><dt id="traffic-monitoring-software.html:dt:wireshark"><a href="#traffic-monitoring-software.html:dt:wireshark"><b>wireshark</b></a></dt><dd>The <b>wireshark</b> command works
+as <b>tcpdump</b>, but redirects the traffic to an instance of Wireshark
+instead.</dd></dl><p>Note that there can only be one traffic dumping tool active on the link. Simics
+will automatically stop the current traffic dump and start a new one as
+necessary. The <b>pcap-dump-stop</b>, <b>tcpdump-stop</b>,
+and <b>wireshark-stop</b> commands can be used to stop the traffic dumping.
+</p><p>
+These commands can also be activated for a specific device on the link by
+associating them with an existing Ethernet probe. This is described in
+the <em>Ethernet Probe</em> section below.
+</p><p>
+</p></section><section class="page" id="ethernet-probe.html"><h1 class="jdocu"><a id="ethernet-probe.html:Ethernet-Probe">2.5.2 Ethernet Probe</a></h1>
+<p>
+
+</p><p>
+The Ethernet probe provides a way to listen to traffic at a particular endpoint
+of the link, that is, the probe will receive both incoming and outgoing traffic
+for a particular device.
+</p><p>
+A probe is inserted using the <b>insert-ethernet-probe</b> command with
+appropriate arguments. We will use <i>QSP-x86</i> as
+an example machine. Please start the simulation with
+the <code>firststeps-no-network.simics</code> start script:
+</p><p>
+
+
+
+
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>new-ethernet-switch link0</b>
+Created instantiated 'ethernet_switch' component 'link0'
+simics&gt; <b>connect link0.device0 board.mb.sb.eth_slot</b>
+
+# insert a probe between the PHY of the eth[0] device above and the link
+simics&gt; <b>load-module eth-probe</b>
+simics&gt; <b>insert-ethernet-probe device = board.mb.sb.phy</b>
+Created probe 'probe0'
+simics&gt; <b>probe0.info</b>
+Information about probe0 [class eth-probe]
+==========================================
+
+Connections:
+    Port A : board.mb.sb.phy
+    Port B : link0.link
+</pre><p>
+</p><p>
+At this point, the probe is ready to use. You can issue
+a <b>&lt;eth-probe&gt;.pcap-dump</b> or similar command to connect an
+external network monitoring tool at the probe level. The traffic will be dumped
+as seen from the <b>board.mb.sb.phy</b> device.
+</p><p>
+You can also register your own callback to listen to the traffic going-on in
+the probe, using the <code>ethernet_probe</code> interface provided by the
+probe object:
+</p><p>
+
+   </p><pre class="jdocu_small">typedef enum {
+        Eth_Probe_Port_A = 0,
+        Eth_Probe_Port_B = 1
+} eth_probe_side_t;
+</pre><p>
+</p><p>
+   
+
+   </p><pre class="jdocu_small">typedef void (*ethernet_probe_snoop_t)(lang_void *user_data,
+                                       conf_object_t *probe,
+                                       eth_probe_side_t to_side,
+                                       const frags_t *frame,
+                                       eth_frame_crc_status_t crc_status);
+</pre><p>
+</p><p>
+   
+
+   </p><pre class="jdocu_small">SIM_INTERFACE(ethernet_probe) {
+        void (*attach_snooper)(conf_object_t *NOTNULL probe,
+                               ethernet_probe_snoop_t snoop_fun,
+                               lang_void *user_data);
+        void (*attach_probe)(conf_object_t *NOTNULL probe,
+                             ethernet_probe_snoop_t snoop_fun,
+                             lang_void *user_data);
+        void (*detach)(conf_object_t *NOTNULL probe);
+        void (*send_frame)(conf_object_t *NOTNULL probe,
+                           eth_probe_side_t to_side,
+                           const frags_t *frame,
+                           eth_frame_crc_status_t crc_status);
+};
+
+#define ETHERNET_PROBE_INTERFACE "ethernet_probe"
+</pre><p>
+</p><p>
+   
+</p><p>
+A complete description of this interface is provided in the <em>Simics
+Reference Manual</em>. What we are interested in at this point is to register
+a <em>snooper</em> callback that will only listen to traffic:
+</p><p>
+</p><pre class="jdocu_small"># a callback that does nothing but print a warning
+simics&gt; <b>@def callback(user_data, probe, to_side, packet, crc_status):</b>
+        <b>    if to_side == Eth_Probe_Port_A:</b>
+        <b>        print('packet going to device')</b>
+        <b>    else:</b>
+        <b>        print('packet going to network')</b>
+
+........
+simics&gt; <b>@conf.probe0.iface.ethernet_probe.attach_snooper(callback, None)</b>
+simics&gt; <b>c</b> 
+packet going to network
+packet going to network
+[...]
+</pre><p>
+</p><p>
+The probe can also drop, modify or inject packets. This is described in
+the <em>Injecting Network Traffic</em> section below.
+</p><p>
+</p></section><section class="page" id="traffic-snooping.html"><h1 class="jdocu"><a id="traffic-snooping.html:Traffic-Snooping">2.5.3 Traffic Snooping</a></h1>
+<p>
+
+</p><p>
+Ethernet links provide a special interface to listen to all traffic on the
+link via a function callback. This makes it possible to write simple traffic
+dumping scripts with customized output.
+</p><p>
+
+   
+</p><pre class="jdocu_small">typedef void (*ethernet_link_snoop_t)(lang_void *user_data,
+                                      conf_object_t *clock,
+                                      const frags_t *packet,
+                                      eth_frame_crc_status_t crc_status);</pre><p>
+
+   </p><pre class="jdocu_small">SIM_INTERFACE(ethernet_snoop) {
+        conf_object_t *(*attach)(conf_object_t *NOTNULL link,
+                                 conf_object_t *clock,
+                                 ethernet_link_snoop_t snoop_fun,
+                                 lang_void *user_data);
+};
+#define ETHERNET_SNOOP_INTERFACE "ethernet_snoop"
+</pre><p>
+</p><p>
+
+   This interface is implemented by Ethernet link objects. It is used to attach
+   snoop functions to the link. The snoop function will receive all traffic
+   going over the link.
+</p><p>
+   
+</p><p>
+   This interface should only be used for inspection, and never as part of the
+   actual simulation. The snoop functions must not affect the simulation in any
+   way.
+</p><p>
+   The <i>clock</i> parameter tells the link on which clock to post the
+   events that call the snoop function. The snoop function will be called at
+   the delivery time of the network packet, which means that it will be called
+   at the same time as any Ethernet devices attached to the same clock that
+   receives packets from the same link.
+</p><p>
+   Snooped frames with a matching CRC will contain the correct frame check
+   sequence.
+</p><p>
+   The <i>user_data</i> parameter is passed to the snoop function every
+   time it is called.
+   
+</p><p>
+   
+</p><p>
+We will use the <i>QSP-x86</i> as an example. Please start
+the simulation with the <code>firststeps-no-network.simics</code> start
+script, a simple script callback could be written as follow:
+</p><p>
+
+
+
+
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>new-ethernet-switch link0</b>
+Created instantiated 'ethernet_switch' component 'link0'
+simics&gt; <b>connect link0.device0 board.mb.sb.eth_slot</b>
+
+# a callback that does nothing but print a warning
+simics&gt; <b>@def callback(user_data, clock, packet, crc_status):</b>
+simics&gt;     <b>print("packet received in snooper")</b>
+
+........
+
+# callback registration on link0, using the CPU as clock object
+simics&gt; <b>@ep = conf.link0.link.iface.ethernet_snoop.attach(<img alt="Line break" src="nextline.png">
+conf.board.mb.cpu0.core[0][0], callback, None)</b>
+simics&gt; <b>c</b> 
+packet received in snooper
+packet received in snooper
+[...]
+</pre><p>
+</p><p>
+The endpoint object returned by the <b><i>attach()</i></b> function can be
+destroyed as any time using <b><i>SIM_delete_object()</i></b>, ending the
+capture. Snooper endpoints are used by the external monitoring tools system
+described in the previous section to feed to the tools the packets passing on
+the links.
+</p><p>
+</p></section><section class="page" id="injecting-and-modifying-network-traffic.html"><h1 class="jdocu"><a id="injecting-and-modifying-network-traffic.html:Injecting-and-Modifying-Network-Traffic">2.6 Injecting and Modifying Network Traffic</a></h1>
+<p>
+
+</p><p>
+
+
+</p><p>
+</p></section><section class="page" id="from-a-network-dump.html"><h1 class="jdocu"><a id="from-a-network-dump.html:From-a-Network-Dump">2.6.1 From a Network Dump</a></h1>
+<p>
+
+</p><p>
+Simics comes with a <b>eth-injector</b> class that takes
+a <em>pcap</em> format file and injects the packets described in the file into
+the simulated network.
+</p><p>
+Each packet in a pcap file has a time stamp that usually is the
+absolute time when the packet was recorded. The
+<b>eth-injector</b> starts injecting the first packet of the pcap file
+directly after the <b>start</b> command has been run. The consecutive
+packets are injected after an amount of virtual time that is equal to the
+difference in time stamp between that packet and the first packet of the pcap
+file. If the packet cannot be injected because of bandwidth limitations, it is
+ignored. Incoming packets are ignored as well.
+</p><p>
+It is common that the CRC of Ethernet frames are not recorded in pcap files. In
+Simics, the whole Ethernet frame has to be present for a correct simulation
+result. The <i>-no-crc</i> option of
+the <b>&lt;eth-injector&gt;.start</b> command can be used to tell
+the injector that the
+pcap file contains no CRC. The injector then adds a CRC to each frame that
+Simics will handle as if it was correct. By not using the <i>-no-crc</i>
+option the frames in the pcap file are injected as they were recorded, without
+any modification.
+</p><p>
+The <b>eth-injector</b> can be connected to an Ethernet link like any
+other Ethernet device. It can also be connected directly to another Ethernet
+device without the need to have a link between the device and
+the <b>eth-injector</b>.
+</p><p>
+The following example creates a new <b>eth-injector</b>,
+connects it to an already existing <b>ethernet_switch</b> of
+name <b>ethernet_switch0</b> and starts packet playback from a
+file named <em>test.pcap</em>:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-injector-comp</b>
+simics&gt; <b>new-eth-injector-comp name = inj0</b>
+Created instantiated 'eth_injector_comp' component 'inj0'
+simics&gt; <b>connect ethernet_switch0.link inj0.link</b>
+simics&gt; <b>inj0.injector.start file = test.pcap</b>
+</pre><p>
+</p></section><section class="page" id="from-an-ethernet-probe.html"><h1 class="jdocu"><a id="from-an-ethernet-probe.html:From-an-Ethernet-Probe">2.6.2 From an Ethernet Probe</a></h1>
+<p>
+
+</p><p>
+The section <em>Observing Network Traffic</em> explained how to use an
+Ethernet probe to listen to the incoming and outgoing traffic of a device
+connected on an Ethernet link. A probe can also be used to modify this traffic
+by dropping and changing existing packets, or injecting new ones.
+</p><p>
+
+   </p><pre class="jdocu_small">typedef enum {
+        Eth_Probe_Port_A = 0,
+        Eth_Probe_Port_B = 1
+} eth_probe_side_t;
+</pre><p>
+</p><p>
+   
+
+   </p><pre class="jdocu_small">typedef void (*ethernet_probe_snoop_t)(lang_void *user_data,
+                                       conf_object_t *probe,
+                                       eth_probe_side_t to_side,
+                                       const frags_t *frame,
+                                       eth_frame_crc_status_t crc_status);
+</pre><p>
+</p><p>
+   
+
+   </p><pre class="jdocu_small">SIM_INTERFACE(ethernet_probe) {
+        void (*attach_snooper)(conf_object_t *NOTNULL probe,
+                               ethernet_probe_snoop_t snoop_fun,
+                               lang_void *user_data);
+        void (*attach_probe)(conf_object_t *NOTNULL probe,
+                             ethernet_probe_snoop_t snoop_fun,
+                             lang_void *user_data);
+        void (*detach)(conf_object_t *NOTNULL probe);
+        void (*send_frame)(conf_object_t *NOTNULL probe,
+                           eth_probe_side_t to_side,
+                           const frags_t *frame,
+                           eth_frame_crc_status_t crc_status);
+};
+
+#define ETHERNET_PROBE_INTERFACE "ethernet_probe"
+</pre><p>
+</p><p>
+   
+</p><p>
+A complete description of this interface is provided in the <em>Simics
+Reference Manual</em>. What we are interested in now is to register
+a <em>probe</em> callback that will be allowed to modify the traffic:
+</p><p>
+
+
+
+
+</p><p>
+
+
+
+
+
+
+
+</p><p>
+</p><pre class="jdocu_small"># a callback that drops all outgoing packets
+simics&gt; <b>@def callback(user_data, probe, to_side, packet, crc_status):</b>
+            <b>if to_side == Eth_Probe_Port_A:</b>
+                <b>print('dropping incoming packet')</b>
+            <b>else:</b>
+                <b>print('forwarding outgoing packet')</b>
+                <b>probe.iface.ethernet_probe.send_frame(to_side, packet, crc_status)</b>
+
+........
+simics&gt; <b>@conf.probe0.iface.ethernet_probe.attach_probe(callback, None)</b>
+simics&gt; <b>c</b> 
+forwarding outgoing packet
+forwarding outgoing packet
+[...]
+</pre><p>
+</p><p>
+When a callback is registered as a <em>probe</em>, it takes responsibility for
+forwarding packets it receives. It is also allowed to drop them, modify them,
+modify their CRC status or inject new packets. For example, it could duplicate
+outgoing packets, inject errors, etc. Note that if your callback modifies the
+simulation in this manner, you may need to create an object representing the
+changes' state engine to make sure the simulation can be checkpointed and stays
+deterministic.
+</p><p>
+</p></section><section class="page" id="real-network.html"><h1 class="jdocu"><a id="real-network.html:real-network">3 Connecting to a Real Network</a></h1>
+<p>
+
+</p><p>
+Connecting a simulator to a real network opens many new possibilities. For
+example, it makes it easy to download files to the simulated machines using
+FTP, to access the simulated machines remotely through telnet, or to test
+software on simulated machines against real machines.
+</p><p>
+Simics provides three kinds of real-network connections. This chapter will go
+through all of them in details, with numerous examples. Section
+<a class="reference" href="#real-network-examples.html">3.1</a> starts by explaining the preparatory steps
+for all the examples presented afterwards. Section
+<a class="reference" href="#real-network-connections.html">3.2</a> goes through all three kinds of
+real-network connections, how they are set up and what they provide.
+</p><p>
+Some real-network connections require specific configuration on the host
+system: these are covered in section <a class="reference" href="#real-network-access.html">3.3</a>.
+Section <a class="reference" href="#real-network-interface.html">3.4</a> describes how to select the
+correct host interface when running on a host with multiple Ethernet
+interfaces.
+</p><p>
+Finally, section <a class="reference" href="#real-network-performance.html">3.5</a> describes how to tune
+real network connections to improve their performance, and section
+<a class="reference" href="#real-network-troubleshooting.html">3.6</a> contains a troubleshooting guide to
+help diagnose problems.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+Connecting a simulated network to a real network requires some knowledge
+of network administration issues.</div>
+
+
+
+
+
+<p>
+</p></section><section class="page" id="real-network-examples.html"><h1 class="jdocu"><a id="real-network-examples.html:real-network-examples">3.1 Preparing for the Examples</a></h1>
+<p>All the examples in section <a class="reference" href="#real-network-connections.html">3.2</a> use the
+simulated <i>QSP-x86</i> machine from the First Steps
+tutorial. Start the <code>firststeps-no-network.simics</code> configuration and boot the
+machine. Then, to save time when trying several examples, save a checkpoint.
+This checkpoint can be used instead of launching and booting
+<i>QSP-x86</i> for each example. When
+idling, <i>QSP-x86</i> runs faster than real time, which means
+that it can time out faster than expected, unless real time mode is turned on
+with <b><a id="real-network-examples.html:enable-real-time-mode">enable-real-time-mode</a></b>.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+Not all kinds of connections with real network, or with real file systems,
+  will continue to work properly if you pause the simulation for a shorter or
+  lengthier time. This applies to most stateful connections, for example NFS,
+  TCP, etc.
+<p>
+  For the same reason, not all kinds of connections with the real world can be
+  saved in a checkpoint and successfully restored at a later time. Hence, make
+  a habit to disconnect such services before pausing the simulation, or before
+  saving a checkpoint.
+</p></div>Some of the examples involve using <em><a id="real-network-examples.html:telnet">telnet</a></em> to connect to the
+simulated machine. On both Linux and Windows, a telnet binary is provided and
+can be used directly respectively in a terminal or in a Command-Line
+prompt. The output on Windows may be slightly different from the output given
+in the examples.
+<p>
+In the examples, the simulated machine sometimes needs to be
+reconfigured. Since it is running Linux, the appropriate Linux configuration
+commands are indicated. Other operating systems should be configured similarly,
+but the commands may of course differ.
+</p><p>
+Finally, in all examples, the host machine where Simics is running has the IP
+address 10.0.0.129 and the real host that communicates with the simulated
+network has the IP address 10.0.0.240. These addresses should be replaced as
+necessary. <i>QSP-x86</i> uses its default IP address
+10.10.0.40.
+</p><p>
+The examples assume that there is a host on the real network that accepts
+telnet connections. Check that it is possible to telnet from the simulation
+host to the other real host. Just run <code>telnet </code><em>ip</em><code></code> at a
+command-line, where <em>ip</em> is the IP address of the other real host. If that
+does not work, the simulated machine will not be able to connect to the real
+host either.
+</p><p>
+If there is no host that accepts telnet connections on the network,
+the connection can be tested with a web server on port 80 instead, by
+entering <code>GET / HTTP/1.0</code> and a blank line. This should return
+the HTML content of the start page of the server. Here www.google.com
+is used:
+</p><p>
+</p><pre class="jdocu_small">~# <b>telnet www.google.com 80</b>
+Trying 64.233.161.104...
+Connected to 64.233.161.104.
+Escape character is '^]'.
+<b>GET / HTTP/1.0</b>
+
+HTTP/1.0 302 Found
+Location: http://www.google.se/cxfer?c=PREF%3D:TM%3D1118841789:S%3DumC<img alt="Line break" src="nextline.png">
+Vbug84n5uBWAo&amp;prev=/
+Set-Cookie: PREF=ID=a5e237e2402bdcac:CR=1:TM=1118841789:LM=1118841789:<img alt="Line break" src="nextline.png">
+S=HQ3jOc8_1peVGj98; expires=Sun, 17-Jan-2038 19:14:07 GMT; path=/; <img alt="Line break" src="nextline.png">
+domain=.google.com
+Content-Type: text/html
+Server: GWS/2.1
+Content-Length: 214
+Date: Wed, 15 Jun 2005 13:23:09 GMT
+Connection: Keep-Alive
+
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;302 Moved&lt;/H1&gt;
+The document has moved
+&lt;A HREF="http://www.google.se/"&gt;here&lt;/A&gt;.
+&lt;/BODY&gt;&lt;/HTML&gt;
+Connection closed by foreign host.
+~#
+</pre><p>
+</p><p>
+Make sure that the telnet or web server is on the same IP subnet as the
+simulation host, since it may not be possible to access other subnets,
+depending on what real-network connection is in use.
+</p><p>
+</p></section><section class="page" id="real-network-connections.html"><h1 class="jdocu"><a id="real-network-connections.html:real-network-connections">3.2 Connection Types</a></h1>
+<p>
+
+</p><p>
+There are three kinds of connections between simulated networks and real
+networks in Simics. The next paragraphs describe how they work, and their
+advantages and drawbacks.
+</p><p>
+All connection types except port forwarding require low-level access to the
+simulation host's Ethernet interfaces, and therefore require administrative
+privileges to set up. However, administrative privileges are, in most
+cases, not needed once the low-level access has been set
+up. See section <a class="reference" href="#real-network-access.html">3.3</a> for details.
+</p><p>
+</p><dl><dt id="real-network-connections.html:dt:port-forwarding"><a href="#real-network-connections.html:dt:port-forwarding"><b></b></a><b><a id="real-network-connections.html:port-forwarding"></a>Port forwarding</b></dt><dd>Port forwarding is the easiest connection type to set up for
+    simple usage. It does not require administrative privileges nor
+    any configuration on the simulation host or on the other
+    hosts.
+<p>
+    However, port forwarding is limited to TCP and UDP traffic. Other
+    traffic, for example, ping packets that use the <a id="real-network-connections.html:ICMP">ICMP</a>
+    protocol, will not pass through the connection. Since port
+    forwarding uses ports on the simulation host it is not possible to
+    use incoming ports that are already used by the simulation host,
+    or ports below 1024 without administrative privileges.
+</p><p>
+    Each incoming TCP port, and each incoming or outgoing UDP port
+    require a separate forwarding rule. Therefore, for an application
+    that uses many ports, or random ports, configuration can become
+    cumbersome or nearly impossible without complex
+    communication. Outgoing TCP connections on many or random ports
+    can be handled by NAPT, so that is not a problem.
+</p><p>
+    Port forwarding allows communication between the simulated
+    machines, the simulation host and other hosts on the real
+    network.</p></dd><dt id="real-network-connections.html:dt:ethernet-bridging-connection"><a href="#real-network-connections.html:dt:ethernet-bridging-connection"><b></b></a><b><a id="real-network-connections.html:Ethernetbridging"></a> <a id="real-network-connections.html:bridging"></a> Ethernet
+		bridging connection</b></dt><dd>With an Ethernet bridging connection, the simulated machines
+    appears to be directly connected to the real network. The
+    connection allows any kind of Ethernet traffic between the
+    simulated and real networks. Usually IP addresses from the IP
+    subnet of the real network are used by the simulated machines, in
+    which case nothing needs to be configured on the real hosts on the
+    real network. However, the simulation host can not be accessed
+    from the simulated machines using an Ethernet bridging connection.
+<p>
+    To use Ethernet bridging, the simulation host needs to be set up
+    for <a id="real-network-connections.html:bridgingTAP"></a> TAP access as described in section
+    <a class="reference" href="#real-network-access.html">3.3</a>.
+</p><p>
+    </p></dd><dt id="real-network-connections.html:dt:host-connection"><a href="#real-network-connections.html:dt:host-connection"><b></b></a><b><a id="real-network-connections.html:host-connection"></a> Host connection</b></dt><dd>With a host connection, the simulation host is connected to a
+    simulated network, allowing any kind of Ethernet traffic between
+    the simulation host and the simulated machines.
+<p>
+    Host connections also supports <em><a id="real-network-connections.html:IPforwarding"></a>IP
+    forwarding</em>. When using IP forwarding, the operating system of
+    the host routes IP traffic between the real and simulated
+    networks. As above, routes should be configured between the
+    simulated and real networks to make it work.
+</p><p>
+    To use host connections, the host needs to be set up for
+    <a id="real-network-connections.html:bridgingTAP2"></a> TAP access as described in section <a class="reference" href="#real-network-access-tap.html">3.3.1</a>.
+</p><p>
+    </p><div class="note">
+<b>Note:</b>
+A raw packet with length X bytes sent from the simulation host
+    through the real network device into the simulated target will have
+    4 Bytes of FCS(frame check sequence) appended. The target machine will
+    actually receive a packet of length X+4 bytes. The NIC model on the
+    target machine usually checks and strips the FCS bytes before it is
+    seen by any software. A raw packet that originates from the target
+    will have an FCS calculated and appended by the NIC model. The real
+    network device will then check the FCS and strip it before sending to
+    the simulation host interface (TAP interface).</div></dd></dl><p></p><div class="figure" id="real-network-connections.html:compare-rn-cnts">
+ <div class="caption">Figure 1. Comparison of real-network
+connections</div> <p>
+  </p><p>
+  </p><p>
+  </p><p>
+  </p><p>
+  </p><p>
+  </p><p>
+  </p><p>
+</p><table>
+
+  <tbody><tr> <td class="jdocu_border"></td> <td class="jdocu_border"><b>Port Forwarding</b></td>
+    <td class="jdocu_border"><b>Ethernet Bridge</b></td>
+    <td class="jdocu_border"><b>Host Connection</b></td></tr>
+
+<tr> <td class="jdocu_border">Need admin rights for config.</td> <td class="jdocu_border">no</td> <td class="jdocu_border">yes</td>
+    <td class="jdocu_border">yes</td> </tr>
+
+<tr> <td class="jdocu_border">Need admin rights to run</td> <td class="jdocu_border">no</td> <td class="jdocu_border">no</td>
+    <td class="jdocu_border">no</td> </tr>
+
+<tr> <td class="jdocu_border">Need real IP available</td> <td class="jdocu_border">no</td> <td class="jdocu_border">yes</td>
+    <td class="jdocu_border">no</td> </tr>
+
+<tr> <td class="jdocu_border">Support UDP/TCP</td> <td class="jdocu_border">yes</td> <td class="jdocu_border">yes</td>
+    <td class="jdocu_border">yes</td> </tr>
+
+<tr> <td class="jdocu_border">Restrict TCP/UDP ports</td> <td class="jdocu_border">yes</td> <td class="jdocu_border">no</td>
+    <td class="jdocu_border">no</td> </tr>
+
+<tr> <td class="jdocu_border">Support all IPv4</td> <td class="jdocu_border">no</td> <td class="jdocu_border">yes</td>
+    <td class="jdocu_border">yes</td> </tr>
+
+<tr> <td class="jdocu_border">Support all Ethernet</td> <td class="jdocu_border">no</td> <td class="jdocu_border">yes</td>
+    <td class="jdocu_border">yes</td> </tr>
+
+</tbody></table>
+</div>
+
+<p>
+The table <a class="reference" href="#real-network-connections.html:compare-rn-cnts">1</a> recapitulates the advantages
+and drawbacks of each type of connection. Basically, for simple TCP
+services like <a id="real-network-connections.html:FTP">FTP</a>, <a id="real-network-connections.html:HTTP">HTTP</a> or <a id="real-network-connections.html:telnet">telnet</a>,
+<a id="real-network-connections.html:port-forwarding2">port forwarding</a> is the way to go. If port forwarding does
+not suffice and if there are available IP addresses on the IP subnet
+of the real network, or for network protocols other than IPv4,
+Ethernet bridging <a id="real-network-connections.html:Ethernetbridging2"></a> is another possibility.
+Finally, if access to the simulated machines from
+the simulation host is required, but port forwarding is not
+sufficient, <a id="real-network-connections.html:host-connection2">host connection</a> might be the solution.
+</p><p>
+All commands that create a connection to the real network start with
+the prefix <b><a id="real-network-connections.html:connect-real-network-">connect-real-network-</a></b>, with different
+suffixes depending on the connection type. They come in two variants.
+</p><p>
+For each connection type there is a global command that assumes that
+there is at most one <a id="real-network-connections.html:Ethernet-linkethernet-link"></a>Ethernet
+link object. If there is no Ethernet link object, a default
+<b>ethernet_switch</b> is created. All Ethernet interfaces of
+all simulated machines in the Simics process are then automatically
+connected to the new Ethernet switch, and the Ethernet switch is
+connected to the real network. This is an easy way to connect all
+simulated machines in the Simics process to the real network with a
+single command. For example, to connect all simulated machines to the
+real network using an Ethernet bridging connection, just type in the
+global command <b>connect-real-network-bridge</b>.
+</p><p>
+For a more complex simulated network setup, not all simulated Ethernet
+interfaces will be connected to the same network. In that case, create
+first the simulated network setup, and then connect specific Ethernet
+links to the real network. For each connection type, there is a
+command with the same name as the global command that can be run on a
+specific Ethernet link object to connect it to the real network. For
+example, with an Ethernet link object named <b>ethernet_hub0</b>,
+use the command <b>ethernet_hub0.connect-real-network-bridge</b>
+to create an Ethernet bridging connection between that particular link
+and the real network.
+</p><p>
+The commands related to port forwarding are an exception to this
+rule. They do not come in variants that can be run on Ethernet links
+objects, but instead have an <i>ethernet-link</i> argument that
+can be used to specify a link.
+</p><p>
+  
+</p><p>
+</p></section><section class="page" id="real-network-connections-port-forwarding.html"><h1 class="jdocu"><a id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding">3.2.1 Port Forwarding</a></h1>
+<p>
+   <a id="real-network-connections-port-forwarding.html:port-forwarding"></a>
+</p><p>
+Port forwarding forwards traffic on TCP and UDP ports between the
+simulated network and the real network. It also allows forwarding DNS
+queries from the simulated network to the real network. Port
+forwarding can be used with any kind of IP network on the host, it is
+not limited to Ethernet networks.
+</p><p>
+Port forwarding is probably the easiest way to access the real network
+for simple <a id="real-network-connections-port-forwarding.html:TCPIP"></a>TCP or <a id="real-network-connections-port-forwarding.html:UDP">UDP</a> connectivity, for
+example, <a id="real-network-connections-port-forwarding.html:telnet">telnet</a> or FTP usage. Port forwarding is easy to
+set up. Simics does not need administrative privileges to run port
+forwarding, and neither the simulation host nor any other host needs
+to be configured in any way.
+</p><p>
+Port forwarding is managed by a <a id="real-network-connections-port-forwarding.html:service-node"></a> service node
+connected to an Ethernet link. It is the service node that listens for
+traffic on both the real and simulated networks and forwards it to the
+other side.  All port forwarding commands except
+<b>connect-real-network</b> therefore take as argument an Ethernet
+link with a connected service node.
+</p><p>
+There are really four distinct parts to Simics's port forwarding
+solution: <a id="real-network-connections-port-forwarding.html:port-forwardingincoming"></a> forwarding of specific
+ports from the real network to the simulated network, <a id="real-network-connections-port-forwarding.html:portforwardingoutgoing"></a> forwarding of specific ports from the
+simulated network to the real network, <a id="real-network-connections-port-forwarding.html:port-forwardingNAPT"></a>
+<a id="real-network-connections-port-forwarding.html:NAPT">NAPT</a> from the simulated network to the real network, and
+forwarding of <a id="real-network-connections-port-forwarding.html:DNS">DNS</a> queries to the real network.
+</p><p>
+There is also a convenience command named <a id="real-network-connections-port-forwarding.html:portforwardingconnect-real-network"></a>
+<b><a id="real-network-connections-port-forwarding.html:connect-real-network">connect-real-network</a></b> that automatically sets up
+NAPT for outgoing traffic, forwarding of DNS queries to the real
+network, and incoming port forwarding for some common services.  If
+there is no Ethernet link object, one is created and set up.
+</p><p>
+The <a id="real-network-connections-port-forwarding.html:port-forwardinglist-port-forwarding-setup"></a>
+<b>list-port-forwarding-setup</b> command describes the current
+port forwarding setup: it will list all incoming and outgoing ports,
+as well as the NAPT and DNS forwarding status.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+<a id="real-network-connections-port-forwarding.html:Ping"></a>Pinging between the simulated network and the
+real network will not work when using port forwarding, so ping should
+not be used to test if the connection is working. Ping uses the
+<a id="real-network-connections-port-forwarding.html:ICMP">ICMP</a> protocol, but only TCP and UDP traffic is supported
+with port forwarding.</div><h2 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crn">The connect-real-network Command</a></h2>
+<p><a id="real-network-connections-port-forwarding.html:connect-real-network2"></a> The <b>connect-real-network</b>
+command is a convenience command that sets up <a id="real-network-connections-port-forwarding.html:NAPT2">NAPT</a> for
+outgoing traffic, enables forwarding of DNS queries to the real
+network, and opens incoming ports for FTP, HTTP and telnet to a
+simulated machine. This is an easy way to get inbound and outbound
+access for common services on a simulated machine.
+</p><p>
+The command requires a <i>target-ip</i> argument that specifies
+the IP address of the simulated machine that should be targeted by the
+incoming traffic. If there are multiple simulated machines,
+<b>connect-real-network</b> can be run once for each
+machine. Simics will select different ports on the simulation host for
+the incoming services for each simulated machine, and the selected
+ports are printed in the Simics console.
+</p><p>
+The <b>connect-real-network</b> command does not require an
+Ethernet link as argument, unless there is more than one in the
+simulation. If there is no Ethernet link or service node, they will be
+created automatically.
+</p><p>
+</p><h3 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crn-example">Example</a></h3>
+<p>
+     
+</p><p>
+The <b>connect-real-network</b> allows us to set up all
+connections that are needed for most simple real network uses with one
+simple command. We can start from the checkpoint prepared in section
+<a class="reference" href="#real-network-examples.html">3.1</a>, and then run the
+<b>connect-real-network</b> command with the IP address 10.10.0.40, which
+is the default address of <i>QSP-x86</i>:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>connect-real-network 10.10.0.40</b>
+No Ethernet link found, created default_eth_switch0.
+Connected board.mb.sb.eth_slot to default_eth_switch0
+Created instantiated 'service_node_comp' component 'default_service_node0'
+Connecting 'default_service_node0' to 'default_eth_switch0' as 10.10.0.1
+NAPT enabled with gateway 10.10.0.1/24 on link default_eth_switch0.link.
+NAPT enabled with gateway fe80::2220:20ff:fe20:2000/64 on link default_eth_switch0.link.
+Host TCP port 4021 -&gt; 10.10.0.40:21
+Host TCP port 4022 -&gt; 10.10.0.40:22
+Host TCP port 4023 -&gt; 10.10.0.40:23
+Host TCP port 4080 -&gt; 10.10.0.40:80
+Real DNS enabled at 10.10.0.1/24 on link default_eth_switch0.link.
+Real DNS enabled at fe80::2220:20ff:fe20:2000/64 on link default_eth_switch0.link.
+</pre><p>
+</p><p>
+The output shows that an <b>ethernet_switch</b> and a
+<b>service_node_comp</b> components have been automatically
+created and connected to the simulated machine. NAPT, DNS forwarding,
+and incoming port forwarding for FTP, HTTP and telnet have also been
+enabled.
+</p><p>
+Now start the simulation. Since we gave the service node the IP
+address 10.10.0.1, <i>QSP-x86</i> should be configured with
+10.10.0.1 as default gateway:
+</p><p>
+</p><pre class="jdocu_small">~# <b>route add default gw 10.10.0.1</b>
+</pre><p>
+</p><p>
+It should now be possible to telnet from the simulated machine to
+hosts on the real network. In this case, we telnet to a
+machine with IP address 10.0.0.240; replace this address with any host
+answering to telnet on the network:
+</p><p>
+</p><pre class="jdocu_small">~# <b>telnet 10.0.0.240</b>
+Trying 10.0.0.240...
+Connected to 10.0.0.240.
+Escape character is '^]'.
+
+
+SunOS 5.9
+
+login: joe
+Password:
+Sun Microsystems Inc.    SunOS 5.9       Generic May 2002
+$ exit
+Connection closed by foreign host.
+~#
+</pre><p>
+</p><p>
+<i>QSP-x86</i> can be configured to use the service node as
+DNS server and use it to look up real DNS names. To do that, add the
+line <code>nameserver 10.10.0.1</code> in the file
+<code>/etc/resolv.conf</code> on the simulated machine:
+</p><p>
+</p><pre class="jdocu_small">~# <b>echo nameserver 10.10.0.1 &gt; /etc/resolv.conf</b>
+</pre><p>
+</p><p>
+It should now be possible to look up the addresses of real hosts on
+the simulated machine, for example,
+<a class="jdocu" href="https://gnu.org" rel="noopener noreferrer" target="_top">https://gnu.org</a>. <i>QSP-x86</i> does not have the tools
+to perform DNS lookups. Instead, verify that DNS works by connecting
+to a real server by name:
+</p><p>
+</p><pre class="jdocu_small">~# <b>telnet gnu.org 80</b>
+<b>GET /</b>
+&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;
+&lt;head&gt;
+&lt;title&gt;Server error!&lt;/title&gt;
+[...]
+Connection closed by foreign host.
+~#
+</pre><p>
+</p><p>
+FTP, HTTP and telnet servers running on the simulated machine should
+also be accessible. <i>QSP-x86</i> runs both a telnet and a
+HTTP server. Just use port 4023 and 4080 instead of 23 and 80. The
+exact ports of the host these services are mapped to varies if the
+default ports are already in use. Look at the output from the
+<b>connect-real-network</b> above for the port numbers to use.
+</p><p>
+
+</p><p>
+ </p><h2 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crnpi">Incoming Port Forwarding</a></h2>
+<p>
+     
+</p><p>
+<a id="real-network-connections-port-forwarding.html:port-forwardingincoming2"></a>
+<a id="real-network-connections-port-forwarding.html:connect-real-networkconnect-real-network-port-in"></a> The
+<b>connect-real-network-port-in</b> command sets up port
+forwarding from a port on the host machine to a specific port on a
+simulated machine. It takes three required arguments:
+<i>ethernet-link</i>, <i>target-ip</i> and
+<i>target-port</i>, that specify the Ethernet link, IP address and
+port the traffic should be forwarded to.
+</p><p>
+An IP address and preferred port can be selected for incoming traffic
+on the simulation host using the <i>host-ip</i> and
+<i>host-port</i> arguments. If these arguments are not provided,
+Simics will select a port automatically and print it on the Simics
+console, and receive all IPv4 traffic (i.e., IP 0.0.0.0) from that
+port. In order to forward multicast traffic, specify that multicast
+address (e.g., specify 239.255.255.253 to forward IPv4 SLP traffic).
+</p><p>
+The <b>connect-real-network-port-in</b> command can also take the
+flags <i>-tcp</i> and <i>-udp</i>, which specify whether
+forwarding is set up for a TCP or a UDP port. If neither is provided,
+forwarding will be set up for both the TCP and UDP ports.
+</p><p>
+The service node acts as a proxy for incoming traffic, so to initiate
+a connection to a specific port on the simulated machine, the real
+machine should contact the corresponding open port on the simulation
+host. The simulation host is not a gateway to the simulated network.
+</p><p>
+Any UDP packets sent to a port on the simulation host are forwarded to
+the specified port and IP address on the simulated network. For the
+simulated machine to be able to return UDP packets to the real
+network, a separate forwarding rule must be set up using the
+<a id="real-network-connections-port-forwarding.html:connect-real-networkconnect-real-network-port-out"></a>
+<b>connect-real-network-port-out</b> command.
+</p><p>
+Any TCP connections to the port on the simulation host are forwarded
+to the specified port and IP address on the simulated network. Since
+TCP connections are two-ways, once a connection has been established,
+data can be sent in both directions.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+You will probably have to manually add the incoming ports to
+your host based software firewall if you want to access the simulated
+network from another machine. Tracking down network problems when you
+forget to update the firewall is annoying as the packets tend to get
+dropped silently without a log.</div><a id="real-network-connections-port-forwarding.html:FTPactive-mode"></a> The FTP protocol needs to open additional
+ports when transferring files. Simics handles this by automatically
+opening outgoing ports for FTP when needed, so FTP will work as long
+as it is in <em>active</em> mode.
+<p>
+</p><h3 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crnpi-example">Example</a></h3>
+<p>
+     
+</p><p>
+<i>QSP-x86</i> runs sshd on port 22. We can now set up a
+port forwarding rule that allows us to access the ssh service from
+the real network. Start from the checkpoint, create an Ethernet link
+and service node, connect the simulated machine to the Ethernet link
+and run the <b>connect-real-network-port-in</b> command like this:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>new-ethernet-switch switch0</b>
+Created instantiated 'ethernet_switch' component 'switch0'
+simics&gt; <b>new-service-node-comp sn0</b>
+Created instantiated 'service_node_comp' component 'sn0'
+simics&gt; <b>sn0.connect-to-link switch0 10.10.0.1</b>
+Adding host info for IP 10.10.0.1: simics0.network.sim  MAC: 20:20:20:20:20:00
+simics&gt; <b>connect board.mb.sb.eth_slot switch0.device1</b>
+simics&gt; <b>connect-real-network-port-in ethernet-link = switch0 <img alt="Line break" src="nextline.png">
+target-ip = 10.10.0.40 target-port = 22 host-port = 2022 -tcp</b>
+Host TCP port 2022 -&gt; 10.10.0.40:22
+simics&gt; <b>enable-real-time-mode</b>
+</pre><p>
+</p><p>
+<i>QSP-x86</i> uses the IP address 10.10.0.40 and the ssh
+service runs on TCP port 22. We use port 2022 on the simulation host,
+but any free port can be used. The last command slows down
+<i>QSP-x86</i> to avoid time-outs.
+</p><p>
+Start the simulation, then start a ssh from a real host to the
+ssh service port of the simulated machine by connecting to port 2022 of the
+simulation host. In our case, we do the ssh on the simulation host
+itself; replace <em>localhost</em> with the IP address of the
+simulation host if running ssh from another machine:
+</p><p>
+</p><pre class="jdocu_small">host:~$ <b>ssh -p 2022 -l root localhost</b>
+The authenticity of host '[localhost]:2022 ([127.0.0.1]:2022)' can't be established.
+ECDSA key fingerprint is 62:7e:eb:4d:6d:cb:ae:0f:a0:a9:44:cc:0d:59:ce:52.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '[localhost]:2022' (ECDSA) to the list of known hosts.
+Last login: Mon Jan 18 10:34:08 2016
+~# <b>ls /</b>
+bin  boot  dev  disk2  etc  home  host  lib  lib64  lost+found  media  mnt  proc  run  sbin  sys  tmp  usr  var  www
+~# <b>exit</b>
+logout
+Connection to localhost closed.
+</pre><p>
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+Note that if you restart the simulated machine, you need to
+remove the line starting with '[localhost]:2022' in host file ~/.ssh/known_hosts
+to login with ssh again.</div>
+<p>
+ </p><h2 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crnpo">Outgoing Port Forwarding</a></h2>
+<p>
+     
+</p><p>
+<a id="real-network-connections-port-forwarding.html:port-forwardingoutgoing"></a>
+<a id="real-network-connections-port-forwarding.html:connect-real-networkconnect-real-network-port-out2"></a> The
+<b>connect-real-network-port-out</b> command sets up port
+forwarding from a port on a service node to a specific port on a host
+on the real network. It takes four required arguments:
+<i>service-node-port</i> <i>ethernet-link</i>,
+<i>target-ip</i> and <i>target-port</i>, that specify the port
+on the <b>service node</b> that will forward traffic to the
+target, the Ethernet link the service node is connected to, and the
+real IP address and port to which the traffic should be forwarded.
+</p><p>
+The command can optionally take the flags <i>-tcp</i> and
+<i>-udp</i>, to specify whether the forwarding should be set up
+for a TCP or UDP port. If neither is provided, forwarding will be set
+up for both the TCP and UDP port.
+</p><p>
+The service node acts as a proxy for outgoing traffic, so to initiate
+a connection to a port on a host on the real network, the simulated
+machine should connect to the corresponding mapped port on the service
+node. The service node is not a gateway to the real network.
+</p><p>
+Any UDP packets sent to a port on the service node are forwarded to
+the specified port and IP address on the real network. For the real
+host to be able to return UDP packets to the simulated network, a
+separate forwarding rule must be set up using the
+<b>connect-real-network-port-in</b> command.
+</p><p>
+Any TCP connections to the port on the service node are forwarded to
+the specified port and IP address on the real network. Since TCP
+connections are two-ways, once a connection has been established data
+can be sent in both directions.
+</p><p>
+</p><h3 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crnpo-example">Example</a></h3>
+<p>
+     
+</p><p>
+By setting up forwarding from a port on a service node to port 22 of a
+host on the real network, it should be possible to ssh to the real
+host by connecting to the port on the service node from
+<i>QSP-x86</i>.  We can start from the checkpoint we
+prepared in section <a class="reference" href="#real-network-examples.html">3.1</a>, and create
+an Ethernet link and a service node, connect the simulated machine to
+the Ethernet link and run the <b>connect-real-network-port-out</b>
+command. Here we use a host on the real network with IP address
+10.0.0.240, replace it with the IP address of a real host on the
+network:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>new-ethernet-switch switch0</b>
+Created instantiated 'ethernet_switch' component 'switch0'
+simics&gt; <b>new-service-node-comp sn0</b>
+Created instantiated 'service_node_comp' component 'sn0'
+simics&gt; <b>sn0.connect-to-link switch0 10.10.0.1</b>
+Adding host info for IP 10.10.0.1: simics0.network.sim  MAC: 20:20:20:20:20:00
+simics&gt; <b>connect board.mb.sb.eth_slot switch0.device1</b>
+simics&gt; <b>connect-real-network-port-out service-node-port = 2222 <img alt="Line break" src="nextline.png">
+ethernet-link = switch0 target-ip = 10.0.0.240 target-port = 22 -tcp</b>
+10.10.0.1 TCP port 2222 on link switch0.link -&gt; host 10.0.0.240:22
+ff02::1:2 TCP port 2222 on link switch0.link -&gt; host 10.0.0.240:22
+simics&gt; <b>enable-real-time-mode</b>
+</pre><p>
+</p><p>
+Now start the simulation. We used the IP address 10.10.0.1 and the
+port 2222 for the service node, so we should be able to ssh to the
+real host by connecting to port 2222 of 10.10.0.1 from
+<i>QSP-x86</i>:
+</p><p>
+</p><pre class="jdocu_small">~# ssh 10.10.0.1 -p 2222
+The authenticity of host '[10.10.0.1]:2222 ([10.10.0.1]:2222)' can't be establis
+hed.
+ECDSA key fingerprint is 39:a4:cb:1c:54:4b:bd:86:9f:d1:1b:6d:a6:43:e9:f4.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '[10.10.0.1]:2222' (ECDSA) to the list of known hosts
+.
+10.10.0.1's password:
+Last login: Thu May 19 09:59:33 2016 from 127.0.0.1
+host:~$ ls /
+bin   dev  home  lib64       media  opt   root  sbin  sys  usr
+boot  etc  lib   lost+found  mnt    proc  run   srv   tmp  var
+</pre><p>
+</p><p>
+
+</p><p>
+ </p><h2 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crnnapt">NAPT</a></h2>
+<p>
+      <a id="real-network-connections-port-forwarding.html:NAPT3"></a> <a id="real-network-connections-port-forwarding.html:NAT"></a>
+</p><p>
+The <b>connect-real-network-napt</b> command sets up <em>NAPT</em>
+(<em>network address port translation</em>, also known as just
+<em>NAT</em> or <em>network address translation</em>) between the
+simulated network and the real network. With NAPT enabled, the service
+node will act as a gateway on the simulated network and automatically
+mediate TCP connections to the real network.
+</p><p>
+The <b>connect-real-network-napt</b> only has one required
+argument, <i>ethernet-link</i>, that specifies the Ethernet link
+that should be connected to the real network.
+</p><p>
+The simulated machines must be configured to use the service node as
+gateway for the real network, so that it is able to capture the
+outgoing traffic. The simulated machines will then be able to access
+hosts on the real network using their real IP addresses. By combining
+NAPT with DNS forwarding, described in section <a href="#real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crndns">DNS Forwarding</a>, the real
+DNS names of hosts on the real network can be used as well.
+</p><p>
+The NAPT setup is not specific to a simulated machine, so
+<b>connect-real-network-napt</b> needs only to run once for each
+Ethernet link, and all simulated machines on the link get outbound
+access.
+</p><p>
+Since NAPT only allows new TCP connections to be opened from the
+simulated network to the real network, and the FTP protocol need to
+open new ports when transferring files, <em>passive</em> mode FTP
+should be used when connecting to an FTP server on a host on the real
+network from a simulated machine. An alternative is to use the FTP
+server implemented in the Simics service-node and avoid the need to
+connect to a real network.
+</p><p>
+</p><h3 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crnnapt-example">Example</a></h3>
+<p>
+     
+</p><p>
+To try NAPT, we can start from the checkpoint we prepared in section
+<a class="reference" href="#real-network-examples.html">3.1</a>, create an Ethernet link and
+service node, connect the simulated machine to the Ethernet link and
+run the <b>connect-real-network-napt</b> command like this:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>new-ethernet-switch switch0</b>
+Created instantiated 'ethernet_switch' component 'switch0'
+simics&gt; <b>new-service-node-comp sn0</b>
+Created instantiated 'service_node_comp' component 'sn0'
+simics&gt; <b>sn0.connect-to-link switch0 10.10.0.1</b>
+Adding host info for IP 10.10.0.1: simics0.network.sim  MAC: 20:20:20:20:20:00
+simics&gt; <b>connect board.mb.sb.eth_slot switch0.device1</b>
+simics&gt; <b>connect-real-network-napt ethernet-link = switch0</b>
+NAPT enabled with gateway 10.10.0.1 on link switch0.link
+NAPT enabled with gateway fe80::2220:20ff:fe20:2000/16 on link switch0.link
+simics&gt; <b>enable-real-time-mode</b> </pre><p>
+</p><p>
+The simulated machine should be configured to use the service node as
+its default gateway:
+</p><p>
+</p><pre class="jdocu_small">~# <b>route add default gw 10.10.0.1</b>
+</pre><p>
+</p><p>
+
+
+</p><p>
+ </p><h2 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crndns">DNS Forwarding</a></h2>
+<p>
+     <a id="real-network-connections-port-forwarding.html:DNS2"></a>
+</p><p>
+The <b>enable-real-dns</b> and <b>disable-real-dns</b>
+commands of the service node enable and disable forwarding of DNS
+requests to the real network by a service node. This allows simulated
+machines to look up names and IP addresses of hosts on the real
+network, using the service node as DNS server.
+</p><p>
+</p><h3 class="jdocu"><a class="not-numbered" id="real-network-connections-port-forwarding.html:real-network-connections-port-forwarding-crndns-example">Example</a></h3>
+<p>
+     
+</p><p>
+To try DNS forwarding, we can start from the checkpoint we prepared in
+section <a class="reference" href="#real-network-examples.html">3.1</a>, and create an Ethernet
+link and a service node, connect the simulated machine to the Ethernet
+link and run the <b>enable-real-dns</b> command like this:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>load-module eth-links</b>
+simics&gt; <b>new-ethernet-switch switch0</b>
+Created instantiated 'ethernet_switch' component 'switch0'
+simics&gt; <b>new-service-node-comp sn0</b>
+Created instantiated 'service_node_comp' component 'sn0'
+simics&gt; <b>sn0.connect-to-link switch0 10.10.0.1</b>
+Adding host info for IP 10.10.0.1: simics0.network.sim  MAC: 20:20:20:20:20:00
+simics&gt; <b>connect board.mb.sb.eth_slot switch0.device1</b>
+simics&gt; <b>sn0.enable-real-dns</b>
+Real DNS enabled
+simics&gt; <b>enable-real-time-mode</b>
+</pre><p>
+</p><p>
+To tell <i>QSP-x86</i> to use the service node as DNS
+server, the line <code>nameserver 10.10.0.1</code> is needed in the file
+<code>/etc/resolv.conf</code>:
+</p><p>
+</p><pre class="jdocu_small">~# <b>echo nameserver 10.10.0.1 &gt; /etc/resolv.conf</b>
+</pre><p>
+</p><p>
+
+</p><p>
+
+</p><p>
+</p></section><section class="page" id="real-network-connections-ethernet-bridging.html"><h1 class="jdocu"><a id="real-network-connections-ethernet-bridging.html:real-network-connections-ethernet-bridging">3.2.2 Ethernet Bridging</a></h1>
+<p>
+      <a id="real-network-connections-ethernet-bridging.html:bridging"></a>
+     <a id="real-network-connections-ethernet-bridging.html:Ethernetbridging"></a>
+</p><p>
+Simics can act as a bridge between simulated Ethernet networks and the
+real Ethernet networks of the host. With this type of connection, the
+simulated machines will appear as directly connected to the real
+network, both to the simulated machines and to the hosts on the real
+network. For that reason, the simulated machines should be configured
+with IP addresses from the same subnet as the real hosts.
+</p><p>
+Since the simulated machines appear to be located on the real network,
+there is no need to configure routes on real hosts that communicate
+with it. They can find the simulated machines by sending ARP requests,
+just like they would find other real hosts.
+</p><p>
+When using a bridged connection, it is recommended to use a dedicated
+host network interface for the bridge, not the interface that the host
+uses for general network access. Otherwise,
+special configuration of the bridge interface is necessary for any
+kind of network access for the host. The details about this
+configuration will not be covered in this manual. See section
+<a class="reference" href="#real-network-access.html">3.3</a> for how to set up <a id="real-network-connections-ethernet-bridging.html:TAP">TAP</a>
+access.
+</p><p>
+To create a bridged connection to the real network, use the
+<b>connect-real-network-bridge</b> command. It takes an
+<i>interface</i> argument that specifies which host TAP interface that
+should be used.
+</p><p>
+</p><h2 class="jdocu"><a id="real-network-connections-ethernet-bridging.html:real-network-connections-ethernet-bridging-example">3.2.2.1 Example</a></h2>
+<p>
+     
+</p><p>
+This example assumes that the simulation is starting from the
+checkpoint prepared in section <a class="reference" href="#real-network-examples.html">3.1</a>,
+and that a TAP bridge has been set up as described in section
+<a class="reference" href="#real-network-connections-ethernet-bridging.html:real-network-connections-ethernet-bridging-tap">3.2.2.2</a>.
+</p><p>
+To set up an Ethernet bridging connection between the real network and
+the simulated network, run the <b>connect-real-network-bridge</b>
+command. This will automatically create an Ethernet link, connect it
+to the simulated machine and set up bridging to the real network:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>connect-real-network-bridge</b>
+No Ethernet link found, created default_eth_switch0.
+Connected board.mb.sb.eth_slot to default_eth_switch0
+[rn0.rn info] Connecting to existing TAP device 'sim_tap0'
+'default_eth_switch0' connected to real network.
+</pre><p>
+</p><p>
+When using Ethernet bridging, the simulated machine should be
+configured with an unused IP address and netmask from the real
+network. In this case we use 10.0.0.241 and 255.255.255.0. Replace it
+with an unused IP address and netmask from the real network:
+</p><p>
+</p><pre class="jdocu_small">~# <b>ifconfig eth0 10.0.0.241 netmask 255.255.255.0</b>
+</pre><p>
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+As the target machine will appear as a real machine in the net, its gateway and
+DNS server should be correctly set according to the host settings, this step
+can be verified through pinging the gateway and DNS server IP.
+In some corner conditions, it's worth trying to reset (disable and then enable)
+the target Ethernet adapter if the gateway or DNS server are unreachable.
+</div>The simulated machine is now connected to the real network. Any kind
+of IP traffic is bridged between the simulated network and the real
+network. It should be possible to ping any real host from the
+simulated machine. Replace <em>10.0.0.240</em> with the address of a
+host on the real network:
+<p>
+</p><pre class="jdocu_small">~# <b>ping 10.0.0.240 -c 3</b>
+PING 10.0.0.240 (10.0.0.240): 56 data bytes
+64 bytes from 10.0.0.240: seq=0 ttl=64 time=10.285 ms
+64 bytes from 10.0.0.240: seq=1 ttl=64 time=0.349 ms
+64 bytes from 10.0.0.240: seq=2 ttl=64 time=0.323 ms
+
+--- 10.0.0.240 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 0.323/3.652/10.285 ms
+</pre><p>
+</p><p>
+Of course, it should also be possible to ping the simulated machine
+from the real host.
+</p><p>
+Running <code>traceroute</code> on the simulated machine shows that it is
+connected directly to the real network; there are no routers between
+it and the real host. Again, replace <em>10.0.0.240</em> with a host
+on the real network:
+</p><p>
+</p><pre class="jdocu_small">~# <b>traceroute 10.0.0.240</b>
+traceroute to 10.0.0.240 (10.0.0.240), 30 hops max, 38 byte packets
+ 1  10.0.0.240 (10.0.0.240)  10.106 ms  0.371 ms  0.347 ms
+</pre><p>
+</p><p>
+If the IP address of the simulated machine itself is printed and
+<code>!H</code> is printed after the response times, it means the
+simulated machine can not reach the real host, and the configuration
+is incorrect.
+</p><p>
+
+</p><h2 class="jdocu"><a id="real-network-connections-ethernet-bridging.html:real-network-connections-ethernet-bridging-tap">3.2.2.2 Setting up TAP for Ethernet Bridging</a></h2>
+<p>
+     
+</p><p>
+To use TAP access with the <b>connect-real-network-bridge</b>
+command, the operating system must be configured to act as a bridge
+between the virtual interface and the real interface. Follow the steps
+below to set it up.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+When setting up bridging between a TAP interface and a real
+Ethernet interface, the host will no longer accept traffic on the real
+interface. All connections the host has open on the interface will be
+lost. One consequence of this is that if this is being done from a
+remote console, the connection might be lost before the bridge is
+fully configured. We therefore strongly recommend that bridging is
+only set up on dedicated host interfaces.</div><b>Linux:</b>
+<p>
+</p><ol>
+
+    <li>Create a TAP interface, as described in section <a class="reference" href="#real-network-access-tap.html">3.3.1</a></li>
+
+    <li>Create a bridge interface and connect the TAP interface and
+    the real interface. Turn off STP (Spanning Tree Protocol) in the
+    bridge as well, otherwise there will be STP traffic from the
+    bridge into both the simulated and the real network. Here the name
+    of the created bridge interface is <code>sim_br0</code> and the
+    interface used is <code>eth1</code>, but other names and interfaces
+    can be used.
+<p>
+</p><pre class="jdocu_small">computer# <b><a id="real-network-connections-ethernet-bridging.html:brctl">brctl</a> addbr sim_br0</b>
+computer# <b>brctl addif sim_br0 sim_tap0</b>
+computer# <b>brctl addif sim_br0 eth1</b>
+computer# <b>brctl stp sim_br0 off</b>
+</pre><p></p></li>
+
+    <li>Bring up the TAP interface and the bridge interface.
+<p>
+</p><pre class="jdocu_small">computer# <b>ifconfig sim_tap0 promisc up</b>
+computer# <b>ifconfig sim_br0 promisc up</b>
+</pre><p></p></li>
+
+    <li>Bring up the Ethernet interface.
+<p>
+</p><pre class="jdocu_small">computer# <b>ifconfig eth1 up</b>
+</pre><p></p></li>
+
+</ol>
+<p>
+To remove the bridging when finished, do the following:
+</p><p>
+</p><ol>
+
+    <li>Bring down the TAP interface and the bridge interface.
+<p>
+</p><pre class="jdocu_small">computer# <b>ifconfig sim_tap0 down</b>
+computer# <b>ifconfig sim_br0 down</b>
+</pre><p></p></li>
+
+    <li>Delete the bridge interface.
+<p>
+</p><pre class="jdocu_small">computer# <b>brctl delbr sim_br0</b>
+</pre><p></p></li>
+
+</ol>
+<p>
+</p><div class="note">
+<b>Note:</b>
+The <code><a id="real-network-connections-ethernet-bridging.html:brctl2">brctl</a></code> utility is usually not present in
+default Linux installations. It is usually included in the
+<code>bridge-utils</code> package.</div><b>Windows:</b>
+<p>
+</p><ol>
+
+    <li>Open the <b>Network Connections</b> folder of
+      <b>Control Panel</b>.
+    </li>
+
+    <li>Select the OpenVPN TAP interface and the real interface to
+    bridge to at the same time.</li>
+
+    <li>Right-click on the OpenVPN TAP interface to bring up a context
+    menu, and select <em>Bridge Connections</em>.</li>
+
+</ol>
+<p>
+Windows will now set up bridging between the OpenVPN TAP interface and
+the real interface. If successful both the OpenVPN TAP and real
+interfaces will seem to disappear as they are now contained in the new
+bridge interface. To undo the bridging, go to the <em>Network
+Connections</em> folder, right-click on the bridge and select
+<em>Delete</em>.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+Perhaps you want to disable the spanning tree algorithm (STA). To do that
+  you must add or edit the <b>DisableSTA</b> registry key to <code>1</code>.
+  Disabling STA will minimize the time to allow packages over the bridge.
+  Rebooting Windows is required.<br>
+  Windows 7 has the key at<br>
+  <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\<b>BridgeMP</b>\DisableSTA</code>
+  while Windows 10 and later has the key at<br>
+  <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\<b>MsBridge</b>\DisableSTA</code>.
+</div>
+<p>
+</p></section><section class="page" id="real-network-connections-host-connection.html"><h1 class="jdocu"><a id="real-network-connections-host-connection.html:real-network-connections-host-connection">3.2.3 Host Connection</a></h1>
+<p> 
+</p><p>
+Simics can connect a simulated network to a virtual Ethernet (TAP)
+interface on the simulation host. The simulation host and the
+simulated machines will then be able to communicate as if they were
+connected to the same Ethernet network. For example, by configuring
+the simulation host with an IP address on the TAP interface, the
+simulation host and the simulated machines will be able to send IP
+traffic to each other.
+</p><p>
+Enabling IP forwarding on the host will also allow the simulated
+machines to access other hosts on the real network, using the host
+operating system's IP routing facilities. Read the instructions after
+the example below for instructions about how to set it up.
+</p><p>
+To connect the simulated network to the TAP interface, the TAP
+interface should be configured on the simulation host, as described in
+section <a class="reference" href="#real-network-access-tap.html">3.3.1</a>. Use the
+<b>connect-real-network-host</b> command, which simply takes the
+name of the TAP interface as the <i>interface</i> argument. The
+simulation host will now appear on the simulated network. Configure
+the TAP interface of the host with an IP address from the same subnet
+as the simulated machines, and the simulated machines will be able to
+communicate with the host.
+</p><p>
+Simulated machine configurations provided with Simics usually use IP
+addresses from the 10.10.0.<em>x</em> subnet, so the simulation host
+should typically get an IP address on the form 10.10.0.<em>x</em> with a
+netmask of 255.255.255.0.
+</p><p>
+On Linux, this is configured with <code>ifconfig</code>, which requires
+administrative privileges:
+</p><p>
+</p><pre class="jdocu_small">computer# <b>ifconfig sim_tap0 10.10.0.<em>x</em> netmask 255.255.255.0 up</b>
+</pre><p>
+</p><p>
+On Windows, use these steps instead:
+</p><p>
+</p><ol>
+
+    <li>Open the <b>Network Connections</b> folder of the
+    <b>Control Panel</b>.</li>
+
+    <li>Right-click on the OpenVPN TAP interface to bring up a context
+    menu, and select <em>Properties</em>.</li>
+
+    <li>A property dialog box will open. Select <em>Internet Protocol
+    (TCP/IP)</em> and click on the <b>Properties</b> button.</li>
+
+    <li>A new property dialog box will open. Select <b>Use the
+    following IP address</b> and enter the <em>IP address</em> and
+    <em>Subnet mask</em> the simulation host should use on the
+    simulated network.
+<p>
+    Select an IP address on the form 10.10.0.<em>x</em> and the netmask
+    255.255.255.0. The <em>Default gateway</em> field can typically be
+    left blank.</p></li>
+
+    <li>Click <b>OK</b> in both property dialog boxes.</li>
+
+</ol>
+<p>
+</p><h2 class="jdocu"><a class="not-numbered" id="real-network-connections-host-connection.html:real-network-connections-host-connection-example">Example</a></h2>
+<p>
+     
+</p><p>
+This example assumes that the simulation is starting from the
+checkpoint prepared in section <a class="reference" href="#real-network-examples.html">3.1</a>,
+that there is a correctly set up TAP interface on the simulation host
+for host connection according to section <a class="reference" href="#real-network-access-tap.html">3.3.1</a>, and that it has been configured
+with the IP address 10.10.0.1 as described above. Here the name if
+the TAP interface is assumed to be <code>sim_tap0</code>: replace it with
+the name of the TAP interface.
+</p><p>
+To connect the TAP interface to the simulated network, use the
+<b>connect-real-network-host</b> command:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>connect-real-network-host interface = sim_tap0</b>
+No Ethernet link found, created default_eth_switch0.
+Connected board.mb.sb.eth_slot to default_eth_switch0
+[rn0.rn info] Connecting to TAP device 'sim_tap0'
+'default_eth_switch0' connected to real network.
+</pre><p>
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+On Windows, the message "Connecting to existing TUN/TAP device
+'sim_tap0'" will not appear.</div>Any kind of Ethernet traffic can now pass between the simulated
+network and the simulation host. It should be possible, for example,
+to ping the simulation host from the simulated machine, at the IP
+address configured on the TAP interface:
+<p>
+</p><pre class="jdocu_small">~# <b>ping 10.10.0.1 -c 5</b>
+PING 10.10.0.1 (10.10.0.1) from 10.10.0.40 : 56(84) bytes of data.
+64 bytes from 10.10.0.1: icmp_seq=1 ttl=64 time=1.15 ms
+64 bytes from 10.10.0.1: icmp_seq=2 ttl=64 time=1.11 ms
+64 bytes from 10.10.0.1: icmp_seq=3 ttl=64 time=10.9 ms
+64 bytes from 10.10.0.1: icmp_seq=4 ttl=64 time=1.11 ms
+64 bytes from 10.10.0.1: icmp_seq=5 ttl=64 time=1.11 ms
+
+--- 10.10.0.1 ping statistics ---
+5 packets transmitted, 5 received, 0% loss, time 4037ms
+rtt min/avg/max/mdev = 1.113/3.085/10.932/3.923 ms
+</pre><p>
+</p><p>
+
+</p><p>
+</p><h2 class="jdocu"><a class="not-numbered" id="real-network-connections-host-connection.html:real-network-connections-host-connection-ip-forwarding">IP Forwarding</a></h2>
+<p>
+     
+</p><p>
+Enabling IP forwarding on the simulation host will allow real machines
+to access the simulated network by routing the traffic through the
+simulation host. This method is called <em> <a id="real-network-connections-host-connection.html:IPforwarding"></a>IP
+forwarding</em>.
+</p><p>
+On Linux run the following command to set up ip forwarding:
+</p><p>
+</p><pre class="jdocu_small">computer# <b>sysctl -w net.ipv4.ip_forward=1</b>
+net.ipv4.ip_forward = 1
+</pre><p>
+</p><p>
+And to disable IP forwarding again:
+</p><p>
+</p><pre class="jdocu_small">computer# <b>sysctl -w net.ipv4.ip_forward=0</b>
+net.ipv4.ip_forward = 0
+</pre><p>
+</p><p>
+To set it up on Windows, change the registry key
+<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\IPEnableRouter</code>
+from 0 to 1 and reboot. If the key does not exist, create it and give
+it the value 1. To disable IP forwarding, reset the registry key to 0
+and reboot.
+</p><p>
+For the routing to work, both the simulated machines and the machines
+on the real network must be configured: on the simulated machines, a
+route must be added to the real network with the IP address of the
+host's TAP interface as gateway; on the real machines, it is a route
+to the simulated network with the IP address of the simulation host's
+Ethernet interface that should be added.
+</p><p>
+ </p></section><section class="page" id="real-network-access.html"><h1 class="jdocu"><a id="real-network-access.html:real-network-access">3.3 Accessing Host Ethernet Interfaces</a></h1>
+<p>
+
+</p><p>
+When connecting to a real network using other connection types than
+port forwarding, Simics needs low-level access to the simulation
+host's Ethernet interfaces to send and receive packets. However,
+operating systems do not usually allow user programs low-level access
+to Ethernet interfaces: it requires specific configuration with
+administrative rights.
+</p><p>
+The access method used by Simics is called <em><a id="real-network-access.html:TAP">TAP</a></em>; it
+is a virtual Ethernet interface on the simulation host. Ethernet
+bridging and host connections require the use of TAP, but, as stated
+above, port forwarding connections do not.
+</p><p>
+
+</p><p>
+</p></section><section class="page" id="real-network-access-tap.html"><h1 class="jdocu"><a id="real-network-access-tap.html:real-network-access-tap">3.3.1 TAP Access</a></h1>
+<p>
+
+</p><p>
+With TAP access Simics will connect the simulated network to a virtual
+Ethernet (TAP) interface provided by the operating system. Accessing
+the TAP interface does not require administrative privileges, so once
+the TAP interface has been configured, Simics can connect to the real
+network without administrative privileges.
+</p><p>
+The TAP interface can either be bridged to a real Ethernet interface
+to create an Ethernet bridging connection, or configured with an IP
+address to create a host connection. This section only describes the
+basic configuration which is required for both kinds of
+connections. Read section <a class="reference" href="#real-network-connections-ethernet-bridging.html">3.2.2</a> for the
+additional steps needed for Ethernet bridging connections and <a class="reference" href="#real-network-connections-host-connection.html">3.2.3</a> for the additional
+steps required for host connections.
+</p><p>
+The setup required for TAP access differs for simulation hosts running
+Linux and Windows.
+</p><p>
+</p><h2 class="jdocu"><a class="not-numbered" id="real-network-access-tap.html:Linux">Linux</a></h2>
+<p> 
+</p><p>
+Creating a TAP interface that Simics can use is done in two simple
+steps. These commands require administrative privileges:
+</p><p>
+</p><ol>
+
+    <li>Give the user running the simulation access to the
+    <code>/dev/net/tun</code> device.
+<p>
+</p><pre class="jdocu_small">computer# <b>chmod a+rw /dev/net/tun</b>
+</pre><p></p></li>
+
+   <li>Create the TAP interface. Here the name of the user that will
+   be using the TAP interface is assumed to be <code>joe</code> and the
+   name of the TAP interface will be <code>sim_tap0</code>, but it should
+   of course be replaced with the correct user name and TAP interface.
+<p>
+</p><pre class="jdocu_small">computer# <b>ip tuntap add sim_tap0 mode tap user joe</b>
+</pre><p></p></li>
+
+   <li>Bring up the interface. (Optional in some environments.)
+<p>
+</p><pre class="jdocu_small">computer# <b>ip link set dev sim_tap0 up</b>
+</pre><p></p></li>
+
+</ol>
+<p>
+To remove a TAP interface, do the following (requires
+administrative privileges):
+</p><p>
+</p><pre class="jdocu_small">computer# <b>ip tuntap del mode tap name sim_tap0</b>
+</pre><p>
+</p><p>
+
+</p><h2 class="jdocu"><a class="not-numbered" id="real-network-access-tap.html:Windows">Windows</a></h2>
+<p>
+
+</p><p>
+Tow create a TAP interface, a <em>TAP</em> driver is required. One such
+is available from the OpenVPN project. See the <em>Installation
+Guide</em> for information about how to do this.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+Simics uses the MAC addresses of the simulation host's network
+interfaces to identify the host for licensing purposes. The licensing
+system does not differentiate TAP interfaces and real Ethernet
+interfaces. Creating or removing TAP interfaces may therefore
+cause a node-locked license to stop working. Renaming the TAP device
+so that the Local Area Connection is first will probably fix
+this.</div>Configuring a TAP interface consists of setting its name and IP
+address.
+<p>
+</p><ol>
+    <li>In the <b>Control Panel</b>, find <b>Network
+      Connections.</b>
+    </li>
+
+    <li>Rename the new TAP interface if you like to, for example to
+      "TAP".
+    </li>
+
+     <li>To configure the IP address, right click the TAP device and
+     choose Properties, then select "Internet Protocol(TCP/IP)" and
+     click the "Properties" button. Some values are 10.10.0.100 for
+     the IP address and 255.255.255.0 for the Subnet Mask.</li>
+
+     <li>Click "OK" twice to save the new configuration</li>
+</ol>
+<p>
+</p><h2 class="jdocu"><a class="not-numbered" id="real-network-access-tap.html:TAP-devices-with-multiple-users-and-simulations">TAP devices with multiple users and simulations</a></h2>
+<p> 
+</p><p>
+On Windows, TAP devices are typically created with sufficient
+permissions for all users to be able to access them. On Linux however,
+you have to be the user or belong to the group that was specified when
+the device was created to be able to access it . On both Windows and
+Linux, each device can only be opened by one application at a
+time. These facts can lead to problems when multiple users tries to
+run the same Simics configuration on the same machine, possibly even
+at the same time.
+</p><p>
+Let us take a closer look at how to solve the problem with having
+multiple users running identical configurations on the same machine,
+but not necessarily at the same time:
+</p><p>
+Newer versions of the Linux kernel offers the possibility to assign a
+group to a TAP device; any member of that group is allowed to open the
+tap device, and no further configuration is needed. That means that
+any routing table entries that has been set up on the simulation host
+has to be configured only once and can remain the same after that.
+Without the group functionality of TAP devices, each user must use its
+own TAP device. This means that the interface argument to
+<b>connect-real-network-[host,bridge]</b> must depend on which
+user that runs the command, and routes on the simulation host must be
+updated to match that TAP device.
+As has previously been said, TAP devices on Windows can typically be
+accessed by all users, so the choice of having one or multiple TAP
+devices is entirely up to the users.
+</p><p>
+If several users needs to run identical configurations at the same
+time with access to the same real network it gets even more
+complicated; the simple answer is that it is generally not possible.
+Even if the users run the configuration on different simulation hosts,
+it is generally not possible connect both simulations to the real
+network in a correct and working manner.
+The reasons are a little different between a host connection and a
+bridged connection, but in both cases it has to do with the fact
+that there are multiple target machines that have the same IP and MAC
+addresses on connected to the real network in some way.
+</p><p>
+When using a bridged real network connection, the simulated network
+will appear to be the same network as the real one. When
+running two identical simulations, both MAC and IP addresses will be
+duplicated on the same network, which will lead to unexpected behavior
+even if different simulation hosts are used.
+When using a host connection the simulation host can only route
+traffic to one of the simulated networks since the network addresses
+and TAP interface addresses has to be the same for both
+simulations.
+The only possible setup is a host connection where each simulation is
+running on a different machine, and the only communication is
+internally on the simulated network and between simulated machines and
+their simulation host.
+</p><p>
+The general solution to this problem is to use configurations that are
+not completely identical. Each simultaneously running configuration
+should have unique network properties, such as IP address range, MAC
+address range and TAP interface. Using such Simics configurations, all
+network configuration, including routes and TAP interfaces on the real
+hosts can be done in advance and does not have to be changed for every
+Simics configuration that is started. For example, if a bridged
+connection is required, several TAP interfaces and a real network
+interface can be bridged together to form a single bridge.
+</p><p>
+The examples below show how real network connections can be configured
+when running multiple <em>almost</em> identical Simics configurations
+simultaneously. For both examples, the part of the configuration that
+has to be done by the root user can be done once so that the user
+running the simulation does not need administrative privileges.
+</p><p>
+Figure <a class="reference" href="#real-network-access-tap.html:multihost">2</a> shows a setup with two Simics
+processes on the same simulation host, both using a host
+connection. Each Simics process connects to its own TAP device. All
+target machines in the <code>Simics 0</code> configuration has IP
+addresses on the 10.10.x.0 network while the <code>Simics 1</code>
+configuration has IP addresses on the 10.10.y.0 network. It is
+important that all the real hosts that the target machines needs to
+talk to has static routes set up for the 10.10.x.0 and 10.10.y.0
+networks, using the simulation host as gateway.
+</p><p>
+</p><div class="figure" id="real-network-access-tap.html:multihost">
+
+<div style="text-align: center">
+<img alt="" src="multi-host.png">
+<div class="caption">Figure 2. Example setup of multiple Simics instances using a host connection</div>
+</div>
+</div>
+
+<p>
+Figure <a class="reference" href="#real-network-access-tap.html:multibridge">3</a> shows a setup similar to Figure <a class="reference" href="#real-network-access-tap.html:multihost">2</a>. In this case the target machine connect to the
+real network using an Ethernet bridge on the simulation host. The
+bridge is invisible to both the target machines and the real hosts. As
+all IP addresses must be on the 192.168.0.0 network, the <code>Simics
+0</code> configuration uses IP addresses between 192.168.0.0 and
+192.168.0.9, and the <code>Simics 1</code> configuration uses IP addresses
+between 192.168.0.10 and 192.168.0.19. Note that both
+<code>sim_tap0</code> and <code>sim_tap1</code> is part of the same Ethernet
+bridge, and that none of the interfaces that is a part of the bridge
+has any IP address. In this description the MAC addresses has been
+left out to not unnecessarily clutter the figure and
+description. These needs to be partitioned between the two Simics
+configurations in the same way as the IP addresses.
+</p><p>
+</p><div class="figure" id="real-network-access-tap.html:multibridge">
+
+<div style="text-align: center">
+<img alt="" src="multi-bridge.png">
+<div class="caption">Figure 3. Example setup of multiple Simics instances using a bridged connection</div>
+</div>
+</div>
+
+<p>
+ </p></section><section class="page" id="real-network-interface.html"><h1 class="jdocu"><a id="real-network-interface.html:real-network-interface">3.4 Selecting Host Ethernet Interface</a></h1>
+<p>
+
+</p><p>
+When connecting to a real network on a host with multiple network interfaces
+installed, Simics will select one of them for the real network connection. If
+the default selection is incorrect, all commands have an <i>interface</i>
+argument to select the desired interface. The interface name expected by
+the <i>interface</i> argument is the ordinary interface name used by the
+host operating system. The next two sections describe how to obtain the names
+of the simulation host's network interfaces for Linux and Windows hosts.
+</p><p>
+
+
+</p></section><section class="page" id="linux.html"><h1 class="jdocu"><a id="linux.html:Linux">3.4.1 Linux</a></h1>
+<p>
+
+</p><p>
+All network interfaces are listed by <code>/sbin/ifconfig -a</code> on the
+simulation host:
+</p><p>
+</p><pre class="jdocu_small">computer$ <b>/sbin/ifconfig -a</b>
+eth0      Link encap:Ethernet  HWaddr 00:10:18:0A:DE:EF
+          BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+          Interrupt:21
+
+eth1      Link encap:Ethernet  HWaddr 00:0C:F1:D1:FF:09
+          inet addr:10.0.0.140  Bcast:10.0.0.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:671467287 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:647635204 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:3725791210 (3553.1 Mb)  TX bytes:217046405 (206.9 Mb)
+          Interrupt:20 Base address:0xdf40 Memory:fceef000-fceef038
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:24929 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24929 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:4164218 (3.9 Mb)  TX bytes:4164218 (3.9 Mb)
+</pre><p>
+</p><p>
+For example, to use the first interface listed above, specify
+<code>eth0</code> as the <i>interface</i> argument.
+</p><p>
+</p></section><section class="page" id="windows.html"><h1 class="jdocu"><a id="windows.html:Windows">3.4.2 Windows</a></h1>
+<p>
+
+</p><p>
+The interface name expected by the <i>interface</i> argument is the
+ordinary interface name used by the host operating system. All interfaces of
+the host are listed in the <em>Network Connections</em> folder in
+the <em>Control Panel</em>; alternatively, <code>ipconfig</code> can be used in a
+command prompt on the simulation host:
+</p><p>
+</p><pre class="jdocu_small">C:\&gt;ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+   Connection-specific DNS Suffix  . :
+   IP Address. . . . . . . . . . . . : 10.0.0.191
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 10.0.0.3
+
+Ethernet adapter LAB:
+
+   Connection-specific DNS Suffix  . :
+   IP Address. . . . . . . . . . . . : 10.10.0.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter TAP:
+
+   Media State . . . . . . . . . . . : Media disconnected
+</pre><p>
+</p><p>
+For example, to use the first interface listed above, specify
+<i>"Local Area Connection"</i> as the <i>interface</i> argument. There is
+no need to specify the entire interface name: it is enough to specify a unique
+substring.
+</p><p>
+</p></section><section class="page" id="real-network-performance.html"><h1 class="jdocu"><a id="real-network-performance.html:real-network-performance">3.5 Performance</a></h1>
+<p>
+
+</p><p>
+When using other connection types than port forwarding, Simics has to prevent
+the simulated network from being flooded with packets from the real network. In
+practice, the simulated machine is not always able to handle the amount of
+traffic it receives, and Simics cannot buffer all incoming packets. This is
+especially a problem when the simulation is stopped.
+</p><p>
+Flooding is prevented by limiting the amount of traffic that is allowed to
+enter the simulated network per simulated second. This amount is determined by
+the <i>tx_bandwidth</i> and <i>tx_packet_rate</i> attributes of the
+real network object created for the connection, typically
+named <b>real_net0</b>. The unit of the <i>tx_bandwidth</i> attribute
+is bits per simulated second, and the unit of the <i>tx_packet_rate</i>
+attribute is packets per simulated second. Either can be set to unlimited by
+setting them to 0, but this is not recommended unless a very limited amount of
+data is to be received. The default is to allow 10 megabits per simulated
+second and an unlimited number of packets.
+</p><p>
+In addition to allowing the selected rate of traffic into the simulated
+network, Simics buffers traffic for an additional 0.1 seconds of simulated
+time, to avoid dropping packets during a short peak in the traffic. If more
+packets arrive once this buffer is full, Simics will drop them.
+</p><p>
+To get better performance out of the connection to the real network, modify the
+value of the <i>tx_bandwidth</i> and <i>tx_packet_rate</i>
+attributes until satisfied. A good strategy is to set the
+<i>tx_bandwidth</i> attribute to the amount of traffic that the simulated
+machine is expected to handle per simulated second, and then try to increase
+the <i>tx_packet_rate</i> from about 5000 and see at what packet rate the
+best performance is achieved.
+</p><p>
+For example, this will set the limit to 100 megabits and 10000 packets per
+simulated second:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>@conf.real_net0.tx_bandwidth = 100000000</b>
+simics&gt; <b>@conf.real_net0.tx_packet_rate = 10000</b>
+</pre><p>
+</p><p>
+</p></section><section class="page" id="real-network-troubleshooting.html"><h1 class="jdocu"><a id="real-network-troubleshooting.html:real-network-troubleshooting">3.6 Troubleshooting</a></h1>
+<p>
+
+</p><p>
+A network monitoring tool such as <em>Wireshark</em> (formerly known
+as <em>Ethereal</em>) is invaluable when debugging problems with the real
+network connections. It is a graphical traffic analyzer that can analyze most
+common network protocols. Wireshark is available
+from <a class="jdocu" href="http://www.wireshark.com" rel="noopener noreferrer" target="_top">http://www.wireshark.com</a>.
+</p><p>
+There are some pitfalls one might encounter when trying to connect a simulated
+network to a real one:
+</p><p>
+</p><dl><dt id="real-network-troubleshooting.html:dt:trying-to-access-the-simulation-host"><a href="#real-network-troubleshooting.html:dt:trying-to-access-the-simulation-host"><b>Trying to access the simulation host</b></a></dt><dd>Accessing the simulation host from the simulated network, or the other
+    way around, is only supported with port forwarding and host connection. It
+    is difficult—sometimes impossible—to access the simulation host
+    from the simulated network when setting up an Ethernet bridging
+    connection.</dd><dt id="real-network-troubleshooting.html:dt:simulated-os-has-no-route"><a href="#real-network-troubleshooting.html:dt:simulated-os-has-no-route"><b>Simulated OS has no route</b></a></dt><dd>When using a NAPT connection and the
+    operating system of the simulated machine does not have a correct route to
+    the real network, the simulated machine will drop the packets or send them
+    to the wrong address. To view the routing setup on the simulated machine,
+    use the command <code>netstat -r</code> on Linux or <code>route
+    print</code> on Windows. Note that these commands should be executed on the
+    <i>simulated</i> machines. The simulated OS should have a default route to
+    the service node.</dd><dt id="real-network-troubleshooting.html:dt:simics-uses-the-wrong-host-network-interface"><a href="#real-network-troubleshooting.html:dt:simics-uses-the-wrong-host-network-interface"><b>Simics uses the wrong host network interface</b></a></dt><dd>On a host with multiple network interfaces installed, Simics will only
+    use one of them for a real network connection. If the default selection is
+    incorrect, use the <i>interface</i> argument of the connect command to
+    select the desired network interface. See the <em>Selecting Host
+    Interface</em> part of section <a class="reference" href="#real-network-interface.html">3.4</a>.</dd></dl><p></p></section>

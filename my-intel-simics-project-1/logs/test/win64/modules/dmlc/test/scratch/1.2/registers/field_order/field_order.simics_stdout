@@ -1,0 +1,13 @@
+WARNING: module 'dml-test-field_order' is not thread safe. Turning Multimachine Accelerator off.
+[obj.bank.b info] name b index 2
+[obj.bank.b info] name a index 0
+[obj.bank.b info] name b index 1
+[obj.bank.b info] name a index 1
+[obj.bank.b info] name b index 0
+[obj.bank.b info] name a index 2
+[obj.bank.b info] wrote b.order[1].b[2] (msb 2 lsb 0)
+[obj.bank.b info] wrote b.order[1].a[0] (msb 3 lsb 3)
+[obj.bank.b info] wrote b.order[1].b[1] (msb 6 lsb 4)
+[obj.bank.b info] wrote b.order[1].a[1] (msb 7 lsb 7)
+[obj.bank.b info] wrote b.order[1].b[0] (msb 10 lsb 8)
+[obj.bank.b info] wrote b.order[1].a[2] (msb 11 lsb 11)

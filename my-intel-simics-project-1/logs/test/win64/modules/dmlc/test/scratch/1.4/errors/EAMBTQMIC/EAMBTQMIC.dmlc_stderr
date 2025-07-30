@@ -1,0 +1,14 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:47:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:54:20: error EAMBTQMIC: Ambiguous invocation of template-qualified method implementation call. 'u3' does not provide an implementation of 'm', and inherits multiple unrelated implementations from its ancestor templates.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:54:20:   resolution: qualify the call instead by the ancestor template with the desired implementation:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:15:5: implementation candidate provided by ancestor template 'u1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:21:5: implementation candidate provided by ancestor template 'u2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:57:20: error EAMBTQMIC: Ambiguous invocation of template-qualified method implementation call. 'u3' does not provide an implementation of 'n', and inherits multiple unrelated implementations from its ancestor templates.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:57:20:   note: some implementation(s) have been eliminated by #if statements, which may have caused the ambiguity.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:57:20:   resolution: qualify the call instead by the ancestor template with the desired implementation:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:16:5: implementation candidate provided by ancestor template 'u1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:23:15: implementation candidate provided by ancestor template 'u2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:67:19: error EAMBTQMIC: Ambiguous invocation of template-qualified method implementation call. 'u3' does not provide an implementation of 'm', and inherits multiple unrelated implementations from its ancestor templates.
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:67:19:   resolution: qualify the call instead by the ancestor template with the desired implementation:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:15:5: implementation candidate provided by ancestor template 'u1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EAMBTQMIC.dml:21:5: implementation candidate provided by ancestor template 'u2'

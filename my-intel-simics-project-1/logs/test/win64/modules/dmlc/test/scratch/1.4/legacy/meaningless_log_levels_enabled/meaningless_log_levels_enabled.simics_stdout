@@ -1,0 +1,20 @@
+WARNING: module 'dml-test-meaningless_log_levels_enabled' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\T_meaningless_log_levels_enabled.py
+[obj error] error 1
+[obj warning] warning 1
+[obj critical] critical 1
+[obj error] error 1 then 1
+[obj warning] warning 1 then 5
+[obj error] error 1
+[obj warning] warning 1
+[obj critical] critical 1
+[obj error] error 1 then 1
+[obj error] error 2
+[obj warning] warning 2
+[obj critical] critical 2
+[obj error] error 1 then 2
+[obj warning] warning 1 then 2
+[obj critical] critical 2 then 3
+[obj error] error 2
+[obj warning] warning 2
+[obj critical] critical 2

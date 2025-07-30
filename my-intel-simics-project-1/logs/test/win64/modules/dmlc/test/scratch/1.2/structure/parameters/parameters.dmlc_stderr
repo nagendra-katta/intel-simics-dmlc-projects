@@ -1,0 +1,9 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:88:8: In template t4
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:80:5: In b.g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:83:9: warning WEXPERIMENTAL: Use of unsupported feature: more than one level of parameter overrides
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:62:1: In p2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:54:5: warning WEXPERIMENTAL: Use of unsupported feature: parameter with two default declarations
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:66:1: In p3
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:69:5: warning WEXPERIMENTAL: Use of unsupported feature: more than one level of parameter overrides
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:102:1: In p5
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_parameters.dml:100:5: warning WEXPERIMENTAL: Use of unsupported feature: more than one level of parameter overrides

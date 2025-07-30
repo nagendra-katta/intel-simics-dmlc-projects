@@ -1,0 +1,12 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:12:5: In regs.r
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:14:15: warning WNOIS: implementation of read() without 'is read' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:16:15: warning WNOIS: implementation of read_field() without 'is read_field' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:18:15: warning WNOIS: implementation of write() without 'is write' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:20:15: warning WNOIS: implementation of write_field() without 'is write_field' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:21:9: In regs.r.f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:33:19: warning WNOIS: implementation of get() without 'is get' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:23:19: warning WNOIS: implementation of read() without 'is read' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:25:19: warning WNOIS: implementation of read_field() without 'is read_field' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:31:19: warning WNOIS: implementation of set() without 'is set' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:27:19: warning WNOIS: implementation of write() without 'is write' is ignored by the standard library
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNOIS.dml:29:19: warning WNOIS: implementation of write_field() without 'is write_field' is ignored by the standard library

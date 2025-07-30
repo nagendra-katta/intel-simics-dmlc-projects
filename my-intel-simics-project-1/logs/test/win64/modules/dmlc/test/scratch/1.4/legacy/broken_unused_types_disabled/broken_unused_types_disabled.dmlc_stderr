@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\broken_unused_types.dml:8:25: error ETYPE: unknown type: 'undefined_type_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\legacy\broken_unused_types.dml:11:17: error ETYPE: unknown type: 'undefined_type_t'

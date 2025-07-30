@@ -1,0 +1,8 @@
+WARNING: module 'dml-test-nested-assignment' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] x.i64: 0x12345678 0xabcdef00
+[obj info] x.i64: 12 34 56 78 ab cd ef 00
+[obj info] w: 0x12345678 0xabcdef00
+[obj info] x.i128: 0x12345678abcdef00 0xabcdef0012345678
+[obj info] x.i128: 12 34 56 78 ab cd ef 00 ab cd ef 00 12 34 56 78
+[obj info] w: 0x12345678abcdef00 0xabcdef0012345678
+[obj info] y.p1.p2: ab cd 12 34 56 78

@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\ETYPE_integer_t.dml:10:8: error ETYPE: unknown type: 'uinteger_t'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\ETYPE_integer_t.dml:12:8: error ETYPE: unknown type: 'integer_t'

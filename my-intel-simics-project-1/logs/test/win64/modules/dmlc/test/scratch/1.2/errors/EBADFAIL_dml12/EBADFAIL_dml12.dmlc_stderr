@@ -1,0 +1,28 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:13:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:18:8: In template methods_dml14
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:8:11: In p.call_all
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:39:23: error EBADFAIL: uncaught exception
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:41:35: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'set'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:81:5: exception propagated from set()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:18:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:36:9: exception propagated from bad1()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:21:15: method 'bad1' also called here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:23:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:41:15: exception propagated from bad2()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:25:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad3'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:45:24: exception propagated from bad3()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:27:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad4'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:49:16: exception propagated from bad4()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:41:15: exception propagated from bad2()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:29:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad5'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:53:15: exception propagated from bad5()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:41:15: exception propagated from bad2()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:31:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad6'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:57:17: exception propagated from bad6()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:41:15: exception propagated from bad2()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:33:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad7'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:64:36: exception propagated from bad7()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:35:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad8'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:70:16: exception propagated from bad8()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\EBADFAIL_dml14.dml:37:15: error EBADFAIL_dml12: uncaught exception in call to DML 1.2 method 'bad9'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBADFAIL_dml12.dml:75:18: exception propagated from bad9()

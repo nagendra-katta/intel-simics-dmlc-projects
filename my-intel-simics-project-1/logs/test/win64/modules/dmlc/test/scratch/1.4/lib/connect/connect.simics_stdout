@@ -1,0 +1,5 @@
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\lib\T_connect.py
+WARNING: module 'dml-test-connect' is not thread safe. Turning Multimachine Accelerator off.
+[bad critical] failed to initialize noconf
+[bad critical] failed to initialize sub[0].renamed
+[bad critical] failed to initialize sub[1].renamed

@@ -1,0 +1,8 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:18:5: error ELAYOUT: illegal layout definition: illegal layout member type: bitfield_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:23:5: error ELAYOUT: illegal layout definition: illegal layout member type: bitfield_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:28:5: error ELAYOUT: illegal layout definition: illegal layout member type: double
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:35:5: error ELAYOUT: illegal layout definition: size of bf is not a whole byte
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:42:5: error ELAYOUT: illegal layout definition: size of x is not a whole byte
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:44:5: error ELAYOUT: illegal layout definition: size of y is not a whole byte
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:47:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELAYOUT.dml:51:9: error ELAYOUT: illegal layout definition: unknown layout size

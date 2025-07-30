@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDXVAR.dml:12:37: In g[i < 2]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDXVAR.dml:12:37: error EIDXVAR: expression may not depend on the index variable i

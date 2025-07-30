@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETQMIC.dml:23:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETQMIC.dml:36:18: error ENTMPL: unknown template: 'nonexistent'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETQMIC.dml:38:16: error ENTMPL: unknown template: 'nonexistent'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETQMIC.dml:41:18: error ETQMIC: invalid template-qualified method implementation call, 'test' does not instantiate 'write'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETQMIC.dml:44:16: error ETTQMIC: invalid template-qualified method implementation call, 't3' not a subtemplate of 't2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETQMIC.dml:46:16: error ETTQMIC: invalid template-qualified method implementation call, 'u' not a subtemplate of 't2'

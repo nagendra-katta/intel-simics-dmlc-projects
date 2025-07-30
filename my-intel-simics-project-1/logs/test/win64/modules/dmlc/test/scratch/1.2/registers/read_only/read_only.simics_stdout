@@ -1,0 +1,10 @@
+WARNING: module 'dml-test-read_only' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_read_only.py
+[obj.bank.b spec-viol] Write to read-only register b.r0 (value written = 0x00000011).
+[obj.bank.b spec-viol] Write to read-only register b.r1 (value written = 0x00000011).
+[obj.bank.b spec-viol] Write to read-only field b.r2.f (value written = 0x00000011, contents = 0x00000000).
+[obj.bank.b spec-viol] Write to read-only register b.r3 (value written = 0x00000011).
+[obj.bank.b spec-viol] Write to read-only register b.r4 (value written = 0x00000011).
+[obj.bank.b spec-viol] Write to read-only field b.r5.f (value written = 0x00000011, contents = 0x00000000).
+[obj.bank.b spec-viol] Write to read-only field b.r6.f (value written = 0x0000000b, contents = 0x00000007).
+[obj.bank.b spec-viol] Write to read-only field b.r7.f (value written = 0x0000000b, contents = 0x00000007).

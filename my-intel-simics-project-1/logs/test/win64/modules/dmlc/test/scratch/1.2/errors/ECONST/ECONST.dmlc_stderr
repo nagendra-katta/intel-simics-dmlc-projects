@@ -1,0 +1,8 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:14:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:16:9: error ECONST: assignment to constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:23:9: error ECONST: assignment to constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:25:7: error ECONST: assignment to constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:32:14: error ECONST: assignment to constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:34:14: error ECONST: assignment to constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:42:11: error ECONST: assignment to constant
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ECONST.dml:48:7: error ECONST: assignment to constant

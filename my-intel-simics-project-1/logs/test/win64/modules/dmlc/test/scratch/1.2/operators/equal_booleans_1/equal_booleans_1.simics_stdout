@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-equal_booleans_1' is not thread safe. Turning Multimachine Accelerator off.

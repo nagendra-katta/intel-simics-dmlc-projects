@@ -1,0 +1,8 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:26:5: In typed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:14:5: error EASSINL: cannot assign to inlined parameter: 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:28:5: In typed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:14:5: error EASSINL: cannot assign to inlined parameter: 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:30:5: In untyped
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:19:5: error EASSINL: cannot assign to inlined parameter: 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:32:5: In untyped
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASSINL.dml:19:5: error EASSINL: cannot assign to inlined parameter: 'x'

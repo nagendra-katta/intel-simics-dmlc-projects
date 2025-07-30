@@ -1,0 +1,2 @@
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\methods\T_startup_memoized.py
+WARNING: module 'dml-test-startup_memoized' is not thread safe. Turning Multimachine Accelerator off.

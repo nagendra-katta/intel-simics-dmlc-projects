@@ -1,0 +1,9 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:27:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:10:1: error ESTATICEXPORT: cannot convert this method reference to a function pointer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:29:5: attempted conversion here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:13:7: error ESTATICEXPORT: cannot convert this method reference to a function pointer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:31:5: attempted conversion here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:16:7: error ESTATICEXPORT: cannot convert this method reference to a function pointer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:33:5: attempted conversion here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:22:11: error ESTATICEXPORT: cannot convert this method reference to a function pointer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESTATICEXPORT.dml:35:5: attempted conversion here

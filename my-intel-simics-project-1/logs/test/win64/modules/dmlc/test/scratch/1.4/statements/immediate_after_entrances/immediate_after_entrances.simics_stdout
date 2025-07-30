@@ -1,0 +1,5 @@
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\statements\T_immediate_after_entrances.py
+WARNING: module 'dml-test-immediate_after_entrances' is not thread safe. Turning Multimachine Accelerator off.
+[obj warning] DML device deleted while immediate after callbacks of it are still pending! These are now canceled. Resolve this warning by calling 'SIM_process_pending_work()' before deleting the device or any objects it may interact with.
+[sim info] Failed creating configuration: Error in finalize_instance() for the obj2 object: Requested to error
+[sim info] Deleting all partially created objects

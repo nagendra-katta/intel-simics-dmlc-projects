@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device name="test" bitorder="le">
+  <bank name="b" vsize="2" byte_order="little-endian">
+    <register name="r10" offset="11 11" size="1">
+    </register>
+    <register name="r6" vsize="2" documentation="long" offset="0 1 0 1" size="1">
+    </register>
+    <register name="r8" offset="10 11" size="1">
+    </register>
+  </bank>
+</device>

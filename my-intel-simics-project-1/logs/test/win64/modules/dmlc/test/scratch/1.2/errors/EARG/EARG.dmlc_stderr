@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:16:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:20:5: error EARG: wrong number of input arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:22:5: error EARG: wrong number of input arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:24:5: error EARG: wrong number of output arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:26:5: error EARG: wrong number of output arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:28:5: error EARG: wrong number of input arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:30:5: error EARG: wrong number of input arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:32:5: error EARG: wrong number of output arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:34:5: error EARG: wrong number of output arguments
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EARG.dml:36:5: error EARG: wrong number of function arguments

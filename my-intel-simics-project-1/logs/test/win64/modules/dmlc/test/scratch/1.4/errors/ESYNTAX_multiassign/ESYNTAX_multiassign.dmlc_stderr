@@ -1,0 +1,22 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:7:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:10:1: error ESYNTAX: syntax error: wrong number of initializers:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:10:1:   2 variables declared
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:10:1:   1 initializers specified
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:12:1: error ESYNTAX: syntax error: wrong number of initializers:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:12:1:   2 variables declared
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:12:1:   3 initializers specified
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:14:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:16:5: error ESYNTAX: syntax error: wrong number of initializers:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:16:5:   2 variables declared
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:16:5:   1 initializers specified
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:18:5: error ESYNTAX: syntax error: wrong number of initializers:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:18:5:   2 variables declared
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:18:5:   3 initializers specified
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:20:5: error ESYNTAX: syntax error: wrong number of initializers:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:20:5:   2 variables declared
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:20:5:   1 initializers specified
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:22:5: error ESYNTAX: syntax error: wrong number of initializers:
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:22:5:   2 variables declared
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:22:5:   3 initializers specified
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:26:5: error ESYNTAX: syntax error at '(': wrong number of simultaneous assign targets for initializer: Expected [ast.initializer_scalar(ast.int(1))], got [LocalVariable(LocalSymbol(x, 'v541_x')), LocalVariable(LocalSymbol(y, 'v541_y'))]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ESYNTAX_multiassign.dml:28:5: error ESYNTAX: syntax error at '(': wrong number of simultaneous assign targets for initializer: Expected [ast.initializer_scalar(ast.int(1)), ast.initializer_scalar(ast.int(2)), ast.initializer_scalar(ast.int(3))], got [LocalVariable(LocalSymbol(x, 'v541_x')), LocalVariable(LocalSymbol(y, 'v541_y'))]

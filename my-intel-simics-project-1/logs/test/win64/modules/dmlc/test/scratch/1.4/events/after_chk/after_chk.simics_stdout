@@ -1,0 +1,34 @@
+WARNING: module 'dml-test-after_chk' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\events\T_after_chk.py
+[obj info] running exec_afters
+WARNING: module 'dml-test-after_chk' is not thread safe. Turning Multimachine Accelerator off.
+┌──────┬──────┬───────────┐
+│Cycle │Object│Description│
+├──────┼──────┼───────────┤
+│100000│obj   │m1         │
+│100000│obj   │()         │
+│100000│obj   │g.m1       │
+│100000│obj   │()         │
+│100000│obj   │p[i][j].m1 │
+│100000│obj   │()         │
+│100000│obj   │p[i][j].m1 │
+│100000│obj   │()         │
+│100000│obj   │m2         │
+│100000│obj   │('uint64') │
+│100000│obj   │g.m2       │
+│100000│obj   │('uint64') │
+│100000│obj   │p[i][j].m2 │
+│100000│obj   │('uint64') │
+│100000│obj   │p[i][j].m2 │
+│100000│obj   │('uint64') │
+└──────┴──────┴───────────┘
+[obj info] running cancel_afters
+Running 2 s
+[obj info] running m1
+[obj info] running m1_h
+[obj.port.p[1][1] info] running m1
+[obj.port.p[1][1] info] running m1_h
+[obj info] running m2 with v = 1
+[obj info] running m2_h with v = 1
+[obj.port.p[1][1] info] running m2 with v = 4
+[obj.port.p[1][1] info] running m2_h with v = 4

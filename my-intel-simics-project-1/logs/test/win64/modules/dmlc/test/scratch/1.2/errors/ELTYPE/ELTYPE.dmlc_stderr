@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELTYPE.dml:9:9: error ELTYPE: invalid log type: 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELTYPE.dml:12:9: error ELTYPE: invalid log type: 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELTYPE.dml:15:9: error ELTYPE: invalid log type: 'unimplemented'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELTYPE.dml:18:9: error ELTYPE: invalid log type: 'unimpl'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELTYPE.dml:21:9: error ELTYPE: invalid log type: 'spec_violation'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELTYPE.dml:24:9: error ELTYPE: invalid log type: 'spec_viol'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ELTYPE.dml:28:9: error ELTYPE: invalid log type: 'undefined'

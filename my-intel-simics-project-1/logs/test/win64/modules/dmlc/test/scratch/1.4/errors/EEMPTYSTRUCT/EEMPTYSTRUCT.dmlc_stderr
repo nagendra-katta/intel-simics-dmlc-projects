@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEMPTYSTRUCT.dml:10:15: error EEMPTYSTRUCT: struct or layout with no fields
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EEMPTYSTRUCT.dml:12:1: error EEMPTYSTRUCT: struct or layout with no fields

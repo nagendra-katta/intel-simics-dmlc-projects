@@ -1,0 +1,3 @@
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_attribute_conf.py
+WARNING: module 'dml-test-attribute_conf' is not thread safe. Turning Multimachine Accelerator off.
+{'sim': <pre conf object sim of type sim>, 'obj': <pre conf object obj of type test>}

@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\testing.dml:23:9: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\layout\T_member_addressof.dml:24:46: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\layout\T_member_addressof.dml:24:46:   got:      pointer to bitfields (backing type: uint32)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\layout\T_member_addressof.dml:24:46:   expected: pointer to bitfields (backing type: uint32_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\layout\T_member_addressof.dml:26:41: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\layout\T_member_addressof.dml:26:41:   got:      pointer to int16
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\layout\T_member_addressof.dml:26:41:   expected: pointer to int16_be_t

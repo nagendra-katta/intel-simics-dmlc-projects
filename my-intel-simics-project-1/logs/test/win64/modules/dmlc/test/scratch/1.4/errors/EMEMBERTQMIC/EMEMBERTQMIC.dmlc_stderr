@@ -1,0 +1,13 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:58:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:65:19: error EMEMBERTQMIC: invalid template-qualified method implementation call, 't1' does not provide nor inherit an implementation of a method 'nonexistent'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:13:1: template declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:67:19: error EMEMBERTQMIC: invalid template-qualified method implementation call, 't1' does not provide nor inherit an implementation of a method 'm2', only an abstract declaration of it
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:13:1: template declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:69:29: error EMEMBERTQMIC: invalid template-qualified method implementation call, 't1' does not provide nor inherit an implementation of a method 'nonexistent'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:13:1: template declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:74:19: error EMEMBERTQMIC: invalid template-qualified method implementation call, 't2' does not provide nor inherit an implementation of a method 'm2' for the object 'g': all implementations that could have been given have been eliminated by #if statements
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:18:1: template declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:83:19: error EMEMBERTQMIC: invalid template-qualified method implementation call, 't1' does not provide nor inherit an implementation of a method 'm3'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:13:1: template declaration
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:93:35: error EMEMBERTQMIC: invalid template-qualified method implementation call, 'subdeclarer' does not provide nor inherit an implementation of a method 'm'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EMEMBERTQMIC.dml:44:1: template declaration

@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSLICE.dml:8:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSLICE.dml:11:6: error EBSLICE: illegal bitslice operation
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSLICE.dml:14:6: error EBSLICE: illegal bitslice operation
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSLICE.dml:16:5: error ENVAL: not a value: [0]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSLICE.dml:18:6: error EARRAY: cannot use an array as a value: 'b[$i < 2]'

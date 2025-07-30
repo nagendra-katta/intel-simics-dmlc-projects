@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:23:13: error ENTMPL: unknown template: 'garbage4'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:21:9: error ENTMPL: unknown template: 'garbage3'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:17:9: error ENTMPL: unknown template: 'garbage2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:13:5: error ENTMPL: unknown template: 'garbage1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:11:5: error ENTMPL: unknown template: 'garbage0'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:52:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:56:5: error ENTMPL: unknown template: 'w2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:58:5: error ENTMPL: unknown template: 'xyz'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:60:5: error ETYPE: unknown type: 'list of trait w2'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENTMPL.dml:62:5: error ETYPE: unknown type: 'list of trait xyz'

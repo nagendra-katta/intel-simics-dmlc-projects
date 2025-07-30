@@ -1,0 +1,28 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\methods\T_inline_untyped_extern.dml:17:1: internal compiler error ICE: Unexpected exception 'not implemented' in init
+Traceback (most recent call last):
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\dmlc.py", line 714, in main
+    dml.c_backend.generate(dev, headers, footers, outputbase,
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3529, in generate
+    generate_cfile(device, footers, prefix, hfilename,
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3308, in generate_cfile
+    generate_cfile_body(device, footers, full_module, filename_prefix)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3410, in generate_cfile_body
+    code.toc_inline()
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\ctree.py", line 408, in toc_inline
+    substatement.toc()
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\ctree.py", line 574, in toc
+    self.toc_stmt()
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\ctree.py", line 568, in toc_stmt
+    self.toc_inline()
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\ctree.py", line 579, in toc_inline
+    stmt.toc()
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\ctree.py", line 5382, in toc
+    self.type.print_declaration(
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\types.py", line 353, in print_declaration
+    out("%s%s%s;\n" % (self.declaration(var),
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\types.py", line 351, in declaration
+    raise Exception("not implemented")
+Exception: not implemented
+*** An unexpected dmlc error occurred!
+    Please report this incident, together with the details
+    found in the dmlc-error.log file.

@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ECONSTFUN.dml:12:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ECONSTFUN.dml:14:5: error ECONSTFUN: const qualified function type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ECONSTFUN.dml:16:20: error ECONSTFUN: const qualified function type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ECONSTFUN.dml:18:20: error ECONSTFUN: const qualified function type

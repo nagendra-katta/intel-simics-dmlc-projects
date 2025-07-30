@@ -1,0 +1,15 @@
+*** Python script 'C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\1.4/serialize/identity_compat\test.py' failed: Python error in PyEval_Evalcode():
+Traceback (most recent call last):
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\logs\test\win64\modules\dmlc\test\scratch\1.4\serialize\identity_compat\test.py", line 16, in <module>
+    SIM_source_python('C:\\Users\\nagen\\simics-projects\\my-intel-simics-project-1\\modules\\dmlc\\test\\1.4\\serialize\\T_identity_compat.py')
+simics.SimExc_General: Python error in PyEval_Evalcode():
+Traceback (most recent call last):
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\serialize\T_identity_compat.py", line 7, in <module>
+    with stest.expect_exception_mgr(simics.SimExc_IllegalValue):
+  File "C:\Users\nagen\AppData\Local\Programs\Simics\simics-python-7.10.0\win64\lib\python3.10\lib\contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "C:\Users\nagen\AppData\Local\Programs\Simics\simics-7.38.0\win64\lib\python-py3\stest.py", line 679, in expect_exception_mgr
+    fail("Expected %s exception, got no exception" % exc.__name__)
+  File "C:\Users\nagen\AppData\Local\Programs\Simics\simics-7.38.0\win64\lib\python-py3\stest.py", line 98, in fail
+    raise TestFailure(msg)
+stest.TestFailure: Expected SimExc_IllegalValue exception, got no exception

@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-asynchronous_send' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\hooks\T_asynchronous_send.py

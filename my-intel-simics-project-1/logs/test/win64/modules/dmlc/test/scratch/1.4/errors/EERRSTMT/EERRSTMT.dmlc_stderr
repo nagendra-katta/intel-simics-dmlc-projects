@@ -1,0 +1,31 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:43:1: In bank
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1599:10: error EERRSTMT: A subdevice may not be named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:54:9: In g1.bank.b
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1897:9: error EERRSTMT: Cannot declare a bank underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:61:13: In g1.bank.g.b
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1897:9: error EERRSTMT: Cannot declare a bank underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:59:13: In g1.bank.g.p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1559:9: error EERRSTMT: Cannot declare a port underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:57:13: In g1.bank.g.s
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1603:9: error EERRSTMT: Cannot declare a subdevice underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:52:9: In g1.bank.p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1559:9: error EERRSTMT: Cannot declare a port underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:50:9: In g1.bank.s
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1603:9: error EERRSTMT: Cannot declare a subdevice underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:74:5: In g3.port_
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1599:10: error EERRSTMT: A subdevice may not be named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:41:1: In port
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1599:10: error EERRSTMT: A subdevice may not be named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:92:9: In s.g.bank
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1599:10: error EERRSTMT: A subdevice may not be named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:88:17: In s.g.port.g.b
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1897:9: error EERRSTMT: Cannot declare a bank underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:86:17: In s.g.port.g.p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1559:9: error EERRSTMT: Cannot declare a port underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:84:17: In s.g.port.g.s
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.4\dml-builtins.dml:1603:9: error EERRSTMT: Cannot declare a subdevice underneath a group named 'port' or 'bank'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:13:7: In m5
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:18:9: error EERRSTMT: forced compilation error in source code
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:25:9: error EERRSTMT: forced compilation error in source code
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:29:9: error EERRSTMT: forced compilation error in source code
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EERRSTMT.dml:34:9: error EERRSTMT: forced compilation error in source code

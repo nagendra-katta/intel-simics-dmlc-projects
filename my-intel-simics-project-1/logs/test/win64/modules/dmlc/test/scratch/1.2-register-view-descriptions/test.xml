@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device name="test" bitorder="le">
+  <bank name="b_desc_documentation" desc="&lt;i&gt;desc&lt;/i&gt;" documentation="&lt;i&gt;documentation&lt;/i&gt;" byte_order="little-endian">
+  </bank>
+  <bank name="b_documentation" documentation="&lt;i&gt;documentation&lt;/i&gt;" byte_order="little-endian">
+  </bank>
+  <bank name="f_desc_documentation" byte_order="little-endian">
+    <register name="r" offset="0" size="1">
+      <field name="f" desc="&lt;i&gt;desc&lt;/i&gt;" documentation="&lt;i&gt;documentation&lt;/i&gt;" msb="7" lsb="0" />
+    </register>
+  </bank>
+  <bank name="f_documentation" byte_order="little-endian">
+    <register name="r" offset="0" size="1">
+      <field name="f" documentation="&lt;i&gt;documentation&lt;/i&gt;" msb="7" lsb="0" />
+    </register>
+  </bank>
+  <bank name="r_desc_documentation" byte_order="little-endian">
+    <register name="r" desc="&lt;i&gt;desc&lt;/i&gt;" documentation="&lt;i&gt;documentation&lt;/i&gt;" offset="0" size="1">
+    </register>
+  </bank>
+  <bank name="r_documentation" byte_order="little-endian">
+    <register name="r" documentation="&lt;i&gt;documentation&lt;/i&gt;" offset="0" size="1">
+    </register>
+  </bank>
+</device>

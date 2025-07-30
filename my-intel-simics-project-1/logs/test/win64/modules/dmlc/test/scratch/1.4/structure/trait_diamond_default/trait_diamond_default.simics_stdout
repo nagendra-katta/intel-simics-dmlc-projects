@@ -1,0 +1,3 @@
+WARNING: module 'dml-test-trait_diamond_default' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] BB
+[obj info] CC

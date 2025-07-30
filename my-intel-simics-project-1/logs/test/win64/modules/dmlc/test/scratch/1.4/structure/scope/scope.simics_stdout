@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-scope' is not thread safe. Turning Multimachine Accelerator off.
+[obj.port.p info] 5 4 3 2

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\dmlc.py", line 714, in main
+    dml.c_backend.generate(dev, headers, footers, outputbase,
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3529, in generate
+    generate_cfile(device, footers, prefix, hfilename,
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3308, in generate_cfile
+    generate_cfile_body(device, footers, full_module, filename_prefix)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 3376, in generate_cfile_body
+    generate_trait_method(m)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\c_backend.py", line 2185, in generate_trait_method
+    code = m.codegen_body()
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\traits.py", line 256, in codegen_body
+    body = codegen_method(
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\codegen.py", line 3953, in codegen_method
+    body.extend(codegen_statements(subs, location, fnscope))
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\codegen.py", line 1913, in codegen_statements
+    stmts.extend(statement_dispatcher.dispatch(tree, *args))
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\ast.py", line 171, in dispatch
+    return self.table[tree.kind](tree, *args)
+  File "C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\python\dml\codegen.py", line 2156, in stmt_saved
+    raise ICE(stmt.site, "'saved' declaration inside a shared method is "
+dml.logging.ICE: 'saved' declaration inside a shared method is not yet allowed

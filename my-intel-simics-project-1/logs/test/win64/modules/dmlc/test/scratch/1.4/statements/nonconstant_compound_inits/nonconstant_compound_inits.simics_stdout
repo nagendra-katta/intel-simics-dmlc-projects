@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-nonconstant_compound_inits' is not thread safe. Turning Multimachine Accelerator off.

@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENCONST.dml:17:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENCONST.dml:20:12: error ENCONST: non-constant expression: cast(i, int64 ) == 0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENCONST.dml:24:16: error ENCONST: non-constant expression: cast(i, int64 ) == 0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENCONST.dml:26:30: In inlined_const
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENCONST.dml:14:10: error ENCONST: non-constant expression: x

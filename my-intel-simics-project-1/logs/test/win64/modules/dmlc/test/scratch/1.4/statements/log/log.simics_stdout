@@ -1,0 +1,6 @@
+WARNING: module 'dml-test-log' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] arg 64 <0000007>
+[obj info] arg 8 <    5>
+[obj info] log on level, #1
+[obj info] log on group, #3
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\statements\T_log.py

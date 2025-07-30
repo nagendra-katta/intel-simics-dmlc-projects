@@ -1,0 +1,15 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:9:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:12:14: warning WNEGCONSTCOMP: Comparing negative constant to unsigned integer has a constant result
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:12:17: Consider 'cast(-1, uint64)'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:14:14: warning WNEGCONSTCOMP: Comparing negative constant to unsigned integer has a constant result
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:14:16: Consider 'cast(-1, uint64)'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:16:16: warning WNEGCONSTCOMP: Comparing negative constant to unsigned integer has a constant result
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:16:18: Consider 'cast(-1, uint64)'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:18:14: warning WNEGCONSTCOMP: Comparing negative constant to unsigned integer has a constant result
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:18:17: Consider 'cast(-1, uint64)'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:20:16: warning WNEGCONSTCOMP: Comparing negative constant to unsigned integer has a constant result
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:20:19: Consider 'cast(-1, uint64)'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:23:15: warning WNEGCONSTCOMP: Comparing negative constant to unsigned integer has a constant result
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:23:18: Consider 'cast(-1, int64)'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:25:15: warning WNEGCONSTCOMP: Comparing negative constant to unsigned integer has a constant result
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_WNEGCONSTCOMP.dml:25:17: Consider 'cast(-1, int64)'

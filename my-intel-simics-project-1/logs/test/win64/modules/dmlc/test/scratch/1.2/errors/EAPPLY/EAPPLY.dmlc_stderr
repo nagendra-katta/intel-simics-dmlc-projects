@@ -1,0 +1,13 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\testing.dml:23:9: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:16:5: error EAPPLY: illegal function application of 'FOO'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:16:5:   type: <unknown type>
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:18:10: error EAPPLY: illegal function application of '(FOO) + 1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:18:10:   type: <unknown type>
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:21:5: error EAPPLY: illegal function application of 'b'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:21:5:   type: bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:23:5: error EAPPLY: illegal function application of '1'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:23:5:   type: uint1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:25:6: error EAPPLY: illegal function application of '$e'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:25:6:   type: event object
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:27:6: error EAPPLY: illegal function application of '$e'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EAPPLY.dml:27:6:   type: event object

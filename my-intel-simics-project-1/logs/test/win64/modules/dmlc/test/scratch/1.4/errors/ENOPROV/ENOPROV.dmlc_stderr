@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENOPROV.dml:9:5: error ENOPROV: No such provisional feature invalid. Valid values are: explicit_param_decls, simics_util_vect
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ENOPROV.dml:11:7: error ENOPROV: No such provisional feature bad. Valid values are: explicit_param_decls, simics_util_vect

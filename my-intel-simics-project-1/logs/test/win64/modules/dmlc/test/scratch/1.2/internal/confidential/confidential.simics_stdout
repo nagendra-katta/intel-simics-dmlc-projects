@@ -1,0 +1,72 @@
+WARNING: module 'dml-test-confidential' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] a_r name is _r0x4
+[obj info] b_r name is _r0x4
+[obj info] c_r name is r
+[obj info] d_r name is r
+[obj info] a_t name is _r0x6
+[obj info] b_t name is _r0x6
+[obj info] c_t name is _r0x6
+[obj info] d_t name is _r0x6
+[obj info] a_p name is p
+[obj info] b_p name is p
+[obj info] c_p name is p
+[obj info] d_p name is p
+[obj info] u_a_r name is _ur0
+[obj info] u_b_r name is _ur1
+[obj info] u_ra0 0 name is _r0x0
+[obj info] u_ra0 1 name is _r0x0
+[obj info] u_ra1 0 name is _ur3
+[obj info] u_ra1 1 name is _ur3
+[obj info] a_r qname is a._r0x4
+[obj info] b_r qname is b._r0x4
+[obj info] c_r qname is c.r
+[obj info] d_r qname is d.r
+[obj info] a_t qname is a._r0x6
+[obj info] b_t qname is b._r0x6
+[obj info] c_t qname is c._r0x6
+[obj info] d_t qname is d._r0x6
+[obj info] a_p qname is a.p
+[obj info] b_p qname is b.p
+[obj info] c_p qname is c.p
+[obj info] d_p qname is d.p
+[obj info] u_a_r qname is u.a._ur0
+[obj info] u_b_r qname is u.b._ur1
+[obj info] u_ra0 0 qname is u._r0x0[0]
+[obj info] u_ra0 1 qname is u._r0x0[1]
+[obj info] u_ra1 0 qname is u._ur3[0]
+[obj info] u_ra1 1 qname is u._ur3[1]
+[obj info] a_r_f name is _b7_0
+[obj info] a_r_fa 0 name is _b9_8
+[obj info] a_r_fa 2 name is _b9_8
+[obj info] b_r_f name is _b7_0
+[obj info] c_r_f name is f
+[obj info] d_r_f name is f
+[obj info] a_t_f name is _b7_0
+[obj info] b_t_f name is _b7_0
+[obj info] c_t_f name is _b7_0
+[obj info] d_t_f name is _b7_0
+[obj info] a_p_f name is f
+[obj info] b_p_f name is f
+[obj info] c_p_f name is f
+[obj info] d_p_f name is f
+[obj info] u_a_r_f name is _b7_0
+[obj info] u_b_r_f name is _b7_0
+[obj info] u_a_r_fa 0 name is _b9_8
+[obj info] u_a_r_fa 2 name is _b9_8
+[obj info] a_r_f qname is a._r0x4._b7_0
+[obj info] b_r_f qname is b._r0x4._b7_0
+[obj info] c_r_f qname is c.r.f
+[obj info] d_r_f qname is d.r.f
+[obj info] a_t_f qname is a._r0x6._b7_0
+[obj info] b_t_f qname is b._r0x6._b7_0
+[obj info] c_t_f qname is c._r0x6._b7_0
+[obj info] d_t_f qname is d._r0x6._b7_0
+[obj info] a_p_f qname is a.p.f
+[obj info] b_p_f qname is b.p.f
+[obj info] c_p_f qname is c.p.f
+[obj info] d_p_f qname is d.p.f
+[obj info] u_a_r_f qname is u.a._ur0._b7_0
+[obj info] u_b_r_f qname is u.b._ur1._b7_0
+[obj info] u_b_r_f qname is u.b._ur1._b7_0
+[obj info] u_a_r_e qname is u.a._ur0.e
+[obj info] u_a_r_fa 1_g qname is u.a._ur0._b9_8[1].g

@@ -1,0 +1,8 @@
+WARNING: module 'dml-test-no_queue' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\events\T_no_queue.py
+[obj info] trying after
++++ SIM_log_error is deprecated.
+    Use the SIM_LOG_ERROR macro instead.
+[obj error] Attribute 'queue' is not set, ignoring delayed call
+[obj info] trying ev.post
+[obj error] ev.post(): The 'queue' attribute is not set, not posting the event

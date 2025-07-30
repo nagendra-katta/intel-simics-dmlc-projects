@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_4050.dml:7:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_4050.dml:10:14: error EBTYPE: wrong type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_4050.dml:10:14:   got:      double
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_4050.dml:10:14:   expected: integer type

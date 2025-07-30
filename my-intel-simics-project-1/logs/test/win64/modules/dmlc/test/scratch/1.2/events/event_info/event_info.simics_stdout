@@ -1,0 +1,14 @@
+WARNING: module 'dml-test-event_info' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\events\T_event_info.py
+[obj info] Posting event with data 100
+[obj info] a.e data 100 converted to attribute (adding 20 to that)
+[obj info] b[1][1].e data 100 converted to attribute (adding 20 to that)
+[obj info] Posting event with data 100
+[obj info] data 100 converted to attribute (adding 20 to that)
+[obj info] data 100 converted to attribute (adding 20 to that)
+[obj info] data 100 converted to attribute (adding 20 to that)
+[obj info] data 100 converted to attribute (adding 20 to that)
+[obj info] a.e data set to 120 (adding 3 to that)
+[obj info] b[1][1].e data set to 120 (adding 3 to that)
+[obj info] a.e data 123 converted to attribute (adding 20 to that)
+[obj info] b[1][1].e data 123 converted to attribute (adding 20 to that)

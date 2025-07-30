@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-1.2-register-view-bitorder-be' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\misc\register_view_bitorder_be.py

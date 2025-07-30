@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EVARPARAM_bug22466.dml:14:5: In b.r
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EVARPARAM_bug22466.dml:14:22: error ENCONST: non-constant expression: i()

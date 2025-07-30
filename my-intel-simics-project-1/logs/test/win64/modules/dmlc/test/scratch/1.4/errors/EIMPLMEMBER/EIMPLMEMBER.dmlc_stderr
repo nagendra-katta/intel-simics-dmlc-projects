@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIMPLMEMBER.dml:26:11: error EIMPLMEMBER: The interface struct member bar_interface_t.i is not a function pointer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIMPLMEMBER.dml:20:1: interface struct definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIMPLMEMBER.dml:16:11: error EIMPLMEMBER: The interface struct member foo_interface_t.i is not a function pointer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIMPLMEMBER.dml:10:1: interface struct definition

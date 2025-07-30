@@ -1,0 +1,31 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:86:12: In b[$j < 2]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:86:10: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:20:1: In b[$j < 2]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:82:22: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:84:28: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:80:18: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:78:22: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:21:5: In b[$j < 2].r1[$i < 2]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:25:32: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:25:32: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:25:32: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:25:32: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:25:32: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:25:32: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:39:5: In b[$j < 2].r4[$i < 2]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:42:17: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:53:9: In b[$j < 2].r7[$i < 2].f1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:55:43: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:127:9: In ea[$i < 2]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:127:9: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:6:7: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:74:29: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:62:29: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:67:29: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:49:27: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:106:39: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:119:36: error EIDXVAR: expression may not depend on the index variable $j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:31:31: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:36:36: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:49:27: error EIDXVAR: expression may not depend on the index variable $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EIDXVAR.dml:69:31: error EIDXVAR: expression may not depend on the index variable $j

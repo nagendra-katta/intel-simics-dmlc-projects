@@ -1,0 +1,11 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:11:1: error EDATAINIT: invalid data initializer: mismatched array size
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:20:1: error EDATAINIT: invalid data initializer: mismatched number of fields
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:31:10: error EDATAINIT: invalid data initializer: non-constant expression
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:46:1: error EDATAINIT: invalid data initializer: mismatched number of fields
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:49:1: error EDATAINIT: invalid data initializer: mismatched number of fields
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:42:14: error EDATAINIT: invalid data initializer: non-constant expression
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:14:1: error EDATAINIT: invalid data initializer: mismatched number of fields
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:17:35: error EDATAINIT: invalid data initializer: non-constant expression
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:51:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:54:5: error EDATAINIT: invalid data initializer: variable length array
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EDATAINIT.dml:69:20: error EDATAINIT: invalid data initializer: non-constant expression

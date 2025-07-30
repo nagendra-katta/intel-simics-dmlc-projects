@@ -1,0 +1,83 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:9:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:13:23: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:13:23:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:13:23:   expected: int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:48:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:51:7: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:51:7:   got:      bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:51:7:   expected: int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:53:7: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:53:7:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:53:7:   expected: int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:56:8: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:56:8:   got:      pointer to const char
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:56:8:   expected: pointer to const int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:59:8: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:59:8:   got:      pointer to bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:59:8:   expected: pointer to const int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:61:19: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:61:19:   got:      bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:61:19:   expected: int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:63:7: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:63:7:   got:      function(pointer to test_t,int) returning bool
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:63:7:   expected: int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:65:7: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:65:7:   got:      uint8
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:65:7:   expected: <unknown type>
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:67:31: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:67:31:   got:      double
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:67:31:   expected: bitfields (backing type: uint8)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:97:11: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:97:11:   got:      pointer to bitfield_24_2_field
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:97:11:   expected: pointer to bitfield_32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:99:13: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:99:13:   got:      pointer to bitfield_32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:99:13:   expected: pointer to bitfield_24_1_field
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:101:11: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:101:11:   got:      pointer to bitfield_24_1_field
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:101:11:   expected: pointer to uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:103:13: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:103:13:   got:      pointer to uint32
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:103:13:   expected: pointer to bitfield_24_1_field
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:106:12: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:106:12:   got:      pointer to bitfields (backing type: uint24_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:106:12:   expected: pointer to bitfields (backing type: uint32_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:108:14: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:108:14:   got:      pointer to bitfields (backing type: uint32_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:108:14:   expected: pointer to bitfields (backing type: uint24_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:110:12: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:110:12:   got:      pointer to bitfields (backing type: uint32_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:110:12:   expected: pointer to int24_be_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:112:12: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:112:12:   got:      pointer to int24_be_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:112:12:   expected: pointer to bitfields (backing type: uint32_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:116:14: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:116:14:   got:      pointer to bitfield_24_1_field
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:116:14:   expected: pointer to bitfields (backing type: uint24_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:118:13: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:118:13:   got:      pointer to bitfields (backing type: uint24_be_t)
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:118:13:   expected: pointer to bitfield_24_1_field
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:123:30: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:123:30:   got:      pointer to function(int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:123:30:   expected: pointer to function() returning int
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:125:35: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:125:35:   got:      pointer to function(int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:125:35:   expected: pointer to function(int,int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:127:31: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:127:31:   got:      pointer to function(int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:127:31:   expected: pointer to function(char) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:129:35: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:129:35:   got:      pointer to function(int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:129:35:   expected: pointer to function(int,...) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:131:10: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:131:10:   got:      function(int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:131:10:   expected: function(int) returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:136:9: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:136:9:   got:      function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:136:9:   expected: function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:138:16: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:138:16:   got:      pointer to function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:138:16:   expected: function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:140:16: error EASTYPE: wrong type for initializer
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:140:16:   got:      function() returning void
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EASTYPE.dml:140:16:   expected: function() returning void

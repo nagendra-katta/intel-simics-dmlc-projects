@@ -1,0 +1,2 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_inlined_param.dml:23:12: In m
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\expressions\T_inlined_param.dml:17:12: error ENCONST: non-constant expression: y == NULL

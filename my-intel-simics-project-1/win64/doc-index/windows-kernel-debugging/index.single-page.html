@@ -1,0 +1,512 @@
+<!doctype html>
+<meta charset=utf8>
+<link rel=stylesheet href="../simics.css">
+<title>Windows Kernel Debugging</title>
+
+<section class="page" id="index.html"><h1>Windows Kernel Debugging</h1>
+ 
+  
+  
+  
+<p>
+  
+  
+  
+</p></section><section class="page" id="windows-kernel-debugging-overview.html"><h1 class="jdocu"><a id="windows-kernel-debugging-overview.html:windows-kernel-debugging-overview">1 Overview of Windows Kernel Debugging in Simics</a></h1>
+<p>
+
+</p><p>
+This guide explains how to setup Windows kernel debugger for use with
+the Windows OS on Simics-simulated Intel Architecture systems.
+</p><p>
+It is assumed that the reader has a reasonable understanding of Windows OS
+architecture, Windows debugging techniques and Windows kernel debugging 
+techniques in particular. It is also assumed that the reader has familiarity
+with Windows command line tools, such as <code>bcdedit.exe</code>.
+</p><p>
+Simics supports connecting the Windows debugger client to the
+target kernel debugger over a network connection.
+</p><p>
+The Windows kernel debugging connection topology does not
+have to be run on a single computer. Simulation, serial connection proxy
+and Windows debugger client could be all running on separate computer systems.
+However this guide focuses on a topology hosted in a single computer system,
+which means that all components involved in the Windows kernel debugging session
+are running on the same physical host computer system. Furthermore, this host is
+assumed to be running Windows 7 or later.
+</p><p>
+Instructions on how to configure distributed Windows kernel debugging topologies
+are outside of scope of this guide.
+</p><p>
+</p><div class="note">
+<b>Note:</b>
+Windows kernel debugging in Simics is a rather challenging task. The Windows
+  kernel debugger client - <code>windbg.exe</code> -  runs on the host and uses
+  real time, while the Windows kernel debugger (a Windows kernel component) runs
+  inside the Simics simulation and uses the simulated clock. The two time bases
+  can drift apart and create timing issues when the debugger client communicates
+  with the kernel debugger.
+<p>
+  Furthermore, various parameters of the simulation, such as, simulated
+  processor speed, stepping rate, number of simulated logical cores, etc., are
+  significant factors affecting the Windows kernel debugging session. 
+</p><p>
+  All of these circumstances can negatively influence the Windows kernel
+  debugging experience and will require more knowledge and skill to use Windows
+  kernel debugging successfully when compared to Windows kernel debugging on a
+  physical system.
+</p></div></section><section class="page" id="network-debugging.html"><h1 class="jdocu"><a id="network-debugging.html:network-debugging">2 Windows Kernel Debugging Over a Network</a></h1>
+<p>
+  
+</p><p>
+  </p><div class="note">
+<b>Note:</b>
+This chapter uses <i>QSP-x86</i> model as an example target
+    platform model. Some of the instructions will need to be adjusted to the
+    particular target model where it differs from <i>QSP-x86</i>
+    model.
+<p>
+    In order to be able to adapt <i>QSP-x86</i> examples to the
+    particular target model familiarity with target model and general Simics
+    environment is required.
+  </p></div>Windows kernel debugging configuration in Simics could be created in
+  such a way, that Windows debugger client connects to the target kernel
+  debugger via a real network. More specifically, Windows kernel running
+  on Simics target systems communicates with Windows kernel debugger
+  running on real host over a real network connection (figure
+  <a class="reference" href="#network-debugging.html:windbg-network-setup">1</a>). For more detailed information
+  about setting the newtwork connection up please refer to "Windows
+  Kernel Debugging Over a Network" (section
+  <a class="reference" href="#network-debugging.html">2</a>).
+<p>
+  </p><div class="figure" id="network-debugging.html:windbg-network-setup">
+
+    <div style="text-align: center">
+      <img alt="" src="windbg-network-setup.png">
+      <div class="caption">Figure 1. Windows kernel debugger connection over a network.</div>
+    </div>
+  </div>
+
+  <p>
+  
+  
+  
+  
+</p></section><section class="page" id="target-network-card.html"><h1 class="jdocu"><a id="target-network-card.html:target-network-card">2.1 Target System Network Card</a></h1>
+<p>
+  
+</p><p>
+  
+  
+</p></section><section class="page" id="supported-pcieid.html"><h1 class="jdocu"><a id="supported-pcieid.html:supported-pcieid">2.1.1 Check for Supported Network Card PCIe ID</a></h1>
+<p>
+  
+</p><p>
+  To make debug over the network work, the target system needs to use a network
+  card that WinDbg recognizes. The current list can be found at
+  <a class="jdocu" href="https://docs.microsoft.com/windows-hardware/drivers/debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-10" rel="noopener noreferrer" target="_top">https://docs.microsoft.com/windows-hardware/drivers/debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-10</a>.
+  Basically, all released Intel network cards are supported. The key here is
+  released - models of not-yet released network cards are typically not
+  supported by Windows. Thus, for targets not yet available in hardware you
+  have to add a PCIe-attached network card that WinDbg knows about - like an
+  i350 or i210.
+</p><p>
+  On a Windows target running with a desktop available, you can check the PCIe
+  ID using Windows Device Manager. Find the network device, open properties,
+  and check the details for the hardware IDs. Figure
+  <a class="reference" href="#supported-pcieid.html:pcieid-in-windows">2</a> shows an example from
+  Windows 10 on a <i>QSP-x86</i> target.
+</p><p>
+  </p><div class="figure" id="supported-pcieid.html:pcieid-in-windows">
+
+    <div style="text-align: center">
+      <img alt="" src="pcieid-in-windows.png">
+      <div class="caption">Figure 2. Checking PCIe ID using Windows Device Manager.</div>
+    </div>
+  </div>
+
+<p>
+  You can also check for the PCI device ID of a network by using the Powershell
+  command <b>Get-PnpDevice</b>. Look for the line "DeviceID" after the name
+  of the network device appears (often, there are many virtual devices that
+  also get listed by this command):
+</p><p>
+  </p><pre class="jdocu_small">&gt; <b>Get-PnpDevice -Class "Net" | fl</b>
+Caption                     : Intel(R) Ethernet Connection (3) I219-LM
+Description                 : Intel(R) Ethernet Connection (3) I219-LM
+InstallDate                 :
+Name                        : Intel(R) Ethernet Connection (3) I219-LM
+Status                      : Unknown
+Availability                :
+ConfigManagerErrorCode      : CM_PROB_PHANTOM
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : PCI\VEN_8086&amp;DEV_15D7<img alt="Line break" src="nextline.png">
+&amp;SUBSYS_224517AA&amp;REV_21\3&amp;11583659&amp;0&amp;FE
+  </pre><p>
+</p><p>
+  From Simics side, you can check the PCIe ID using the <b>print-device-regs </b>
+  command.
+  For example, network card on a <i>QSP-x86</i> target
+  (PCIe ID <code>0x10CD</code> is supported according to Microsoft):
+</p><p>
+  </p><pre class="jdocu_small">simics&gt; <b>print-device-regs bank = board.mb.sb.lan.bank.pci_config</b>
+Offset  Name                   Size    Value
+--------------------------------------------
+   0x0  vendor_id                 2   0x8086
+   0x2  device_id                 2   0x10cd
+   0x4  command                   2      0x0
+   0x6  status                    2     0x10
+   0x8  revision_id               1      0x0
+   0x9  class_code                3  0x20000
+   0xc  cache_line_size           1      0x0
+   0xd  latency_timer             1      0x0
+   0xe  header_type               1      0x0
+   0xf  bist                      1      0x0
+  0x10  mbara                     4      0x0
+  0x14  mbarb                     4      0x0
+  0x18  mbarc                     4      0x1
+  0x1c  base_address_3            4      0x0
+  0x20  base_address_4            4      0x0
+  0x24  base_address_5            4      0x0
+  0x28  cardbus_cis_ptr           4      0x0
+  0x2c  subsystem_vendor_id       2   0x8086
+  0x2e  subsystem_id              2      0x0
+  0x30  expansion_rom_base        4      0x0
+  0x34  capabilities_ptr          1     0xc8
+  0x3c  interrupt_line            1      0x0
+  0x3d  interrupt_pin             1      0x1
+  0x3e  min_gnt                   1      0x0
+  0x3f  max_lat                   1      0x0
+  0xc8  pm_capability_header      2   0xd001
+  0xca  pm_capabilities           2     0x21
+  0xcc  pm_status_control         2      0x0
+  0xce  pm_sc_bridge              1      0x0
+  0xcf  pm_data                   1      0x0
+  0xd0  msi_capability_header     2   0xe005
+  0xd2  msi_control               2     0x80
+  0xd4  msi_address               4      0x0
+  0xd8  msi_upper_address         4      0x0
+  0xdc  msi_data                  2      0x0
+  0xe0  flrcap                    2      0x9
+  0xe2  flrclv                    2      0x6
+  0xe4  devctrl                   2      0x0
+simics&gt; <b>print-device-regs board.mb.sb.lan pattern = "device_id"</b>
+Bank: pci_config
+Offset  Name       Size   Value
+-------------------------------
+   0x2  device_id     2  0x10cd
+
+simics&gt; <b>print-device-regs board.mb.sb.lan pattern = "*id"</b>
+Bank: csr
+Offset  Name  Size  Value
+-------------------------
+0x2c08  raid     4    0x0
+
+Bank: pci_config
+Offset  Name         Size   Value | Offset  Name                 Size   Value
+----------------------------------+------------------------------------------
+   0x0  vendor_id       2  0x8086 |   0x2c  subsystem_vendor_id     2  0x8086
+   0x2  device_id       2  0x10cd |   0x2e  subsystem_id            2     0x0
+   0x8  revision_id     1     0x0 |
+  </pre><p>
+</p></section><section class="page" id="check-pcie-address.html"><h1 class="jdocu"><a id="check-pcie-address.html:check-pcie-address">2.1.2 Check Network Device PCIe Address</a></h1>
+<p>
+  
+</p><p>
+  If there are multiple network devices in the system, Windows requires that
+  you specify the card to use for debug. This is done using the PCI
+  <b>Bus:Device:Function</b> (BDF) address of the network card supported by
+  the Windows kernel debugger. To find out the BDF of the network card,
+  check the properties in the Windows Device Manager. The address is listed
+  as <b>'Location'</b> in the <b>'General'</b> tab.
+</p><p>
+  </p><div class="figure" id="check-pcie-address.html:pcie-address-in-windows">
+
+    <div style="text-align: center">
+      <img alt="" src="pcie-address-in-windows.png">
+      <div class="caption">Figure 3. Checking PCIe address of network device.</div>
+    </div>
+  </div>
+
+<p>
+  You can also use the <b>Get-NetAdapterHardwareInfo</b> Powershell command
+  to get BDF:
+</p><p>
+  </p><pre class="jdocu_small">&gt; <b>Get-NetAdapterHardwareInfo | fl</b>
+
+Name                        : Ethernet 2
+InterfaceDescription        : Intel(R) I210 Gigabit Network Connection
+DeviceType                  : PCI Express endpoint
+SegmentNumber               : 0
+BusNumber                   : 2
+DeviceNumber                : 0
+FunctionNumber              : 0
+SlotNumber                  : 12
+NumaNode                    : 0
+PciCurrentSpeedAndMode      :
+PciExpressCurrentLinkSpeed  : 2.5 GT/s
+PciExpressCurrentLinkWidth  : 4
+PciExpressMaxLinkSpeed      : 2.5 GT/s
+PciExpressMaxLinkWidth      : 4
+PciExpressVersion           : 1.1
+LineBasedInterruptSupported : True
+MsiInterruptSupported       : True
+MsiXInterruptSupported      : False
+  </pre><p>
+</p><p>
+  </p><div class="note">
+<b>Note:</b>
+It is a good idea to always specify the card to use for debug even if
+    target setup has a single network card. This will insure against any target
+    configuration changes that could introduce additional network cards.
+  </div></section><section class="page" id="target-ip-address.html"><h1 class="jdocu"><a id="target-ip-address.html:target-ip-address">2.2 Target System IP Address</a></h1>
+<p>
+  
+</p><p>
+  Given a working network card, the next step is to check which IP address the
+  target system is using inside the simulated network. This would normally be
+  provided over DHCP from a
+  Simics Service Node - it defaults to the 10.10.0.x range on the
+  <i>QSP-x86</i>, but it varies from target to target.
+</p><p>
+  To check the IP address, start a <b>CMD</b> on the target and use the
+  command <b>ipconfig</b>:
+</p><p>
+  </p><pre class="jdocu_small">C:\Windows\System32&gt;<b>ipconfig.exe</b>
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : network.sim
+   IPv6 Address. . . . . . . . . . . : 11:2233:4455:6677:f4bc:e2b1:6094:1dc1
+   Temporary IPv6 Address. . . . . . : 11:2233:4455:6677:fdbd:e3ce:f40e:c1fa
+   Link-local IPv6 Address . . . . . : fe80::f4bc:e2b1:6094:1dc1%26
+   IPv4 Address. . . . . . . . . . . : 10.10.0.100
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 10.10.0.1
+
+Ethernet adapter vEthernet (Default Switch):
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::ad9f:c64b:63c5:440f%16
+   IPv4 Address. . . . . . . . . . . : 172.17.18.145
+   Subnet Mask . . . . . . . . . . . : 255.255.255.240
+   Default Gateway . . . . . . . . . :
+  </pre><p>
+</p><p>
+  In addition, you need to know the IP address of the service node that works
+  as the default gateway - which ipconfig also returns. To double-check, also
+  run the <b>info</b> command on the service node in Simics:
+</p><p>
+  </p><pre class="jdocu_small">running&gt; <b>service_node_cmp0.sn.info</b>
+Information about service_node_cmp0.sn [class service-node]
+===========================================================
+
+Interface 'service_node_cmp0.snd[0]':
+                 Network : &lt;the eth-switch-link 'ethernet_switch0.link'&gt; (via
+                           ethernet_switch0.epaa8a1a0ce658ccc0)
+             MAC address : 20:20:20:20:20:00
+            IP addresses : 10.10.0.1/24
+                           ff02::1:2/64
+                           fe80::2220:20ff:fe20:2000/64
+                     MTU : 1500
+...
+  </pre><p>
+</p></section><section class="page" id="setup-windows-debug.html"><h1 class="jdocu"><a id="setup-windows-debug.html:setup-windows-debug">2.3 Setting up Windows Target for Debug</a></h1>
+<p>
+  
+  Once the required information has been collected, it is possible to set up the
+  Windows target to allow debug.
+</p><p>
+  
+  
+  
+</p></section><section class="page" id="configure-communications.html"><h1 class="jdocu"><a id="configure-communications.html:configure-communications">2.3.1 Configure Communications</a></h1>
+<p>
+  
+</p><p>
+  In an elevated command prompt on the target system, issue the following
+  command to tell the Windows on-target debug agent how to connect
+  to the debugger outside of Simics:
+</p><p>
+  </p><pre class="jdocu_small">&gt; <b>BCDEDIT /DBGSETTINGS NET HOSTIP:&lt;DebugHostIP&gt; BUSPARAMS:&lt;B.D.F&gt;<img alt="Line break" src="nextline.png">
+PORT:&lt;Port&gt; KEY:1.2.3.4</b>
+  </pre><p>
+</p><p>
+  where:
+</p><p>
+  </p><ul>
+    <li><b><code>&lt;DebugHostIP&gt;</code></b> is the service node/gateway IP. It
+      is used to communicate with the the outside world.</li>
+    <li><b><code>&lt;B.D.F&gt;</code></b> is the BDF of the network card, as shown
+      in section <a class="reference" href="#check-pcie-address.html">2.1.2</a>.</li>
+    <li><b><code>&lt;Port&gt;</code></b> is a port you need to choose for the
+      connection, typically somewhere above 50000. Say <b>50010</b> as a
+      default.</li>
+    <li>The Key is a value used to secure the connection. Make sure to use the
+      same value everywhere it is required. You can use <b>1.2.3.4</b> to keep
+      things simple.</li>
+  </ul>
+<p>
+  In the setup used for the example:
+</p><p>
+  </p><pre class="jdocu_small">&gt; <b>BCDEDIT /DBGSETTINGS NET HOSTIP:10.10.0.1 BUSPARAMS:0.25.0 PORT:50010<img alt="Line break" src="nextline.png">
+KEY:1.2.3.4</b>
+  </pre><p>
+</p><p>
+</p></section><section class="page" id="configure-debug.html"><h1 class="jdocu"><a id="configure-debug.html:configure-debug">2.3.2 Configure Debug</a></h1>
+<p>
+  
+</p><p>
+  There are several possible debug targets in a Windows set up. To cover them
+  all, open an elevated command prompt window on the target system, and enter
+  the following commands:
+</p><p>
+  </p><pre class="jdocu_small">&gt; <b>BCDEDIT /SET '{BOOTMGR}' BOOTDEBUG ON</b>
+&gt; <b>BCDEDIT /SET BOOTDEBUG ON</b>
+&gt; <b>BCDEDIT /SET DEBUG ON</b>
+  </pre><p>
+</p><p>
+  </p><div class="note">
+<b>Note:</b>
+When boot debug is enabled, Windows will wait for a while during the boot
+    to see if a WinDbg is connecting, and then proceed with the boot. Thus,
+    enabling boot debug will make the boot take a little longer (a few
+    virtual minutes of wait time).
+  </div></section><section class="page" id="system-reboot.html"><h1 class="jdocu"><a id="system-reboot.html:system-reboot">2.3.3 Shutdown, Save State, and Reboot</a></h1>
+<p>
+  
+</p><p>
+  These changes do not take effect until the target system is rebooted. To make
+  it easy to get into debug:
+</p><p>
+  </p><ul>
+    <li>Shutdown the target system,</li>
+    <li>When the shutdown is complete (it is not given that Simics stops at
+      this point, since power-off is an allowed operation in a virtual
+      platform), stop Simics.</li>
+    <li>Save the complete disk state to use this as your base disk, or save a
+      diff to apply in the reboot.</li>
+  </ul>
+<p>
+  For the <i>QSP-x86</i> system, a complete image save is done in
+  a way like this:
+</p><p>
+</p><pre class="jdocu_small">simics&gt; <b>board.disk0.hd_image.save -save-craff win10-debug.craff</b>
+</pre><p>
+</p><p>
+  Start a new Simics session using this new disk image as the boot image.
+</p></section><section class="page" id="connect-windbg.html"><h1 class="jdocu"><a id="connect-windbg.html:connect-windbg">2.4 Connect Windows Kernel Debugger to the Target</a></h1>
+<p>
+  
+</p><p>
+  With a Windows image configured as shown in section
+  <a class="reference" href="#setup-windows-debug.html">2.3</a>, you are ready to set up the network
+  connections to allow WinDbg on the host to connect to the target system. This
+  requires setting up an <b>outbound port translation</b> in Simics. The reason
+  is that WinDbg connections are initiated from the target system, and not from
+  the debugger. When kernel or boot debug is enabled, Windows will periodically
+  reach out to the IP and port you configured above, and see if there is a
+  WinDbg running there and listening to connections from the target.
+</p><p>
+  
+  
+</p></section><section class="page" id="port-forwarding.html"><h1 class="jdocu"><a id="port-forwarding.html:port-forwarding">2.4.1 Configure Port Forwarding</a></h1>
+<p>
+  
+</p><p>
+  Locate the Ethernet network connected to your target system. It is usually
+  called <b>ethernet_switch0</b>, but check that using
+  <b>list-objects</b> command:
+</p><p>
+  </p><pre class="jdocu_small">simics&gt; <b>list-objects type = ethernet_switch -all</b>
+Component Class    Object
+-----------------------------------
+&lt;ethernet_switch  ethernet_switch0
+  </pre><p>
+</p><p>
+  In a start-up script that uses the common Simics Ethernet setup scripts, you
+  can also use the script variable <b>$eth_link</b> to locate the Ethernet
+  network.
+</p><p>
+  On the Simics command-line, issue one command to set up outbound port
+  forwarding:
+</p><p>
+  </p><pre class="jdocu_small">simics&gt; connect-real-network-port-out service-node-port=&lt;port-in-target&gt;<img alt="Line break" src="nextline.png">
+ethernet-link=&lt;ethlink&gt; target-ip=&lt;debug-host-ip&gt;<img alt="Line break" src="nextline.png">
+target-port=&lt;port-on-host&gt; -udp
+  </pre><p>
+</p><p>
+  where:
+</p><p>
+  </p><ul>
+    <li><b>&lt;ethlink&gt;</b> is the name of the Ethernet link as discussed
+      above.</li>
+    <li><b>&lt;port-on-host&gt;</b> is the port to use to connect on the host
+      side. It can be the same as the target-side port specified above, such as
+      50010.</li>
+    <li><b>&lt;simics-target-ip&gt;</b> is the IP address of the Simics target,
+      such as 10.10.0.100 for the <i>QSP-x86</i> example.</li>
+    <li><b>&lt;port-in-target&gt;</b> is the port configured on the target
+      above, such as 50010.</li>
+    <li><b>&lt;debug-host-ip&gt;</b> is the IP address of the real-world machine
+      running WinDbg. To run WinDbg on the host running Simics, use 127.0.0.1.
+      For another machine on the local network, use its network address. You
+      would use the IP of another machine for the case where you are simulating
+      a Windows target on a Linux host, and need to call into a Windows host
+      that actually runs WinDbg. </li>
+  </ul>
+<p>
+  For example in the <i>QSP-x86</i> example, with WinDbg on the host running Simics:
+</p><p>
+  </p><pre class="jdocu_small">simics&gt; <b>$eth_link</b>
+'ethernet_switch0'
+simics&gt; <b>connect-real-network-port-out ethernet-link = $eth_link<img alt="Line break" src="nextline.png">
+service-node-port = 50010 target-port = 50010 target-ip = '127.0.0.1'</b>
+10.10.0.1 UDP port 50010 on link ethernet_switch0.link -&gt; host 127.0.0.1:50010
+10.10.0.1 TCP port 50010 on link ethernet_switch0.link -&gt; host 127.0.0.1:50010
+ff02::1:2 UDP port 50010 on link ethernet_switch0.link -&gt; host 127.0.0.1:50010
+ff02::1:2 TCP port 50010 on link ethernet_switch0.link -&gt; host 127.0.0.1:50010
+  </pre><p>
+</p></section><section class="page" id="start-windbg.html"><h1 class="jdocu"><a id="start-windbg.html:start-windbg">2.4.2 Start WinDbg</a></h1>
+<p>
+  
+</p><p>
+  To start debugging, run WinDbg on the host system. To debug the early boot,
+  start WinDbg before you tell Simics to start running the simulation. To debug
+  once Windows has booted, start WinDbg once the Simics target shows the
+  Windows desktop. In either case:
+</p><p>
+  </p><ol>
+    <li>Set up outbound port-forwarding in Simics.</li>
+    <li>Start WinDbg, listening for a connection from Simics.</li>
+    <li>Run the simulation forward.</li>
+  </ol>
+<p>
+  To run WinDbg, go to a CMD shell, and start WinDbg from the command line
+  like the following:
+</p><p>
+  </p><pre class="jdocu_small">&gt; <b>windbg -k net:port=&lt;port-on-host&gt;,key=&lt;key&gt;</b>
+  </pre><p>
+</p><p>
+  where:
+</p><p>
+  </p><ul>
+    <li><b><code>&lt;port-on-host&gt;</code></b> is the port to use to connect on
+      the host side, as determined in section
+      <a class="reference" href="#port-forwarding.html">2.4.1</a>.</li>
+    <li><b><code>&lt;key&gt;</code></b> is a value used to secure the connection,
+      as discussed in section <a class="reference" href="#configure-communications.html">2.3.1</a>.</li>
+  </ul>
+<p>
+  For example:
+</p><p>
+  </p><pre class="jdocu_small">C:\WINDOWS\system32&gt;<b>cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64</b>
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64&gt;<b>windbg -k<img alt="Line break" src="nextline.png">
+net:port=50010,key=1.2.3.4</b>
+  </pre><p>
+</p><p>
+</p></section>

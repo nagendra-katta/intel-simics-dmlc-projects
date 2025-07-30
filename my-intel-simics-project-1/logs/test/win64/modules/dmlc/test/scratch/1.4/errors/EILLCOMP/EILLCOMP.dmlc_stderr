@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EILLCOMP.dml:9:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EILLCOMP.dml:14:23: error EILLCOMP: illegal comparison; mismatching types
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EILLCOMP.dml:14:23:   LH: 'test.ob...' has type 'template type object'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EILLCOMP.dml:14:23:   RH: 'test.init' has type 'template type init'

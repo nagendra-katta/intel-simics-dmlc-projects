@@ -1,0 +1,3 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETYPEDPARAMVIOL.dml:35:24: error ETYPEDPARAMVIOL: typed parameter definitions may not contain independent methods calls
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETYPEDPARAMVIOL.dml:37:24: error ETYPEDPARAMVIOL: typed parameter definitions may not contain independent methods calls
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETYPEDPARAMVIOL.dml:39:12: error ETYPEDPARAMVIOL: typed parameter definitions may not contain independent methods calls

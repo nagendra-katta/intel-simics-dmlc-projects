@@ -1,0 +1,11 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:29:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:25:5: error EMEMBER: 'S1' has no member named 'foo'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:33:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:36:7: error EMEMBER: 'x' has no member named 'parent'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:39:7: error EMEMBER: 'x' has no member named 'this'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:43:10: error EMEMBER: 'S1_interface_t' has no member named 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:46:10: error EMEMBER: 'S1_interface_t' has no member named 'y'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:49:10: error EMEMBER: 'S1_interface_t' has no member named 'z'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:56:6: error EMEMBER: 'a' has no member named 'z'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:63:8: error EMEMBER: 'foo' has no member named 'x'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EMEMBER.dml:67:6: error EMEMBER: 'y' has no member named 'b'

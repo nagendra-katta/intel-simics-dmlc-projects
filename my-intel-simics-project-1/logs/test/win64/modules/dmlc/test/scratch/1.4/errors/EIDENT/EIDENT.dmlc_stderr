@@ -1,0 +1,13 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:10:1: In p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:10:11: error EIDENT: unknown identifier: 'garbage'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:21:5: In y.p
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:21:15: error EIDENT: unknown identifier: 'c'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:39:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:42:6: error ENSHARED: subobject c in template x does not belong to the template type
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:16:9: declared here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:45:25: error EIDENT: unknown identifier: 'z'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:50:19: error EIDENT: unknown identifier: 'v'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:52:32: error EIDENT: unknown identifier: 'a'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:25:11: In g[i < 2].m
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:30:9: error EIDENT: unknown identifier: 'len'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EIDENT.dml:35:13: error EREF: reference to unknown object 'g[i].len'

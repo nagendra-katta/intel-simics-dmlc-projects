@@ -1,0 +1,10 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:63:4: error EATTRCOLL: Declaration would result in conflicting attribute name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:66:8: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:45:8: error EATTRCOLL: Declaration would result in conflicting attribute name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:42:8: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:24:4: error EATTRCOLL: Declaration would result in conflicting attribute name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:19:9: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:14:1: error EATTRCOLL: Declaration would result in conflicting attribute name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:11:5: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:56:1: error EATTRCOLL: Declaration would result in conflicting attribute name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EATTRCOLL.dml:51:5: conflicting definition

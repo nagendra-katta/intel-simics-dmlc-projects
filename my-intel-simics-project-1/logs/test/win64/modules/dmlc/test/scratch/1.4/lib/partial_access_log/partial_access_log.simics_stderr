@@ -1,0 +1,4 @@
+C:\Users\nagen\AppData\Local\Programs\Simics\simics-7.38.0\win64\lib\python-py3\stest.py:555: FutureWarning: Possible nested set at position 35
+  and re.search(regex, _msg)):
+C:\Users\nagen\AppData\Local\Programs\Simics\simics-7.38.0\win64\lib\python-py3\stest.py:555: FutureWarning: Possible nested set at position 34
+  and re.search(regex, _msg)):

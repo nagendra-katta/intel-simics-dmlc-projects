@@ -1,0 +1,16 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:27:9: In b.r.f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:29:13: error ENALLOW: this object is not allowed here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:24:5: In b.r
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:26:9: error ENALLOW: this object is not allowed here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:47:5: In c.g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:49:9: error ENALLOW: this object is not allowed here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\ENALLOW_dml14.dml:7:1: In d
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\ENALLOW_dml14.dml:12:5: error ENALLOW: this object is not allowed here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:11:1: In foo
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:18:5: error ENALLOW: this object is not allowed here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:12:5: In foo.signal
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:14:9: error ENALLOW: this object is not allowed here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:34:1: In g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:39:5: error ENALLOW: this object is not allowed here
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:55:5: In p.g
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENALLOW.dml:57:9: error ENALLOW: this object is not allowed here

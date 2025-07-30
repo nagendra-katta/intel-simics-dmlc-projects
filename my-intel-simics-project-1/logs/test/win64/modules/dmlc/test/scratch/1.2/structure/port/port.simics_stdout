@@ -1,0 +1,7 @@
+WARNING: module 'dml-test-port' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\structure\T_port.py
+[obj.port.p info] p.simple_interrupt interrupt 17
+[obj.port.q error] Port object not recognized by parent
+[sim info] Failed creating configuration: Could not initialize object 'obj.port.q'
+[sim info] Deleting all partially created objects
+[obj.port.p info] p.simple_interrupt interrupt 43

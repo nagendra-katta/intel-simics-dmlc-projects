@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-17423' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\bugs\T_17423.py
+<the test 'obj'>
+WARNING: Using the name 'cpu' conflicts with the 'cpu' object alias.
+[obj.bank.bank0 spec-viol] 2 byte write access at offset 0 in bank0 (addr 0) outside registers or misaligned access

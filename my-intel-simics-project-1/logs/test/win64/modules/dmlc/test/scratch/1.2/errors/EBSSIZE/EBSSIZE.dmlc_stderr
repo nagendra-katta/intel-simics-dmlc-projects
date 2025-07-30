@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSSIZE.dml:8:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSSIZE.dml:10:11: error EBSSIZE: bitslice size of -1 bits is not between 1 and 64
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSSIZE.dml:12:11: error EBSSIZE: bitslice size of 65 bits is not between 1 and 64
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EBSSIZE.dml:15:15: error EBSSIZE: bitslice size of -1 bits is not between 1 and 64

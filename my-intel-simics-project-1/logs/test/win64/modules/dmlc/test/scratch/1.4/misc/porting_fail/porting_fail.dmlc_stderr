@@ -1,0 +1,4 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\misc\T_porting_fail.dml:31:5: In xyz.r
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\misc\T_porting_fail.dml:26:15: error EAMBINH: conflicting definitions of x when instantiating template superior and template inferior_x
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\misc\T_porting_fail.dml:12:11: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\misc\T_porting_fail.dml:26:15: probable resolution: add 'is inferior_x' near this line

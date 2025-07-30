@@ -1,0 +1,7 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARGT.dml:17:11: error EARGT: wrong type in method parameter '<return value>' when implementing 'ret_uint32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARGT.dml:17:11:   got:      'int32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARGT.dml:17:11:   expected: 'uint32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARGT.dml:19:11: error EARGT: wrong type in method parameter 'arg' when implementing 'uint32_arg'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARGT.dml:19:11:   got:      'pointer to int32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARGT.dml:19:11:   expected: 'uint32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EARGT.dml:21:11: error EMETH: incompatible method definitions: interface method is variadic

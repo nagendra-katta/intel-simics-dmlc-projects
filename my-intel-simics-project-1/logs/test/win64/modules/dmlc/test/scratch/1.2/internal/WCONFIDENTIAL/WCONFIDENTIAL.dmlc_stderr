@@ -1,0 +1,11 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\internal\T_WCONFIDENTIAL.dml:37:5: In template register
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1403:5: In b.secret2._read_access_nopartial
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\internal\T_WCONFIDENTIAL.dml:43:60: warning WCONFIDENTIAL: potential leak of confidential information
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\internal\T_WCONFIDENTIAL.dml:45:61: warning WCONFIDENTIAL: potential leak of confidential information
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\internal\T_WCONFIDENTIAL.dml:11:5: In template register
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1403:5: In b.secret1._read_access_nopartial
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\internal\T_WCONFIDENTIAL.dml:17:56: warning WCONFIDENTIAL: potential leak of confidential information
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\internal\T_WCONFIDENTIAL.dml:19:63: warning WCONFIDENTIAL: potential leak of confidential information
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\internal\T_WCONFIDENTIAL.dml:27:9: In template event
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1815:5: In b.secret1.leak.describe_event
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\win64\bin\dml\1.2\dml-builtins.dml:1819:38: warning WCONFIDENTIAL: potential leak of confidential information

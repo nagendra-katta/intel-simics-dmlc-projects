@@ -1,0 +1,4 @@
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\lib\T_signal_templates.py
+WARNING: module 'dml-test-signal_templates' is not thread safe. Turning Multimachine Accelerator off.
+[test.port.insig spec-viol] insig.signal raised when already high
+[test.port.insig spec-viol] insig.signal lowered when already low

@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EUNDEF.dml:20:5: In b.r
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EUNDEF.dml:22:30: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EUNDEF.dml:9:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EUNDEF.dml:11:7: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EUNDEF.dml:13:13: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_EUNDEF.dml:15:14: error EUNDEF: undefined value: 'undefined'

@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-inheritance_from_14' is not thread safe. Turning Multimachine Accelerator off.
+[obj.bank.b info] Value written to register: 5
+[obj.bank.b info] Value written to field: 4
+[obj.bank.b info] Value read from register: 5
+[obj.bank.b info] Value read from field: 4

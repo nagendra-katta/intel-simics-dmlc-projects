@@ -1,0 +1,6 @@
+WARNING: module 'dml-test-event' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\lib\T_event.py
+[obj info] DESTROY CYCLE -1
+[obj info] DESTROY TIME 1750
+[obj info] DESTROY CYCLE -1
+[obj info] DESTROY TIME 1750

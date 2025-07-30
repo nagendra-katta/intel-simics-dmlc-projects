@@ -1,0 +1,12 @@
+#SIMICS-CONF-1
+OBJECT checkpoint_info TYPE checkpoint_info {
+	comment: ""
+	prioritized_packages: ()
+	kind: "checkpoint"
+	machines: ()
+	host_name: "MYLegion"
+	date: "Wed Jul 30 12:57:33 2025"
+	host_type: "win64"
+	packages: (("QSP-ISIM","7.0.0-pre.2"),("Docea-Base","7.0.0-pre.5"),("Python","7.10.0"),("GDB","7.7.0"),("Simics-Base","7.38.0"),("QSP-x86","7.27.0"),("RISC-V-CPU","7.17.0"),("SystemC-Library","7.11.0"),("Training","7.0.0-pre.11"),("QSP-CPU","7.11.0"),("Crypto-Engine","7.13.0"),("RISC-V-Simple","7.10.0"))
+	user: "nagen"
+}

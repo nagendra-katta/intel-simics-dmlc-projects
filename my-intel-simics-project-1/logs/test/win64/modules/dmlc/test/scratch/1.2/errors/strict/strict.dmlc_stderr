@@ -1,0 +1,27 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:216:1: error EEXTERN: illegal declaration of extern method
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:35:5: error ENTMPL: unknown template: 'nonexisting'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:6:1: In test
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:81:1: error ESYNTAX: syntax error at 'bank': anonymous banks are not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:55:1: error ENAMECOLL: name collision on 'aa'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:53:1: conflicting definition
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:228:28: warning WDEPRECATED: deprecation: parameter c_name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:228:28: warning WDEPRECATED: deprecation: parameter c_name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:228:28: warning WDEPRECATED: deprecation: parameter c_name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:102:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:116:9: error EERRSTMT: forced compilation error in source code
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:119:5: error ESYNTAX: syntax error at 'signed': type name used as variable name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:129:8: error ENBOOL: non-boolean condition: '$b.r' of type 'uint32'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:138:14: error EIFREF: illegal interface method reference: $c.i.f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:148:5: error ESYNTAX: syntax error at 'goto': goto statement not allowed
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:161:5: error ENLST: not a list: v
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:162:5: In m
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:70:9: error EERRSTMT: forced compilation error in source code
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:102:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:172:5: error ECONSTP: passing const reference for nonconst parameter s in method call
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:184:6: error ENBOOL: non-boolean condition: '1' of type 'int64'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:186:9: error ENBOOL: non-boolean condition: '0' of type 'int64'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:194:12: error ERVAL: operand of 'sizeof' is not an lvalue
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:196:19: error ERVAL: operand of 'typeof' is not an lvalue
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:205:36: error ENVAL: not a value: $i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:95:1: error ESYNTAX: syntax error at 'signed': type name used as variable name
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_strict.dml:228:28: warning WDEPRECATED: deprecation: parameter c_name

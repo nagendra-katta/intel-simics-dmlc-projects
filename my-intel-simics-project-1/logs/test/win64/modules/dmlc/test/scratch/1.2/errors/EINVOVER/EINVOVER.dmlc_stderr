@@ -1,0 +1,6 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EINVOVER.dml:1: In test
+<command-line>:0: error EINVOVER: invalid override of non-default declaration ARG
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EINVOVER.dml:11:1: overridden assignment
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EINVOVER.dml:36:1: In p1
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EINVOVER.dml:39:5: error EINVOVER: invalid override of non-default declaration foo
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EINVOVER.dml:32:5: overridden assignment

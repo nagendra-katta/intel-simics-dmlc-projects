@@ -1,0 +1,30 @@
+WARNING: module 'dml-test-subsequent_log' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\statements\T_subsequent_log.py
+[obj info] regular once 1
+[obj info] exact once
+[obj info] regular once 2
+[obj info] shared method 1 once in g1
+[obj info] shared method 2 once in g1
+[obj info] shared method 1 once in g2
+[obj info] regular once 1
+[obj info] regular once 1
+[obj info] regular once 2
+[obj info] regular once 2
+[obj info] shared method 1 once in g1
+[obj info] shared method 1 once in g1
+[obj info] shared method 2 once in g1
+[obj info] shared method 2 once in g1
+[obj info] shared method 1 once in g2
+[obj info] shared method 1 once in g2
+[obj info] multiply inherited
+[obj info] shared in array
+[obj info] shared in array
+[obj info] shared in array
+[obj info] shared in array
+[obj info] array method
+[obj info] array method
+[obj info] array method
+[obj info] array method
+[obj warning] warning once
+[obj error] error once
+[obj critical] critical once

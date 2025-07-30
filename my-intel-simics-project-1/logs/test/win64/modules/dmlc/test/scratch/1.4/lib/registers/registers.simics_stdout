@@ -1,0 +1,5 @@
+WARNING: module 'dml-test-registers' is not thread safe. Turning Multimachine Accelerator off.
+[obj.bank.miss info] offset = 0
+[obj.bank.miss info] offset = 0
+[obj.bank.miss_be info] offset = 0
+[obj.bank.miss_be info] offset = 0

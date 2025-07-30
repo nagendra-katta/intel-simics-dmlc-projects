@@ -1,0 +1,4 @@
+WARNING: module 'dml-test-sizeof' is not thread safe. Turning Multimachine Accelerator off.
++++ SIM_log_info is deprecated.
+    Use the SIM_LOG_INFO macro instead.
+[obj info] 4 2 4 4

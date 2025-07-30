@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-endian_int' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] eint: 10

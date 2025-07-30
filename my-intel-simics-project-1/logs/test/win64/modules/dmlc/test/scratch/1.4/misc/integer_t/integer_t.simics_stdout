@@ -1,0 +1,1 @@
+WARNING: module 'dml-test-integer_t' is not thread safe. Turning Multimachine Accelerator off.

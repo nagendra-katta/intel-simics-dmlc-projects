@@ -1,0 +1,7 @@
+WARNING: module 'dml-test-bitfields' is not thread safe. Turning Multimachine Accelerator off.
+[obj info] x = 280
+[obj info] y = 280
+[obj info] z = 280
+[obj info] y.a = 35
+[obj info] z.a = 17
+[obj info] z.b = 8

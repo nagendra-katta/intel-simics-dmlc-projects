@@ -1,0 +1,9 @@
+WARNING: module 'dml-test-interface_avail' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\operators\T_interface_avail.py
+WARNING: Using the name 'cpu' conflicts with the 'cpu' object alias.
+running test1
+... success
+running test2
+... success
+running test3
+... success

@@ -1,0 +1,5 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETRAITUPCAST.dml:17:7: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETRAITUPCAST.dml:19:5: error ETEMPLATEUPCAST: invalid upcast, object not a subtemplate of a_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETRAITUPCAST.dml:24:5: error ETEMPLATEUPCAST: invalid upcast, template type c_t not a subtemplate of template type a_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETRAITUPCAST.dml:28:5: error ETEMPLATEUPCAST: invalid upcast, int64 not a subtemplate of template type a_t
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\errors\T_ETRAITUPCAST.dml:30:5: error ETEMPLATEUPCAST: invalid upcast, pointer to void not a subtemplate of template type a_t

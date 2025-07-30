@@ -1,0 +1,2 @@
+WARNING: module 'dml-test-register_view_fields' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.4\misc\T_register_view_fields.py

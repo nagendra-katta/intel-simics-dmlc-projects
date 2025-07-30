@@ -1,0 +1,29 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:27:1: warning WEXPERIMENTAL: Use of unsupported feature: traits
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:9:18: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:12:28: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:21:6: In eassign
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:18:15: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:18:1: In y
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:18:15: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:32:24: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:45:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:47:19: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:49:17: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:51:15: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:54:7: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:57:9: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:60:12: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:63:12: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:66:18: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:68:13: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:71:13: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:73:15: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:75:5: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:77:5: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:79:9: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:82:10: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:85:5: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:88:5: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:91:21: error EUNDEF: undefined value: 'undefined'
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:94:5: In m2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_EUNDEF.dml:38:5: error EUNDEF: undefined value: 'undefined'

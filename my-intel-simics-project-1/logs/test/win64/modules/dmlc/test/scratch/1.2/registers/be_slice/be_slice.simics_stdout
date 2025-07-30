@@ -1,0 +1,51 @@
+WARNING: module 'dml-test-be_slice' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\registers\T_be_slice.py
+New global log level: 4
+Writing 12816 to 0
+[obj.bank.b1 info] Write to register b1.r1 (addr 0) <- 0x3210
+[obj.bank.b1 info] Read from register b1.r1 (addr 0) -> 0x3210
+Writing 1985229328 to 4
+[obj.bank.b1 info] Write to register b1.r2 (addr 0x4) <- 0x76543210
+[obj.bank.b1 info] Read from register b1.r2 (addr 0x4) -> 0x76543210
+Writing 12816 to 8
+[obj.bank.b1 info] Write to register b1.r3 (addr 0x8) <- 0x3210
+[obj.bank.b1 info] Read from register b1.r3 (addr 0x8) -> 0x3210
+Writing 1985229328 to 12
+[obj.bank.b1 info] Write to register b1.r4 (addr 0xc) <- 0x76543210
+[obj.bank.b1 info] Read from register b1.r4 (addr 0xc) -> 0x76543210
+Writing 12816 to 0
+[obj.bank.b2 info] Write to register b2.r1 (addr 0) <- 0x3210
+[obj.bank.b2 info] Read from register b2.r1 (addr 0) -> 0x3210
+Writing 1985229328 to 4
+[obj.bank.b2 info] Write to register b2.r2 (addr 0x4) <- 0x76543210
+[obj.bank.b2 info] Read from register b2.r2 (addr 0x4) -> 0x76543210
+Writing 12816 to 8
+[obj.bank.b2 info] Write to register b2.r3 (addr 0x8) <- 0x3210
+[obj.bank.b2 info] Read from register b2.r3 (addr 0x8) -> 0x3210
+Writing 1985229328 to 12
+[obj.bank.b2 info] Write to register b2.r4 (addr 0xc) <- 0x76543210
+[obj.bank.b2 info] Read from register b2.r4 (addr 0xc) -> 0x76543210
+Writing 12816 to 0
+[obj.bank.b3 info] Write to register b3.r1 (addr 0) <- 0x3210
+[obj.bank.b3 info] Read from register b3.r1 (addr 0) -> 0x3210
+Writing 1985229328 to 4
+[obj.bank.b3 info] Write to register b3.r2 (addr 0x4) <- 0x76543210
+[obj.bank.b3 info] Read from register b3.r2 (addr 0x4) -> 0x76543210
+Writing 12816 to 8
+[obj.bank.b3 info] Write to register b3.r3 (addr 0x8) <- 0x3210
+[obj.bank.b3 info] Read from register b3.r3 (addr 0x8) -> 0x3210
+Writing 1985229328 to 12
+[obj.bank.b3 info] Write to register b3.r4 (addr 0xc) <- 0x76543210
+[obj.bank.b3 info] Read from register b3.r4 (addr 0xc) -> 0x76543210
+Writing 12816 to 0
+[obj.bank.b4 info] Write to register b4.r1 (addr 0) <- 0x3210
+[obj.bank.b4 info] Read from register b4.r1 (addr 0) -> 0x3210
+Writing 1985229328 to 4
+[obj.bank.b4 info] Write to register b4.r2 (addr 0x4) <- 0x76543210
+[obj.bank.b4 info] Read from register b4.r2 (addr 0x4) -> 0x76543210
+Writing 12816 to 8
+[obj.bank.b4 info] Write to register b4.r3 (addr 0x8) <- 0x3210
+[obj.bank.b4 info] Read from register b4.r3 (addr 0x8) -> 0x3210
+Writing 1985229328 to 12
+[obj.bank.b4 info] Write to register b4.r4 (addr 0xc) <- 0x76543210
+[obj.bank.b4 info] Read from register b4.r4 (addr 0xc) -> 0x76543210

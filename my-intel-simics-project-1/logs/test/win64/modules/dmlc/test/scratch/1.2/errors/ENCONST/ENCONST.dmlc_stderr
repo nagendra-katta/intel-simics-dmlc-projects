@@ -1,0 +1,18 @@
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:10:18: error ENCONST: non-constant expression: 1 + cast(sizeof(int ), uint64 )
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:12:15: error ENCONST: non-constant expression: $dev
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:21:15: In b.r[$i < 2]
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:21:15: error ENCONST: non-constant expression: (j) == 0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:29:5: In b.r2
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:31:14: error ENCONST: non-constant expression: f()
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:35:9: In b.r4.f
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:35:17: error ENCONST: non-constant expression: j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:35:17: error ENCONST: non-constant expression: j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:35:17: error ENCONST: non-constant expression: j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:35:17: error ENCONST: non-constant expression: j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:35:17: error ENCONST: non-constant expression: j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:33:5: In b.r4
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:35:17: error ENCONST: non-constant expression: j
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:26:32: error ENCONST: non-constant expression: (j) == 0
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:39:1: In init
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:42:6: error ENCONST: non-constant expression: i
+C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\errors\T_ENCONST.dml:46:20: error ENCONST: non-constant expression: i

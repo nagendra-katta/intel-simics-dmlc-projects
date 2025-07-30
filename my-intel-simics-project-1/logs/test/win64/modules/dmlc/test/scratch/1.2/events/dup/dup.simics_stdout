@@ -1,0 +1,7 @@
+WARNING: module 'dml-test-dup' is not thread safe. Turning Multimachine Accelerator off.
+running C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\test\1.2\events\T_dup.py
+WARNING: module 'dml-test-dup' is not thread safe. Turning Multimachine Accelerator off.
+[obj.bank.a info] a.foo happened
+[obj.bank.b info] b.foo happened
+[obj.bank.c[0] info] c[0].foo happened
+[obj.bank.d[1] info] d[1].foo happened
