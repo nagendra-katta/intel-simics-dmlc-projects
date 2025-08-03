@@ -23,7 +23,7 @@ This guide documents the working setup for building Simics DMLC modules on Windo
   ```
   
   ➡ Your Simics project directory:  
-  `C:\Users\nagen\simics-projects\my-intel-simics-project-1`
+  `%SIMICS_PROJECT%\my-intel-simics-project-1`
 
 ---
 
@@ -40,8 +40,8 @@ C:\msys64\mingw64\bin
 ### 🔧 Define New Variables
 
 ```
-SIMICS_BASE = C:/Users/nagen/AppData/Local/Programs/Simics/simics-7.38.0
-SIMICS_PROJECT = C:\Users\nagen\simics-projects\my-intel-simics-project-1
+SIMICS_BASE = %USERPROFILE%/AppData/Local/Programs/Simics/simics-7.38.0
+SIMICS_PROJECT = %SIMICS_PROJECT%\my-intel-simics-project-1
 ```
 
 ---
@@ -82,7 +82,7 @@ For more details, refer to the official guide:\
 - Move the downloaded image to:
   
   ```
-  C:\Users\<username>\AppData\Local\Programs\Simics\simics-qsp-x86-7.27.0\targets\qsp-x86\images\
+  %USERPROFILE%\AppData\Local\Programs\Simics\simics-qsp-x86-7.27.0\targets\qsp-x86\images\
   ```
 
 ### 8. Modify YAML File   ***(Optional for GRML OS)***
@@ -90,7 +90,7 @@ For more details, refer to the official guide:\
 - Go to:
   
   ```
-  C:\Users\<username>\AppData\Local\Programs\Simics\simics-qsp-x86-7.27.0\targets\qsp-x86
+  %USERPROFILE%\AppData\Local\Programs\Simics\simics-qsp-x86-7.27.0\targets\qsp-x86
   ```
 
 - Open the file `firststeps.target.yml`
@@ -136,7 +136,7 @@ C:\
 ├── msys64\
 │   └── mingw64\        ← your working standalone MinGW-w64 GCC
 │       └── bin\gcc.exe
-├── Users\nagen\
+├── Users\%user%\
 │   └── simics-projects\
 │       └── my-intel-simics-project-1\
 │           ├── GNUmakefile
@@ -165,7 +165,7 @@ Install:
 - Create project from the package manager
 
 ➡ Your Simics project directory:  
-`C:\Users\nagen\simics-projects\my-intel-simics-project-1`
+`%SIMICS_PROJECT%\my-intel-simics-project-1`
 
 ---
 
@@ -196,8 +196,8 @@ endif
 ### 4. ✅ `config-user.mk` — Basic Setup for build
 
 ```makefile
-SIMICS_BASE = C:\Users\nagen\AppData\Local\Programs\Simics\simics-7.38.0
-SIMICS_PROJECT = C:\Users\nagen\simics-projects\my-intel-simics-project-1
+SIMICS_BASE = %USERPROFILE%\AppData\Local\Programs\Simics\simics-7.38.0
+SIMICS_PROJECT = %SIMICS_PROJECT%\my-intel-simics-project-1
 HOST_TYPE = win64
 ```
 
@@ -209,7 +209,7 @@ Repo : https://github.com/intel/device-modeling-language
 Place your custom DML code here:
 
 ```bash
-C:\Users\nagen\simics-projects\my-intel-simics-project-1\modules\dmlc\
+%SIMICS_PROJECT%\my-intel-simics-project-1\modules\dmlc\
 ```
 
 ---
@@ -234,7 +234,7 @@ default: all
 ### 7. Build Your DML Module
 
 ```cmd
-cd C:\Users\nagen\simics-projects\my-intel-simics-project-1
+cd %SIMICS_PROJECT%\my-intel-simics-project-1
 make dmlc
 ```
 

@@ -1,0 +1,163 @@
+dml 1.4; 
+ 
+ 
+device uart_core; 
+ 
+ 
+param desc = "Basic UART simulation"; 
+ 
+ 
+param documentation = "Simulates UART TX and RX"; 
+ 
+ 
+// Device-scoped state variables (global to this device instance) 
+// These persist across simulation saves/restores and are accessible from all methods 
+saved uint8 tx_data;    // Last data written to TX register 
+saved uint8 rx_data;    // Current data available in RX buffer 
+saved uint8 status;     // Status register: bit 0=TX_READY, bit 1=RX_READY, bit 2=OVERRUN 
+saved uint8 ret;        // Temporary variable for status register reads 
+ 
+ 
+/** 
+ * Device initialization method - called when device is created 
+ * Sets up initial state and logs device configuration 
+ */ 
+method init() { 
+    log info: "UART Core: Device initialized"; 
+    log info: "UART Core: Register layout - TX:0x00, RX:0x01, STAT:0x02"; 
+    log info: "UART Core: Status bits - TX_READY:0x01, RX_READY:0x02, OVERRUN:0x04"; 
+     
+    // Initialize all state variables to known values 
+    status = 0;     // Clear all status bits 
+    tx_data = 0;    // Clear TX data buffer 
+    rx_data = 0;    // Clear RX data buffer 
+    ret = 0;        // Clear temporary variable 
+} 
+ 
+ 
+/** 
+ * UART register bank - contains all memory-mapped registers 
+ * Base address mapping: TX=0x00, RX=0x01, STAT=0x02 
+ */ 
+bank uart_regs { 
+    /** 
+     * TX Register (Write-only) - Transmit Data Register 
+     * Address: 0x00, Size: 1 byte 
+     * Writing to this register simulates sending data via UART TX line 
+     */ 
+    register TX size 1 @ 0x00 is (write) { 
+        method write(uint64 val) { 
+            // Log the data being transmitted (hex + ASCII if printable) 
+            log info: "UART TX: Writing data 0x%02x ('%c')", val, cast(val >= 32 && val <= 126 ? val : '?', int32); 
+             
+            // Store the transmitted data 
+            tx_data = val; 
+             
+            // Set TX ready status bit (bit 0) to indicate transmission complete 
+            status |= 0x01; // Set TX ready status 
+             
+            log info: "UART TX: Status updated to 0x%02x", status; 
+        } 
+    } 
+    /** 
+     * RX Register (Read-only) - Receive Data Register 
+     * Address: 0x01, Size: 1 byte 
+     * Reading from this register retrieves received data and clears RX ready status 
+     */ 
+    register RX size 1 @ 0x01 is (read) { 
+        method read() -> (uint64) { 
+            log info: "UART RX: Read attempt, current status 0x%02x", status; 
+             
+            // Check if RX data is available (bit 1 of status register) 
+            if ((status & 0x02) != 0) { // Check if RX data is available 
+                // Log the data being read (hex + ASCII if printable) 
+                log info: "UART RX: Returning data 0x%02x ('%c')", rx_data, cast(rx_data >= 32 && rx_data <= 126 ? rx_data : '?', int32); 
+                 
+                // Clear RX ready status bit (bit 1) - data has been consumed 
+                status &= ~0x02; // Clear RX ready status 
+                 
+                log info: "UART RX: Status cleared to 0x%02x", status; 
+                return rx_data; 
+            } else { 
+                // No data available - return 0 
+                log info: "UART RX: No data available, returning 0"; 
+                return 0; // No data available 
+            } 
+        } 
+    } 
+    /** 
+     * STAT Register (Read-only) - Status Register 
+     * Address: 0x02, Size: 1 byte 
+     * Bit layout: [7:3]=Reserved, [2]=OVERRUN, [1]=RX_READY, [0]=TX_READY 
+     * Reading this register returns current status and clears some status bits 
+     */ 
+    register STAT size 1 @ 0x02 is (read) { 
+        method read() -> (uint64) { 
+            log info: "UART STAT: Reading status register, current value 0x%02x", status; 
+             
+            // Save current status value to return to caller 
+            ret = status; 
+             
+            // Clear specific status bits after reading: 
+            // - Clear TX ready bit (0x01) - indicates TX operation acknowledged 
+            // - Clear overrun error bit (0x04) - error has been reported 
+            // - Keep RX ready bit (0x02) - only cleared when RX data is actually read 
+            status &= ~0x05; // Clear TX ready (bit 0) and overrun error (bit 2) after reading 
+
+            log info: "UART STAT: Returning 0x%02x, status cleared to 0x%02x", ret, status; 
+            return ret; 
+        } 
+    } 
+} 
+ 
+ 
+/** 
+ * External method to inject received data into the UART 
+ * This simulates data arriving on the UART RX line from an external source 
+ *  
+ * @param data: The byte of data to inject into the RX buffer 
+ *  
+ * Behavior: 
+ * - Checks for overrun condition (previous data not yet read) 
+ * - Sets overrun error bit if data is overwritten 
+ * - Stores new data and sets RX ready status 
+ */ 
+method inject_rx_data(uint8 data) { 
+    // Log the incoming data with current status 
+    log info: "UART RX_INJECT: Injecting data 0x%02x ('%c'), current status 0x%02x",  
+              data, cast(data >= 32 && data <= 126 ? data : '?', int32), status; 
+     
+    // Check if previous data hasn't been read yet (overrun condition) 
+    // This happens when new data arrives before software reads the previous data 
+    if ((status & 0x02) != 0) { 
+        log info: "UART RX_INJECT: Overrun detected! Previous data 0x%02x not read yet", rx_data; 
+         
+        // Set overrun error bit (bit 2) to indicate data loss 
+        status |= 0x04; // Set overrun error bit (bit 2) 
+    } 
+     
+    // Store the new received data (overwrites previous if any) 
+    rx_data = data; 
+     
+    // Set RX ready status bit (bit 1) to indicate data is available for reading 
+    status |= 0x02; // Set RX ready status 
+     
+    log info: "UART RX_INJECT: Data stored, status updated to 0x%02x", status; 
+} 
+ 
+ 
+// Export the inject_rx_data method to make it accessible from Simics CLI 
+export inject_rx_data as "inject_rx_data"; 
+ 
+ 
+// Attribute to expose inject_rx_data functionality to Simics CLI 
+attribute inject_data is (int64_attr) { 
+    param desc = "Inject data into UART RX buffer (write-only)"; 
+     
+    method set(attr_value_t value) throws { 
+        local uint8 data = SIM_attr_integer(value); 
+        inject_rx_data(data); 
+        // Don't store the value in val, as this is a write-only operation 
+    } 
+} 
+

@@ -1,0 +1,31 @@
+dml 1.4;
+
+device basic_uart;
+
+param desc = "Basic UART simulation device";
+param documentation = "Implements basic UART Tx/Rx with status and control.";
+
+saved uint8 tx_data;
+saved uint8 status;
+saved uint8 ret;
+
+// UART register bank
+bank uart_regs {
+    //Transmit Register (write-only)
+    register TX size 1 @ 0x00 is (write){
+        method write(uint64 val) {
+            tx_data=val;
+            log info: "UART TX: Sent byte 0x%x", tx_data;
+            status |= 0x01;  // Set TX_READY status register
+        }
+    }
+
+    //Status Register (read-only)
+    register STAT size 1 @ 0x04 is read {
+        method read() -> (uint64) {
+            ret = status;
+            status &= ~0x01;  // Clear TX_READY flag after read
+            return ret;
+        }
+    }
+}

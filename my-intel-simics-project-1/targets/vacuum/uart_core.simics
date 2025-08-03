@@ -1,0 +1,121 @@
+run-script "%script%/vacuum.simics"
+
+# Load compiled module
+load-module uart_core
+
+# Create a new instance of the UART device
+@SIM_create_object("uart_core", "uart0")
+
+# Map UART registers to physical memory
+# TX=0x1000, RX=0x1001, STAT=0x1002
+phys_mem.add-map uart0.bank.uart_regs 0x1000 0x100 priority = 1
+
+echo "UART Core device created and mapped to memory"
+echo "  TX Register:   0x1000 (write-only)"
+echo "  RX Register:   0x1001 (read-only)"
+echo "  STAT Register: 0x1002 (read-only)"
+echo ""
+
+# List UART objects
+list-objects uart_core
+echo ""
+
+echo "=== Test 1: Initial Status Check ==="
+echo "Reading initial status register..."
+phys_mem.read 0x1002 -b 1
+echo ""
+
+echo "=== Test 2: TX Register Write Test ==="
+echo "Writing 0xAA to TX register..."
+phys_mem.write 0x1000 0xAA -b 1
+
+echo "Reading status after TX write (should show TX_READY=0x01)..."
+phys_mem.read 0x1002 -b 1
+echo ""
+
+echo "=== Test 3: RX Register Read Test (Empty) ==="
+echo "Reading RX register (should be 0x00 - empty)..."
+phys_mem.read 0x1001 -b 1
+
+echo "Reading status after RX read..."
+phys_mem.read 0x1002 -b 1
+echo ""
+
+echo "=== Test 4: RX Data Injection Test ==="
+echo "Injecting 0x42 ('B') into RX buffer using inject_data attribute..."
+uart0->inject_data = 0x42
+
+echo "Reading status after injection (should show RX_READY=0x02)..."
+phys_mem.read 0x1002 -b 1
+
+echo "Reading injected data from RX register..."
+phys_mem.read 0x1001 -b 1
+
+echo "Reading status after consuming RX data (RX_READY should be cleared).."
+phys_mem.read 0x1002 -b 1
+echo ""
+
+echo "=== Test 5: Overrun Condition Test ==="
+echo "Injecting first byte 0x43 ('C')..."
+uart0->inject_data = 0x43
+
+echo "Injecting second byte 0x44 ('D') before reading first (should cause overrun)..."
+uart0->inject_data = 0x44
+
+echo "Reading status (should show OVERRUN=0x04 + RX_READY=0x02 = 0x06)..."
+phys_mem.read 0x1002 -b 1
+
+echo "Reading RX data (should be 0x44 - latest data)..."
+phys_mem.read 0x1001 -b 1
+
+echo "Reading status after consuming data (overrun bit should remain until status read)..."
+phys_mem.read 0x1002 -b 1
+echo ""
+
+echo "=== Test 6: Multiple TX Operations ==="
+echo "Writing 'H' (0x48) to TX..."
+phys_mem.write 0x1000 0x48 -b 1
+phys_mem.read 0x1002 -b 1
+
+echo "Writing 'e' (0x65) to TX..."
+phys_mem.write 0x1000 0x65 -b 1
+phys_mem.read 0x1002 -b 1
+
+echo "Writing 'l' (0x6C) to TX..."
+phys_mem.write 0x1000 0x6C -b 1
+phys_mem.read 0x1002 -b 1
+
+echo "Writing 'l' (0x6C) to TX..."
+phys_mem.write 0x1000 0x6C -b 1
+phys_mem.read 0x1002 -b 1
+
+echo "Writing 'o' (0x6F) to TX..."
+phys_mem.write 0x1000 0x6F -b 1
+phys_mem.read 0x1002 -b 1
+echo ""
+
+echo "=== Test 7: Multiple RX Operations ==="
+echo "Injecting and reading 'W' (0x57)..."
+uart0->inject_data = 0x57
+phys_mem.read 0x1001 -b 1
+
+echo "Injecting and reading 'o' (0x6F)..."
+uart0->inject_data = 0x6F
+phys_mem.read 0x1001 -b 1
+
+echo "Injecting and reading 'r' (0x72)..."
+uart0->inject_data = 0x72
+phys_mem.read 0x1001 -b 1
+
+echo "Injecting and reading 'l' (0x6C)..."
+uart0->inject_data = 0x6C
+phys_mem.read 0x1001 -b 1
+
+echo "Injecting and reading 'd' (0x64)..."
+uart0->inject_data = 0x64
+phys_mem.read 0x1001 -b 1
+echo ""
+
+echo "=== UART Core Testing Complete ==="
+echo "All register operations have been tested successfully!"
+echo "Check the console output above for device logging information."

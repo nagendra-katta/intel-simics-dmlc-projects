@@ -4,12 +4,27 @@ A collection of sample Simics DMLC (Device Modeling Language Compiler) projects 
 
 ---
 
-## 📁 Project 1: `sample-mydevice`
+## 📁 Projects
 
+### 1. `mydevice`
 A basic Simics device module to demonstrate:
 - Custom device creation using DMLC
 - Manual build setup using `mingw32-make`
 - Simics script execution and memory-mapped register testing
+
+### 2. `basic_uart`
+A simple UART (Universal Asynchronous Receiver-Transmitter) implementation featuring:
+- Basic TX functionality
+- Memory-mapped register interface
+- Simple status tracking
+
+### 3. `uart_core`
+An advanced UART implementation with:
+- Full TX/RX functionality with status management
+- Overrun detection and error handling
+- Comprehensive logging system
+- CLI-accessible data injection interface
+- Complete test suite with multiple scenarios
 
 ---
 
@@ -39,11 +54,12 @@ A basic Simics device module to demonstrate:
 
 ---
 
-## 📚 How to Use
+## 📚 Documentation & Setup
 
-See [`README.md`](my-intel-simics-project-1/README.md) inside `my-intel-simics-project-1/` for full setup and build instructions.
+For detailed documentation and setup instructions, refer to:
 
+- [`README.md`](my-intel-simics-project-1/README.md) - Main project setup and Sample device implementation guide
+- [`README_basic_uart.md`](my-intel-simics-project-1/modules/basic_uart/README_basic_uart.md) - Basic UART implementation guide
+- [`README_uart_core.md`](my-intel-simics-project-1/modules/uart_core/README_uart_core.md) - Advanced UART implementation and testing guide
 ---
-
-## 📦 Repository Layout
 

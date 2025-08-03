@@ -1,0 +1,23 @@
+run-script "%script%/vacuum.simics"
+# Load compiled module
+load-module basic_uart
+
+# Create an new instance of the UART device
+@SIM_create_object("basic_uart", "uart0")
+
+
+# Map UART to memory (e.g., at 0x1000)
+phys_mem.add-map uart0.bank.uart_regs 0x1000 0x100 priority = 1
+# Q Why map 0x1000 (4 KB) when you only use a few bytes?
+# A Most hardware devices are mapped in aligned chunks of memory — often at least 4 KB (0x1000 bytes) or bigger.
+
+
+# print UART registers
+list-objects basic_uart
+
+# Test write
+phys_mem.write 0x1000 0xAA -b 1
+
+# Test read (STAT register at 0x1004)
+phys_mem.read 0x1004 -b 1
+phys_mem.read 0x1004 -b 1
